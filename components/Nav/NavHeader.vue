@@ -7,15 +7,15 @@
     flex items-center gap-6
     py-4
   >
-    <BaseLine class="hidden xl:block" />
+    <BaseLine hidden xl:block />
 
     <header
       max-w="full xl:6xl"
       mx-auto w-full
-      flex flex-grow-1 flex-shrink-0 justify-between items-center gap-6
+      flex flex-grow-1 flex-shrink-0 justify-center sm:justify-between items-center gap-6
       text-base
     >
-      <div>
+      <div hidden sm:block>
         <NuxtLink to="/">
           <div flex items-center gap-2>
             <Icon text-4xl name="ph:cloud-rain-fill" />
@@ -23,11 +23,11 @@
         </NuxtLink>
       </div>
 
-      <BaseLine />
+      <BaseLine hidden md:block />
 
       <NavBar />
     </header>
 
-    <BaseLine class="hidden xl:block" />
+    <BaseLine hidden xl:block />
   </div>
 </template>

@@ -31,7 +31,7 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   shortcuts: {
-    hyperlink: 'underline decoration-underline underline-offset-5 hover:decoration-current transition-all',
+    hyperlink: 'underline decoration-underline hover:decoration-current transition-all',
   },
   theme: {
     maxWidth: {

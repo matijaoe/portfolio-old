@@ -18,7 +18,7 @@ useHead({
   </div>
 </template>
 
-<style scoped>
+<style>
 @import url('https://fonts.cdnfonts.com/css/palmtick');
 
 #cover {

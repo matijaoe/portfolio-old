@@ -11,7 +11,7 @@ definePageMeta({
   <div grid content-center h-full flex-1 mt-15vh>
     <div flex flex-col gap-8>
       <div font-display space-y-4>
-        <p text-8xl>
+        <p text-7xl md:text-8xl>
           Matija Osrečki
         </p>
         <p text-3xl>

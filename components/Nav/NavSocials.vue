@@ -4,8 +4,9 @@ import { SOCIALS } from '~~/constants/socials'
 
 <template>
   <div
+    class="hidden md:flex"
+    flex-col items-center justify-center gap-6
     fixed right-4 top-0 bottom-0
-    flex flex-col items-center justify-center gap-6
     py-6
   >
     <BaseLine type="vertical" flex-1 />

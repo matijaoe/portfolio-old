@@ -8,7 +8,7 @@ definePageMeta({
 </script>
 
 <template>
-  <BaseHeading as="h2" text-6xl>
+  <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
     Who am I
   </BaseHeading>
 </template>
