@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+useHead({
+  title: 'Blog | Matija Osrecki',
+})
 definePageMeta({
   accent: 'to-sky-9',
 })

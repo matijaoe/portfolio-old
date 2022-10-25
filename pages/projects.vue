@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import { PROJECTS } from '~~/constants/projects'
 
+useHead({
+  title: 'Projects | Matija Osrecki',
+})
 definePageMeta({
   accent: 'to-emerald-9',
 })
@@ -12,7 +15,7 @@ definePageMeta({
       Projects
     </BaseHeading>
 
-    <div mt-12 flex flex-col gap-12>
+    <div mt-12 flex flex-col gap-8>
       <ProjectCard
         v-for="project in PROJECTS"
         :key="project.name"

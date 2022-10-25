@@ -22,7 +22,7 @@ export type Project = {
   description: string
   tags: Tag[]
   year: number
-  links?: {
+  links: {
     label: string
     href: string
   }[]

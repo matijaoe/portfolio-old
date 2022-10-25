@@ -1,6 +1,7 @@
+import type { Project } from '~~/models'
 import { Tag } from '~~/models'
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     name: 'Qwiz',
     description: 'Platform for creation, organization & discovery of pub quizzes.',

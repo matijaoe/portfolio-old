@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+useHead({
+  title: 'Contact | Matija Osrecki',
+})
 definePageMeta({
   accent: 'to-yellow-9',
 })
