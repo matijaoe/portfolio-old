@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
       },
       {
         label: 'Backend',
-        href: 'https://github.com/mat2ja/expenses-frontend',
+        href: 'https://github.com/mat2ja/expenses-backend',
       },
       {
         label: 'Live',
