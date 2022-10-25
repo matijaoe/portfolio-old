@@ -6,7 +6,7 @@
   <div>
     <NavSocials />
 
-    <div h-screen overflow-auto>
+    <div h="screen sm:[calc(100vh_-_32px)]" overflow-auto>
       <NavHeader pr-6 />
 
       <main

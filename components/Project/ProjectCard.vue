@@ -17,7 +17,7 @@ const initalLink = ref(props.project.links[0].href)
 
     <div flex flex-col gap-2 w-full>
       <div flex justify-between items-center w-full>
-        <NuxtLink :href="initalLink" class="hover:underline" w-fit flex items-center gap-4 group>
+        <NuxtLink :href="initalLink" target="_nowrap" class="hover:underline" w-fit flex items-center gap-4 group>
           <h3 font-display text-2xl flex items-start gap-4>
             {{ project.name }}
             <span v-if="project.inProgress" mt-1 font-sans bg-emerald-4 px-2 py="0.75" text="10px" leading-none font-bold uppercase rounded-full text-stone-9>in progress</span>

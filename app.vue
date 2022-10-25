@@ -6,20 +6,27 @@ useHead({
 
 <template>
   <div
-    h-screen w-screen
-    text-stone-3
-    font-sans
-    class="bg-gradient-to-tr from-black via-stone-9"
-    :class="[$route.meta.accent]"
+    class="sm:(p-4 overflow-hidden)"
   >
-    <div id="cover" h-screen pl-6>
-      <NuxtLayout />
+    <div
+      text-stone-3
+      rounded-lg
+      font-sans
+      class="bg-gradient-to-tr from-black via-stone-9"
+      :class="[$route.meta.accent]"
+    >
+      <div id="cover" pl-6>
+        <NuxtLayout />
+      </div>
     </div>
   </div>
 </template>
 
 <style>
 @import url('https://fonts.cdnfonts.com/css/palmtick');
+body {
+  background: black;
+}
 
 #cover {
   background-image: url('assets/noise2.png');
