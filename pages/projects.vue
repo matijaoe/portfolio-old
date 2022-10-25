@@ -38,7 +38,19 @@ const projects = ref<Project[]>([
         href: 'https://aimo.vercel.app',
       },
     ],
-
+  },
+  {
+    name: 'FIRE Platform',
+    description: 'Platform for Financial independence, Retire early community.',
+    tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS, Tag.Prisma],
+    year: 2023,
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/mat2ja/fire-zavrsni',
+      },
+    ],
+    inProgress: true,
   },
   {
     name: 'Expense tracker',
@@ -57,14 +69,34 @@ const projects = ref<Project[]>([
     ],
   },
   {
-    name: 'FIRE Platform',
-    description: 'Platform for Financial independence, Retire early community.',
-    tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS, Tag.Prisma],
-    year: 2023,
+    name: 'MeetMia',
+    description: 'Cake shop concept project for Web Design college course',
+    tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.UnoCSS],
+    year: 2021,
     links: [
       {
         label: 'Code',
-        href: 'https://github.com/mat2ja/fire-zavrsni',
+        href: 'https://github.com/mat2ja/meet-mia',
+      },
+      {
+        label: 'Live',
+        href: 'https://meet-mia.surge.sh/',
+      },
+    ],
+  },
+  {
+    name: 'Comet',
+    description: 'Video streaming platform mockup',
+    tags: [Tag.HTML, Tag.SCSS, Tag.JavaScript],
+    year: 2020,
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/mat2ja/comet',
+      },
+      {
+        label: 'Live',
+        href: 'https://mat2ja.github.io/comet/',
       },
     ],
   },
@@ -77,7 +109,8 @@ const projects = ref<Project[]>([
       Projects
     </BaseHeading>
 
-    <div mt-10 flex flex-col gap-10>
+    <!-- flex flex-col gap-10 -->
+    <div mt-10 grid grid-cols-2 gap-x-10 gap-y-14>
       <ProjectCard
         v-for="project in projects"
         :key="project.name"

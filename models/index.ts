@@ -4,6 +4,9 @@ export enum Tag {
   React = 'react',
   Next = 'next',
   TypeScript = 'typescript',
+  JavaScript = 'javascript',
+  SCSS = 'scss',
+  HTML = 'html',
   Tailwind = 'tailwind',
   Vite = 'vite',
   UnoCSS = 'unocss',
@@ -23,4 +26,5 @@ export type Project = {
     label: string
     href: string
   }[]
+  inProgress?: boolean
 }

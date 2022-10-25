@@ -1,6 +1,6 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
-  type: 'vertical' | 'horizontal'
+  type?: 'vertical' | 'horizontal'
 }>(), {
   type: 'horizontal',
 })

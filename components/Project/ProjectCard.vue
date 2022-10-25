@@ -7,14 +7,16 @@ defineProps<{
 </script>
 
 <template>
+  <!-- TODO: show image over card on hover, onak fensi -->
   <div>
     <div class="write-vertical-left rotate-180 text-right" top="50%" font-bold text-5xl text-stone-2 opacity-20>
       {{ project.year }}
     </div>
 
     <div flex flex-col gap-2>
-      <h3 font-display text-2xl>
+      <h3 font-display text-2xl flex items-start gap-4>
         {{ project.name }}
+        <span v-if="project.inProgress" mt-1 font-sans bg-emerald-4 px-2 py="0.75" text="10px" leading-none font-bold uppercase rounded-full text-stone-9>in progress</span>
       </h3>
       <p text-sm opacity-80>
         {{ project.description }}
@@ -22,13 +24,13 @@ defineProps<{
 
       <div v-if="project.links?.length" text-sm flex items-center gap-3>
         <div v-for="(link, i) in project.links" :key="i" flex gap-4>
-          <NuxtLink :href="link.href" target="_blank" underline>
+          <NuxtLink :href="link.href" target="_blank" class="underline  opacity-80 hover:opacity-100">
             {{ link.label }}
           </NuxtLink>
         </div>
       </div>
 
-      <ul mt-2 flex items-center flex-wrap gap-2 text="11px" lowercase font-bold>
+      <ul mt-2 flex items-center flex-wrap gap-2>
         <ProjectTag v-for="tag in project.tags" :key="tag">
           {{ tag }}
         </ProjectTag>

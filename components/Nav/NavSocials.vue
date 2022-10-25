@@ -36,7 +36,7 @@ const socials = [
       flex flex-col items-center gap-5
     >
       <li v-for="(social, i) in socials" :key="i">
-        <NuxtLink target="_blank" :href="social.href" py-1 px-2 class="lowercase font-semibold opacity-90 hover:opacity-100">
+        <NuxtLink target="_blank" :href="social.href" py-1 px-2 opacity="80 hover:100">
           <Icon :name="social.icon" text-xl />
         </NuxtLink>
       </li>
