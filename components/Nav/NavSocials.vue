@@ -4,7 +4,7 @@ import { SOCIALS } from '~~/constants/socials'
 
 <template>
   <div
-    absolute right-4 top-0 bottom-0
+    fixed right-4 top-0 bottom-0
     flex flex-col items-center justify-center gap-6
     py-6
   >

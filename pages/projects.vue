@@ -12,7 +12,7 @@ definePageMeta({
       Projects
     </BaseHeading>
 
-    <div mt-12 grid grid-cols-2 gap-x-10 gap-y-14>
+    <div mt-12 flex flex-col gap-12>
       <ProjectCard
         v-for="project in PROJECTS"
         :key="project.name"

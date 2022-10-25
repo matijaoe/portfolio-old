@@ -5,8 +5,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div grid content-center h-full flex-1 translate-y="[-5vh]">
-    <div flex flex-col gap-3>
+  <div grid content-center h-full flex-1 mt-15vh>
+    <div flex flex-col gap-8>
       <div font-display space-y-4>
         <p text-8xl>
           Matija Osrečki
@@ -23,7 +23,7 @@ definePageMeta({
         </div>
 
         <div class="after:(content-none bg-red-5 w-full h-4)">
-          Currently working as a Mid Frontend Developer at <a class="hyperlink decoration-rose-7" target="_blank" href="https://4ofthem.eu/">Four of them LLC</a>.
+          Currently working as a Mid Frontend Developer at <a underline target="_blank" href="https://4ofthem.eu/">Four of them LLC</a>.
         </div>
       </div>
     </div>

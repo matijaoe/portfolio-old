@@ -6,13 +6,13 @@ useHead({
 
 <template>
   <div
-    font="sans"
+    h-screen w-screen
+    text-stone-3
+    font-sans
     class="bg-gradient-to-tr from-black via-stone-9"
     :class="[$route.meta.accent]"
-    min-h-screen w-screen
-    text-stone-3
   >
-    <div id="cover" min-h-screen>
+    <div id="cover" h-screen pl-6>
       <NuxtLayout />
     </div>
   </div>

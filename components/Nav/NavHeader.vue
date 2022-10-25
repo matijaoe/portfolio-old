@@ -3,7 +3,10 @@
 </script>
 
 <template>
-  <div flex items-center gap-6 py-4 px-6>
+  <div
+    flex items-center gap-6
+    py-4
+  >
     <BaseLine class="hidden xl:block" />
 
     <header
