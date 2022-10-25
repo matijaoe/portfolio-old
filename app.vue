@@ -19,9 +19,7 @@ useHead({
 </template>
 
 <style scoped>
-@import url('http://fonts.cdnfonts.com/css/satoshi');
-@import url('http://fonts.cdnfonts.com/css/crima');
-@import url('http://fonts.cdnfonts.com/css/palmtick');
+@import url('https://fonts.cdnfonts.com/css/palmtick');
 
 #cover {
   background-image: url('assets/noise2.png');

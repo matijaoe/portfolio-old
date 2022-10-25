@@ -18,7 +18,7 @@ const projects = ref<Project[]>([
         href: 'https://github.com/qwiz-app/qwiz',
       },
       {
-        label: 'Demo',
+        label: 'Live',
         href: 'https://app.qwiz.party',
       },
     ],
@@ -34,7 +34,7 @@ const projects = ref<Project[]>([
         href: 'https://github.com/mat2ja/aimo',
       },
       {
-        label: 'Demo',
+        label: 'Live',
         href: 'https://aimo.vercel.app',
       },
     ],

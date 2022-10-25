@@ -29,9 +29,9 @@ defineProps<{
       </div>
 
       <ul mt-2 flex items-center flex-wrap gap-2 text="11px" lowercase font-bold>
-        <li v-for="tag in project.tags" :key="tag" py="0.5" px-2 bg-black font-mono cursor="pointer" rounded-full>
+        <ProjectTag v-for="tag in project.tags" :key="tag">
           {{ tag }}
-        </li>
+        </ProjectTag>
       </ul>
     </div>
   </div>

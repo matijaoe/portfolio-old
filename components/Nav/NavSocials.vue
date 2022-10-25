@@ -8,12 +8,12 @@ const socials = [
   {
     label: 'LinkedIn',
     icon: 'tabler:brand-linkedin',
-    href: 'https://github.com/mat2ja',
+    href: 'http://linkedin.com/in/matijao',
   },
   {
     label: 'Twitter',
     icon: 'tabler:brand-twitter',
-    href: 'https://github.com/mat2ja',
+    href: 'https://twitter.com/matijao_',
   },
   {
     label: 'Email',
