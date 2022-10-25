@@ -1,26 +1,5 @@
 <script lang="ts" setup>
-const socials = [
-  {
-    label: 'Github',
-    icon: 'tabler:brand-github',
-    href: 'https://github.com/mat2ja',
-  },
-  {
-    label: 'LinkedIn',
-    icon: 'tabler:brand-linkedin',
-    href: 'http://linkedin.com/in/matijao',
-  },
-  {
-    label: 'Twitter',
-    icon: 'tabler:brand-twitter',
-    href: 'https://twitter.com/matijao_',
-  },
-  {
-    label: 'Email',
-    icon: 'tabler:mail',
-    href: 'mailto:matija.osrecki@gmail.com',
-  },
-]
+import { SOCIALS } from '~~/constants/socials'
 </script>
 
 <template>
@@ -35,7 +14,7 @@ const socials = [
       font-mono
       flex flex-col items-center gap-5
     >
-      <li v-for="(social, i) in socials" :key="i">
+      <li v-for="(social, i) in SOCIALS" :key="i">
         <NuxtLink target="_blank" :href="social.href" py-1 px-2 opacity="80 hover:100">
           <Icon :name="social.icon" text-xl />
         </NuxtLink>

@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 const items = [
   {
+    label: 'Home',
+    to: '/',
+  },
+  {
     label: 'About',
     to: '/about',
   },
@@ -11,6 +15,14 @@ const items = [
   {
     label: 'Blog',
     to: '/blog',
+  },
+  {
+    label: 'Contact',
+    to: '/contact',
+  },
+  {
+    label: 'Guestlist',
+    to: '/guestlist',
   },
 ]
 </script>

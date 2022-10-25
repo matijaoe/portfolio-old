@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 definePageMeta({
-  accent: 'to-orange-9',
+  accent: 'to-purple-9',
 })
 </script>
 
 <template>
   <BaseHeading as="h2" text-6xl>
-    Who am I
+    Mark your teritory
   </BaseHeading>
 </template>
