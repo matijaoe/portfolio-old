@@ -21,8 +21,8 @@ const items = [
     to: '/contact',
   },
   {
-    label: 'Guestlist',
-    to: '/guestlist',
+    label: 'Guestbook',
+    to: '/guestbook',
   },
 ]
 </script>
