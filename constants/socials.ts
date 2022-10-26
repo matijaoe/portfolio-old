@@ -34,4 +34,9 @@ export const SOCIALS = [
     icon: 'tabler:mail',
     href: 'mailto:matija.osrecki@gmail.com',
   },
+  {
+    label: 'CV',
+    icon: 'academicons:cv',
+    href: '',
+  },
 ]

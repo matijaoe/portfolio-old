@@ -15,7 +15,7 @@ useHead({
       class="bg-gradient-to-tr from-black via-stone-9"
       :class="[$route.meta.accent]"
     >
-      <div id="cover" pl-6>
+      <div id="cover">
         <NuxtLayout />
       </div>
     </div>

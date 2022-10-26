@@ -7,10 +7,11 @@
     <NavSocials />
 
     <div h="screen sm:[calc(100vh_-_32px)]" overflow-auto>
-      <NavHeader pr-6 />
+      <NavHeader />
 
       <main
-        pr-6
+        pl-6
+        pr-6 sm:pr-16
         pt-8 pb-24
         max-w="full xl:6xl"
         w-full

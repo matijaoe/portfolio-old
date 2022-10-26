@@ -25,7 +25,7 @@ definePageMeta({
           <p>Most passionate about building products, web design, clean code & bitcoin.</p>
         </div>
 
-        <div class="after:(content-none bg-red-5 w-full h-4)">
+        <div>
           Currently working as a Mid Frontend Developer at <a underline target="_blank" href="https://4ofthem.eu/">Four of them LLC</a>.
         </div>
       </div>
