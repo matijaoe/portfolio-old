@@ -17,10 +17,10 @@ definePageMeta({
 
     <div mt-12 flex flex-col gap-8>
       <ProjectCard
-        v-for="project in PROJECTS"
-        :key="project.name"
+        v-for="(project, i) in PROJECTS"
+        :key="i"
+        :index="i"
         :project="project"
-        max-w-lg relative flex gap-4
       />
     </div>
   </div>

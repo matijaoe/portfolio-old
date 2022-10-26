@@ -9,6 +9,7 @@ import { SOCIALS } from '~~/constants/socials'
     fixed right-4 top-0 bottom-0
     pt-3
     py-8
+    z-50
   >
     <BaseLine type="vertical" flex-1 />
 

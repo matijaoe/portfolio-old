@@ -34,7 +34,7 @@ const items = [
 </script>
 
 <template>
-  <nav flex items-center>
+  <nav flex items-center z-50>
     <ul font-sans flex items-center gap-2 lowercase>
       <li v-for="(item, i) in items" :key="i">
         <NuxtLink

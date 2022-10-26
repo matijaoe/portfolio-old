@@ -11,7 +11,7 @@
 
       <main
         pl-6
-        pr-6 sm:pr-16
+        pr-6 md:pr-16
         pt-8 pb-24
         max-w="full xl:6xl"
         w-full

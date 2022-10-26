@@ -27,4 +27,5 @@ export type Project = {
     href: string
   }[]
   inProgress?: boolean
+  thumbnail?: any
 }

@@ -7,7 +7,7 @@
     flex items-center gap-6
     py-3
     pl-8
-    pr-2
+    pr-3
   >
     <!-- max-w="full xl:6xl" -->
     <header

@@ -29,7 +29,7 @@ body {
 }
 
 #cover {
-  background-image: url('assets/noise2.png');
+  background-image: url('assets/images/noise2.png');
   background-attachment: fixed;
   backdrop-filter: grayscale(65%);
 }
