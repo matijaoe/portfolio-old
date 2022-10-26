@@ -31,7 +31,9 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   shortcuts: {
-    hyperlink: 'underline decoration-underline hover:decoration-current transition-all',
+    'text-dimmed': 'text-stone-2/65',
+    'bg-dimmed': 'bg-stone-1/50',
+    'hyperlink': 'underline decoration-underline hover:decoration-current transition-all',
   },
   theme: {
     maxWidth: {

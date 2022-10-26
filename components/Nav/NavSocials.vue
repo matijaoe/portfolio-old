@@ -15,10 +15,24 @@ import { SOCIALS } from '~~/constants/socials'
 
     <ul
       font-mono
-      flex flex-col items-center gap-5
+      flex flex-col items-center gap-2
     >
-      <li v-for="(social, i) in SOCIALS" :key="i">
-        <NuxtLink target="_blank" :href="social.href" py-1 px-2 opacity="80 hover:100">
+      <li
+        v-for="(social, i) in SOCIALS"
+        :key="i"
+        v-tooltip="{
+          delay: 0,
+          content: social.label,
+          theme: 'info-tooltip',
+          placement: 'left',
+        }"
+        class="hover:bg-zinc-4/10"
+        rounded-full
+      >
+        <NuxtLink
+          flex items-center justify-center
+          block target="_blank" :href="social.href" py-2 px-2 opacity="80 hover:100"
+        >
           <Icon :name="social.icon" text-xl />
         </NuxtLink>
       </li>

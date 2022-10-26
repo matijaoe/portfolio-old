@@ -6,11 +6,11 @@ useHead({
 
 <template>
   <div
-    class="sm:(p-4 overflow-hidden)"
+    class="md:(p-4 overflow-hidden)"
   >
     <div
       text-stone-3
-      rounded-lg
+      md:rounded-lg
       font-sans
       class="bg-gradient-to-tr from-black via-stone-9"
       :class="[$route.meta.accent]"
@@ -24,6 +24,7 @@ useHead({
 
 <style>
 @import url('https://fonts.cdnfonts.com/css/palmtick');
+
 body {
   background: black;
 }
@@ -54,5 +55,23 @@ body {
 ::selection {
   background: #d4d4d4;
   color: #292524;
+}
+
+/* Extract into custom file */
+.v-popper--theme-info-tooltip .v-popper__inner {
+  background: #292524;
+  color: #d4d4d4;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: #57534e solid 1px;
+}
+
+.v-popper--theme-info-tooltip .v-popper__arrow-inner {
+  visibility: hidden;
+}
+
+.v-popper--theme-info-tooltip .v-popper__arrow-outer {
+  visibility: hidden;
 }
 </style>

@@ -46,13 +46,13 @@ const cardRowHovered = useElementHover(cardRow)
           </div>
         </div>
 
-        <p text-sm opacity-80>
+        <p text-sm text-dimmed>
           {{ project.description }}
         </p>
 
         <div text-sm flex items-center gap-3>
           <div v-for="(link, i) in project.links" :key="i" flex gap-4>
-            <NuxtLink :href="link.href" target="_blank" class="hyperlink" opacity="80 hover:100">
+            <NuxtLink :href="link.href" target="_blank" class="hyperlink text-stone-3/85 hover:text-stone-3/100">
               {{ link.label }}
             </NuxtLink>
           </div>
@@ -76,7 +76,7 @@ const cardRowHovered = useElementHover(cardRow)
             top="50%" right="-30% xl:-5"
             h-64
             class="-translate-y-30% scale-130 rotate-15 transition-all"
-            :class="[cardRowHovered ? 'opacity-100 visible z-1' : 'opacity-4']"
+            :class="[cardRowHovered ? 'opacity-100 visible z-1' : 'opacity-3']"
             :src="project.thumbnail"
           >
         </a>

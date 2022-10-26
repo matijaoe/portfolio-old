@@ -19,14 +19,20 @@ definePageMeta({
         </p>
       </div>
 
-      <div max-w-xl opacity-80 space-y-4>
+      <div max-w-xl space-y-4 class="text-stone-2/65">
         <div space-y-1>
           <p>Highly ambitious full-stack developer with special attention to detail and a keen eye for UI/UX design.</p>
           <p>Most passionate about building products, web design, clean code & bitcoin.</p>
         </div>
 
         <div>
-          Currently working as a Mid Frontend Developer at <a underline target="_blank" href="https://4ofthem.eu/">Four of them LLC</a>.
+          Currently working as a Mid Frontend Developer at
+          <a
+            underline target="_blank"
+            class="transition-all hyperlink text-stone-3/85 hover:text-stone-3/100" href="https://4ofthem.eu/"
+          >
+            Four of them LLC
+          </a>.
         </div>
       </div>
     </div>

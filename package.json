@@ -17,6 +17,7 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
+    "floating-vue": "^2.0.0-beta.19",
     "@vueuse/nuxt": "^9.4.0"
   }
 }
