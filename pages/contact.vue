@@ -4,6 +4,7 @@ useHead({
 })
 definePageMeta({
   accent: 'to-yellow-9',
+  bg: 'bg-yellow-9',
 })
 </script>
 

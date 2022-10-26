@@ -12,13 +12,12 @@ useHead({
       text-stone-3
       md:rounded-lg
       font-sans
-      class="bg-gradient-to-tr from-black via-stone-9"
-      :class="[$route.meta.accent]"
+      :class="[$route.meta.bg]"
     >
-      <div id="cover">
-        <NuxtLayout />
-      </div>
+      <NuxtLayout />
     </div>
+
+    <GrainCover />
   </div>
 </template>
 
@@ -27,12 +26,6 @@ useHead({
 
 body {
   background: black;
-}
-
-#cover {
-  background-image: url('assets/images/noise2.png');
-  background-attachment: fixed;
-  backdrop-filter: grayscale(65%);
 }
 
 .page-enter-active {
@@ -59,12 +52,11 @@ body {
 
 /* Extract into custom file */
 .v-popper--theme-info-tooltip .v-popper__inner {
-  background: #292524;
+  background: rgba(250,250,249,0.15);;
   color: #d4d4d4;
   padding: 5px 10px;
   font-size: 13px;
   border-radius: 4px;
-  border: #57534e solid 1px;
 }
 
 .v-popper--theme-info-tooltip .v-popper__arrow-inner {

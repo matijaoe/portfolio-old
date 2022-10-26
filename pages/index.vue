@@ -3,7 +3,8 @@ useHead({
   title: 'Home | Matija Osrecki',
 })
 definePageMeta({
-  accent: 'to-rose-9',
+  accent: 'to-indigo-9',
+  bg: 'bg-indigo-9',
 })
 </script>
 
@@ -19,6 +20,7 @@ definePageMeta({
         </p>
       </div>
 
+      <!-- TODO: why light font not recognized -->
       <div max-w-xl space-y-4 class="text-stone-2/65">
         <div space-y-1>
           <p>Highly ambitious full-stack developer with special attention to detail and a keen eye for UI/UX design.</p>

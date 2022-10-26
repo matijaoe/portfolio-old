@@ -24,8 +24,8 @@ const cardRowHovered = useElementHover(cardRow)
       relative
       flex gap-4
       w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 sm:hover:(bg-zinc-6/20 lg:translate-x-0) transition-all sm:pl-3 pr-5"
-      :class="[{ 'bg-zinc-6/20 lg:translate-x-0': cardRowHovered }]"
+      class="lg:-translate-x-4 sm:hover:(bg-stone-50/5 lg:translate-x-0) transition-all sm:pl-3 pr-5"
+      :class="[{ 'bg-stone-50/5 lg:translate-x-0': cardRowHovered }]"
       py-4 rounded-md cursor-pointer
     >
       <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-bold text-5xl text-stone-2 opacity-20>
@@ -73,10 +73,10 @@ const cardRowHovered = useElementHover(cardRow)
 
             rounded-md
             absolute
-            top="50%" right="-30% xl:-5"
+            top="50%" right="-30% xl:-8"
             h-64
-            class="-translate-y-30% scale-130 rotate-15 transition-all"
-            :class="[cardRowHovered ? 'opacity-100 visible z-1' : 'opacity-3']"
+            class="-translate-y-45% scale-130 transition-all"
+            :class="[cardRowHovered ? 'opacity-100 visible rotate-0 z-10 translate-x--5' : 'opacity-4 rotate-12']"
             :src="project.thumbnail"
           >
         </a>

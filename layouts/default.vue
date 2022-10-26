@@ -3,10 +3,9 @@
 </script>
 
 <template>
+  <NavSocials />
   <div>
-    <NavSocials />
-
-    <div h="screen md:[calc(100vh_-_32px)]" overflow-auto>
+    <div h="screen md:[calc(100vh_-_32px)]" overflow-auto r>
       <NavHeader />
 
       <main

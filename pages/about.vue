@@ -3,7 +3,8 @@ useHead({
   title: 'About | Matija Osrecki',
 })
 definePageMeta({
-  accent: 'to-orange-9',
+  accent: 'to-blue-9',
+  bg: 'bg-blue-9',
 })
 </script>
 

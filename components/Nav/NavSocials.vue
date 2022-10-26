@@ -6,10 +6,11 @@ import { SOCIALS } from '~~/constants/socials'
   <div
     class="hidden md:flex"
     flex-col items-center justify-center gap-6
-    fixed right-4 top-0 bottom-0
+    absolute right-4 top-4 bottom-0
     pt-3
-    py-8
+    py-10
     z-50
+    pr-4
   >
     <BaseLine type="vertical" flex-1 />
 
@@ -26,12 +27,12 @@ import { SOCIALS } from '~~/constants/socials'
           theme: 'info-tooltip',
           placement: 'left',
         }"
-        class="hover:bg-zinc-4/10"
+        class="hover:bg-stone-50/15"
         rounded-full
       >
         <NuxtLink
           flex items-center justify-center
-          block target="_blank" :href="social.href" py-2 px-2 opacity="80 hover:100"
+          block target="_blank" :href="social.href" py-2 px-2
         >
           <Icon :name="social.icon" text-xl />
         </NuxtLink>
