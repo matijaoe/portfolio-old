@@ -12,12 +12,19 @@
       </p>
       <p>
         Find me on
-        <a class="group" inline-flex items-center gap-2 group href="https://www.goodreads.com/matijao" target="_blank" hyperlink>
+        <a
+          class="group"
+          inline-flex items-center gap-2
+          href="https://www.goodreads.com/matijao"
+          target="_blank"
+          hyperlink
+        >
           Goodreads
           <Icon
             name="simple-icons:goodreads"
             text-orange-5
-            class="opacity-0 translate-x--2 transition-all group-hover:(opacity-100 translate-x-0)"
+            mt-1
+            class="opacity-0 translate-x--3 transition-all scale-50 group-hover:(opacity-100 translate-x-0 rotate-0 scale-100)"
           />
         </a>
       </p>
