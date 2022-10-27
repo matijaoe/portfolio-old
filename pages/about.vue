@@ -5,7 +5,6 @@ useHead({
 definePageMeta({
   accent: 'to-blue-9',
   bg: 'bg-blue-9',
-
 })
 </script>
 
@@ -40,6 +39,8 @@ definePageMeta({
     </div>
 
     <AboutCareer />
+
+    <AboutSkills />
 
     <AboutBooks />
 

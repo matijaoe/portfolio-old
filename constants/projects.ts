@@ -1,5 +1,16 @@
-import type { Project } from '~~/models'
+import Aimo from 'public/projects/aimo.png'
+import Comet from 'public/projects/comet.png'
+import Expenses from 'public/projects/expenses.png'
+import Expenses2 from 'public/projects/expenses2.png'
+import Matijao from 'public/projects/matijao.png'
+import MeetMia from 'public/projects/meetmia.png'
+import Qwiz from 'public/projects/qwiz.png'
+import Qwiz2 from 'public/projects/qwiz2.png'
+import Qwiz3 from 'public/projects/qwiz3.png'
+import Qwiz4 from 'public/projects/qwiz4.png'
+import QwizPreview from 'public/projects/qwiz-preview.png'
 import { Tag } from '~~/models'
+import type { Project } from '~~/models'
 
 export const projects: Project[] = [
   {
@@ -25,7 +36,7 @@ export const projects: Project[] = [
         href: 'https://documenter.getpostman.com/view/15639222/UyrDCvUG',
       },
     ],
-    thumbnail: 'https://github.com/qwiz-app/qwiz/raw/main/design.png',
+    thumbnail: Qwiz,
   },
   {
     name: 'Aimo',
@@ -42,7 +53,7 @@ export const projects: Project[] = [
         href: 'https://aimo.vercel.app',
       },
     ],
-    thumbnail: 'https://user-images.githubusercontent.com/46557266/144764764-632663f5-da98-4c06-8075-c54572f97999.png',
+    thumbnail: Aimo,
   },
   {
     name: 'FIRE Platform',
@@ -74,12 +85,12 @@ export const projects: Project[] = [
       },
     ],
     inProgress: true,
-    thumbnail: 'https://media.cleanshot.cloud/media/40197/IOxqgjbvJuCwPazOwLO6Du2xlG9Zkcn6uS0WeH3z.jpeg?Expires=1666832136&Signature=o-vWdpA9UoNerIg~9lAy0w76bRN0Tc-Ep8vSaqNUAByGMoDvop8XuLeX94TiFuar0YwbrnXnsbkSAqU1DttmZ0rrCIb7b9BKe8rjxhjMUDgxvHYC0T6S9uyvB3ONGBosy~dc6WiGZVwhEwnW9HHA2~ZbKXosij-xy-6JEN6X2QwdUuzO~3gXJeoLPEAcsHBgmM9EKarS8iuarsTKlmeVIaPAVoPC8i9q8pxA6RL~RX84BLz~x5lIgqj~k5ub7fDkXRHO0zZu2-ZuwV-KoPQqUwqbPRu5w07qarTmq13KwUPjTl55aFRrmc3BSl4i61WAUSTvltJ09IwtobzseMcaHQ__&Key-Pair-Id=K269JMAT9ZF4GZ',
+    thumbnail: Matijao,
   },
   {
     name: 'Expense tracker',
     description: 'Final project of Advanced JavaScript college course',
-    tags: [Tag.Vue, Tag.TypeScript, Tag.Vite, Tag.Node, Tag.Mongo],
+    tags: [Tag.Vue, Tag.TypeScript, Tag.Vite, Tag.Node, Tag.Express, Tag.Mongo],
     year: 2022,
     links: [
       {
@@ -95,7 +106,7 @@ export const projects: Project[] = [
         href: 'https://expenses-frontend-five.vercel.app',
       },
     ],
-    thumbnail: 'https://user-images.githubusercontent.com/46557266/164997459-3fe121e6-5e5f-4f8d-8c92-ee8ea8d7f7ca.png',
+    thumbnail: Expenses2,
   },
   {
     name: 'MeetMia',
@@ -112,7 +123,7 @@ export const projects: Project[] = [
         href: 'https://meet-mia.surge.sh/',
       },
     ],
-    thumbnail: 'https://user-images.githubusercontent.com/46557266/164997631-e06d68ec-08e8-4c4a-a938-d3eace2a1dc0.png',
+    thumbnail: MeetMia,
   },
   {
     name: 'Comet',
@@ -129,6 +140,6 @@ export const projects: Project[] = [
         href: 'https://mat2ja.github.io/comet/',
       },
     ],
-    thumbnail: 'https://github.com/mat2ja/comet/raw/master/img/screenshots/screenshot1.png',
+    thumbnail: Comet,
   },
 ]

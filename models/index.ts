@@ -11,6 +11,7 @@ export enum Tag {
   Vite = 'vite',
   UnoCSS = 'unocss',
   Node = 'node',
+  Express = 'express',
   Nest = 'nest',
   Firebase = 'firebase',
   Prisma = 'prisma',

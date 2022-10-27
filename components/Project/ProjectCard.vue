@@ -110,7 +110,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
         v-show="project.thumbnail"
         hidden md:block
         absolute
-        top="50%" right="-40% lg:-20% xl:-14"
+        top="50%" right="-40% lg:-20% xl:-25"
         overflow-hidden
         class="-translate-y-45% scale-130 transition-all"
         :class="[
