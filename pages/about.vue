@@ -32,12 +32,18 @@ definePageMeta({
           </p>
         </div>
 
-        <img flex-shrink-0 rounded-lg aspect-square max-w="320px" src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
+        <div relative overflow-hidden flex-shrink-0>
+          <GrainCover strentgh="weak" />
+          <img rounded-lg aspect-square max-w="320px" src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
+        </div>
       </div>
     </div>
 
     <AboutCareer />
 
+    <AboutBooks />
+
     <AboutPodcasts />
   </div>
 </template>
+

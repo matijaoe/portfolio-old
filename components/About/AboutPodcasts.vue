@@ -14,20 +14,33 @@ const podcasts = [PodcastLex, PodcastHuberman, PodcastRogan, PodcastPeterson, Po
 <template>
   <AboutSection title="Podcasts I enjoy">
     <div
-      overflow-x-scroll
-      flex gap-4
-      pb-5
+      overflow-x-scroll flex
+      gap-1
+      pb-5 snap-x
+      scroll-mandatory
     >
-      <div
-
-        v-for="(pod, i) in podcasts" :key="i"
-        flex-shrink-0 aspect-square w-30
-        rounded-md
-        border-4 border-transparent hover:border-amber-5
-        overflow-hidden
+      <a
+        v-for="(pod, i) in podcasts"
+        :key="i"
+        href=""
+        target="_blank"
+        flex-shrink-0
       >
-        <img :src="pod" alt="">
-      </div>
+        <article
+          ref="podCard"
+          rounded-lg
+          overflow-hidden
+          snap-start
+          p-1
+          class="bg-transparent hover:gradient-warm"
+          relative
+        >
+          <div relative overflow-hidden rounded-md>
+            <GrainCover strentgh="weak" />
+            <img h-40 :src="pod" alt="">
+          </div>
+        </article>
+      </a>
     </div>
   </AboutSection>
 </template>

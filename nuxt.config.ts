@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/styles/page-transitions.css',
+    '~/assets/styles/keyframes.css',
     '~/assets/styles/floating-vue.css',
   ],
 })

@@ -13,8 +13,7 @@ useHead({
     >
       <NuxtLayout />
     </div>
-
-    <!-- <GrainCover /> -->
+    <!-- <GrainCover  /> -->
   </div>
 </template>
 

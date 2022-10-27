@@ -40,11 +40,24 @@ const openProject = () => window.open(initalLink.value, '_blank')
 
       <div flex flex-col gap-2 w-full>
         <div flex justify-between items-center w-full>
-          <div w-fit flex items-center gap-4 group>
+          <div w-fit flex items-center gap-3 group>
             <h3 font-display text-2xl flex items-start gap-4 class="hover:underline" :class="{ underline: cardHovered }">
               {{ project.name }}
             </h3>
-            <span v-if="project.inProgress" font-sans bg="yellow-5" px-2 py="0.75" text="10px" mb-1 leading-none font-bold uppercase rounded-full text-stone-9>wip</span>
+            <span
+              v-if="project.inProgress" font-sans px-2 py="0.75" text="10px" mb-1 leading-none font-bold uppercase rounded-full text-stone-9 filter-saturate-85
+              class="gradient-warm"
+            >
+              wip
+            </span>
+            <Icon
+              name="tabler:link"
+              text-xl
+              mb-1
+              class="opacity-0 -translate-x-4 transition-all"
+              text-orange-5
+              :class="{ '!translate-x-0 !opacity-100': cardHovered }"
+            />
           </div>
 
           <div block sm:hidden class="text-right" top="50%" font-semibold text-3xl text="stone-2/20">
@@ -73,18 +86,25 @@ const openProject = () => window.open(initalLink.value, '_blank')
     </div>
 
     <ClientOnly>
-      <div v-if="project.thumbnail" hidden md:block bg-red-7 class="outline-stone-4 outline-4 outline-offset-4">
-        <a :href="project.thumbnail" target="_blank">
+      <div
+        v-show="project.thumbnail"
+        hidden md:block
+        absolute
+        top="50%" right="-30% xl:-8"
+        overflow-hidden
+        class="-translate-y-45% scale-130 transition-all"
+        :class="[
+          cardRowHovered
+            ? 'visible opacity-100 -rotate-3 z-10 translate-x--5'
+            : 'invisble opacity-4 rotate-12 filter-saturate-0',
+        ]"
+      >
+        <a relative :href="project.thumbnail" target="_blank">
           <img
-
-            rounded-md
-            absolute
-            top="50%" right="-30% xl:-8"
-            h-64
-            class="-translate-y-45% scale-130 transition-all"
-            :class="[cardRowHovered ? 'opacity-100 visible rotate-0 z-10 translate-x--5' : 'opacity-4 rotate-12 filter-saturate-0']"
+            rounded-md h-64
             :src="project.thumbnail"
           >
+          <GrainCover v-show="cardHovered" strentgh="weak" />
         </a>
       </div>
     </ClientOnly>

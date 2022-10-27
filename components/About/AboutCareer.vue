@@ -47,7 +47,7 @@ const jobs = [
       </BaseHeading>
       <div flex items-center gap-2>
         <a :href="job.company.url" target="_blank" class="hyperlink">{{ job.company.name }}</a>
-        <span>•</span>
+        <span text-orange-5>•</span>
         <span text-dimmed font-light>{{ job.company.location }}</span>
         <!-- <template v-if="job.remote">
             <span>•</span>
@@ -56,7 +56,7 @@ const jobs = [
       </div>
       <div text-dimmed font-light flex items-center gap-2>
         <span>{{ job.from }} – {{ job.to }}</span>
-        <span>•</span>
+        <span text-orange-5>•</span>
         <span>{{ job.duration }}</span>
       </div>
     </div>

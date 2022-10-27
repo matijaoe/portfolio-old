@@ -43,11 +43,7 @@ export default defineConfig({
     'text-opaque-2': 'text-white/80',
     'bg-dimmed': 'bg-stone-1/50',
     'hyperlink': 'font-normal text-dimmed-2 hover:text-base decoration-stone-2/65 decoration-underline hover:decoration-current transition-all',
-  },
-  theme: {
-    maxWidth: {
-    // 1110px + 2x16px side padding
-      app: '1280px',
-    },
+    'gradient-warm': 'bg-gradient-to-tr from-orange-5 to-rose-4',
+    'gradient-warm-2': 'bg-gradient-to-tr from-rose-4 via-amber-5 to-rose-5',
   },
 })
