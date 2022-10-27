@@ -23,11 +23,10 @@ definePageMeta({
         </p>
       </div>
 
-      <div max-w-xl space-y-4 text-dimmed font-light>
-        <div space-y-1>
-          <p>Highly ambitious full-stack developer with special attention to detail and a keen eye for UI/UX design.</p>
-          <p>Most passionate about building products, web design, clean code & bitcoin.</p>
-        </div>
+      <div max-w-xl space-y-4 text-dimmed font-light leading-relaxed>
+        <p>
+          Most passionate about building products, web design, clean code & bitcoin.
+        </p>
 
         <div>
           Currently working as a Mid Frontend Developer at

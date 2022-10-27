@@ -25,12 +25,11 @@ const openProject = () => window.open(initalLink.value, '_blank')
     <!-- TODO: show image over card on hover, onak fensi -->
     <div
       ref="card"
-      z-2
       relative
       flex gap-4
       w-full max-w-full md:max-w-lg
       class="lg:-translate-x-4 sm:hover:(bg-stone-50/5 lg:translate-x-0) transition-all sm:pl-3 pr-5"
-      :class="[{ 'bg-stone-50/5 lg:translate-x-0': cardRowHovered }]"
+      :class="[{ 'sm:(bg-stone-50/5 lg:translate-x-0)': cardRowHovered }]"
       py-4 rounded-md cursor-pointer
       @click="openProject"
     >
@@ -39,28 +38,49 @@ const openProject = () => window.open(initalLink.value, '_blank')
       </div>
 
       <div flex flex-col gap-2 w-full>
-        <div flex justify-between items-center w-full>
-          <div w-fit flex items-center gap-3 group>
-            <h3 font-display text-2xl flex items-start gap-4 class="hover:underline" :class="{ underline: cardHovered }">
+        <div flex justify-between items-center w-full relative>
+          <div
+            w-fit
+            line-clamp-1
+            flex items-center gap-3
+          >
+            <h3
+              line-clamp-1
+              font-display text-2xl
+              flex-1
+              flex items-start gap-4
+              class="hover:underline" :class="{ underline: cardHovered }"
+            >
               {{ project.name }}
             </h3>
+
             <span
               v-if="project.inProgress" font-sans px-2 py="0.75" text="10px" mb-1 leading-none font-bold uppercase rounded-full text-stone-9 filter-saturate-85
               class="gradient-warm"
             >
               wip
             </span>
+
             <Icon
               name="tabler:link"
               text-xl
               mb-1
-              class="opacity-0 -translate-x-4 transition-all"
               text-orange-5
-              :class="{ '!translate-x-0 !opacity-100': cardHovered }"
+              transition-all
+              :class="[cardHovered
+                ? 'visible opacity-100 translate-x-0'
+                : 'invisible opacity-0 -translate-x-4']"
             />
           </div>
 
-          <div block sm:hidden class="text-right" top="50%" font-semibold text-3xl text="stone-2/20">
+          <div
+            absolute top-0 right-0
+            block sm:hidden
+            class="text-right"
+            font-semibold
+            top="-2"
+            text-3xl text="stone-2/20"
+          >
             {{ project.year }}
           </div>
         </div>
@@ -90,7 +110,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
         v-show="project.thumbnail"
         hidden md:block
         absolute
-        top="50%" right="-30% xl:-8"
+        top="50%" right="-40% lg:-20% xl:-14"
         overflow-hidden
         class="-translate-y-45% scale-130 transition-all"
         :class="[

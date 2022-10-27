@@ -12,7 +12,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div>
+  <div pb-30>
     <BaseHeading
       as="h2" text-4xl sm:text-5xl md:text-6xl
     >
