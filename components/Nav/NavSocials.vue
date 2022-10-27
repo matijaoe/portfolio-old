@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { SOCIALS } from '~~/constants/socials'
+import { socials } from '~~/constants/socials'
 </script>
 
 <template>
@@ -17,7 +17,7 @@ import { SOCIALS } from '~~/constants/socials'
       flex flex-col items-center gap-3
     >
       <li
-        v-for="(social, i) in SOCIALS"
+        v-for="(social, i) in socials"
         :key="i"
         v-tooltip="{
           delay: 0,

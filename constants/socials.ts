@@ -1,4 +1,4 @@
-export const SOCIALS = [
+export const socials = [
   {
     label: 'Github',
     icon: 'tabler:brand-github',

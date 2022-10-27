@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { PROJECTS } from '~~/constants/projects'
+import { projects } from '~~/constants/projects'
 
 useHead({
   title: 'Projects | Matija Osrecki',
@@ -21,7 +21,7 @@ definePageMeta({
 
     <div mt-12 flex flex-col gap-8>
       <ProjectCard
-        v-for="(project, i) in PROJECTS"
+        v-for="(project, i) in projects"
         :key="i"
         :index="i"
         :project="project"
