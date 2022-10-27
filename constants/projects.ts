@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
         href: 'https://aimo.vercel.app',
       },
     ],
-    thumbnail: 'https://media.cleanshot.cloud/media/40197/EVcfBjpVmq0HfwOGnomNzfZvPZsdLyJePyEnKkaE.jpeg?Expires=1666830670&Signature=oM3IaABQAF1z4AkxkA2E45Uy~98Zkuyrvk5qE7SxTmvTkb0NQ6BcgIiIz~9Mxkm868mYxLdE2ikZhB8-LMM-VZDopz8lAsnupPcfrZ7IoqHdixI11CXRvIVawZU2TsNjKDwobd49ngblmIoiydg2M3CNo6WE3w3eok-yxJSTl8BxmkTza0psEVMBA9BOdGFhGALFjrBCC5aHmKpNscafuq1-w2quxsO~BHQprJFOxd5fZb-y6vWUvCQl5Fai~I3N3KQMoHTYQqqKi7wp4WZp~2xUiI07ZKmP5GA7kqAdXEbk8nAihwZ8LjziizIO1mwUCiKLZT6LzHjb1aFJY8N2hA__&Key-Pair-Id=K269JMAT9ZF4GZ',
+    thumbnail: 'https://user-images.githubusercontent.com/46557266/144764764-632663f5-da98-4c06-8075-c54572f97999.png',
   },
   {
     name: 'FIRE Platform',
@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'MeetMia',
     description: 'Cake shop concept project for Web Design college course',
-    tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.UnoCSS],
+    tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.SCSS],
     year: 2021,
     links: [
       {

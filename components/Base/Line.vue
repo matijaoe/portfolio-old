@@ -5,7 +5,7 @@ withDefaults(defineProps<{
   type: 'horizontal',
 })
 
-const styles = 'w-full bg-stone-4 text-dimmed'
+const styles = 'w-full bg-stone-50/30'
 </script>
 
 <template>

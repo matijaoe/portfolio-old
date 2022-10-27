@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 useHead({
-  title: 'Guestbook | Matija Osrecki',
+  title: 'Uses | Matija Osrecki',
 })
 definePageMeta({
-  accent: 'to-purple-9',
-  bg: 'bg-purple-9',
+  accent: 'to-lime-9',
+  bg: 'bg-lime-9',
 })
 </script>
 
 <template>
   <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
-    Wassup
+    What I Use
   </BaseHeading>
 </template>

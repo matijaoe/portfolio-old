@@ -11,12 +11,13 @@
 
 <style scoped>
 #grain {
+  /* TODO: animation broken */
   background-image: url('assets/images/notfound-noise.png');
   animation: home-grain 6s steps(10) infinite;
   background-repeat: repeat;
   height: 300%;
   left: -50%;
-  opacity: .05;
+  opacity: .04;
   position: fixed;
   top: -100%;
   width: 300%;

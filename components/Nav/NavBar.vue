@@ -16,6 +16,11 @@ const items = [
     icon: 'tabler:bulb',
   },
   {
+    label: 'Uses',
+    to: '/uses',
+    icon: 'tabler:tools',
+  },
+  {
     label: 'Blog',
     to: '/blog',
     icon: 'tabler:file-text',
@@ -34,25 +39,28 @@ const items = [
 </script>
 
 <template>
-  <nav flex items-center z-50>
-    <ul font-semibold flex items-center gap-2 lowercase>
+  <nav>
+    <ul font-medium flex items-center gap-0 lowercase>
       <li v-for="(item, i) in items" :key="i">
+        <!-- desktop -->
         <NuxtLink
           :to="item.to"
-          p-2
+          py-2 px-4
+          rounded-sm
           hidden sm:block
-          opacity="50 hover:100"
-          class="opacity-50 hover:opacity-100"
-          active-class="!opacity-100 !text-stone-2"
+          class="text-opaque hover:text-dimmed-2"
+          active-class="!text-base"
         >
           <span text-sm> {{ item.label }}</span>
         </NuxtLink>
+
+        <!-- mobile -->
         <NuxtLink
           :to="item.to"
           p-2
           block sm:hidden
-          opacity="50 hover:100"
-          active-class="!opacity-100 !text-stone-2"
+          class="text-opaque hover:text-dimmed-2"
+          active-class="!text-base"
         >
           <Icon text-2xl :name="item.icon" />
         </NuxtLink>

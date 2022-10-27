@@ -3,7 +3,13 @@
 </script>
 
 <template>
-  <li py="0.5" px-2 border="stone-50/25" border-1 font-mono rounded-full lowercase font-bold text="11px stone-2/65">
+  <li
+    py="0.5" px-2
+    border="stone-50/20 1 rounded-full"
+    font-mono font-bold
+    text="11px dimmed-2"
+    lowercase
+  >
     <slot />
   </li>
 </template>

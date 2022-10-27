@@ -18,9 +18,13 @@ export default defineConfig({
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'google',
       fonts: {
-        sans: 'Rubik',
-        serif: 'Prata',
+        sans: {
+          name: 'Rubik',
+          weights: ['300', '400', '500', '600', '700'],
+          italic: true,
+        },
         display: 'Palmtick',
         mono: 'Roboto Mono',
       },
@@ -31,9 +35,14 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   shortcuts: {
-    'text-dimmed': 'text-stone-2/65',
+    'text-strong': 'font-medium text-base',
+    'text-base': 'text-stone-3',
+    'text-dimmed': 'text-stone-50/45',
+    'text-dimmed-2': 'text-stone-50/65',
+    'text-opaque': 'text-white/40',
+    'text-opaque-2': 'text-white/80',
     'bg-dimmed': 'bg-stone-1/50',
-    'hyperlink': 'underline decoration-underline hover:decoration-current transition-all',
+    'hyperlink': 'font-normal text-dimmed-2 hover:text-base decoration-stone-2/65 decoration-underline hover:decoration-current transition-all',
   },
   theme: {
     maxWidth: {

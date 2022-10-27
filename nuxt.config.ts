@@ -11,4 +11,8 @@ export default defineNuxtConfig({
   unocss: {
     preflight: true,
   },
+  css: [
+    '~/assets/styles/page-transitions.css',
+    '~/assets/styles/floating-vue.css',
+  ],
 })

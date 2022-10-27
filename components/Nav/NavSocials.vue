@@ -7,16 +7,14 @@ import { SOCIALS } from '~~/constants/socials'
     class="hidden md:flex"
     flex-col items-center justify-center gap-6
     absolute right-4 top-4 bottom-0
-    pt-3
-    py-10
     z-50
-    pr-4
+    pr-2
   >
-    <BaseLine type="vertical" flex-1 />
+    <!-- <BaseLine type="vertical" flex-1 /> -->
 
     <ul
       font-mono
-      flex flex-col items-center gap-2
+      flex flex-col items-center gap-3
     >
       <li
         v-for="(social, i) in SOCIALS"
@@ -27,18 +25,19 @@ import { SOCIALS } from '~~/constants/socials'
           theme: 'info-tooltip',
           placement: 'left',
         }"
-        class="hover:bg-stone-50/15"
+        class="hover:bg-stone-50/5"
         rounded-full
       >
         <NuxtLink
           flex items-center justify-center
-          block target="_blank" :href="social.href" py-2 px-2
+          block target="_blank" :href="social.href"
+          p-2
         >
-          <Icon :name="social.icon" text-xl />
+          <Icon :name="social.icon" text-xl opacity-80 hover:opacity-100 />
         </NuxtLink>
       </li>
     </ul>
 
-    <BaseLine type="vertical" flex-1 />
+    <!-- <BaseLine type="vertical" flex-1 /> -->
   </div>
 </template>

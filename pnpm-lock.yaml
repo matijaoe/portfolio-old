@@ -10,10 +10,12 @@ specifiers:
   nuxt: 3.0.0-rc.12
   nuxt-icon: ^0.1.7
   typescript: ^4.8.4
+  vue-command-palette: ^0.1.3
 
 dependencies:
   '@vueuse/nuxt': 9.4.0_nuxt@3.0.0-rc.12
   floating-vue: 2.0.0-beta.20
+  vue-command-palette: 0.1.3
 
 devDependencies:
   '@antfu/eslint-config': 0.27.0_wyqvi574yv7oiwfeinomdzmc3m
@@ -3103,6 +3105,11 @@ packages:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: true
 
+  /fuse.js/6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
+    dev: false
+
   /gauge/3.0.2:
     resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==}
     engines: {node: '>=10'}
@@ -4041,6 +4048,10 @@ packages:
     dependencies:
       minipass: 3.3.4
       yallist: 4.0.0
+
+  /mitt/3.0.0:
+    resolution: {integrity: sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==}
+    dev: false
 
   /mkdir/0.0.2:
     resolution: {integrity: sha512-98OnjcWaNEIRUJJe9rFoWlbkQ5n9z8F86wIPCrI961YEViiVybTuJln919WuuSHSnlrqXy0ELKCntoPy8C7lqg==}
@@ -5973,6 +5984,14 @@ packages:
     resolution: {integrity: sha512-kjJWPayzup8QFynETVpoYD0gDM2nbwN//bpt86hAHpZ+FPdTJFDQqKpouSLQgb2XjkOYM1uB/yc6Zb3iCvS7Gw==}
     dependencies:
       ufo: 0.8.6
+
+  /vue-command-palette/0.1.3:
+    resolution: {integrity: sha512-EHdPPKcEX++qY7k9b/gcY9z9xrAzginvaTOlmJ59xYypaeeJE48Uhex8te5hpQQu3Lnf0SQV71P4DXP08Du1Sg==}
+    dependencies:
+      fuse.js: 6.6.2
+      mitt: 3.0.0
+      nanoid: 4.0.0
+    dev: false
 
   /vue-demi/0.13.11:
     resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}

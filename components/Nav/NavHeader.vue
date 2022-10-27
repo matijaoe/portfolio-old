@@ -4,22 +4,16 @@
 
 <template>
   <div
-    flex items-center gap-6
+    items-center gap-6
     py-3
-    pl-8
-    pr-3
+    flex justify-center
   >
-    <!-- max-w="full xl:6xl" -->
     <header
-      mx-auto w-full
-      flex flex-grow-1 flex-shrink-0 justify-center items-center gap-6
+      mx-auto
+      flex flex-grow-1 flex-shrink-0 justify-center items-center gap-4
       text-base
     >
-      <BaseLine hidden md:block />
-
       <NavBar />
-
-      <BaseLine hidden md:block />
     </header>
   </div>
 </template>
