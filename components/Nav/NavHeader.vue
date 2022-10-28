@@ -13,10 +13,13 @@ const { isDark, toggleDark } = useTheme()
     z-1000
   >
     <div
+      row
       max-w="full xl:5xl"
-      grid grid-cols="[100px_1fr_100px]" gap-4 items-center mx-auto
+      grid grid-cols="[40px_1fr_40px]" gap-2 items-center mx-auto
     >
-      <div />
+      <div>
+        <Icon v-show="isDark" name="tabler:diamonds" text-2xl />
+      </div>
 
       <NavBar mx-auto />
 

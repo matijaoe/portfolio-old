@@ -2,22 +2,27 @@
 useHead({
   title: 'Matija Osrecki',
 })
+
+useShortcuts()
 </script>
 
 <template>
-  <div overflow-y-auto>
-    <NuxtLoadingIndicator />
-    <div
-      min-h-screen
-      text-default
-      font-sans
-      bg-shade-1
-    >
-      <NuxtLayout />
-    </div>
-    <!-- TODO: fix overflow -->
-    <!-- <GrainCover /> -->
+  <NuxtLoadingIndicator />
+
+  <div
+    min-h-screen
+    w-screen
+    overflow-x-hidden
+    text-default
+    font-sans
+    bg-shade-1
+    relative
+  >
+    <NuxtLayout />
   </div>
+
+  <!-- TODO: fix overflow -->
+  <!-- <GrainCover /> -->
 </template>
 
 <style>
