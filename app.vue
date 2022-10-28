@@ -19,7 +19,7 @@ useHead({
 
 <style>
 @import url('https://fonts.cdnfonts.com/css/palmtick');
-@import url('http://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
 html {
   background: #f5f5f4;
