@@ -6,6 +6,7 @@ useHead({
 
 <template>
   <div overflow-y-auto>
+    <NuxtLoadingIndicator />
     <div
       min-h-screen
       text-default
@@ -33,12 +34,12 @@ html.dark {
 }
 
 ::selection {
-  background: #d6d3d1;
+  background: #d6d3d186;
   color: #44403c;
 }
 
 .dark ::selection {
-  background: #44403c;
+  background: #44403c6d;
   color: #d6d3d1;
 }
 </style>

@@ -35,7 +35,7 @@ definePageMeta({
           <figure aspect-square>
             <div class="img-bg" w-full />
             <div relative overflow-hidden>
-              <GrainCover strentgh="mid" group-hover:hidden />
+              <!-- <GrainCover strentgh="mid" group-hover:hidden /> -->
               <img rounded-lg w-full src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
             </div>
           </figure>
