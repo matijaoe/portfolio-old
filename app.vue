@@ -14,6 +14,8 @@ useHead({
     >
       <NuxtLayout />
     </div>
+    <!-- TODO: fix overflow -->
+    <!-- <GrainCover /> -->
   </div>
 </template>
 

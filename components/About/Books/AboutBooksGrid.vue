@@ -10,8 +10,6 @@ useHorizontalScroll(grid)
     ref="grid"
     v-dragscroll
     mt--1
-    xl:ml--20
-    xl:mr--20
     pt-1
     pb-3
     flex gap-2
@@ -41,13 +39,14 @@ useHorizontalScroll(grid)
             <a hover:underline uppercase font-bold :href="book.url" target="_blank" line-clamp-2 class="text-11px" leading-snug>{{ book.name }}</a>
           </p>
         </div>
-        <article
+
+        <figure
           relative
           z-2
         >
           <GrainCover strentgh="mid" />
           <img h="46" :src="book.cover" alt="">
-        </article>
+        </figure>
       </div>
     </div>
   </div>

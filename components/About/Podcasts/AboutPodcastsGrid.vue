@@ -10,8 +10,6 @@ useHorizontalScroll(grid)
     ref="grid"
     v-dragscroll
     mt--1
-    xl:ml--20
-    xl:mr--20
     pt-1
     pb-3
     flex gap-2
@@ -26,10 +24,10 @@ useHorizontalScroll(grid)
       target="_blank"
       flex-shrink-0
       rounded-lg
-      p-1
+      p="0.5"
       class="hover:gradient-warm group"
     >
-      <article
+      <figure
         rounded-md
         relative
         overflow-hidden
@@ -37,7 +35,7 @@ useHorizontalScroll(grid)
         <!-- group-hover:hidden -->
         <GrainCover strentgh="mid" />
         <img h-34 aspect-square :src="pod" alt="">
-      </article>
+      </figure>
     </div>
   </div>
 </template>

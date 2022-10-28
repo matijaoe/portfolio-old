@@ -47,9 +47,9 @@ const pageScrolled = computed(() => y.value > 48)
     <div
       rounded-full flex justify-center px-3 transition-all
       relative overflow-hidden
-      :class="{ 'bg-opaque backdrop-blur-lg shadow-xl shadow-stone-9/4': pageScrolled }"
+      :class="{ 'bg-opaque backdrop-blur-lg ': pageScrolled }"
     >
-      <GrainCover v-show="pageScrolled" strentgh="weak" />
+      <!-- <GrainCover v-show="pageScrolled" strentgh="weak" /> -->
       <ul font-medium lowercase flex items-center gap-0 w-max>
         <li v-for="(item, i) in items" :key="i">
           <!-- desktop -->

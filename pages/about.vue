@@ -20,7 +20,7 @@ definePageMeta({
           text-dimmed-2
         >
           <p>
-            Hey, I'm <span class="text-strong">Matija Osrečki</span>, started as a web developer engineer back in 2020.
+            Hey, I'm <span class="text-strong">Matija Osrečki</span>, started as a web developer back in 2020.
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nam quos? Totam beatae reprehenderit ratione! Molestiae praesentium, esse voluptas beatae, quibusdam suscipit, distinctio fuga itaque hic et quod doloremque eius!
@@ -31,9 +31,14 @@ definePageMeta({
           </p>
         </div>
 
-        <div relative overflow-hidden flex-shrink-0 class="group">
-          <GrainCover strentgh="mid" group-hover:hidden />
-          <img rounded-lg aspect-square max-w="320px" src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
+        <div flex-shrink-0 class="group">
+          <figure aspect-square>
+            <div class="img-bg" w-full />
+            <div relative overflow-hidden>
+              <GrainCover strentgh="mid" group-hover:hidden />
+              <img rounded-lg w-full src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
+            </div>
+          </figure>
         </div>
       </div>
     </div>
@@ -48,3 +53,34 @@ definePageMeta({
   </div>
 </template>
 
+<style scoped>
+figure {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+img {
+  z-index: 1;
+}
+
+figure img,
+.img-bg {
+  height: 320px;
+  width: 320px;
+}
+
+.img-bg {
+  position: absolute;
+  background-image: linear-gradient(-45deg, #D0A299 50%, #243B1E 50%);
+  border-radius: 50%;
+  filter: blur(72px);
+  animation: pulse 4s cubic-bezier(0, 0, 0, 0.5) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.5);
+  }
+}
+</style>
