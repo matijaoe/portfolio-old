@@ -9,7 +9,11 @@ useHorizontalScroll(grid)
   <div
     ref="grid"
     v-dragscroll
-    py-3
+    mt--1
+    xl:ml--20
+    xl:mr--20
+    pt-1
+    pb-3
     flex gap-2
     overflow-x-auto
     cursor-grab
@@ -21,11 +25,12 @@ useHorizontalScroll(grid)
       target="_blank"
       class="hover:gradient-warm group"
       flex-shrink-0
-      rounded="0.625rem"
+      rounded-lg
       p="0.5"
       transition-all
+      hover:shadow-md
     >
-      <div relative overflow-hidden rounded-lg>
+      <div relative overflow-hidden rounded-md>
         <div
           transition-all
           class="opacity-0 translate-y-50%  group-hover:(opacity-100 translate-y-0 z-3)"
@@ -38,11 +43,10 @@ useHorizontalScroll(grid)
         </div>
         <article
           relative
-          overflow-hidden
           z-2
         >
           <GrainCover strentgh="mid" />
-          <img h="48.75" :src="book.cover" alt="">
+          <img h="46" :src="book.cover" alt="">
         </article>
       </div>
     </div>

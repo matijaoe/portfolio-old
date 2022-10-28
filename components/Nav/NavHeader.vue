@@ -4,14 +4,18 @@ const { isDark, toggleDark } = useTheme()
 
 <template>
   <header
-    py-3
+    fixed
+    top-0
+    left-0
+    right-0
+    py-6
     flex-grow-1 flex-shrink-0
+    z-1000
   >
     <div
       max-w="full xl:5xl"
       grid grid-cols="[100px_1fr_100px]" gap-4 items-center mx-auto
     >
-      <!-- flex justify-center items-center gap-4 -->
       <div />
 
       <NavBar mx-auto />

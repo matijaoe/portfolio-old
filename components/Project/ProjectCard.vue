@@ -30,7 +30,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       flex gap-4
       w-full max-w-full md:max-w-lg
       class="lg:-translate-x-4 transition-all sm:pl-3 pr-5"
-      :class="[{ 'sm:(bg-stone-50/5 !lg:translate-x-0)': cardRowHovered }]"
+      :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovered }]"
       py-4 rounded-md cursor-pointer
       @click="openProject"
     >

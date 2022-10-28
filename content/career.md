@@ -4,7 +4,7 @@
 
 > I'm just testing this out
 
-::about-section
+::about-section-md
 ---
 title: Career
 ---

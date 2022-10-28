@@ -17,7 +17,7 @@ definePageMeta({
         </p>
 
         <p text-3xl>
-          Full-Stack Developer
+          Full Stack Developer
         </p>
       </div>
 

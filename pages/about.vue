@@ -9,7 +9,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div flex flex-col gap-16 row>
+  <div row flex flex-col gap-16>
     <div space-y-4>
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
         Who am I

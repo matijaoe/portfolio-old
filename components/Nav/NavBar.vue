@@ -36,36 +36,47 @@ const items = [
     icon: 'tabler:book',
   },
 ]
+
+const { y } = useWindowScroll()
+
+const pageScrolled = computed(() => y.value > 48)
 </script>
 
 <template>
   <nav>
-    <ul font-medium lowercase flex items-center gap-0>
-      <li v-for="(item, i) in items" :key="i">
-        <!-- desktop -->
-        <NuxtLink
-          :to="item.to"
-          hidden sm:block
-          py-2 px-4 rounded-sm
-          text-opaque hover:text-opaque-2
-          relative
-          z-2
-          active-class="!text-default"
-        >
-          <span text-sm> {{ item.label }}</span>
-        </NuxtLink>
+    <div
+      rounded-full flex justify-center px-3 transition-all
+      relative overflow-hidden
+      :class="{ 'bg-opaque backdrop-blur-lg shadow-xl shadow-stone-9/4': pageScrolled }"
+    >
+      <GrainCover v-show="pageScrolled" strentgh="weak" />
+      <ul font-medium lowercase flex items-center gap-0 w-max>
+        <li v-for="(item, i) in items" :key="i">
+          <!-- desktop -->
+          <NuxtLink
+            :to="item.to"
+            hidden sm:block
+            py-2 px-4 rounded-sm
+            text-opaque hover:text-opaque-2
+            relative
+            z-2
+            active-class="!text-default"
+          >
+            <span text-sm> {{ item.label }}</span>
+          </NuxtLink>
 
-        <!-- mobile -->
-        <NuxtLink
-          :to="item.to"
-          block sm:hidden
-          p-2
-          text-opaque hover:text-opaque-2
-          active-class="!text-default"
-        >
-          <Icon text-2xl :name="item.icon" />
-        </NuxtLink>
-      </li>
-    </ul>
+          <!-- mobile -->
+          <NuxtLink
+            :to="item.to"
+            block sm:hidden
+            p-2
+            text-opaque hover:text-opaque-2
+            active-class="!text-default"
+          >
+            <Icon text-2xl :name="item.icon" />
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>

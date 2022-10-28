@@ -3,7 +3,7 @@
 
 <template>
   <AboutSection title="Book favourites">
-    <div mt--3 text-dimmed>
+    <div mt--2 text-dimmed>
       <p>
         Started my journey in 2020, fell in love with it not much after.
       </p>

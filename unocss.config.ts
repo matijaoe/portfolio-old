@@ -48,6 +48,7 @@ export default defineConfig({
     // Others
     'hyperlink': 'font-normal text-dimmed-2 hover:text-default decoration-stone-8/50 dark:decoration-stone-2/65 decoration-underline hover:decoration-current transition-all',
     // Backgrounds
+    'bg-opaque': 'bg-stone-2/40 dark:bg-stone-50/5',
     'bg-shade-1': 'bg-stone-1 dark:bg-stone-9',
     'bg-shade-2': 'bg-stone-2 dark:bg-stone-8',
     'gradient-warm': 'bg-gradient-to-tr from-rose-4 via-amber-5 to-rose-5',
