@@ -38,29 +38,19 @@ const openProject = () => window.open(initalLink.value, '_blank')
         {{ project.year }}
       </div>
 
-      <div flex flex-col gap-2 w-full>
-        <div flex justify-between items-center w-full relative>
-          <div
-            w-fit
-            line-clamp-1
-            flex items-center gap-3
-          >
+      <div flex-1 flex flex-col gap-2>
+        <div relative flex justify-between items-center>
+          <div flex items-center gap-3>
             <h3
               line-clamp-1
               font-display text-2xl
-              flex-1
-              flex items-start gap-4
-              class="hover:underline" :class="{ underline: cardHovered }"
+              flex-1 flex items-start gap-4
+              class="hover:underline" :class="{ '!underline': cardHovered }"
             >
               {{ project.name }}
             </h3>
 
-            <span
-              v-if="project.inProgress" font-sans px-2 py="0.75" text="10px" mb-1 leading-none font-bold uppercase rounded-full text-stone-9 filter-saturate-85
-              class="gradient-warm"
-            >
-              wip
-            </span>
+            <ProjectTagWip v-if="project.inProgress" />
 
             <Icon
               name="tabler:link"
@@ -75,12 +65,10 @@ const openProject = () => window.open(initalLink.value, '_blank')
           </div>
 
           <div
-            absolute top-0 right-0
             block sm:hidden
-            class="text-right"
+            absolute top="[-2]" right-0
             font-semibold
-            top="-2"
-            text-3xl text="stone-2/20"
+            text="stone-2/20 3xl right"
           >
             {{ project.year }}
           </div>
@@ -107,27 +95,11 @@ const openProject = () => window.open(initalLink.value, '_blank')
     </div>
 
     <ClientOnly>
-      <div
-        v-show="project.thumbnail"
-        rounded-md
-        absolute
-        top="50%"
-        right="-80% sm:-60% md:-25% lg:-10% xl:-35"
-        overflow-hidden
-        transition-all
-        class="-translate-y-20 scale-130 opacity-4 rotate-12 filter-saturate-0 z-1"
-        :class="[
-          { 'lg:(visible opacity-100 -rotate-3 -translate-x-20 -translate-y-35 scale-130 filter-saturate-100 z-10)': cardRowHovered },
-        ]"
-      >
-        <a relative :href="project.thumbnail" target="_blank">
-          <img
-            h-64
-            :src="project.thumbnail"
-          >
-          <GrainCover v-show="cardRowHovered" strentgh="weak" />
-        </a>
-      </div>
+      <ProjectCardThumbnail
+        v-if="project.thumbnail"
+        :thumbnail="project.thumbnail"
+        :shown="cardRowHovered"
+      />
     </ClientOnly>
   </div>
 </template>

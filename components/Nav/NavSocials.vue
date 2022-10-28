@@ -4,18 +4,11 @@ import { socials } from '~~/constants/socials'
 
 <template>
   <div
-    class="hidden md:flex"
-    flex-col items-center justify-center gap-6
-    absolute right-4 top-4 bottom-0
-    z-50
-    pr-2
+    hidden md:flex flex-col justify-center
+    pos="absolute right-4 top-4 bottom-0"
+    pr-3 z-50
   >
-    <!-- <BaseLine type="vertical" flex-1 /> -->
-
-    <ul
-      font-mono
-      flex flex-col items-center gap-3
-    >
+    <ul flex flex-col items-center gap-1>
       <li
         v-for="(social, i) in socials"
         :key="i"
@@ -28,16 +21,15 @@ import { socials } from '~~/constants/socials'
         class="hover:bg-stone-50/5"
         rounded-full
       >
-        <NuxtLink
+        <a
+          :href="social.href"
+          target="_blank"
           flex items-center justify-center
-          block target="_blank" :href="social.href"
-          p-2
+          p-3
         >
           <Icon :name="social.icon" text-xl opacity-80 hover:opacity-100 />
-        </NuxtLink>
+        </a>
       </li>
     </ul>
-
-    <!-- <BaseLine type="vertical" flex-1 /> -->
   </div>
 </template>

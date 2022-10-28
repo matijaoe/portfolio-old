@@ -10,6 +10,7 @@ useHead({
       bg-stone-9
       text-base
       font-sans
+      overflow-x-hidden
     >
       <NuxtLayout />
     </div>

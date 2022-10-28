@@ -45,10 +45,9 @@ const items = [
         <!-- desktop -->
         <NuxtLink
           :to="item.to"
-          py-2 px-4
-          rounded-sm
           hidden sm:block
-          class="text-opaque hover:text-dimmed-2"
+          py-2 px-4 rounded-sm
+          text-opaque hover:text-dimmed-2
           active-class="!text-base"
         >
           <span text-sm> {{ item.label }}</span>
@@ -57,9 +56,9 @@ const items = [
         <!-- mobile -->
         <NuxtLink
           :to="item.to"
-          p-2
           block sm:hidden
-          class="text-opaque hover:text-dimmed-2"
+          p-2
+          text-opaque hover:text-dimmed-2
           active-class="!text-base"
         >
           <Icon text-2xl :name="item.icon" />

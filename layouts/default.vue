@@ -3,18 +3,15 @@
 </script>
 
 <template>
-  <NavSocials />
   <div>
+    <NavSocials />
     <div h="screen" overflow-auto r>
       <NavHeader />
 
       <main
-        pl-6
-        pr-6 md:pr-16
-        pt-12 pb-24
+        pt-12 pb-24 pl-6 pr="6 md:16"
         max-w="full xl:5xl"
-        w-full
-        mx-auto
+        w-full mx-auto
         flex flex-col flex-1
       >
         <NuxtPage />
