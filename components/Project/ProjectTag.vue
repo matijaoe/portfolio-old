@@ -5,8 +5,8 @@
 <template>
   <span
     py="0.5" px-2
-    border="stone-50/20 1 rounded-full"
-    font-mono font-bold
+    border="stone-3/80 dark:stone-6/60 1 rounded-full"
+    font-mono font-medium
     text="11px dimmed-2"
     lowercase
   >

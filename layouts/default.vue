@@ -5,7 +5,7 @@
 <template>
   <div>
     <NavSocials />
-    <div h="screen" overflow-auto r>
+    <div overflow-auto r>
       <NavHeader />
 
       <main

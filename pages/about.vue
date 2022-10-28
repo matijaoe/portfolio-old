@@ -17,7 +17,7 @@ definePageMeta({
       <div flex gap-10 items-center>
         <div
           space-y-4 leading-loose
-          font-light text-dimmed-2
+          text-dimmed-2
         >
           <p>
             Hey, I'm <span class="text-strong">Matija Osrečki</span>, started as a web developer engineer back in 2020.

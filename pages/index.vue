@@ -9,10 +9,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div grid content-center h-full flex-1 mt-20vh>
-    <div
-      flex flex-col gap-8
-    >
+  <div flex flex-col gap-20 mt-30>
+    <div flex flex-col gap-8>
       <div font-display space-y-4>
         <p text-6xl md:text-8xl>
           Matija Osrečki
@@ -23,7 +21,7 @@ definePageMeta({
         </p>
       </div>
 
-      <div max-w-xl space-y-4 text-dimmed font-light leading-relaxed>
+      <div max-w-xl space-y-4 text-dimmed leading-relaxed>
         <p>
           Most passionate about building products, web design, clean code & bitcoin.
         </p>
@@ -48,6 +46,31 @@ definePageMeta({
           </a>
         </div>
       </div>
+    </div>
+
+    <div grid grid-cols-2 gap-4>
+      <article
+        v-for="i in 3" :key="i"
+        hover:gradient-warm
+        rounded="[0.625rem]"
+        transition-all
+        p="0.5"
+        class="hover:(-translate-y-1 hover:border-)"
+      >
+        <div
+          rounded-lg
+          px-8 py-8
+          flex flex-col gap-4
+          bg-shade-2
+        >
+          <h4 text-lg font-display>
+            Projects
+          </h4>
+          <p text-sm>
+            View and try the personal and commercial applications I have worked on in the recent years.
+          </p>
+        </div>
+      </article>
     </div>
   </div>
 </template>

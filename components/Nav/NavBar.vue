@@ -40,15 +40,15 @@ const items = [
 
 <template>
   <nav>
-    <ul font-medium flex items-center gap-0 lowercase>
+    <ul font-medium lowercase flex items-center gap-0>
       <li v-for="(item, i) in items" :key="i">
         <!-- desktop -->
         <NuxtLink
           :to="item.to"
           hidden sm:block
           py-2 px-4 rounded-sm
-          text-opaque hover:text-dimmed-2
-          active-class="!text-base"
+          text-opaque hover:text-opaque-2
+          active-class="!text-default"
         >
           <span text-sm> {{ item.label }}</span>
         </NuxtLink>
@@ -58,8 +58,8 @@ const items = [
           :to="item.to"
           block sm:hidden
           p-2
-          text-opaque hover:text-dimmed-2
-          active-class="!text-base"
+          text-opaque hover:text-opaque-2
+          active-class="!text-default"
         >
           <Icon text-2xl :name="item.icon" />
         </NuxtLink>

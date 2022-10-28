@@ -7,27 +7,36 @@ useHead({
 <template>
   <div>
     <div
-      bg-stone-9
-      text-base
+      min-h-screen
+      text-default
       font-sans
-      overflow-x-hidden
+      bg-shade-1
     >
       <NuxtLayout />
     </div>
-    <!-- <GrainCover  /> -->
   </div>
 </template>
 
 <style>
 @import url('https://fonts.cdnfonts.com/css/palmtick');
+@import url('http://fonts.cdnfonts.com/css/satoshi');
 
-body {
-  background: #08070b;
+html {
+  background: #f5f5f4;
+}
+
+html.dark {
+  background: #1c1917;
   color-scheme: dark;
 }
 
 ::selection {
-  background: #d4d4d4;
-  color: #292524;
+  background: #d6d3d1;
+  color: #44403c;
+}
+
+.dark ::selection {
+  background: #44403c;
+  color: #d6d3d1;
 }
 </style>

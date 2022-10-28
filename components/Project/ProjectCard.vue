@@ -29,12 +29,12 @@ const openProject = () => window.open(initalLink.value, '_blank')
       relative
       flex gap-4
       w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 sm:hover:(bg-stone-50/5 lg:translate-x-0) transition-all sm:pl-3 pr-5"
+      class="lg:-translate-x-4 transition-all sm:pl-3 pr-5"
       :class="[{ 'sm:(bg-stone-50/5 !lg:translate-x-0)': cardRowHovered }]"
       py-4 rounded-md cursor-pointer
       @click="openProject"
     >
-      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-semibold text-5xl text="stone-2/20">
+      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-semibold text-5xl text="stone-8/12 dark:white/18">
         {{ project.year }}
       </div>
 
