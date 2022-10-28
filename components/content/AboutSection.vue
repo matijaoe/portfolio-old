@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <section bg-red-5 flex flex-col gap-5>
+  <section flex flex-col gap-5>
     <BaseHeading as="h3" text-3xl>
       <slot name="title">
         {{ title }}

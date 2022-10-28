@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { podcasts } from '~~/constants/podcasts'
+import { podcasts } from '~~/data/podcasts'
 </script>
 
 <template>

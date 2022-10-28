@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { books } from '~~/constants/books'
+import { books } from '~~/data/books'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { socials } from '~~/constants/socials'
+import { socials } from '~~/data/socials'
 </script>
 
 <template>

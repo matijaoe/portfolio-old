@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { projects } from '~~/constants/projects'
+import { projects } from '~~/data/projects'
 
 useHead({
   title: 'Projects | Matija Osrecki',

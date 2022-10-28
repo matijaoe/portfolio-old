@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@nuxt/content',
   ],
   experimental: {
     reactivityTransform: true,
@@ -16,4 +17,7 @@ export default defineNuxtConfig({
     '~/assets/styles/keyframes.css',
     '~/assets/styles/floating-vue.css',
   ],
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+  },
 })
