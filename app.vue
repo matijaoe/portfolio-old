@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div overflow-y-auto>
     <div
       min-h-screen
       text-default

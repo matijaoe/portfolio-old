@@ -11,13 +11,8 @@ import BookWhyWeSleep from 'assets/images/books/why-we-sleep.jpg'
 
 export const books = [
   {
-    name: 'Animal Farm',
-    cover: BookAnimalFarm,
-    url: 'https://www.goodreads.com/book/show/170448.Animal_Farm ',
-  },
-  {
-    name: 'Courage to be disliked',
-    cover: BookCourageToBeDisliked,
+    name: 'The Daily Stoic',
+    cover: BookTheDailyStoic,
     url: '',
   },
   {
@@ -26,13 +21,23 @@ export const books = [
     url: '',
   },
   {
+    name: 'Courage to be disliked',
+    cover: BookCourageToBeDisliked,
+    url: '',
+  },
+  {
+    name: 'Animal Farm',
+    cover: BookAnimalFarm,
+    url: 'https://www.goodreads.com/book/show/170448.Animal_Farm ',
+  },
+  {
     name: 'Of Mice and Men',
     cover: BookOfMiceAndMen,
     url: 'https://www.goodreads.com/book/show/890.Of_Mice_and_Men',
   },
   {
-    name: 'Psycho Cybernetics',
-    cover: BookPsychoCybernetics,
+    name: 'Why We Sleep',
+    cover: BookWhyWeSleep,
     url: '',
   },
   {
@@ -46,18 +51,13 @@ export const books = [
     url: '',
   },
   {
-    name: 'The Daily Stoic',
-    cover: BookTheDailyStoic,
-    url: '',
-  },
-  {
     name: 'The Four Agreements',
     cover: BookTheFourAgreements,
     url: '',
   },
   {
-    name: 'Why We Sleep',
-    cover: BookWhyWeSleep,
+    name: 'Psycho Cybernetics',
+    cover: BookPsychoCybernetics,
     url: '',
   },
 ]

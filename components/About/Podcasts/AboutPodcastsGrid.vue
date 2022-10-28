@@ -1,33 +1,39 @@
 <script lang="ts" setup>
 import { podcasts } from '~~/data/podcasts'
+
+const grid = ref<HTMLElement | null>(null)
+useHorizontalScroll(grid)
 </script>
 
 <template>
   <div
+    ref="grid"
+    v-dragscroll
     pb-3
     flex gap-2
-    overflow-x-scroll
-    snap-x scroll-mandatory
+    overflow-x-auto
+    cursor-grab
   >
-    <a
+    <!-- TODO: link -->
+    <div
       v-for="(pod, i) in podcasts"
       :key="i"
       href=""
       target="_blank"
-      class="hover:gradient-warm"
       flex-shrink-0
-      rounded-lg
+      rounded="0.625rem"
       p-1
-      snap-start
+      class="hover:gradient-warm group"
     >
       <article
-        rounded-md
+        rounded-lg
         relative
         overflow-hidden
       >
-        <GrainCover strentgh="weak" />
-        <img h-40 aspect-square :src="pod" alt="">
+        <!-- group-hover:hidden -->
+        <GrainCover strentgh="mid" />
+        <img h-38 aspect-square :src="pod" alt="">
       </article>
-    </a>
+    </div>
   </div>
 </template>

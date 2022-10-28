@@ -1,33 +1,50 @@
 <script lang="ts" setup>
 import { books } from '~~/data/books'
+
+const grid = ref<HTMLElement | null>(null)
+useHorizontalScroll(grid)
 </script>
 
 <template>
   <div
-    pb-3
+    ref="grid"
+    v-dragscroll
+    py-3
     flex gap-2
-    overflow-x-scroll
-    snap-x scroll-mandatory
+    overflow-x-auto
+    cursor-grab
   >
-    <a
+    <div
       v-for="(book, i) in books"
       :key="i"
       :href="book.url"
       target="_blank"
-      class="hover:gradient-warm"
+      class="hover:gradient-warm group"
       flex-shrink-0
-      rounded-lg
-      p-1
-      snap-start
+      rounded="0.625rem"
+      p="0.5"
+      transition-all
     >
-      <article
-        rounded-md
-        relative
-        overflow-hidden
-      >
-        <GrainCover strentgh="weak" />
-        <img h-50 :src="book.cover" alt="">
-      </article>
-    </a>
+      <div relative overflow-hidden rounded-lg>
+        <div
+          transition-all
+          class="opacity-0 translate-y-50%  group-hover:(opacity-100 translate-y-0 z-3)"
+          absolute right-0 left-0 bottom-0 h="50%"
+          bg-gradient-to-t from-stone-9 text-stone-2
+        >
+          <p flex items-end justify-center w-full h-full pb-4 px-2 text-center>
+            <a hover:underline uppercase font-bold :href="book.url" target="_blank" line-clamp-2 class="text-11px" leading-snug>{{ book.name }}</a>
+          </p>
+        </div>
+        <article
+          relative
+          overflow-hidden
+          z-2
+        >
+          <GrainCover strentgh="mid" />
+          <img h="48.75" :src="book.cover" alt="">
+        </article>
+      </div>
+    </div>
   </div>
 </template>

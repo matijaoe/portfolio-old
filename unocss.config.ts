@@ -36,6 +36,7 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   shortcuts: {
+    'row': 'w-full max-w-full xl:max-w-5xl mx-auto px-6',
     // Properties
     'text-strong': 'font-medium text-default',
     // Text colors

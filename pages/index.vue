@@ -10,7 +10,7 @@ definePageMeta({
 
 <template>
   <div flex flex-col gap-20 mt-30>
-    <div flex flex-col gap-8>
+    <div row flex flex-col gap-8>
       <div font-display space-y-4>
         <p text-6xl md:text-8xl>
           Matija Osrečki
@@ -48,9 +48,9 @@ definePageMeta({
       </div>
     </div>
 
-    <div grid grid-cols-2 gap-4>
+    <div row grid grid-cols-2 gap-4>
       <article
-        v-for="i in 3" :key="i"
+        v-for="i in 4" :key="i"
         hover:gradient-warm
         rounded="[0.625rem]"
         transition-all

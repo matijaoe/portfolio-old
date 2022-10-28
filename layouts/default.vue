@@ -5,13 +5,11 @@
 <template>
   <div>
     <NavSocials />
-    <div overflow-auto r>
+    <div>
       <NavHeader />
 
       <main
-        pt-12 pb-24 pl-6 pr="6 md:16"
-        max-w="full xl:5xl"
-        w-full mx-auto
+        pt-12 pb-24
         flex flex-col flex-1
       >
         <NuxtPage />

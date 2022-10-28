@@ -48,6 +48,8 @@ const items = [
           hidden sm:block
           py-2 px-4 rounded-sm
           text-opaque hover:text-opaque-2
+          relative
+          z-2
           active-class="!text-default"
         >
           <span text-sm> {{ item.label }}</span>

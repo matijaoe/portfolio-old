@@ -5,7 +5,7 @@ import { socials } from '~~/data/socials'
 <template>
   <div
     hidden md:flex flex-col justify-center
-    pos="absolute right-4 top-4 bottom-0"
+    pos="fixed right-4 top-4 bottom-0"
     pr-3 z-50
   >
     <ul flex flex-col items-center gap-1>

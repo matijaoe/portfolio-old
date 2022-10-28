@@ -9,7 +9,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div flex flex-col gap-16>
+  <div flex flex-col gap-16 row>
     <div space-y-4>
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
         Who am I
@@ -31,8 +31,8 @@ definePageMeta({
           </p>
         </div>
 
-        <div relative overflow-hidden flex-shrink-0>
-          <GrainCover strentgh="weak" />
+        <div relative overflow-hidden flex-shrink-0 class="group">
+          <GrainCover strentgh="mid" group-hover:hidden />
           <img rounded-lg aspect-square max-w="320px" src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
         </div>
       </div>
