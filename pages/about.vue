@@ -35,7 +35,11 @@ definePageMeta({
             <div class="img-bg" w-full bg />
             <div relative overflow-hidden>
               <!-- <GrainCover strentgh="mid" group-hover:hidden /> -->
-              <img rounded-lg w-full src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
+              <img
+                border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
+                src="https://avatars.githubusercontent.com/u/46557266?v=4"
+                alt=""
+              >
             </div>
           </figure>
         </div>
@@ -78,7 +82,7 @@ figure img,
   background-image: linear-gradient(-45deg, #FADD95 50%, #308469 50%);
   border-radius: 50%;
   filter: blur(72px);
-  animation: pulse 10s cubic-bezier(0, 0, 0, 0.5) infinite;
+  animation: pulse 9s cubic-bezier(0, 0, 0, 0.5) infinite;
 }
 
 @keyframes pulse {
