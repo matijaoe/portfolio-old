@@ -5,35 +5,35 @@ const props = withDefaults(defineProps<{
   strentgh: 'weak',
 })
 
-const opacityStyle = computed(() => {
-  switch (props.strentgh) {
-    case 'weakest':
-      return 'opacity-[0.02]'
-    case 'weak':
-      return 'opacity-[0.05]'
-    case 'mid':
-      return 'opacity-[0.1]'
-    case 'higher':
-      return 'opacity-[0.14]'
-    default:
-      return 'opacity-[0.05]'
-  }
-})
+// const opacityStyle = computed(() => {
+//   switch (props.strentgh) {
+//     case 'weakest':
+//       return 'opacity-[0.02]'
+//     case 'weak':
+//       return 'opacity-[0.05]'
+//     case 'mid':
+//       return 'opacity-[0.1]'
+//     case 'higher':
+//       return 'opacity-[0.14]'
+//     default:
+//       return 'opacity-[0.05]'
+//   }
+// })
 </script>
 
 <template>
   <div
     id="grain"
     overflow="hidden"
-    :class="opacityStyle"
   />
+  <!-- :class="opacityStyle" -->
 </template>
 
 <style scoped>
 #grain {
   background-image: url('assets/images/notfound-noise.png');
   background-repeat: repeat;
-  position: absolute;
+  position: fixed;
   width: 600%;
   left: -200%;
   height: 600%;

@@ -28,6 +28,7 @@ const { isTouchDevice } = useTouchDevice()
       class="hover:gradient-warm group"
       flex-shrink-0
       rounded-lg
+      p="0.5"
       transition-all
       hover:shadow-md
       :class="[{ 'snap-start': isTouchDevice }]"
@@ -45,7 +46,7 @@ const { isTouchDevice } = useTouchDevice()
         </div>
 
         <figure relative>
-          <GrainCover strentgh="mid" />
+          <!-- <GrainCover strentgh="mid" /> -->
           <img h="46" :src="book.cover" alt="">
         </figure>
       </div>

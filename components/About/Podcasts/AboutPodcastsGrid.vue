@@ -38,7 +38,7 @@ const { isTouchDevice } = useTouchDevice()
         overflow-hidden
       >
         <!-- group-hover:hidden -->
-        <GrainCover strentgh="mid" />
+        <!-- <GrainCover strentgh="mid" /> -->
         <img h-34 aspect-square :src="pod" alt="">
       </figure>
     </div>

@@ -3,27 +3,20 @@ useHead({
   title: 'Matija Osrecki',
 })
 
+const { showGrain } = useGrain()
+
 useShortcuts()
 </script>
 
 <template>
-  <div class="w-100vw h-100vh">
-    <NuxtLoadingIndicator />
+  <NuxtLoadingIndicator />
 
-    <div
-      min-h-screen
-      w-screen
-      overflow-x-hidden
-      text-default
-      font-sans
-      bg-shade-1
-      relative
-    >
-      <NuxtLayout />
-    </div>
-
-    <!-- TODO: fix overflow -->
-    <!-- <GrainCover /> -->
+  <div min-h-screen text-default font-sans>
+    <NuxtLayout />
+    <GrainCover
+      v-if="showGrain"
+      opacity="4"
+    />
   </div>
 </template>
 
@@ -33,13 +26,15 @@ useShortcuts()
 
 html {
   background: #f5f5f4;
-
-  overflow-x: hidden;
 }
 
 html.dark {
   background: #1c1917;
   color-scheme: dark;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -53,7 +48,7 @@ html.dark {
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+  width: 0;
+  height: 0;
 }
 </style>

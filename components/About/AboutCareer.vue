@@ -4,9 +4,9 @@ import { jobs } from '~~/data/jobs'
 
 <template>
   <AboutSection title="Career">
-    <div space-y-5>
-      <div v-for="(job, i) in jobs" :key="i" flex flex-col gap-2>
-        <BaseHeading as="h6" text-lg>
+    <div space-y-6>
+      <div v-for="(job, i) in jobs" :key="i" flex flex-col gap-1>
+        <BaseHeading as="h6" text-lg leading-snug>
           {{ job.position }}
         </BaseHeading>
         <div flex items-center gap-2>
