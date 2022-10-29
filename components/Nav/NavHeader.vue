@@ -17,16 +17,16 @@ const { isDark, toggleDark } = useTheme()
       max-w="full xl:5xl"
       grid grid-cols="[40px_1fr_40px]" gap-2 items-center mx-auto
     >
-      <div>
-        <Icon v-show="isDark" name="tabler:diamonds" text-2xl />
-      </div>
+      <NuxtLink to="/">
+        <Icon name="tabler:seeding" text-2xl text-opaque hover:text-amber-5 />
+      </NuxtLink>
 
       <NavBar mx-auto />
 
       <div justify-self-end>
-        <button @click="toggleDark">
-          <Icon v-show="!isDark" name="tabler:moon" text-2xl />
-          <Icon v-show="isDark" name="tabler:sun" text-2xl />
+        <button transition-all flex items-center text-opaque hover:text-default text-2xl @click="toggleDark">
+          <Icon v-show="!isDark" name="tabler:moon" />
+          <Icon v-show="isDark" name="tabler:sun" />
         </button>
       </div>
     </div>

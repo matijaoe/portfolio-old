@@ -4,7 +4,7 @@ const skills = [
   'nuxt',
   'react',
   'next',
-  'javasript',
+  'javascript',
   'typescript',
   'tailwind',
   'unocss',
@@ -17,7 +17,7 @@ const skills = [
   'sql',
   'mongo',
   'python',
-  'tanstack query',
+  'query',
   'storybook',
   'linux',
 ]

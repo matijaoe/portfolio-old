@@ -14,7 +14,7 @@ definePageMeta({
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
         Who am I
       </BaseHeading>
-      <div flex gap-10 items-center>
+      <div flex gap-40 items-center>
         <div
           space-y-4 leading-loose
           text-dimmed-2
@@ -27,7 +27,6 @@ definePageMeta({
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, eum fugiat voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
-            Iusto illo eaque quis, rerum exercitationem dicta commodi non, architecto aliquam itaque, est debitis! Hic sit nostrum provident eaque ratione.
           </p>
         </div>
 
@@ -45,7 +44,11 @@ definePageMeta({
 
     <AboutCareer />
 
-    <AboutSkills />
+    <div relative>
+      <SVGThings absolute top--60 left--60 />
+
+      <AboutSkills />
+    </div>
 
     <AboutBooks />
 
@@ -72,7 +75,7 @@ figure img,
 
 .img-bg {
   position: absolute;
-  background-image: linear-gradient(-45deg, #D0A299 50%, #243B1E 50%);
+  background-image: linear-gradient(-45deg, #FADD95 50%, #308469 50%);
   border-radius: 50%;
   filter: blur(72px);
   animation: pulse 4s cubic-bezier(0, 0, 0, 0.5) infinite;

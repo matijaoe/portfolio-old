@@ -42,7 +42,6 @@ useHorizontalScroll(grid)
 
         <figure
           relative
-          z-2
         >
           <!-- <GrainCover strentgh="mid" /> -->
           <img h="46" :src="book.cover" alt="">

@@ -3,7 +3,7 @@ const items = [
   {
     label: 'Home',
     to: '/',
-    icon: 'tabler:home',
+    icon: 'tabler:home-2',
   },
   {
     label: 'About',

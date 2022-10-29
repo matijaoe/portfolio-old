@@ -10,6 +10,7 @@ useShortcuts()
   <NuxtLoadingIndicator />
 
   <div
+    z-2
     min-h-screen
     w-screen
     overflow-x-hidden
