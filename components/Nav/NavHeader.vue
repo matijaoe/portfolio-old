@@ -18,7 +18,7 @@ const { isDark, toggleDark } = useTheme()
       grid grid-cols="[40px_1fr_40px]" gap-2 items-center mx-auto
     >
       <NuxtLink to="/">
-        <Icon name="tabler:seeding" text-2xl text-opaque hover:text-amber-5 />
+        <Icon name="tabler:seeding" text-2xl text-opaque hover:text-green-5 />
       </NuxtLink>
 
       <NavBar mx-auto />

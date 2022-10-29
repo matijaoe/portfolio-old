@@ -2,19 +2,23 @@
 import { podcasts } from '~~/data/podcasts'
 
 const grid = ref<HTMLElement | null>(null)
-useHorizontalScroll(grid)
+// useHorizontalScroll(grid)
+
+const { isTouchDevice } = useTouchDevice()
 </script>
 
 <template>
   <div
     ref="grid"
-    v-dragscroll
+    v-dragscroll="!isTouchDevice"
     mt--1
     pt-1
     pb-3
     flex gap-2
     overflow-x-auto
     cursor-grab
+    class="hide-scrollbar"
+    :class="[{ 'snap-x scroll-mandatory': isTouchDevice }]"
   >
     <!-- TODO: link -->
     <div
@@ -26,6 +30,7 @@ useHorizontalScroll(grid)
       rounded-lg
       p="0.5"
       class="hover:gradient-warm group"
+      :class="[{ 'snap-start': isTouchDevice }]"
     >
       <figure
         rounded-md

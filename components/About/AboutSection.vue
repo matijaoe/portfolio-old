@@ -5,8 +5,8 @@ defineProps<{
 </script>
 
 <template>
-  <section space-y-4>
-    <BaseHeading z-2 as="h3" text-3xl>
+  <section space-y-4 relative>
+    <BaseHeading as="h3" text-3xl>
       <slot name="title">
         {{ title }}
       </slot>

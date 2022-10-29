@@ -2,19 +2,23 @@
 import { books } from '~~/data/books'
 
 const grid = ref<HTMLElement | null>(null)
-useHorizontalScroll(grid)
+// useHorizontalScroll(grid)
+
+const { isTouchDevice } = useTouchDevice()
 </script>
 
 <template>
   <div
     ref="grid"
-    v-dragscroll
+    v-dragscroll="!isTouchDevice"
     mt--1
     pt-1
     pb-3
-    flex gap-2
+    flex gap-2 flex-nowrap
     overflow-x-auto
     cursor-grab
+    class="hide-scrollbar"
+    :class="[{ 'snap-x scroll-mandatory': isTouchDevice }]"
   >
     <div
       v-for="(book, i) in books"
@@ -24,9 +28,9 @@ useHorizontalScroll(grid)
       class="hover:gradient-warm group"
       flex-shrink-0
       rounded-lg
-      p="0.5"
       transition-all
       hover:shadow-md
+      :class="[{ 'snap-start': isTouchDevice }]"
     >
       <div relative overflow-hidden rounded-md>
         <div
@@ -40,13 +44,12 @@ useHorizontalScroll(grid)
           </p>
         </div>
 
-        <figure
-          relative
-        >
-          <!-- <GrainCover strentgh="mid" /> -->
+        <figure relative>
+          <GrainCover strentgh="mid" />
           <img h="46" :src="book.cover" alt="">
         </figure>
       </div>
     </div>
   </div>
 </template>
+

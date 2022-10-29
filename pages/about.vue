@@ -26,13 +26,13 @@ definePageMeta({
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nam quos? Totam beatae reprehenderit ratione! Molestiae praesentium, esse voluptas beatae, quibusdam suscipit, distinctio fuga itaque hic et quod doloremque eius!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, eum fugiat voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
           </p>
         </div>
 
         <div flex-shrink-0 class="group">
           <figure aspect-square>
-            <div class="img-bg" w-full />
+            <div class="img-bg" w-full bg />
             <div relative overflow-hidden>
               <!-- <GrainCover strentgh="mid" group-hover:hidden /> -->
               <img rounded-lg w-full src="https://avatars.githubusercontent.com/u/46557266?v=4" alt="">
@@ -69,8 +69,8 @@ img {
 
 figure img,
 .img-bg {
-  height: 320px;
-  width: 320px;
+  height: 300px;
+  width: 300px;
 }
 
 .img-bg {
@@ -78,7 +78,7 @@ figure img,
   background-image: linear-gradient(-45deg, #FADD95 50%, #308469 50%);
   border-radius: 50%;
   filter: blur(72px);
-  animation: pulse 4s cubic-bezier(0, 0, 0, 0.5) infinite;
+  animation: pulse 10s cubic-bezier(0, 0, 0, 0.5) infinite;
 }
 
 @keyframes pulse {

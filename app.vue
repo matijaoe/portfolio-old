@@ -7,23 +7,24 @@ useShortcuts()
 </script>
 
 <template>
-  <NuxtLoadingIndicator />
+  <div class="w-100vw h-100vh">
+    <NuxtLoadingIndicator />
 
-  <div
-    z-2
-    min-h-screen
-    w-screen
-    overflow-x-hidden
-    text-default
-    font-sans
-    bg-shade-1
-    relative
-  >
-    <NuxtLayout />
+    <div
+      min-h-screen
+      w-screen
+      overflow-x-hidden
+      text-default
+      font-sans
+      bg-shade-1
+      relative
+    >
+      <NuxtLayout />
+    </div>
+
+    <!-- TODO: fix overflow -->
+    <!-- <GrainCover /> -->
   </div>
-
-  <!-- TODO: fix overflow -->
-  <!-- <GrainCover /> -->
 </template>
 
 <style>
@@ -32,6 +33,8 @@ useShortcuts()
 
 html {
   background: #f5f5f4;
+
+  overflow-x: hidden;
 }
 
 html.dark {
@@ -47,5 +50,10 @@ html.dark {
 .dark ::selection {
   background: #44403c6d;
   color: #d6d3d1;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 </style>
