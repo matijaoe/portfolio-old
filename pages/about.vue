@@ -55,6 +55,8 @@ useHead({
       <AboutSkills />
     </div>
 
+    <AboutSkillsAlt />
+
     <AboutBooks />
 
     <AboutPodcasts />

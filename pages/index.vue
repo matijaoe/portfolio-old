@@ -103,7 +103,7 @@ useHead({
           rounded-lg
           px-8 py-8
           flex flex-col gap-4
-          bg-stone-1 dark:bg-stone-8
+          bg-default-3
         >
           <!-- bg-stone-1 dark:bg-stone-8 -->
           <h4 text-lg font-display>

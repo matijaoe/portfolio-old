@@ -30,7 +30,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       w-full max-w-full md:max-w-lg
       class="lg:-translate-x-4 transition sm:pl-3 pr-5"
       :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovegreen }]"
-      py-4 rounded-md cursor-pointer
+      py-4 rounded-lg cursor-pointer
       @click="openProject"
     >
       <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-semibold text-5xl text="stone-8/12 dark:white/18">

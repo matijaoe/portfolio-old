@@ -54,6 +54,7 @@ export default defineConfig({
     'bg-opaque': 'bg-stone-2/40 dark:bg-stone-8/60',
     'bg-default-1': 'bg-stone-50 dark:bg-stone-9',
     'bg-default-2': 'bg-stone-2 dark:bg-stone-8',
+    'bg-default-3': 'bg-stone-1 dark:bg-stone-8',
     'gradient-warm': 'bg-gradient-to-tr from-amber-4 via-amber-5 to-rose-5',
   },
 })

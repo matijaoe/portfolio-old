@@ -23,13 +23,13 @@ const { isTouchDevice } = useTouchDevice()
       href=""
       target="_blank"
       flex-shrink-0
-      rounded-lg
+      rounded="0.625rem"
       p="0.5"
       class="hover:gradient-warm group"
       :class="[{ 'snap-start': isTouchDevice }]"
     >
       <figure
-        rounded-md
+        rounded-lg
         relative
         overflow-hidden
       >
