@@ -1,24 +1,4 @@
 <script lang="ts" setup>
-const props = withDefaults(defineProps<{
-  strentgh?: 'weakest' | 'weak' | 'mid' | 'higher'
-}>(), {
-  strentgh: 'weak',
-})
-
-// const opacityStyle = computed(() => {
-//   switch (props.strentgh) {
-//     case 'weakest':
-//       return 'opacity-[0.02]'
-//     case 'weak':
-//       return 'opacity-[0.05]'
-//     case 'mid':
-//       return 'opacity-[0.1]'
-//     case 'higher':
-//       return 'opacity-[0.14]'
-//     default:
-//       return 'opacity-[0.05]'
-//   }
-// })
 </script>
 
 <template>
@@ -26,7 +6,6 @@ const props = withDefaults(defineProps<{
     id="grain"
     overflow="hidden"
   />
-  <!-- :class="opacityStyle" -->
 </template>
 
 <style scoped>

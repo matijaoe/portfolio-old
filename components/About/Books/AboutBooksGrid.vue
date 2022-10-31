@@ -1,15 +1,11 @@
 <script lang="ts" setup>
 import { books } from '~~/data/books'
 
-const grid = ref<HTMLElement | null>(null)
-// useHorizontalScroll(grid)
-
 const { isTouchDevice } = useTouchDevice()
 </script>
 
 <template>
   <div
-    ref="grid"
     v-dragscroll="!isTouchDevice"
     mt--1
     pt-1
@@ -46,7 +42,6 @@ const { isTouchDevice } = useTouchDevice()
         </div>
 
         <figure relative>
-          <!-- <GrainCover strentgh="mid" /> -->
           <img h="46" :src="book.cover" alt="">
         </figure>
       </div>

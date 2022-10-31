@@ -23,7 +23,6 @@ defineProps<{
         h-64
         :src="thumbnail"
       >
-      <!-- <GrainCover v-show="shown" strentgh="weak" /> -->
     </a>
   </div>
 </template>

@@ -4,11 +4,6 @@ import { projects } from '~~/data/projects'
 useHead({
   title: 'Projects | Matija Osrecki',
 })
-definePageMeta({
-  accent: 'to-emerald-9',
-  bg: 'bg-emerald-9',
-  gradient: 'from-green-9 via-green-8 to-emerald-9',
-})
 </script>
 
 <template>

@@ -22,7 +22,6 @@ const openProject = () => window.open(initalLink.value, '_blank')
     ref="cardRow"
     flex items-center justify-between relative
   >
-    <!-- TODO: show image over card on hover, onak fensi -->
     <div
       ref="card"
       z-5

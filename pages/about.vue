@@ -2,10 +2,6 @@
 useHead({
   title: 'About | Matija Osrecki',
 })
-definePageMeta({
-  accent: 'to-blue-9',
-  bg: 'bg-blue-9',
-})
 </script>
 
 <template>
@@ -31,10 +27,9 @@ definePageMeta({
         </div>
 
         <div flex-shrink-0 class="group">
-          <figure aspect-square>
+          <figure aspect-square flex flex-col relative>
             <div class="img-bg" w-full bg />
             <div relative overflow-hidden>
-              <!-- <GrainCover strentgh="mid" group-hover:hidden /> -->
               <img
                 border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
                 src="https://avatars.githubusercontent.com/u/46557266?v=4"
@@ -61,16 +56,6 @@ definePageMeta({
 </template>
 
 <style scoped>
-figure {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-
-img {
-  z-index: 1;
-}
-
 figure img,
 .img-bg {
   height: 300px;

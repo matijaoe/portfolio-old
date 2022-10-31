@@ -2,10 +2,6 @@
 useHead({
   title: 'Guestbook | Matija Osrecki',
 })
-definePageMeta({
-  accent: 'to-purple-9',
-  bg: 'bg-purple-9',
-})
 </script>
 
 <template>

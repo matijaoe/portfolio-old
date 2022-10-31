@@ -35,6 +35,11 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  theme: {
+    colors: {
+      accent: '#c084fc',
+    },
+  },
   shortcuts: {
     'row': 'w-full max-w-full xl:max-w-5xl mx-auto px-6',
     // Properties
@@ -51,6 +56,6 @@ export default defineConfig({
     'bg-opaque': 'bg-stone-2/40 dark:bg-stone-8/60',
     'bg-shade-1': 'bg-stone-1 dark:bg-stone-9',
     'bg-shade-2': 'bg-stone-2 dark:bg-stone-8',
-    'gradient-warm': 'bg-gradient-to-tr from-rose-4 via-amber-5 to-rose-5',
+    'gradient-warm': 'bg-gradient-to-tr from-amber-4 via-amber-5 to-rose-5',
   },
 })

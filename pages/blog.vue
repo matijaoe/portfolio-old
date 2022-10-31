@@ -2,10 +2,6 @@
 useHead({
   title: 'Blog | Matija Osrecki',
 })
-definePageMeta({
-  accent: 'to-sky-9',
-  bg: 'bg-sky-9',
-})
 </script>
 
 <template>

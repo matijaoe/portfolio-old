@@ -2,10 +2,6 @@
 useHead({
   title: 'Contact | Matija Osrecki',
 })
-definePageMeta({
-  accent: 'to-yellow-9',
-  bg: 'bg-yellow-9',
-})
 </script>
 
 <template>
