@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { baseSocials } from '~~/data/socials'
+
 useHead({
   title: 'Home | Matija Osrecki',
 })
@@ -15,18 +17,18 @@ useHead({
           </p>
         </div>
 
-        <p text-3xl z-2 relative>
+        <!-- <p text-3xl z-2 relative>
           Full Stack Developer
-        </p>
+        </p> -->
       </div>
 
       <div max-w-xl space-y-4 text-stone-6 dark:text-stone-4 leading-relaxed z-2>
-        <p>
-          Most passionate about building products, web design, clean code & bitcoin.
+        <p title="its a stolen placeholder">
+          I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code.
         </p>
 
         <div>
-          Currently working as a Mid Frontend Developer at
+          Working as a Mid Frontend Developer at
           <a
             inline-flex items-center gap-2
             transition
@@ -55,17 +57,47 @@ useHead({
           </p>
         </div>
       </div>
+
+      <div mt-4>
+        <ul flex items-center gap-1 ml--2>
+          <li
+            v-for="(social, i) in baseSocials"
+            :key="i"
+            v-tooltip="{
+              delay: 0,
+              content: social.label,
+              theme: 'info-tooltip',
+              placement: 'bottom',
+            }"
+          >
+            <a
+              :href="social.href"
+              target="_blank"
+              flex items-center justify-center
+              p-2
+            >
+              <Icon
+                :name="social.icon"
+                text-2xl
+                text-dimmed hover:text-default
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div row grid md:grid-cols-2 gap-4>
-      <article
+      <button
         v-for="i in 4"
         :key="i"
+        text-left
         rounded="[0.625rem]"
         transition
         bg="hover:(stone-8 dark:stone-2)"
         p="0.5"
         class="hover:(-translate-y-1)"
+        @click="navigateTo('/projects')"
       >
         <div
           rounded-lg
@@ -81,7 +113,7 @@ useHead({
             View and try the personal and commercial applications I have worked on in the recent years.
           </p>
         </div>
-      </article>
+      </button>
     </div>
   </div>
 </template>

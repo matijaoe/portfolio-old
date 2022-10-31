@@ -1,4 +1,4 @@
-export const socials = [
+export const baseSocials = [
   {
     label: 'Github',
     icon: 'tabler:brand-github',
@@ -14,6 +14,10 @@ export const socials = [
     icon: 'tabler:brand-twitter',
     href: 'https://twitter.com/matijao_',
   },
+]
+
+export const socials = [
+  ...baseSocials,
   {
     label: 'Angellist',
     icon: 'fa6-brands:angellist',

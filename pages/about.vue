@@ -5,10 +5,10 @@ useHead({
 </script>
 
 <template>
-  <div row flex flex-col gap-16>
+  <div row flex flex-col gap-24>
     <div space-y-4>
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
-        Who am I
+        Who is this fella
       </BaseHeading>
       <div flex gap-40 items-center>
         <div
@@ -16,7 +16,7 @@ useHead({
           text-dimmed-2
         >
           <p>
-            Hey, I'm <span class="text-strong">Matija Osrečki</span>, started as a web developer back in 2020.
+            Ay, I'm <span class="text-strong">Matija Osrečki</span>, started as a web developer back in 2020.
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nam quos? Totam beatae reprehenderit ratione! Molestiae praesentium, esse voluptas beatae, quibusdam suscipit, distinctio fuga itaque hic et quod doloremque eius!
@@ -43,7 +43,11 @@ useHead({
       </div>
     </div>
 
-    <AboutCareer />
+    <div flex justify-between>
+      <AboutCareer />
+    </div>
+
+    <AboutEducation />
 
     <div relative>
       <SVGThings absolute top--60 left--60 />

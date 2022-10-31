@@ -10,13 +10,13 @@ import { jobs } from '~~/data/jobs'
           {{ job.position }}
         </BaseHeading>
         <div flex items-center gap-2>
-          <a :href="job.company.url" target="_blank" class="hyperlink">{{ job.company.name }}</a>
-          <span text-green-5>•</span>
+          <a :href="job.company.url" target="_blank" hyperlink>{{ job.company.name }}</a>
+          <span>•</span>
           <span text-dimmed>{{ job.company.location }}</span>
         </div>
-        <div text-dimmed flex items-center gap-2>
+        <div text-dimmed text-sm flex items-center gap-2>
           <span>{{ job.from }} – {{ job.to }}</span>
-          <span text-green-5>•</span>
+          <span>•</span>
           <span>{{ job.duration }}</span>
         </div>
       </div>

@@ -1,0 +1,53 @@
+<script lang="ts" setup>
+import { jobs } from '~~/data/jobs'
+
+/* Zagreb University of Applied SciencesZagreb University of Applied Sciences
+Bachelor's degree, Computer Software Engineering */
+const schools = [
+  {
+    degree: 'Bachelor\'s degree',
+    name: 'Zagreb University of Applied Sciences',
+    nameShort: 'TVZ',
+    url: 'https://www.tvz.hr',
+    field: 'Computer Software Engineering',
+    from: '2019',
+    to: '2023',
+    location: 'Zagreb, Croatia',
+  },
+  {
+    degree: null,
+    name: 'Faculty of Electrical Engineering and Computing',
+    nameShort: 'FER',
+    url: 'https://www.fer.unizg.hr/',
+    field: 'Computer Science',
+    from: '2018',
+    to: '2019',
+    location: 'Zagreb, Croatia',
+  },
+]
+</script>
+
+<template>
+  <AboutSection title="Education">
+    <div space-y-6 z-2>
+      <div v-for="(school, i) in schools" :key="i" flex flex-col gap-1>
+        <BaseHeading as="h6" text-lg leading-snug>
+          {{ school.degree }}
+        </BaseHeading>
+        <div flex items-center gap-2>
+          <a :href="school.url" target="_blank" hyperlink>{{ school.name }}</a>
+          <span text-opaque>|</span>
+          <span text-xs font-bold uppercase>{{ school.nameShort }}</span>
+        </div>
+        <p text-dimmed text-sm>
+          {{ school.field }}
+        </p>
+        <div text-dimmed text-sm flex items-center gap-2>
+          <span>{{ school.from }} – {{ school.to }}</span>
+          <span>•</span>
+          <span>{{ school.location }}</span>
+        </div>
+      </div>
+    </div>
+  </AboutSection>
+</template>
