@@ -14,7 +14,7 @@ useHead({
       Projects
     </BaseHeading>
 
-    <div mt-12 flex flex-col gap-8>
+    <div mt-8 md:mt-12 flex flex-col gap-5 md:gap-8>
       <ProjectCard
         v-for="(project, i) in projects"
         :key="i"

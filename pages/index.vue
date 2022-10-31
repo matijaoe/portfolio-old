@@ -29,7 +29,7 @@ useHead({
           Currently working as a Mid Frontend Developer at
           <a
             inline-flex items-center gap-2
-            transition-all
+            transition
             class="group"
             href="https://4ofthem.eu/"
             target="_blank"
@@ -40,19 +40,19 @@ useHead({
               name="tabler:clover"
               text-2xl
               text="#FF8502"
-              class="opacity-0 translate-x--2 transition-all scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
+              class="opacity-0 translate-x--2 transition scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
             />
           </a>
         </div>
       </div>
     </div>
 
-    <div row grid grid-cols-2 gap-4>
+    <div row grid md:grid-cols-2 gap-4>
       <article
         v-for="i in 4"
         :key="i"
         rounded="[0.625rem]"
-        transition-all
+        transition
         bg="hover:(stone-8 dark:yellow-5/80)"
         p="0.5"
         class="hover:(-translate-y-1)"

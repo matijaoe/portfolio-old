@@ -9,7 +9,7 @@
       <NavHeader />
 
       <main
-        pt-36 pb-24
+        p="t-24 b-24 md:(t-32 b-24)"
         flex flex-col flex-1
       >
         <NuxtPage />

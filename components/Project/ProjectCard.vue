@@ -28,7 +28,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       relative
       flex gap-4
       w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 transition-all sm:pl-3 pr-5"
+      class="lg:-translate-x-4 transition sm:pl-3 pr-5"
       :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovered }]"
       py-4 rounded-md cursor-pointer
       @click="openProject"
@@ -56,7 +56,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               text-xl
               mb-1
               text-orange-5
-              transition-all
+              transition
               :class="[cardHovered
                 ? 'visible opacity-100 translate-x-0'
                 : 'invisible opacity-0 -translate-x-4']"

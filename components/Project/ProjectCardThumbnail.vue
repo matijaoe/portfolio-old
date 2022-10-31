@@ -12,7 +12,7 @@ defineProps<{
     right="-80% sm:-60% md:-25% lg:-10% xl:-35"
     rounded-md
     overflow-hidden
-    transition-all
+    transition
     class="-translate-y-20 scale-130 opacity-4 rotate-12 filter-saturate-0 z-1"
     :class="[
       { 'lg:(visible opacity-100 -rotate-3 -translate-x-20 -translate-y-35 scale-130 filter-saturate-100 z-10)': shown },

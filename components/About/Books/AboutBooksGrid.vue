@@ -25,13 +25,13 @@ const { isTouchDevice } = useTouchDevice()
       flex-shrink-0
       rounded-lg
       p="0.5"
-      transition-all
+      transition
       hover:shadow-md
       :class="[{ 'snap-start': isTouchDevice }]"
     >
       <div relative overflow-hidden rounded-md>
         <div
-          transition-all
+          transition
           class="opacity-0 translate-y-50%  group-hover:(opacity-100 translate-y-0 z-3)"
           absolute right-0 left-0 bottom-0 h="50%"
           bg-gradient-to-t from-stone-9 text-stone-2

@@ -15,26 +15,26 @@ const items = [
     to: '/projects',
     icon: 'tabler:bulb',
   },
-  {
-    label: 'Uses',
-    to: '/uses',
-    icon: 'tabler:tools',
-  },
-  {
-    label: 'Blog',
-    to: '/blog',
-    icon: 'tabler:file-text',
-  },
+  // {
+  //   label: 'Uses',
+  //   to: '/uses',
+  //   icon: 'tabler:tools',
+  // },
+  // {
+  //   label: 'Blog',
+  //   to: '/blog',
+  //   icon: 'tabler:file-text',
+  // },
   {
     label: 'Contact',
     to: '/contact',
     icon: 'tabler:pencil',
   },
-  {
-    label: 'Guestbook',
-    to: '/guestbook',
-    icon: 'tabler:book',
-  },
+  // {
+  //   label: 'Guestbook',
+  //   to: '/guestbook',
+  //   icon: 'tabler:book',
+  // },
 ]
 
 const pos = ref(0)
@@ -51,7 +51,7 @@ onMounted(() => {
 <template>
   <nav>
     <div
-      rounded-full flex justify-center px-3 transition-all
+      rounded-full flex justify-center px-3 transition
       relative overflow-hidden
       :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
     >
@@ -60,8 +60,9 @@ onMounted(() => {
           <!-- desktop -->
           <NuxtLink
             :to="item.to"
-            hidden sm:block
+            hidden md:block
             py-2 px-4 rounded-sm
+            transition
             text-opaque hover:text-opaque-2
             relative
             z-2
@@ -73,12 +74,13 @@ onMounted(() => {
           <!-- mobile -->
           <NuxtLink
             :to="item.to"
-            block sm:hidden
+            block md:hidden
             p-2
+            transition
             text-opaque hover:text-opaque-2
             active-class="!text-default"
           >
-            <Icon text-2xl :name="item.icon" />
+            <Icon text-lg md:text-2xl :name="item.icon" />
           </NuxtLink>
         </li>
       </ul>
