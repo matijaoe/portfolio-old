@@ -55,7 +55,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               name="tabler:link"
               text-xl
               mb-1
-              text-orange-5
+              text-green-5
               transition
               :class="[cardHovered
                 ? 'visible opacity-100 translate-x-0'

@@ -20,7 +20,7 @@ const { showGrain, toggleGrain } = useGrain()
       grid grid-cols="[100px_1fr_100px]" gap-2 items-center mx-auto
     >
       <NuxtLink to="/">
-        <Icon transition name="tabler:seeding" text-lg md:text-2xl text-opaque hover:text-default />
+        <Icon transition name="tabler:seeding" text-lg md:text-2xl text-opaque hover:text-green-5 />
       </NuxtLink>
 
       <NavBar mx-auto />

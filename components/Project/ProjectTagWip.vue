@@ -8,7 +8,7 @@
     uppercase
     rounded-full
     filter-saturate-85
-    gradient-warm
+    bg-green-5
   >
     wip
   </span>

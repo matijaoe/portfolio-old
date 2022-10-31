@@ -22,7 +22,7 @@
           Goodreads
           <Icon
             name="simple-icons:goodreads"
-            text-orange-5
+            text="yellow-6 dark:yellow-5"
             mt-1
             class="opacity-0 translate-x--3 transition scale-50 group-hover:(opacity-100 translate-x-0 rotate-0 scale-100)"
           />
