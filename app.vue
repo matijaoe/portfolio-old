@@ -11,7 +11,7 @@ useShortcuts()
 <template>
   <NuxtLoadingIndicator />
 
-  <div min-h-screen text-default font-sans>
+  <div min-h-screen text-default font-sans flex bg-default-1>
     <NuxtLayout />
     <GrainCover
       v-if="showGrain"
@@ -25,11 +25,11 @@ useShortcuts()
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
 html {
-  background: #f5f5f4;
+  background: #fafaf9; /* stone-50 */
 }
 
 html.dark {
-  background: #1c1917;
+  background: #1c1917; /* stone-900 */
   color-scheme: dark;
 }
 

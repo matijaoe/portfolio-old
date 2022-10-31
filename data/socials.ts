@@ -14,29 +14,24 @@ export const socials = [
     icon: 'tabler:brand-twitter',
     href: 'https://twitter.com/matijao_',
   },
-  // {
-  //   label: 'Dev.to',
-  //   icon: 'fa6-brands:dev',
-  //   href: 'https://dev.to/matijao',
-  // },
-  // {
-  //   label: 'Angellist',
-  //   icon: 'fa6-brands:angellist',
-  //   href: 'https://angel.co/u/matijao',
-  // },
-  // {
-  //   label: 'Goodreads',
-  //   icon: 'fa6-brands:goodreads-g',
-  //   href: 'https://www.goodreads.com/matijao',
-  // },
   {
-    label: 'Email',
+    label: 'Angellist',
+    icon: 'fa6-brands:angellist',
+    href: 'https://angel.co/u/matijao',
+  },
+  {
+    label: 'Dev.to',
+    icon: 'fa6-brands:dev',
+    href: 'https://dev.to/matijao',
+  },
+  {
+    label: 'Goodreads',
+    icon: 'fa6-brands:goodreads',
+    href: 'https://www.goodreads.com/matijao',
+  },
+  {
+    label: 'matija.osrecki@gmail.com',
     icon: 'tabler:mail',
     href: 'mailto:matija.osrecki@gmail.com',
   },
-  // {
-  //   label: 'CV',
-  //   icon: 'academicons:cv',
-  //   href: '',
-  // },
 ]

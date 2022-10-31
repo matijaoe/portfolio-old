@@ -3,18 +3,21 @@
 </script>
 
 <template>
-  <div>
-    <NavSocials />
-    <div>
-      <NavHeader />
+  <div
+    flex-1
+    flex flex-col
+  >
+    <TheHeader />
 
-      <main
-        p="t-24 b-24 md:(t-32 b-24)"
-        flex flex-col flex-1
-      >
-        <NuxtPage />
-      </main>
-    </div>
+    <main
+      flex-1
+      flex flex-col
+      p="t-24 b-40 md:(t-32 b-40)"
+    >
+      <NuxtPage />
+    </main>
+
+    <TheFooter mt-auto />
   </div>
 </template>
 

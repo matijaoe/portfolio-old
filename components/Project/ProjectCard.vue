@@ -11,8 +11,8 @@ const initalLink = ref(props.project.links[0].href)
 const cardRow = ref<HTMLElement>()
 const card = ref<HTMLElement>()
 
-const cardRowHovered = useElementHover(cardRow)
-const cardHovered = useElementHover(card)
+const cardRowHovegreen = useElementHover(cardRow)
+const cardHovegreen = useElementHover(card)
 
 const openProject = () => window.open(initalLink.value, '_blank')
 </script>
@@ -29,7 +29,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       flex gap-4
       w-full max-w-full md:max-w-lg
       class="lg:-translate-x-4 transition sm:pl-3 pr-5"
-      :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovered }]"
+      :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovegreen }]"
       py-4 rounded-md cursor-pointer
       @click="openProject"
     >
@@ -44,7 +44,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               line-clamp-1
               font-display text-2xl
               flex-1 flex items-start gap-4
-              class="hover:underline" :class="{ '!underline': cardHovered }"
+              class="hover:underline" :class="{ '!underline': cardHovegreen }"
             >
               {{ project.name }}
             </h3>
@@ -57,7 +57,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               mb-1
               text-green-5
               transition
-              :class="[cardHovered
+              :class="[cardHovegreen
                 ? 'visible opacity-100 translate-x-0'
                 : 'invisible opacity-0 -translate-x-4']"
             />
@@ -97,7 +97,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       <ProjectCardThumbnail
         v-if="project.thumbnail"
         :thumbnail="project.thumbnail"
-        :shown="cardRowHovered"
+        :shown="cardRowHovegreen"
       />
     </ClientOnly>
   </div>

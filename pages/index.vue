@@ -20,7 +20,7 @@ useHead({
         </p>
       </div>
 
-      <div max-w-xl space-y-4 text-dimmed leading-relaxed z-2>
+      <div max-w-xl space-y-4 text-stone-6 dark:text-stone-4 leading-relaxed z-2>
         <p>
           Most passionate about building products, web design, clean code & bitcoin.
         </p>
@@ -44,6 +44,16 @@ useHead({
             />
           </a>
         </div>
+
+        <div mt="!8" flex items-center gap-3 text-sm>
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-4 opacity-75" />
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-green-5" />
+          </span>
+          <p text-stone-5 dark:text-stone-5 flex items-center gap-2>
+            Currently in Zagreb, Croatia
+          </p>
+        </div>
       </div>
     </div>
 
@@ -53,7 +63,7 @@ useHead({
         :key="i"
         rounded="[0.625rem]"
         transition
-        bg="hover:(stone-8 dark:yellow-5/80)"
+        bg="hover:(stone-8 dark:stone-2)"
         p="0.5"
         class="hover:(-translate-y-1)"
       >
@@ -61,8 +71,9 @@ useHead({
           rounded-lg
           px-8 py-8
           flex flex-col gap-4
-          bg-shade-2
+          bg-stone-1 dark:bg-stone-8
         >
+          <!-- bg-stone-1 dark:bg-stone-8 -->
           <h4 text-lg font-display>
             Projects
           </h4>
