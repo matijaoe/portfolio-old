@@ -2,6 +2,8 @@
 import { books } from '~~/data/books'
 
 const { isTouchDevice } = useTouchDevice()
+
+// TODO: set snap by default, but disable it when mousepressed (to drag)
 </script>
 
 <template>

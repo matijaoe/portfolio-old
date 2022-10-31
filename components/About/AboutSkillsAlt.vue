@@ -138,12 +138,12 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
       <div flex gap-2>
         <Switch
           v-model="favsOnly"
-          :class="favsOnly ? 'bg-stone-8 dark:bg-stone-3' : 'bg-stone-2 dark:bg-stone-7'"
+          :class="favsOnly ? 'bg-stone-8 dark:bg-green-5' : 'bg-stone-2 dark:bg-stone-7'"
           class="relative inline-flex h-6 w-11 items-center rounded-full"
         >
           <span
             :class="favsOnly ? 'translate-x-6' : 'translate-x-1'"
-            class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+            class="inline-block h-4 w-4 transform rounded-full bg-white dark:bg-stone-9 transition"
           />
         </Switch>
       </div>
