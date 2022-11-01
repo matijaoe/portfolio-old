@@ -31,13 +31,13 @@ useHead({
           <figure aspect-square flex flex-col relative>
             <div class="img-bg" w-full bg />
             <div relative overflow-hidden>
-              <img
+              <NuxtImg
                 transition
                 hover:rotate-12
                 border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
                 src="https://avatars.githubusercontent.com/u/46557266?v=4"
                 alt=""
-              >
+              />
             </div>
           </figure>
         </div>

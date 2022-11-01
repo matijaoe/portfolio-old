@@ -5,7 +5,7 @@ specifiers:
   '@formkit/auto-animate': 1.0.0-beta.3
   '@headlessui/vue': ^1.7.3
   '@nuxt/content': ^2.2.1
-  '@nuxt/image': ^0.7.1
+  '@nuxt/image-edge': 1.0.0-27769790.4b27db3
   '@unocss/nuxt': ^0.46.0
   '@vueuse/nuxt': ^9.4.0
   eslint: ^8.26.0
@@ -29,7 +29,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.27.0_wyqvi574yv7oiwfeinomdzmc3m
   '@nuxt/content': 2.2.1
-  '@nuxt/image': 0.7.1
+  '@nuxt/image-edge': 1.0.0-27769790.4b27db3
   '@unocss/nuxt': 0.46.2
   eslint: 8.26.0
   nuxt: 3.0.0-rc.12_wyqvi574yv7oiwfeinomdzmc3m
@@ -690,26 +690,23 @@ packages:
   /@nuxt/devalue/2.0.0:
     resolution: {integrity: sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==}
 
-  /@nuxt/image/0.7.1:
-    resolution: {integrity: sha512-dKCVvRBae9rPHvyaIcC1ypFh+rnNP85WJgzYOE7XMtHQnrGj7X8UiGWTlk2ahcRPBGx1W8JlJuNGBhWZKrf6lQ==}
-    engines: {node: '>=14.16.0'}
+  /@nuxt/image-edge/1.0.0-27769790.4b27db3:
+    resolution: {integrity: sha512-DzqKv9nw1kB35njknjqPf1bo7m4S6qhVbot9Q8M1D/6u2Hypwh2VefSIJelMJnPAmNfZfHim36ZWOYW5RWTAXg==}
+    engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     dependencies:
+      '@nuxt/kit': 3.0.0-rc.12
       consola: 2.15.3
       defu: 6.1.0
-      fs-extra: 10.1.0
-      hasha: 5.2.2
+      h3: 0.8.6
       image-meta: 0.1.1
-      is-https: 4.0.0
-      lru-cache: 7.14.0
       node-fetch-native: 0.1.8
-      p-limit: 3.1.0
-      rc9: 1.2.2
-      requrl: 3.0.2
-      semver: 7.3.8
+      ohash: 0.1.5
+      pathe: 0.3.9
       ufo: 0.8.6
-      upath: 2.0.1
     optionalDependencies:
       ipx: 0.9.11
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@nuxt/kit/3.0.0-rc.12:
@@ -3539,14 +3536,6 @@ packages:
   /hash-sum/2.0.0:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
 
-  /hasha/5.2.2:
-    resolution: {integrity: sha512-Hrp5vIK/xr5SkeN2onO32H0MgNZ0f17HRNH39WfL0SYUNOTZ5Lz1TJ8Pajo/87dYGEFlLMm7mIc/k/s6Bvz9HQ==}
-    engines: {node: '>=8'}
-    dependencies:
-      is-stream: 2.0.1
-      type-fest: 0.8.1
-    dev: true
-
   /hast-to-hyperscript/10.0.1:
     resolution: {integrity: sha512-dhIVGoKCQVewFi+vz3Vt567E4ejMppS1haBRL6TEmeLeJVB1i/FJIIg/e6s1Bwn0g5qtYojHEKvyGA+OZuyifw==}
     dependencies:
@@ -3945,10 +3934,6 @@ packages:
     resolution: {integrity: sha512-DgZQp241c8oO6cA1SbTEWiXeoxV42vlcJxgH+B3hi1AiqqKruZR3ZGF8In3fj4+/y/7rHvlOZLZtgJ/4ttYGZg==}
     dev: true
 
-  /is-https/4.0.0:
-    resolution: {integrity: sha512-FeMLiqf8E5g6SdiVJsPcNZX8k4h2fBs1wp5Bb6uaNxn58ufK1axBqQZdmAQsqh0t9BuwFObybrdVJh6MKyPlyg==}
-    dev: true
-
   /is-interactive/2.0.0:
     resolution: {integrity: sha512-qP1vozQRI+BMOPcjFzrjXuQvdak2pHNUMZoeG2eRbiSqyvbEf/wQtEOTOX1guk6E3t36RkaqiSt8A/6YElNxLQ==}
     engines: {node: '>=12'}
@@ -4268,11 +4253,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-
-  /lru-cache/7.14.0:
-    resolution: {integrity: sha512-EIRtP1GrSJny0dqb50QXRUNBxHJhcpxHC++M5tD7RYbvLLn5KVWKsbyswSSqDuU15UFi3bgTQIY8nhDMeF6aDQ==}
-    engines: {node: '>=12'}
-    dev: true
 
   /magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
@@ -5976,10 +5956,6 @@ packages:
   /requires-port/1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
 
-  /requrl/3.0.2:
-    resolution: {integrity: sha512-f3gjR6d8MhOpn46PP+DSJywbmxi95fxQm3coXBFwognjFLla9X6tr8BdNyaIKNOEkaRbRcm0/zYAqN19N1oyhg==}
-    dev: true
-
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -6873,11 +6849,6 @@ packages:
       scule: 0.3.2
     transitivePeerDependencies:
       - supports-color
-
-  /upath/2.0.1:
-    resolution: {integrity: sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==}
-    engines: {node: '>=4'}
-    dev: true
 
   /update-browserslist-db/1.0.10_browserslist@4.21.4:
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}

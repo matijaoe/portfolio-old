@@ -19,10 +19,11 @@ defineProps<{
     ]"
   >
     <a relative :href="thumbnail" target="_blank">
-      <img
+      <NuxtImg
         h-64
+        height="1024"
         :src="thumbnail"
-      >
+      />
     </a>
   </div>
 </template>

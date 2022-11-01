@@ -1,14 +1,3 @@
-import Aimo from '/projects/aimo.png'
-import Comet from '/projects/comet.png'
-import Expenses from '/projects/expenses.png'
-import Expenses2 from '/projects/expenses2.png'
-import Matijao from '/projects/matijao.png'
-import MeetMia from '/projects/meetmia.png'
-import Qwiz from '/projects/qwiz.png'
-import Qwiz2 from '/projects/qwiz2.png'
-import Qwiz3 from '/projects/qwiz3.png'
-import Qwiz4 from '/projects/qwiz4.png'
-import QwizPreview from '/projects/qwiz-preview.png'
 import { Tag } from '~~/models'
 import type { Project } from '~~/models'
 
@@ -36,7 +25,7 @@ export const projects: Project[] = [
         href: 'https://documenter.getpostman.com/view/15639222/UyrDCvUG',
       },
     ],
-    thumbnail: Qwiz,
+    thumbnail: '/projects/qwiz.png',
   },
   {
     name: 'Aimo',
@@ -53,7 +42,7 @@ export const projects: Project[] = [
         href: 'https://aimo.vercel.app',
       },
     ],
-    thumbnail: Aimo,
+    thumbnail: '/projects/aimo.png',
   },
   {
     name: 'FIRE Platform',
@@ -85,7 +74,7 @@ export const projects: Project[] = [
       },
     ],
     inProgress: true,
-    thumbnail: Matijao,
+    thumbnail: '/projects/matijao.png',
   },
   {
     name: 'Expense tracker',
@@ -106,7 +95,7 @@ export const projects: Project[] = [
         href: 'https://expenses-frontend-five.vercel.app',
       },
     ],
-    thumbnail: Expenses2,
+    thumbnail: '/projects/expenses2.png',
   },
   {
     name: 'MeetMia',
@@ -123,7 +112,7 @@ export const projects: Project[] = [
         href: 'https://meet-mia.surge.sh/',
       },
     ],
-    thumbnail: MeetMia,
+    thumbnail: '/projects/meetmia.png',
   },
   {
     name: 'Comet',
@@ -140,6 +129,6 @@ export const projects: Project[] = [
         href: 'https://mat2ja.github.io/comet/',
       },
     ],
-    thumbnail: Comet,
+    thumbnail: '/projects/comet.png',
   },
 ]

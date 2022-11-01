@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/content',
+    '@nuxt/image-edge',
   ],
   experimental: {
     reactivityTransform: true,

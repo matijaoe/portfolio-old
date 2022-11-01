@@ -10,9 +10,9 @@ const list = [
     url: 'https://mc2.tvz.hr/2021',
     project: 'Aimo',
     from: 'Feb 2021',
-    to: 'June 2021',
+    to: 'Jun 2021',
     additional: '🏆🥇',
-    description: 'Won first place. Won best design award',
+    description: 'Won first place. Won best design award.',
   },
   {
     name: 'TVZ Mc2 2022',
@@ -20,7 +20,7 @@ const list = [
     url: 'https://mc2.tvz.hr',
     project: 'Qwiz',
     from: 'Feb 2022',
-    to: 'June 2022',
+    to: 'Jun 2022',
     description: 'Weren\'t able to secure the win, but we got a lot of traction afterwards',
   },
 ]
