@@ -56,7 +56,7 @@ export const projects: Project[] = [
       },
     ],
     inProgress: true,
-    thumbnail: 'https://cdn.discordapp.com/attachments/1010508281447460864/1031553495553278084/unknown.png',
+    thumbnail: '/projects/fire.png',
   },
   {
     name: 'Personal site',

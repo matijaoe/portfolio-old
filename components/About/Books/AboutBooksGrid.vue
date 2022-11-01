@@ -44,7 +44,11 @@ const { isTouchDevice } = useTouchDevice()
         </div>
 
         <figure relative>
-          <NuxtImg h="46" :src="book.cover" alt="" />
+          <NuxtImg
+            format="webp"
+            height="256"
+            h="46" :src="book.cover" alt=""
+          />
         </figure>
       </div>
     </div>

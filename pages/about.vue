@@ -34,9 +34,10 @@ useHead({
           <div relative overflow-hidden>
             <NuxtImg
               transition
+              format="webp"
               hover:rotate-12
               border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
-              src="https://avatars.githubusercontent.com/u/46557266?v=4"
+              src="/avatar.jpg"
               alt=""
             />
           </div>

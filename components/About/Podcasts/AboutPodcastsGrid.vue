@@ -33,7 +33,12 @@ const { isTouchDevice } = useTouchDevice()
         relative
         overflow-hidden
       >
-        <NuxtImg h-34 aspect-square :src="pod" alt="" />
+        <NuxtImg
+          format="webp"
+          height="256"
+          h-34 aspect-square
+          :src="pod" alt=""
+        />
       </figure>
     </div>
   </div>
