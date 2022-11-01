@@ -1,9 +1,14 @@
-import { set } from '@vueuse/core'
+import { get } from '@vueuse/core'
 
 export const useTheme = () => {
-  const isDark = useDark()
+  const color = useColorMode()
 
-  const toggleDark = () => set(isDark, !isDark.value)
+  const { value: colorValue } = toRefs(color)
+  const isDark = computed(() => get(colorValue) === 'dark')
+
+  const toggleDark = () => {
+    color.preference = get(isDark) ? 'light' : 'dark'
+  }
 
   return {
     isDark,

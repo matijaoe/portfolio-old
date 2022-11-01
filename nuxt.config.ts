@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxt/image-edge',
+    '@nuxtjs/color-mode',
   ],
   experimental: {
     reactivityTransform: true,
@@ -20,5 +21,11 @@ export default defineNuxtConfig({
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
+  },
+  colorMode: {
+    storageKey: 'matijao-color-mode',
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'dark',
   },
 })

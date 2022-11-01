@@ -10,9 +10,9 @@ useHead({
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
         Hi there
       </BaseHeading>
-      <div grid grid-cols-5 gap-40>
+      <div grid class="grid-cols-1 gap-0 lg:(grid-cols-5 gap-40)">
         <div
-          col-span-3
+          lg:col-span-3
           space-y-4 leading-loose
           text-dimmed-2
         >
@@ -27,20 +27,20 @@ useHead({
           </p>
         </div>
 
-        <div col-span-2 class="group">
-          <figure aspect-square flex flex-col relative>
-            <div class="img-bg" w-full bg />
-            <div relative overflow-hidden>
-              <NuxtImg
-                transition
-                hover:rotate-12
-                border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
-                src="https://avatars.githubusercontent.com/u/46557266?v=4"
-                alt=""
-              />
-            </div>
-          </figure>
-        </div>
+        <figure
+          aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1"
+        >
+          <div class="img-bg" w-full bg />
+          <div relative overflow-hidden>
+            <NuxtImg
+              transition
+              hover:rotate-12
+              border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
+              src="https://avatars.githubusercontent.com/u/46557266?v=4"
+              alt=""
+            />
+          </div>
+        </figure>
       </div>
     </div>
 
