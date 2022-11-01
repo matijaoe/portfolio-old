@@ -8,7 +8,7 @@ useHead({
   <div row flex flex-col gap-24>
     <div space-y-4>
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
-        Who is this fella
+        Hi there
       </BaseHeading>
       <div flex gap-40 items-center>
         <div
@@ -16,7 +16,7 @@ useHead({
           text-dimmed-2
         >
           <p>
-            Ay, I'm <span class="text-strong">Matija Osrečki</span>, started as a web developer back in 2020.
+            I'm <span class="text-strong">Matija Osrečki</span>, 23 year old Full Stack Developer from Croatia.
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nam quos? Totam beatae reprehenderit ratione! Molestiae praesentium, esse voluptas beatae, quibusdam suscipit, distinctio fuga itaque hic et quod doloremque eius!

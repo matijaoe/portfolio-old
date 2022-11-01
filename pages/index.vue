@@ -58,6 +58,10 @@ useHead({
         </div>
       </div>
 
+      <!-- <button title="its a stolen placeholder" flex items-center gap-1>
+        Press<BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd> to start
+      </button> -->
+
       <div mt-4>
         <ul flex items-center gap-1 ml--2>
           <li

@@ -14,7 +14,7 @@ export const jobs = [
   {
     position: 'Junior Frontend Developer',
     company: {
-      name: 'Three of them Ltd.',
+      name: 'Three of them Ltd',
       location: 'Zapresic, Croatia ',
       url: 'https://www.3ofthem.eu/',
     },

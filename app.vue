@@ -13,12 +13,10 @@ useShortcuts()
 
   <div min-h-screen text-default font-sans flex bg-default-1>
     <NuxtLayout />
-    <ClientOnly>
-      <GrainCover
-        v-if="showGrain"
-        opacity="4"
-      />
-    </ClientOnly>
+    <GrainCover
+      v-if="showGrain"
+      opacity="3"
+    />
   </div>
 </template>
 

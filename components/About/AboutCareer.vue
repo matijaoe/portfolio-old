@@ -13,6 +13,10 @@ import { jobs } from '~~/data/jobs'
           <a :href="job.company.url" target="_blank" hyperlink>{{ job.company.name }}</a>
           <span>•</span>
           <span text-dimmed>{{ job.company.location }}</span>
+          <!-- <div flex items-center gap-1>
+            <Icon name="circle-flags:hr" />
+            <Icon name="circle-flags:de" />
+          </div> -->
         </div>
         <div text-dimmed text-sm flex items-center gap-2>
           <span>{{ job.from }} – {{ job.to }}</span>
