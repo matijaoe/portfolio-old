@@ -41,6 +41,7 @@ const year = new Date().getFullYear()
           © {{ year }} Matija Osrečki. All rights reserved.
         </p>
       </div>
+
       <div flex justify-center>
         <p text-sm text-opaque-2 flex items-center gap-2>
           built with

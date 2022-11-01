@@ -10,8 +10,9 @@ useHead({
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
         Hi there
       </BaseHeading>
-      <div flex gap-40 items-center>
+      <div grid grid-cols-5 gap-40>
         <div
+          col-span-3
           space-y-4 leading-loose
           text-dimmed-2
         >
@@ -26,7 +27,7 @@ useHead({
           </p>
         </div>
 
-        <div flex-shrink-0 class="group">
+        <div col-span-2 class="group">
           <figure aspect-square flex flex-col relative>
             <div class="img-bg" w-full bg />
             <div relative overflow-hidden>
@@ -43,11 +44,15 @@ useHead({
       </div>
     </div>
 
-    <div flex justify-between>
-      <AboutCareer />
-    </div>
+    <AboutCareer />
 
-    <AboutEducation />
+    <div grid grid-cols-5 justify-between>
+      <AboutEducation col-span-3 />
+      <AboutCompetitions
+        border="l-1 l-stone-2 dark:(l-stone-8)"
+        pl-12 col-span-2
+      />
+    </div>
 
     <div relative>
       <SVGThings absolute top--60 left--60 />

@@ -1,6 +1,19 @@
 <script lang="ts" setup>
 import { baseSocials } from '~~/data/socials'
 
+const cards = [
+  {
+    title: 'Get to know me',
+    description: 'Who am I, what do I do, what have I done, what will I do.',
+    to: '/about',
+  },
+  {
+    title: 'Projects',
+    description: 'Check out some of projects I am proud of.',
+    to: '/projects',
+  },
+]
+
 useHead({
   title: 'Home | Matija Osrecki',
 })
@@ -58,8 +71,10 @@ useHead({
         </div>
       </div>
 
-      <!-- <button title="its a stolen placeholder" flex items-center gap-1>
-        Press<BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd> to start
+      <!-- <button title="its a stolen placeholder" flex items-center gap="1.5">
+        Press <div flex items-center gap-1>
+          <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
+        </div> to start
       </button> -->
 
       <div mt-4>
@@ -93,15 +108,15 @@ useHead({
 
     <div row grid md:grid-cols-2 gap-4>
       <button
-        v-for="i in 4"
-        :key="i"
+        v-for="card in cards"
+        :key="card.title"
         text-left
         rounded="[0.625rem]"
         transition
         bg="hover:(stone-8 dark:stone-2)"
         p="0.5"
         class="hover:(-translate-y-1)"
-        @click="navigateTo('/projects')"
+        @click="navigateTo(card.to)"
       >
         <div
           rounded-lg
@@ -109,12 +124,11 @@ useHead({
           flex flex-col gap-4
           bg-default-3
         >
-          <!-- bg-stone-1 dark:bg-stone-8 -->
           <h4 text-lg font-display>
-            Projects
+            {{ card.title }}
           </h4>
-          <p text-sm>
-            View and try the personal and commercial applications I have worked on in the recent years.
+          <p text-sm text-dimmed>
+            {{ card.description }}
           </p>
         </div>
       </button>

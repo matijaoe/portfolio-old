@@ -21,7 +21,6 @@ export default defineConfig({
       provider: 'google',
       fonts: {
         sans: {
-          // name: 'Maven Pro',
           name: 'Satoshi',
           weights: ['300', '400', '500', '600', '700'],
           italic: true,
@@ -36,7 +35,6 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   theme: {
-
   },
   shortcuts: {
     'row': 'w-full max-w-full xl:max-w-5xl mx-auto px-6',
