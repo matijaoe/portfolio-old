@@ -23,10 +23,16 @@ export default defineConfig({
         sans: {
           name: 'Satoshi',
           weights: ['300', '400', '500', '600', '700'],
-          italic: true,
+          provider: 'fontshare',
         },
-        display: 'Palmtick',
-        mono: 'JetBrains Mono',
+        display: {
+          name: 'Palmtick',
+          provider: 'none',
+        },
+        mono: {
+          name: 'JetBrains Mono',
+          provider: 'google',
+        },
       },
     }),
   ],

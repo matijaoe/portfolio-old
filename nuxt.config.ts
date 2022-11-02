@@ -15,8 +15,10 @@ export default defineNuxtConfig({
     preflight: true,
   },
   css: [
-    '~/assets/styles/page-transitions.css',
-    '~/assets/styles/keyframes.css',
+    '~/assets/styles/variables.css',
+    '~/assets/styles/fonts.css',
+    '~/assets/styles/global.css',
+    '~/assets/styles/animations.css',
     '~/assets/styles/floating-vue.css',
   ],
   content: {
