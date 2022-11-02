@@ -2,6 +2,7 @@
 defineProps<{
   shown: boolean
   thumbnail: string
+  alt: string
 }>()
 </script>
 
@@ -24,6 +25,7 @@ defineProps<{
         format="webp"
         height="1024"
         :src="thumbnail"
+        :alt="alt"
       />
     </a>
   </div>

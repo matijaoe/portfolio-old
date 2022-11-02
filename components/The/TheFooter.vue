@@ -11,31 +11,7 @@ const year = new Date().getFullYear()
   >
     <div row space-y-10>
       <div flex="~ flex-col gap-5 md:(flex-row gap-4)" items-center justify-between flex-col md:flex-row gap-2>
-        <ul flex items-center gap-1>
-          <li
-            v-for="(social, i) in socials"
-            :key="i"
-            v-tooltip="{
-              delay: 0,
-              content: social.label,
-              theme: 'info-tooltip',
-              placement: 'top',
-            }"
-          >
-            <a
-              :href="social.href"
-              target="_blank"
-              flex items-center justify-center
-              p-2
-            >
-              <Icon
-                :name="social.icon"
-                text-xl
-                text-opaque-2 hover:text-default
-              />
-            </a>
-          </li>
-        </ul>
+        <NavSocials />
 
         <p text-sm text-opaque>
           © {{ year }} Matija Osrečki. All rights reserved.

@@ -79,7 +79,13 @@ const openProject = () => window.open(initalLink.value, '_blank')
 
         <div text-sm flex items-center gap-3>
           <div v-for="(link, i) in project.links" :key="i" flex gap-4>
-            <NuxtLink :href="link.href" target="_blank" class="hyperlink text-dimmed-2 hover:text-dimmed" @click.stop="">
+            <NuxtLink
+              :href="link.href"
+              target="_blank"
+              class="hyperlink text-dimmed-2 hover:text-dimmed"
+              :aria-label="link.label"
+              @click.stop
+            >
               {{ link.label }}
             </NuxtLink>
           </div>
@@ -98,6 +104,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
         v-if="project.thumbnail"
         :thumbnail="project.thumbnail"
         :shown="cardRowHovegreen"
+        :alt="project.name"
       />
     </ClientOnly>
   </div>

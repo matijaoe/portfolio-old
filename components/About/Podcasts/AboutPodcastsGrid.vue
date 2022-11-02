@@ -37,8 +37,10 @@ const { isTouchDevice } = useTouchDevice()
           format="webp"
           height="256"
           h-34 aspect-square
-          :src="pod" alt=""
+          :src="pod"
+          alt="A podcast"
         />
+        <!-- TODO: alt -->
       </figure>
     </div>
   </div>

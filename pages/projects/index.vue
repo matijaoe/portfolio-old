@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-
 import { projects } from '~~/data/projects'
 
 useHead({

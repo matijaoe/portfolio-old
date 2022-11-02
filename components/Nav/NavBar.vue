@@ -1,41 +1,5 @@
 <script lang="ts" setup>
-const items = [
-  {
-    label: 'Home',
-    to: '/',
-    icon: 'tabler:home-2',
-  },
-  {
-    label: 'About',
-    to: '/about',
-    icon: 'tabler:user',
-  },
-  {
-    label: 'Projects',
-    to: '/projects',
-    icon: 'tabler:bulb',
-  },
-  // {
-  //   label: 'Uses',
-  //   to: '/uses',
-  //   icon: 'tabler:tools',
-  // },
-  // {
-  //   label: 'Blog',
-  //   to: '/blog',
-  //   icon: 'tabler:file-text',
-  // },
-  {
-    label: 'Contact',
-    to: '/contact',
-    icon: 'tabler:pencil',
-  },
-  // {
-  //   label: 'Guestbook',
-  //   to: '/guestbook',
-  //   icon: 'tabler:book',
-  // },
-]
+import { navItems } from '~~/data/nav-items'
 
 const pos = ref(0)
 const pageScrolled = computed(() => pos.value > 48)
@@ -56,10 +20,11 @@ onMounted(() => {
       :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
     >
       <ul font-medium lowercase flex items-center gap-3 sm:gap-0 w-max>
-        <li v-for="(item, i) in items" :key="i">
+        <li v-for="(item, i) in navItems" :key="i">
           <!-- desktop -->
           <NuxtLink
             :to="item.to"
+            :aria-label="item.label"
             hidden md:block
             py-2 px-4 rounded-sm
             transition
@@ -72,16 +37,17 @@ onMounted(() => {
           </NuxtLink>
 
           <!-- mobile -->
-          <NuxtLink
+          <!-- <NuxtLink
             :to="item.to"
             block md:hidden
             p-2
             transition
             text-opaque hover:text-opaque-2
             active-class="!text-default"
+            :aria-label="item.label"
           >
             <Icon text-lg md:text-2xl :name="item.icon" />
-          </NuxtLink>
+          </NuxtLink> -->
         </li>
       </ul>
     </div>
