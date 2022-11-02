@@ -25,13 +25,12 @@ export default defineNuxtConfig({
     'assets/styles/floating-vue.css',
   ],
   app: {
+    htmlAttrs: { lang: 'en' },
     head: {
       title: meta.title,
       meta: [
         { name: 'author', content: meta.author },
         { name: 'description', content: meta.description },
-        // { name: 'robots', content: 'index,follow' },
-        // { name: 'googlebot', content: 'index,follow' },
         // Og data
         { name: 'og:title', content: meta.title },
         { name: 'og:site_name', content: meta.site_name },
