@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Tag } from '~~/models'
-import Qwiz from '/projects/qwiz.png'
+import Qwiz from '/projects/qwiz.webp'
 
 const project = {
   name: 'Qwiz',

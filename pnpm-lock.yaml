@@ -8,6 +8,7 @@ specifiers:
   '@nuxt/image-edge': 1.0.0-27769790.4b27db3
   '@nuxtjs/color-mode': ^3.1.8
   '@nuxtjs/fontaine': ^0.2.2
+  '@nuxtjs/robots': ^2.5.0
   '@unocss/nuxt': ^0.46.0
   '@unocss/preset-web-fonts': ^0.46.3
   '@vueuse/nuxt': ^9.4.0
@@ -23,6 +24,7 @@ specifiers:
 dependencies:
   '@formkit/auto-animate': 1.0.0-beta.3
   '@headlessui/vue': 1.7.3
+  '@nuxtjs/robots': 2.5.0
   '@unocss/preset-web-fonts': 0.46.3
   '@vueuse/nuxt': 9.4.0_nuxt@3.0.0-rc.12
   floating-vue: 2.0.0-beta.20
@@ -919,6 +921,10 @@ packages:
       - encoding
       - supports-color
     dev: true
+
+  /@nuxtjs/robots/2.5.0:
+    resolution: {integrity: sha512-z1F3HXb05NiZga8Cuq6k5bbowfJOScPtbSOakip0nege+1aI9pGoajzap8eR5s1qwLXAk9Ts+NcgetoUn5lwrQ==}
+    dev: false
 
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}

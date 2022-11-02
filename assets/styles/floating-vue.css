@@ -11,11 +11,3 @@
   background: #44403c6d;
   color: #d6d3d1;
 }
-
-.v-popper--theme-info-tooltip .v-popper__arrow-inner {
-  visibility: hidden;
-}
-
-.v-popper--theme-info-tooltip .v-popper__arrow-outer {
-  visibility: hidden;
-}

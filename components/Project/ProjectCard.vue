@@ -83,7 +83,6 @@ const openProject = () => window.open(initalLink.value, '_blank')
               :href="link.href"
               target="_blank"
               class="hyperlink text-dimmed-2 hover:text-dimmed"
-              :aria-label="link.label"
               @click.stop
             >
               {{ link.label }}

@@ -25,7 +25,7 @@ export const projects: Project[] = [
         href: 'https://documenter.getpostman.com/view/15639222/UyrDCvUG',
       },
     ],
-    thumbnail: '/projects/qwiz.png',
+    thumbnail: '/projects/qwiz.webp',
   },
   {
     name: 'Aimo',
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         href: 'https://aimo.vercel.app',
       },
     ],
-    thumbnail: '/projects/aimo.png',
+    thumbnail: '/projects/aimo.webp',
   },
   {
     name: 'FIRE Platform',
@@ -56,7 +56,7 @@ export const projects: Project[] = [
       },
     ],
     inProgress: true,
-    thumbnail: '/projects/fire.png',
+    thumbnail: '/projects/fire.webp',
   },
   {
     name: 'Personal site',
@@ -74,7 +74,7 @@ export const projects: Project[] = [
       },
     ],
     inProgress: true,
-    thumbnail: '/projects/matijao.png',
+    thumbnail: '/projects/matijao.webp',
   },
   {
     name: 'Expense tracker',
@@ -95,7 +95,7 @@ export const projects: Project[] = [
         href: 'https://expenses-frontend-five.vercel.app',
       },
     ],
-    thumbnail: '/projects/expenses2.png',
+    thumbnail: '/projects/expenses.webp',
   },
   {
     name: 'MeetMia',
@@ -112,7 +112,7 @@ export const projects: Project[] = [
         href: 'https://meet-mia.surge.sh/',
       },
     ],
-    thumbnail: '/projects/meetmia.png',
+    thumbnail: '/projects/meetmia.webp',
   },
   {
     name: 'Comet',
@@ -129,6 +129,6 @@ export const projects: Project[] = [
         href: 'https://mat2ja.github.io/comet/',
       },
     ],
-    thumbnail: '/projects/comet.png',
+    thumbnail: '/projects/comet.webp',
   },
 ]

@@ -24,7 +24,6 @@ onMounted(() => {
           <!-- desktop -->
           <NuxtLink
             :to="item.to"
-            :aria-label="item.label"
             hidden md:block
             py-2 px-4 rounded-sm
             transition
