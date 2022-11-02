@@ -30,8 +30,8 @@ export default defineNuxtConfig({
       meta: [
         { name: 'author', content: meta.author },
         { name: 'description', content: meta.description },
-        { name: 'robots', content: 'index,follow' },
-        { name: 'googlebot', content: 'index,follow' },
+        // { name: 'robots', content: 'index,follow' },
+        // { name: 'googlebot', content: 'index,follow' },
         // Og data
         { name: 'og:title', content: meta.title },
         { name: 'og:site_name', content: meta.site_name },
