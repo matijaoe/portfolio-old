@@ -15,9 +15,9 @@ import { socials } from '~~/data/socials'
       }"
     >
       <a
-        :aria-label="social.label"
         :href="social.href"
         target="_blank"
+        :aria-label="social.label"
         flex items-center justify-center
         p-2
       >

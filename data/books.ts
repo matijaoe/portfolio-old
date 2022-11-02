@@ -1,52 +1,52 @@
 export const books = [
   {
     name: 'The Daily Stoic',
-    cover: '/books/the-daily-stoic.jpg',
+    cover: '/books/the-daily-stoic.webp',
     url: '',
   },
   {
     name: 'Meditations',
-    cover: '/books/meditations.jpeg',
+    cover: '/books/meditations.webp',
     url: '',
   },
   {
     name: 'Courage to be disliked',
-    cover: '/books/courage-to-be-disliked.jpg',
+    cover: '/books/courage-to-be-disliked.webp',
     url: '',
   },
   {
     name: 'Animal Farm',
-    cover: '/books/animal-farm.jpeg',
+    cover: '/books/animal-farm.webp',
     url: 'https://www.goodreads.com/book/show/170448.Animal_Farm ',
   },
   {
     name: 'Of Mice and Men',
-    cover: '/books/of-mice-and-men.jpg',
+    cover: '/books/of-mice-and-men.webp',
     url: 'https://www.goodreads.com/book/show/890.Of_Mice_and_Men',
   },
   {
     name: 'Why We Sleep',
-    cover: '/books/why-we-sleep.jpg',
+    cover: '/books/why-we-sleep.webp',
     url: '',
   },
   {
     name: 'Shoe Dog',
-    cover: '/books/shoe-dog.jpeg',
+    cover: '/books/shoe-dog.webp',
     url: '',
   },
   {
     name: 'The Book Thief',
-    cover: '/books/the-book-thief.jpg',
+    cover: '/books/the-book-thief.webp',
     url: '',
   },
   {
     name: 'The Four Agreements',
-    cover: '/books/the-four-agreements.jpeg',
+    cover: '/books/the-four-agreements.webp',
     url: '',
   },
   {
     name: 'Psycho Cybernetics',
-    cover: '/books/psycho-cybernetics.jpeg',
+    cover: '/books/psycho-cybernetics.webp',
     url: '',
   },
 ]

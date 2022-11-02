@@ -22,7 +22,6 @@
   "dependencies": {
     "@formkit/auto-animate": "1.0.0-beta.3",
     "@headlessui/vue": "^1.7.3",
-    "@nuxtjs/robots": "^2.5.0",
     "@unocss/preset-web-fonts": "^0.46.3",
     "@vueuse/nuxt": "^9.4.0",
     "floating-vue": "^2.0.0-beta.19",

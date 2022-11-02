@@ -23,13 +23,13 @@
       <NavBar mx-auto />
 
       <div justify-self-end flex items-center justify-end gap-5>
-        <button
+        <!-- <button
           aria-label="Command prompt"
           py-1
           transition flex items-center text-opaque hover:text-default text-lg md:text-2xl
         >
           <Icon name="tabler:command" />
-        </button>
+        </button> -->
 
         <DarkToggle />
       </div>

@@ -1,9 +1,9 @@
 export const podcasts = [
-  'podcasts/podcast-rogan.jpeg',
-  'podcasts/podcast-huberman.jpeg',
-  'podcasts/podcast-peterson.jpeg',
-  'podcasts/podcast-theo.jpeg',
-  'podcasts/podcast-btc-standard.png',
+  'podcasts/podcast-rogan.webp',
+  'podcasts/podcast-huberman.webp',
+  'podcasts/podcast-peterson.webp',
+  'podcasts/podcast-theo.webp',
+  'podcasts/podcast-btc-standard.webp',
   'podcasts/podcast-what-is-money.webp',
-  'podcasts/podcast-speaking-of-btc.jpeg',
+  'podcasts/podcast-speaking-of-btc.webp',
 ]

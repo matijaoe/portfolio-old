@@ -37,7 +37,7 @@ useHead({
               format="webp"
               hover:rotate-12
               border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
-              src="/avatar.jpg"
+              src="/avatar.webp"
               alt="Matija Osrečki avatar"
             />
           </div>
