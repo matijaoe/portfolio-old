@@ -12,7 +12,6 @@ withDefaults(defineProps<Props>(), {
   <component
     v-bind="$attrs"
     :is="as"
-    m="0"
     font="display"
     class="text-secondary-500"
   >

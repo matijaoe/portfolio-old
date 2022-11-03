@@ -135,7 +135,10 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
 <template>
   <AboutSection title="Skills">
     <template #right>
-      <div flex gap-2>
+      <div flex gap-4 items-center>
+        <p uppercase font-sans font-semibold text-sm text-default :class="favsOnly ? 'text-default' : '!text-stone-7 line-through'">
+          favorites
+        </p>
         <Switch
           v-model="favsOnly"
           :class="favsOnly ? 'bg-stone-8 dark:bg-green-5' : 'bg-stone-2 dark:bg-stone-7'"

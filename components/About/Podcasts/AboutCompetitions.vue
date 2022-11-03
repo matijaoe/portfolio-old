@@ -30,9 +30,9 @@ const list = [
   <AboutSection title="Competitions">
     <div space-y-6 z-2>
       <div v-for="(item, i) in list" :key="i" flex flex-col gap-1>
-        <BaseHeading as="h6" text-lg leading-snug>
+        <h6 text-lg leading-snug font-semibold>
           {{ item.name }}
-        </BaseHeading>
+        </h6>
         <div flex items-center gap-2>
           <a :href="item.url" target="_blank" hyperlink>{{ item.project }}</a>
           <template v-if="item.additional">

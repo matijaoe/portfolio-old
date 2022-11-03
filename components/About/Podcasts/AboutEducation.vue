@@ -31,9 +31,9 @@ const schools = [
   <AboutSection title="Education">
     <div space-y-6 z-2>
       <div v-for="(school, i) in schools" :key="i" flex flex-col gap-1>
-        <BaseHeading as="h6" text-lg leading-snug>
+        <h6 text-lg leading-snug font-semibold>
           {{ school.degree }}
-        </BaseHeading>
+        </h6>
         <div flex items-center gap-2>
           <a :href="school.url" target="_blank" hyperlink>{{ school.name }}</a>
           <span text-opaque>|</span>

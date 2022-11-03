@@ -10,6 +10,7 @@ export const jobs = [
     to: 'Present',
     duration: '4 months',
     remote: true,
+    flags: ['circle-flags:hr', 'circle-flags:de'],
   },
   {
     position: 'Junior Frontend Developer',
@@ -22,6 +23,7 @@ export const jobs = [
     to: 'July 2022',
     duration: '1 year',
     remote: true,
+    flags: ['circle-flags:hr', 'circle-flags:de'],
   },
   {
     position: 'Junior Full Stack Developer',
@@ -34,5 +36,6 @@ export const jobs = [
     to: 'Jul 2021',
     duration: '3 months',
     remote: true,
+    flags: ['circle-flags:hr'],
   },
 ]

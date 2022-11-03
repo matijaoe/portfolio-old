@@ -125,7 +125,7 @@ useHead({
           flex flex-col gap-4
           bg-default-3
         >
-          <h4 text-lg font-display>
+          <h4 text-xl font-display>
             {{ card.title }}
           </h4>
           <p text-sm text-dimmed>

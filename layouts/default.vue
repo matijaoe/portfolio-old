@@ -5,7 +5,8 @@
 <template>
   <div
     flex-1
-    flex flex-col
+    flex
+    flex-col
   >
     <TheHeader />
 

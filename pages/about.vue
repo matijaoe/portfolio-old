@@ -27,16 +27,15 @@ useHead({
           </p>
         </div>
 
-        <figure
-          aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1"
-        >
-          <div class="img-bg" w-full bg />
-          <div relative overflow-hidden>
+        <figure aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1">
+          <!-- <div class="img-bg" w-full bg /> -->
+          <div relative>
             <NuxtImg
               transition
               format="webp"
               hover:rotate-12
-              border-3 border-stone-8 dark:border-stone-9 rounded-full w-full
+              rotate-3
+              rounded-lg w-full
               src="/avatar.webp"
               alt="Matija Osrečki avatar"
             />
