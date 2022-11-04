@@ -37,7 +37,7 @@ useHead({
 
       <div max-w-xl space-y-4 text-stone-6 dark:text-stone-4 leading-relaxed z-2>
         <p title="its a stolen placeholder">
-          I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code.
+          I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code (STOLEN PLACEHOLDER)
         </p>
 
         <div>

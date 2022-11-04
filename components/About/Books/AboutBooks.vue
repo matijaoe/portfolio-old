@@ -5,10 +5,10 @@
   <AboutSection title="Book favourites">
     <div mt--2 text-dimmed>
       <p>
-        Started my journey in 2020, fell in love with it not much after.
+        Fell in love with reading during 2020. Here are some of my favourites.
       </p>
       <p>
-        Fun fact, haven't missed a day of reading in 914 days (and counting).
+        Fun fact, haven't missed a day of reading in 922 days (and counting).
       </p>
       <p>
         Find me on

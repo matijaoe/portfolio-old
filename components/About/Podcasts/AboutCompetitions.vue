@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-import { jobs } from '~~/data/jobs'
-
-/* Zagreb University of Applied SciencesZagreb University of Applied Sciences
-Bachelor's degree, Computer Software Engineering */
 const list = [
   {
     name: 'TVZ Mc2 2021',
@@ -21,7 +17,7 @@ const list = [
     project: 'Qwiz',
     from: 'Feb 2022',
     to: 'Jun 2022',
-    description: 'Weren\'t able to secure the win, but we got a lot of traction afterwards',
+    description: 'Bili smo osmi hehe xd',
   },
 ]
 </script>

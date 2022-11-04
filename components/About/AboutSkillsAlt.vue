@@ -38,9 +38,21 @@ const skills = [
     icon: 'logos:javascript',
   },
   {
+    name: 'Svelte',
+    value: 'svelte',
+    icon: 'logos:svelte-icon',
+    favorite: false,
+  },
+  {
     name: 'Vite',
     value: 'vite',
     icon: 'logos:vitejs',
+    favorite: true,
+  },
+  {
+    name: 'Tanstack Query',
+    value: 'tanstack query',
+    icon: 'logos:react-query-icon',
     favorite: true,
   },
   {
@@ -60,12 +72,6 @@ const skills = [
     value: 'scss',
     icon: 'logos:sass',
     favorite: false,
-  },
-  {
-    name: 'Tanstack Query',
-    value: 'tanstack query',
-    icon: 'logos:react-query-icon',
-    favorite: true,
   },
   {
     name: 'Storybook',
@@ -121,12 +127,6 @@ const skills = [
     icon: 'logos:figma',
     favorite: false,
   },
-  {
-    name: 'Linux',
-    value: 'linux',
-    icon: 'logos:linux-tux',
-    favorite: false,
-  },
 ]
 const favsOnly = ref(true)
 const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill.favorite) : skills)
@@ -136,7 +136,7 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
   <AboutSection title="Skills">
     <template #right>
       <div flex gap-4 items-center>
-        <p uppercase font-sans font-semibold text-sm text-default :class="favsOnly ? 'text-default' : '!text-stone-7 line-through'">
+        <p uppercase font-sans font-semibold text-sm text-default :class="favsOnly ? 'text-default' : 'text-stone-3 !dark:text-stone-7 line-through'">
           favorites
         </p>
         <Switch

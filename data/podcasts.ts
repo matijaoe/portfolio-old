@@ -1,5 +1,6 @@
 export const podcasts = [
   'podcasts/syntax.webp',
+  'podcasts/podcast-lex.webp',
   'podcasts/podcast-rogan.webp',
   'podcasts/podcast-huberman.webp',
   'podcasts/podcast-peterson.webp',
