@@ -45,6 +45,7 @@ const { isTouchDevice } = useTouchDevice()
 
         <figure relative>
           <NuxtImg
+            loading="lazy"
             format="webp"
             height="256"
             h="46"

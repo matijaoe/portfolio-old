@@ -34,6 +34,7 @@ const { isTouchDevice } = useTouchDevice()
         overflow-hidden
       >
         <NuxtImg
+          loading="lazy"
           format="webp"
           height="256"
           h-34 aspect-square

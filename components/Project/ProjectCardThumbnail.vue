@@ -21,6 +21,7 @@ defineProps<{
   >
     <a relative :href="thumbnail" target="_blank">
       <NuxtImg
+        loading="lazy"
         h-64
         format="webp"
         height="1024"
