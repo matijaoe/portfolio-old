@@ -7,7 +7,7 @@ useHead({
 <template>
   <div row flex flex-col gap-24>
     <div space-y-10 lg:space-y-4>
-      <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
+      <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl z-2>
         Hi there
       </BaseHeading>
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
@@ -40,7 +40,7 @@ useHead({
 
     <AboutCareer />
 
-    <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between divider-x>
+    <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between lg:divider-x>
       <AboutEducation col-span-3 />
       <AboutCompetitions
         col-span-2

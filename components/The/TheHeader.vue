@@ -17,19 +17,20 @@ onMounted(() => {
     py-4 md:py-6
     z-200
   >
+    <!-- TODO: they are not fully vertically aligned on mobile -->
     <div
       row
       max-w="full xl:5xl"
       grid grid-cols-5 gap-2 items-center
     >
-      <div :class="{ 'opacity-0 invisible': pageScrolled }">
-        <NuxtLink to="/" aria-label="Logo">
+      <div :class="{ 'opacity-0 invisible': pageScrolled }" flex items-center>
+        <NuxtLink to="/" aria-label="Logo" p-2 ml--2>
           <Icon transition name="tabler:seeding" text-xl md:text-2xl text-opaque hover:text-green-5 />
         </NuxtLink>
       </div>
 
       <!-- TODO: dont set whole header to fix because it blocks click around not used area on scrollk -->
-      <div col-span-3>
+      <div col-span-3 flex items-center>
         <NavBar w-max mx-auto />
       </div>
 
@@ -45,7 +46,7 @@ onMounted(() => {
           <Icon name="tabler:command" />
         </button> -->
 
-        <DarkToggle />
+        <DarkToggle p-2 mr--2 />
       </div>
     </div>
   </header>
