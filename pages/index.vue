@@ -1,7 +1,12 @@
 <script lang="ts" setup>
 import { baseSocials } from '~~/data/socials'
+import type { NavCard } from '~~/models'
 
-const cards = [
+useHead({
+  title: 'Home | Matija Osrecki',
+})
+
+const cards: NavCard[] = [
   {
     title: 'Get to know me',
     description: 'Who am I, what do I do, what have I done, what will I do.',
@@ -13,10 +18,6 @@ const cards = [
     to: '/projects',
   },
 ]
-
-useHead({
-  title: 'Home | Matija Osrecki',
-})
 </script>
 
 <template>
@@ -29,10 +30,6 @@ useHead({
             Matija Osrečki
           </p>
         </div>
-
-        <!-- <p text-3xl z-2 relative>
-          Full Stack Developer
-        </p> -->
       </div>
 
       <div max-w-xl space-y-4 text-stone-6 dark:text-stone-4 leading-relaxed z-2>
@@ -43,18 +40,16 @@ useHead({
         <div>
           Working as a Mid Frontend Developer at
           <a
-            inline-flex items-center gap-2
-            transition
-            class="group"
             href="https://4ofthem.eu/"
             target="_blank"
             hyperlink
+            inline-flex items-center gap-2 transition
+            class="group"
           >
             Four of them LLC.
             <Icon
               name="tabler:clover"
-              text-2xl
-              text="#FF8502"
+              text="#FF8502 2xl"
               class="opacity-0 translate-x--2 transition scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
             />
           </a>
@@ -71,11 +66,11 @@ useHead({
         </div>
       </div>
 
-      <!-- <button title="its a stolen placeholder" flex items-center gap="1.5">
+      <button title="its a stolen placeholder" flex items-center gap="1.5">
         Press <div flex items-center gap-1>
           <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
         </div> to start
-      </button> -->
+      </button>
 
       <div mt-4>
         <ul flex items-center gap-1 ml--2>
@@ -108,31 +103,11 @@ useHead({
     </div>
 
     <div row grid md:grid-cols-2 gap-4>
-      <button
-        v-for="card in cards"
-        :key="card.title"
-        text-left
-        rounded="[0.625rem]"
-        transition
-        bg="hover:(stone-8 dark:stone-2)"
-        p="0.5"
-        class="hover:(-translate-y-1)"
-        @click="navigateTo(card.to)"
-      >
-        <div
-          rounded-lg
-          px-8 py-8
-          flex flex-col gap-4
-          bg-default-3
-        >
-          <h4 text-xl font-display>
-            {{ card.title }}
-          </h4>
-          <p text-sm text-dimmed>
-            {{ card.description }}
-          </p>
-        </div>
-      </button>
+      <HomeCard
+        v-for="(card, i) in cards"
+        :key="i"
+        :card="card"
+      />
     </div>
   </div>
 </template>

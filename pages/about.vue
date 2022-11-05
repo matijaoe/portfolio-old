@@ -6,16 +6,12 @@ useHead({
 
 <template>
   <div row flex flex-col gap-24>
-    <div space-y-4>
+    <div space-y-10 lg:space-y-4>
       <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
         Hi there
       </BaseHeading>
-      <div grid class="grid-cols-1 gap-0 lg:(grid-cols-5 gap-40)">
-        <div
-          lg:col-span-3
-          space-y-4 leading-loose
-          text-dimmed-2
-        >
+      <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
+        <div lg:col-span-3 space-y-4 leading-loose text-dimmed-2>
           <p>
             I'm <span class="text-strong">Matija Osrečki</span>, 23 year old Full Stack Developer from Croatia.
           </p>
@@ -27,15 +23,13 @@ useHead({
           </p>
         </div>
 
-        <figure aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1">
-          <!-- <div class="img-bg" w-full bg /> -->
+        <figure lg:aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1">
+          <div class="img-bg" w-full bg />
           <div relative>
             <NuxtImg
-              transition
+              transition rotate-3 hover:rotate-12
+              rounded-lg
               format="webp"
-              hover:rotate-12
-              rotate-3
-              rounded-lg w-full
               src="/avatar.webp"
               alt="Matija Osrečki avatar"
             />
@@ -46,11 +40,12 @@ useHead({
 
     <AboutCareer />
 
-    <div grid grid-cols-5 justify-between>
+    <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between>
       <AboutEducation col-span-3 />
       <AboutCompetitions
-        border="l-1 l-stone-2 dark:(l-stone-8)"
-        pl-12 col-span-2
+        col-span-2
+        lg:border="l-1 l-stone-2 dark:(l-stone-8)"
+        lg:pl-16
       />
     </div>
 
@@ -79,7 +74,7 @@ figure img,
   position: absolute;
   background-image: linear-gradient(-45deg, #FADD95 50%, #308469 50%);
   border-radius: 50%;
-  filter: blur(72px);
+  filter: blur(72px) opacity(100%);
   animation: pulse 9s cubic-bezier(0, 0, 0, 0.5) infinite;
 }
 

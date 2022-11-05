@@ -29,6 +29,7 @@ const list = [
         <h6 text-lg leading-snug font-semibold>
           {{ item.name }}
         </h6>
+
         <div flex items-center gap-2>
           <a :href="item.url" target="_blank" hyperlink>{{ item.project }}</a>
           <template v-if="item.additional">
@@ -36,11 +37,13 @@ const list = [
             {{ item.additional }}
           </template>
         </div>
+
         <div flex items-center gap-2>
           <p text-dimmed text-sm>
             {{ item.description }}
           </p>
         </div>
+
         <div text-dimmed text-sm flex items-center gap-2>
           <span>{{ item.from }} – {{ item.to }}</span>
         </div>

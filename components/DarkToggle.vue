@@ -5,7 +5,7 @@ const { isDark, toggleDark } = useTheme()
 <template>
   <button
     py-1
-    transition flex items-center text-opaque hover:text-default text-lg md:text-2xl
+    transition flex items-center text-opaque hover:text-default text-xl md:text-2xl
     aria-label="Toggle dark mode"
     @click="toggleDark"
   >

@@ -7,12 +7,8 @@ const { isTouchDevice } = useTouchDevice()
 <template>
   <div
     v-dragscroll="!isTouchDevice"
-    mt--1
-    pt-1
-    pb-3
-    flex gap-2
-    overflow-x-auto
-    cursor-grab
+    mt--1 pt-1 pb-3 flex gap-2
+    overflow-x-auto cursor-grab
     class="hide-scrollbar"
     :class="[{ 'snap-x scroll-mandatory': isTouchDevice }]"
   >
@@ -25,7 +21,8 @@ const { isTouchDevice } = useTouchDevice()
       flex-shrink-0
       rounded="0.625rem"
       p="0.5"
-      class="hover:gradient-warm group"
+      bg="hover:(stone-8 dark:stone-2)"
+      class="group"
       :class="[{ 'snap-start': isTouchDevice }]"
     >
       <figure

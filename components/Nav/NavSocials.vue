@@ -3,7 +3,7 @@ import { socials } from '~~/data/socials'
 </script>
 
 <template>
-  <ul flex items-center gap-1>
+  <menu flex items-center gap-1>
     <li
       v-for="(social, i) in socials"
       :key="i"
@@ -18,15 +18,13 @@ import { socials } from '~~/data/socials'
         :href="social.href"
         target="_blank"
         :aria-label="social.label"
-        flex items-center justify-center
-        p-2
+        p-2 flex items-center justify-center
       >
         <Icon
           :name="social.icon"
-          text-xl
-          text-opaque-2 hover:text-default
+          text-xl text-opaque-2 hover:text-default
         />
       </a>
     </li>
-  </ul>
+  </menu>
 </template>

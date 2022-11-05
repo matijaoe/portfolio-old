@@ -1,3 +1,5 @@
+import type { RouteLocationRaw } from 'vue-router'
+
 export enum Tag {
   Vue = 'vue',
   Nuxt = 'nuxt',
@@ -29,4 +31,10 @@ export type Project = {
   }[]
   inProgress?: boolean
   thumbnail?: any
+}
+
+export type NavCard = {
+  title: string
+  description: string
+  to: RouteLocationRaw
 }

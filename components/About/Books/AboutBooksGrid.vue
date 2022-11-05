@@ -23,12 +23,13 @@ const { isTouchDevice } = useTouchDevice()
       :key="i"
       :href="book.url"
       target="_blank"
-      class="hover:gradient-warm group"
       flex-shrink-0
       rounded="0.625rem"
       p="0.5"
       transition
       hover:shadow-md
+      bg="hover:(stone-8 dark:stone-2)"
+      class="group"
       :class="[{ 'snap-start': isTouchDevice }]"
     >
       <div relative overflow-hidden rounded-lg>

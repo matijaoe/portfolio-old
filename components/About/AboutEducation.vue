@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-import { jobs } from '~~/data/jobs'
-
-/* Zagreb University of Applied SciencesZagreb University of Applied Sciences
-Bachelor's degree, Computer Software Engineering */
 const schools = [
   {
     degree: 'Bachelor\'s degree',
@@ -34,14 +30,17 @@ const schools = [
         <h6 text-lg leading-snug font-semibold>
           {{ school.degree }}
         </h6>
+
         <div flex items-center gap-2>
           <a :href="school.url" target="_blank" hyperlink>{{ school.name }}</a>
           <span text-opaque>|</span>
           <span text-xs font-bold uppercase>{{ school.nameShort }}</span>
         </div>
+
         <p text-dimmed text-sm>
           {{ school.field }}
         </p>
+
         <div text-dimmed text-sm flex items-center gap-2>
           <span>{{ school.from }} – {{ school.to }}</span>
           <span>•</span>

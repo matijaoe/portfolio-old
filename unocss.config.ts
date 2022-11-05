@@ -39,7 +39,7 @@ export default defineConfig({
   theme: {
   },
   shortcuts: {
-    'row': 'w-full max-w-full xl:max-w-5xl mx-auto px-6',
+    'row': 'w-full max-w-full xl:max-w-5xl mx-auto px-5 sm:px-8',
     // Properties
     'text-strong': 'font-medium text-default',
     // Text colors
