@@ -18,7 +18,6 @@ onMounted(() => {
     z-200
   >
     <div
-
       row
       max-w="full xl:5xl"
       grid grid-cols-5 gap-2 items-center
@@ -29,7 +28,7 @@ onMounted(() => {
         </NuxtLink>
       </div>
 
-      <!-- TODO: dont set whole header to fix because it blocks click around not used area on scroll -->
+      <!-- TODO: dont set whole header to fix because it blocks click around not used area on scrollk -->
       <div col-span-3>
         <NavBar w-max mx-auto />
       </div>

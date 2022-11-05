@@ -40,11 +40,10 @@ useHead({
 
     <AboutCareer />
 
-    <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between>
+    <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between divider-x>
       <AboutEducation col-span-3 />
       <AboutCompetitions
         col-span-2
-        lg:border="l-1 l-stone-2 dark:(l-stone-8)"
         lg:pl-16
       />
     </div>

@@ -49,7 +49,7 @@ const cards: NavCard[] = [
             Four of them LLC.
             <Icon
               name="tabler:clover"
-              text="#FF8502 2xl"
+              text="#FF8502 xl"
               class="opacity-0 translate-x--2 transition scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
             />
           </a>
@@ -66,13 +66,7 @@ const cards: NavCard[] = [
         </div>
       </div>
 
-      <button title="its a stolen placeholder" flex items-center gap="1.5">
-        Press <div flex items-center gap-1>
-          <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
-        </div> to start
-      </button>
-
-      <div mt-4>
+      <div mt-4 flex items-center gap-4 divider-x>
         <ul flex items-center gap-1 ml--2>
           <li
             v-for="(social, i) in baseSocials"
@@ -99,11 +93,17 @@ const cards: NavCard[] = [
             </a>
           </li>
         </ul>
+
+        <button pl-4 flex items-center gap="1.5">
+          Press <div flex items-center gap-1>
+            <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
+          </div> to start
+        </button>
       </div>
     </div>
 
     <div row grid md:grid-cols-2 gap-4>
-      <HomeCard
+      <NavSiteCard
         v-for="(card, i) in cards"
         :key="i"
         :card="card"

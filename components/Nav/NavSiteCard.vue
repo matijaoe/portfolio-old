@@ -8,6 +8,7 @@ defineProps<{
 
 <template>
   <button
+
     text-left
     rounded="[0.625rem]"
     transition

@@ -50,6 +50,8 @@ export default defineConfig({
     'text-dimmed-2': 'text-stone-8/90 dark:text-stone-50/65',
     // Others
     'hyperlink': 'font-normal text-dimmed-2 hover:text-default decoration-stone-8/50 dark:decoration-stone-50/50 decoration-underline hover:decoration-current transition',
+    'divider-x': 'divide-x-1 divide-stone-2 dark:divide-stone-8',
+    'divider-y': 'divide-y-1 divide-stone-2 dark:divide-stone-8',
     // Backgrounds
     'bg-opaque': 'bg-stone-2/40 dark:bg-stone-8/60',
     'bg-default-1': 'bg-stone-50 dark:bg-stone-9',
