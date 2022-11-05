@@ -26,7 +26,6 @@ onMounted(() => {
           :to="item.to"
           hidden md:block
           py-2 px-4
-          bg-blue-5
           text-opaque hover:text-opaque-2
           relative z-2
           transition rounded-sm
