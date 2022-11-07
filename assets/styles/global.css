@@ -1,10 +1,8 @@
 html {
-  background: var(--bg-primary-light);
   overflow-x: hidden;
 }
 
 html.dark {
-  background: var(--bg-primary-dark);
   color-scheme: dark;
 }
 

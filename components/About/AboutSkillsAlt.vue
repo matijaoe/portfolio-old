@@ -143,10 +143,12 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
           v-model="favsOnly"
           :class="favsOnly ? 'bg-stone-8 dark:bg-green-5' : 'bg-stone-2 dark:bg-stone-7'"
           class="relative inline-flex h-6 w-11 items-center rounded-full"
+          transition-base
         >
+          <!-- TODO: transition -->
           <span
             :class="favsOnly ? 'translate-x-6' : 'translate-x-1'"
-            class="inline-block h-4 w-4 transform rounded-full bg-white dark:bg-stone-9 transition"
+            class="inline-block h-4 w-4 transform rounded-full bg-white dark:bg-stone-9"
           />
         </Switch>
       </div>
@@ -160,7 +162,7 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
         :key="item.value"
         p-6
         rounded-lg
-        transition
+        transition-base
         max-h="96px"
         class="hover:-translate-y-1 shadow-md shadow-stone-800/5 ring-1 ring-stone-900/5 dark:border dark:border-stone-700/50 dark:bg-stone-800 dark:ring-0"
       >

@@ -32,7 +32,7 @@ const cards: NavCard[] = [
         </div>
       </div>
 
-      <div max-w-xl space-y-4 text-stone-6 dark:text-stone-4 leading-relaxed z-2>
+      <div max-w-xl space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
         <p title="its a stolen placeholder">
           I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code (STOLEN PLACEHOLDER)
         </p>
@@ -43,14 +43,14 @@ const cards: NavCard[] = [
             href="https://4ofthem.eu/"
             target="_blank"
             hyperlink
-            inline-flex items-center gap-2 transition
+            inline-flex items-center gap-2
             class="group"
           >
             Four of them LLC.
             <Icon
               name="tabler:clover"
               text="#FF8502 xl"
-              class="opacity-0 translate-x--2 transition scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
+              class="opacity-0 translate-x--2 transition-base scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
             />
           </a>
         </div>
@@ -89,6 +89,7 @@ const cards: NavCard[] = [
                 :name="social.icon"
                 text-2xl
                 text-dimmed hover:text-default
+                transition-smooth
               />
             </a>
           </li>

@@ -4,13 +4,18 @@ useShortcuts()
 
 <template>
   <Html lang="en">
-    <div
-      min-h-screen w-screen overflow-x-hidden
+    <Body
+      bg-stone-50 dark:bg-stone-9
       text-default font-sans
-      flex
+      transition-smooth
     >
-      <NuxtLayout />
-    </div>
+      <div
+        min-h-screen w-screen overflow-x-hidden
+        flex
+      >
+        <NuxtLayout />
+      </div>
+    </Body>
   </Html>
 </template>
 

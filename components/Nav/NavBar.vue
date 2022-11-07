@@ -16,10 +16,11 @@ onMounted(() => {
   <nav
     relatives overflow-hidden
     flex justify-center
-    px-3 rounded-full transition
+    px-5 py-0 rounded-full
+    transition duration-500 ease transition-all
     :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
   >
-    <menu font-medium lowercase flex items-center gap-3 sm:gap-0 w-max>
+    <menu font-medium lowercase flex items-center gap-2 sm:gap-0 w-max>
       <li v-for="(item, i) in navItems" :key="i">
         <!-- desktop -->
         <NuxtLink
@@ -38,9 +39,10 @@ onMounted(() => {
         <NuxtLink
           :to="item.to"
           flex items-center
-          block md:hidden p-2 transition text-opaque hover:text-opaque-2
+          block md:hidden transition text-opaque hover:text-opaque-2
           active-class="!text-default"
           :aria-label="item.label"
+          p-3 lg:p-2
         >
           <Icon text-xl md:text-2xl :name="item.icon" />
         </NuxtLink>

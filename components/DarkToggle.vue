@@ -3,8 +3,10 @@ const { isDark, toggleDark } = useTheme()
 </script>
 
 <template>
+  <!-- TODO: transition -->
   <button
-    transition flex items-center text-opaque hover:text-default text-xl md:text-2xl
+    flex items-center
+    text-opaque hover:text-default text-xl md:text-2xl
     aria-label="Toggle dark mode"
     @click="toggleDark"
   >

@@ -20,11 +20,10 @@ onMounted(() => {
     <!-- TODO: they are not fully vertically aligned on mobile -->
     <div
       row
-      max-w="full xl:5xl"
       grid grid-cols-5 gap-2 items-center
     >
       <div :class="{ 'opacity-0 invisible': pageScrolled }" flex items-center>
-        <NuxtLink to="/" aria-label="Logo" p-2 ml--2>
+        <NuxtLink to="/" aria-label="Logo" class="p-3 ml--3 lg:(p-2 ml--2)">
           <Icon transition name="tabler:seeding" text-xl md:text-2xl text-opaque hover:text-green-5 />
         </NuxtLink>
       </div>
@@ -46,7 +45,7 @@ onMounted(() => {
           <Icon name="tabler:command" />
         </button> -->
 
-        <DarkToggle p-2 mr--2 />
+        <DarkToggle class="p-3 mr--3 lg:(p-2 mr--2)" />
       </div>
     </div>
   </header>

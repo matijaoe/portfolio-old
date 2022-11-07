@@ -23,6 +23,7 @@ import { socials } from '~~/data/socials'
         <Icon
           :name="social.icon"
           text-xl text-opaque-2 hover:text-default
+          transition-smooth
         />
       </a>
     </li>

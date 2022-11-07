@@ -11,7 +11,7 @@ useHead({
         Hi there
       </BaseHeading>
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
-        <div lg:col-span-3 space-y-4 leading-loose text-dimmed-2>
+        <div lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4>
           <p>
             I'm <span class="text-strong">Matija Osrečki</span>, 23 year old Full Stack Developer from Croatia.
           </p>
@@ -27,7 +27,7 @@ useHead({
           <div class="img-bg" w-full bg />
           <div relative>
             <NuxtImg
-              transition rotate-3 hover:rotate-12
+              transition duration-500 ease rotate-3 hover:rotate-12
               rounded-lg
               format="webp"
               src="/avatar.webp"
