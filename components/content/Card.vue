@@ -1,6 +1,5 @@
 <template>
-  <div class="p-6 border bg-black border-gray-700 rounded">
-    <ProjectTagWip />
+  <div class="border rounded">
     <slot />
   </div>
 </template>
