@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
+    inlineSSRStyles: false,
   },
   unocss: {
     preflight: true,
@@ -24,8 +25,13 @@ export default defineNuxtConfig({
     'assets/styles/animations.css',
     'assets/styles/floating-vue.css',
   ],
+  colorMode: {
+    storageKey: 'matijao-color-mode',
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'dark',
+  },
   app: {
-    htmlAttrs: { lang: 'en' },
     head: {
       title: meta.title,
       meta: [
@@ -59,12 +65,6 @@ export default defineNuxtConfig({
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
-  },
-  colorMode: {
-    storageKey: 'matijao-color-mode',
-    classSuffix: '',
-    preference: 'system',
-    fallback: 'dark',
   },
   image: { },
 })
