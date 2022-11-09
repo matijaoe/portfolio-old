@@ -61,10 +61,6 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: meta.url },
 
       ],
-      script: [
-        { src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'matijao.com' },
-      ],
-
     },
   },
   content: {
