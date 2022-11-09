@@ -9,21 +9,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
-    '@huntersofbook/plausible-nuxt',
     // '@nuxtjs/fontaine',
   ],
   experimental: {
     reactivityTransform: true,
     inlineSSRStyles: false,
-  },
-  plausible: {
-    init: {
-      domain: 'localhost',
-      apiHost: 'https://site.com',
-      trackLocalhost: true,
-    },
-    // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
-    partytown: false,
   },
   unocss: {
     preflight: true,
