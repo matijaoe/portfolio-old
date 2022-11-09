@@ -43,7 +43,7 @@ export default defineConfig({
     'transition-smooth': 'transition duration-500 ease transition-colors',
     'transition-base': 'transition duration-150 ease',
     // Sizing
-    'row': 'container w-full xl:max-w-5xl mx-auto px-5 sm:px-8',
+    'row': 'w-full max-w-5xl mx-auto px-5 sm:px-8',
     // Properties
     'text-strong': 'font-medium text-default',
     // Text colors
