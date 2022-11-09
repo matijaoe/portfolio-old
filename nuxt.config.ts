@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
-    // '@nuxtjs/fontaine',
   ],
   experimental: {
     reactivityTransform: true,
@@ -31,7 +30,9 @@ export default defineNuxtConfig({
     preference: 'system',
     fallback: 'dark',
   },
+
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: meta.title,
       meta: [
