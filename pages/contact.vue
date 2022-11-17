@@ -11,3 +11,4 @@ useHead({
     </BaseHeading>
   </div>
 </template>
+

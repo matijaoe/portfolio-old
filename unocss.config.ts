@@ -48,11 +48,11 @@ export default defineConfig({
     'text-strong': 'font-medium text-default',
     // Text colors
     // TODO: should i put transition on text colors? nah, seems they stack and ruin it
-    'text-default': 'text-stone-8 dark:text-stone-3 transition-smooth',
-    'text-opaque': 'text-stone-8/30 dark:text-white/30 transition-smooth',
-    'text-opaque-2': 'text-stone-8/50 dark:text-white/50 transition-smooth',
-    'text-dimmed': 'text-stone-8/75 dark:text-stone-50/50 transition-smooth',
-    'text-dimmed-2': 'text-stone-8/90 dark:text-stone-50/65 transition-smooth',
+    'text-default': 'text-stone-8 dark:text-stone-3',
+    'text-opaque': 'text-stone-8/30 dark:text-white/30',
+    'text-opaque-2': 'text-stone-8/50 dark:text-white/50',
+    'text-dimmed': 'text-stone-8/75 dark:text-stone-50/50',
+    'text-dimmed-2': 'text-stone-8/90 dark:text-stone-50/65',
     // Others
     'hyperlink': 'font-normal text-dimmed-2 hover:text-default decoration-stone-8/50 dark:decoration-stone-50/50 decoration-underline hover:decoration-current',
     'divider-x': 'divide-x-1 divide-stone-2 dark:divide-stone-8',

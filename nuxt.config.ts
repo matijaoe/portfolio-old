@@ -2,6 +2,8 @@ import { meta } from './data/meta'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  // TODO: ssr messes up with my inital gsap animations, fix this somehow without turning off ssr
+  ssr: false,
   modules: [
     'nuxt-icon',
     '@unocss/nuxt',
@@ -58,14 +60,11 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: meta.thumbnail },
         { name: 'twitter:url', content: meta.url },
       ],
-      link: [
-        { rel: 'canonical', href: meta.url },
-
-      ],
+      link: [{ rel: 'canonical', href: meta.url }],
     },
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
-  image: { },
+  image: {},
 })

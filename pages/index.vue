@@ -1,7 +1,7 @@
 <script lang="ts" setup>
+import gsap from 'gsap'
 import { baseSocials } from '~~/data/socials'
 import type { NavCard } from '~~/models'
-
 useHead({
   title: 'Home | Matija Osrecki',
 })
@@ -18,18 +18,33 @@ const cards: NavCard[] = [
     to: '/projects',
   },
 ]
+
+const container = ref<HTMLDivElement>()
+
+onMounted(() => {
+  gsap.from(container.value!.children, {
+    delay: 0.15,
+    duration: 0.5,
+    y: '+100',
+    autoAlpha: 0,
+    stagger: 0.15,
+    ease: 'back.out(1.7)',
+  })
+})
 </script>
 
 <template>
   <div flex flex-col gap-40 mt-30 relative>
-    <div row flex flex-col gap-8>
-      <div z-2 font-display space-y-4>
-        <div relative>
-          <SVGCloud z-1 aspect-square absolute top="-55" left="25vw md:50vw lg:120" />
-          <p text-6xl md:text-8xl z-2 relative>
-            Matija Osrečki
-          </p>
-        </div>
+    <div ref="container" row flex flex-col gap-8>
+      <div z-2 font-display space-y-4 relative>
+        <SVGCloud z-1 aspect-square absolute top="-55" left="25vw md:50vw lg:120" />
+        <p
+          ref="name" text-6xl md:text-8xl
+          z-2
+          relative
+        >
+          Matija Osrečki
+        </p>
       </div>
 
       <div max-w-xl space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>

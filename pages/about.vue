@@ -6,12 +6,21 @@ useHead({
 
 <template>
   <div row flex flex-col gap-24>
-    <div space-y-10 lg:space-y-4>
-      <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl z-2>
+    <div v space-y-10 lg:space-y-4>
+      <BaseHeading
+        v-motion-slide-visible-once-bottom
+        as="h2" text-4xl sm:text-5xl md:text-6xl z-2
+      >
         Hi there
       </BaseHeading>
-      <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
-        <div lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4>
+      <div
+
+        class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)"
+      >
+        <div
+          v-motion-slide-visible-once-bottom
+          lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4
+        >
           <p>
             I'm <span class="text-strong">Matija Osrečki</span>, 23 year old Full Stack Developer from Croatia.
           </p>
@@ -23,10 +32,13 @@ useHead({
           </p>
         </div>
 
-        <figure lg:aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1">
-          <div class="img-bg" w-full bg />
-          <div relative>
+        <figure
+          lg:aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1"
+        >
+          <div v-motion-pop-visible class="img-shade" w-full bg />
+          <div v-motion-slide-visible-once-bottom relative>
             <NuxtImg
+
               transition duration-500 ease rotate-3 hover:rotate-12
               rounded-lg
               format="webp"
@@ -38,11 +50,12 @@ useHead({
       </div>
     </div>
 
-    <AboutCareer />
+    <AboutCareer v-motion-slide-visible-once-bottom />
 
     <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between lg:divider-x>
-      <AboutEducation col-span-3 />
+      <AboutEducation v-motion-slide-visible-once-bottom col-span-3 />
       <AboutCompetitions
+        v-motion-slide-visible-once-bottom
         col-span-2
         lg:pl-16
       />
@@ -51,25 +64,25 @@ useHead({
     <div relative>
       <SVGThings absolute top--60 left--60 />
 
-      <AboutSkills />
+      <AboutSkills v-motion-slide-visible-once-bottom />
     </div>
 
-    <AboutSkillsAlt />
+    <AboutSkillsAlt v-motion-slide-visible-once-bottom />
 
-    <AboutBooks />
+    <AboutBooks v-motion-slide-visible-once-bottom />
 
-    <AboutPodcasts />
+    <AboutPodcasts v-motion-slide-visible-once-bottom />
   </div>
 </template>
 
 <style scoped>
 figure img,
-.img-bg {
+.img-shade {
   height: 300px;
   width: 300px;
 }
 
-.img-bg {
+.img-shade {
   position: absolute;
   background-image: linear-gradient(-45deg, #FADD95 50%, #308469 50%);
   border-radius: 50%;
