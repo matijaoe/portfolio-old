@@ -2,6 +2,7 @@
 import gsap from 'gsap'
 import { baseSocials } from '~~/data/socials'
 import type { NavCard } from '~~/models'
+
 useHead({
   title: 'Home | Matija Osrecki',
 })
