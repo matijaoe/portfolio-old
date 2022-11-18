@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-
+const { isDark } = useTheme()
 </script>
 
 <template>
@@ -9,14 +9,6 @@
     flex-col
   >
     <TheHeader />
-    <!-- <div
-      v-if="$route.name === 'index'"
-      fixed
-      h="100vh"
-      inset-0 z--2
-      class="hero"
-      overflow-hidden
-    /> -->
 
     <main
       main
@@ -25,9 +17,8 @@
       p="t-24 b-40 md:(t-32 b-40)"
     >
       <NuxtPage />
+      <!-- <GrainCover v-if="isDark" opacity="2" /> -->
     </main>
-
-    <GrainCover opacity="2" />
 
     <TheFooter mt-auto />
   </div>

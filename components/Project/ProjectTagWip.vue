@@ -7,8 +7,8 @@
     leading-none
     uppercase
     rounded-full
-    filter-saturate-85
-    bg-green-5
+    bg-accent
+    border="~ 1.5 stone-9"
   >
     wip
   </span>

@@ -22,8 +22,8 @@ import { socials } from '~~/data/socials'
       >
         <Icon
           :name="social.icon"
-          text-xl text-opaque-2 hover:text-default
-          transition-smooth
+          text-xl text-stone-5 hover:text-accent
+          transition-base
         />
       </a>
     </li>

@@ -23,8 +23,10 @@ onMounted(() => {
       grid grid-cols-5 gap-2 items-center
     >
       <div :class="{ 'opacity-0 invisible': pageScrolled }" flex items-center>
-        <NuxtLink to="/" aria-label="Logo" class="p-3 ml--3 lg:(p-2 ml--2)">
-          <Icon transition name="tabler:seeding" text-xl md:text-2xl text-opaque hover:text-green-5 />
+        <NuxtLink to="/" aria-label="Logo" class="p-3 ml--3 lg:(p-2 ml--2)" text-opaque hover:text-default>
+          <Icon
+            transition name="tabler:seeding" text-xl md:text-2xl
+          />
         </NuxtLink>
       </div>
 

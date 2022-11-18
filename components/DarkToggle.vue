@@ -6,11 +6,12 @@ const { isDark, toggleDark } = useTheme()
   <!-- TODO: transition -->
   <button
     flex items-center
-    text-opaque hover:text-default text-xl md:text-2xl
+    text-xl md:text-2xl
     aria-label="Toggle dark mode"
+    text-opaque hover:text-default
     @click="toggleDark"
   >
-    <Icon v-show="!isDark" name="tabler:moon" />
-    <Icon v-show="isDark" name="tabler:sun" />
+    <Icon v-show="!isDark" name="ph:moon-duotone" />
+    <Icon v-show="isDark" name="ph:sun-duotone" />
   </button>
 </template>

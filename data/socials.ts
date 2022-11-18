@@ -1,17 +1,17 @@
 export const baseSocials = [
   {
     label: 'Github',
-    icon: 'tabler:brand-github',
+    icon: 'ph:github-logo-fill',
     href: 'https://github.com/mat2ja',
   },
   {
     label: 'LinkedIn',
-    icon: 'tabler:brand-linkedin',
+    icon: 'ph:linkedin-logo-fill',
     href: 'http://linkedin.com/in/matijao',
   },
   {
     label: 'Twitter',
-    icon: 'tabler:brand-twitter',
+    icon: 'ph:twitter-logo-fill',
     href: 'https://twitter.com/matijao_',
   },
 ]
@@ -23,11 +23,11 @@ export const socials = [
     icon: 'fa6-brands:angellist',
     href: 'https://angel.co/u/matijao',
   },
-  {
-    label: 'Dev.to',
-    icon: 'fa6-brands:dev',
-    href: 'https://dev.to/matijao',
-  },
+  // {
+  //   label: 'Dev.to',
+  //   icon: 'fa6-brands:dev',
+  //   href: 'https://dev.to/matijao',
+  // },
   {
     label: 'Goodreads',
     icon: 'fa6-brands:goodreads',

@@ -11,8 +11,8 @@ const initalLink = ref(props.project.links[0].href)
 const cardRow = ref<HTMLElement>()
 const card = ref<HTMLElement>()
 
-const cardRowHovegreen = useElementHover(cardRow)
-const cardHovegreen = useElementHover(card)
+const cardRowHovered = useElementHover(cardRow)
+const cardHovered = useElementHover(card)
 
 const openProject = () => window.open(initalLink.value, '_blank')
 </script>
@@ -29,7 +29,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       flex gap-4
       w-full max-w-full md:max-w-lg
       class="lg:-translate-x-4 transition sm:pl-3 pr-5"
-      :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovegreen }]"
+      :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovered }]"
       py-4 rounded-lg cursor-pointer
       @click="openProject"
     >
@@ -44,7 +44,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               line-clamp-1
               font-display text-2xl
               flex-1 flex items-start gap-4
-              class="hover:underline" :class="{ '!underline': cardHovegreen }"
+              class="hover:underline" :class="{ '!underline': cardHovered }"
             >
               {{ project.name }}
             </h3>
@@ -52,12 +52,12 @@ const openProject = () => window.open(initalLink.value, '_blank')
             <ProjectTagWip v-if="project.inProgress" />
 
             <Icon
-              name="tabler:link"
-              text-xl
+              name="ph:arrow-up-right-bold"
+              text-lg
               mb-1
-              text-green-5
+              text-accent
               transition
-              :class="[cardHovegreen
+              :class="[cardHovered
                 ? 'visible opacity-100 translate-x-0'
                 : 'invisible opacity-0 -translate-x-4']"
             />
@@ -82,7 +82,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
             <NuxtLink
               :href="link.href"
               target="_blank"
-              class="hyperlink text-dimmed-2 hover:text-dimmed"
+              class="hyperlink text-dimmed-lighter hover:text-dimmed"
               @click.stop
             >
               {{ link.label }}
@@ -102,7 +102,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       <ProjectCardThumbnail
         v-if="project.thumbnail"
         :thumbnail="project.thumbnail"
-        :shown="cardRowHovegreen"
+        :shown="cardRowHovered"
         :alt="project.name"
       />
     </ClientOnly>

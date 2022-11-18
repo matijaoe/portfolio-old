@@ -11,12 +11,12 @@ useShortcuts()
       text-default
       font-sans
       transition-smooth
-      bg-stone-50 dark:bg-stone-9
+      bg-default-1
     >
       <div
-        rounded-md
+        min-h-screen
         flex
-        p-2
+        flex-col
       >
         <NuxtLayout />
       </div>

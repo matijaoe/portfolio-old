@@ -16,8 +16,9 @@ onMounted(() => {
   <nav
     relatives overflow-hidden
     flex justify-center
-    px-5 py-0 rounded-full
-    transition duration-500 ease transition-all
+    px-4 py-1 rounded-full
+    transition duration-500 ease transition-base
+
     :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
   >
     <menu font-medium lowercase flex items-center gap-2 sm:gap-0 w-max>
@@ -26,10 +27,13 @@ onMounted(() => {
         <NuxtLink
           :to="item.to"
           hidden md:block
-          py-2 px-4
-          text-opaque hover:text-opaque-2
+          py="1.5" px-4
+          text-opaque
+          bg-transparent
+          :class="{ 'hover:(bg-opaque text-opaque-hovered)': !pageScrolled, 'hover:text-opaque-hovered': pageScrolled }"
+          transition-base
           relative z-2
-          transition rounded-sm
+          rounded-md
           active-class="!text-default"
         >
           <span text-sm> {{ item.label }}</span>
@@ -39,7 +43,7 @@ onMounted(() => {
         <NuxtLink
           :to="item.to"
           flex items-center
-          block md:hidden transition text-opaque hover:text-opaque-2
+          block md:hidden transition text-opaque hover:text-opaque-hovered
           active-class="!text-default"
           :aria-label="item.label"
           p-3 lg:p-2

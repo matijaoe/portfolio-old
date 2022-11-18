@@ -1,9 +1,16 @@
+:root {
+  --accent-light: #fe5f55;
+  --accent-dark: #D6FB03;
+}
+
 html {
   overflow-x: hidden;
+  --accent: var(--accent-light);
 }
 
 html.dark {
   color-scheme: dark;
+  --accent: var(--accent-dark);
 }
 
 ::selection {

@@ -4,7 +4,7 @@ import { baseSocials } from '~~/data/socials'
 import type { NavCard } from '~~/models'
 
 useHead({
-  title: 'Home | Matija Osrecki',
+  title: 'Home | Matija Osrečki',
 })
 
 const cards: NavCard[] = [
@@ -35,7 +35,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div flex flex-col gap-40 mt-30 relative>
+  <div flex flex-col gap-40 mt-12vh relative>
     <div ref="container" row flex flex-col gap-8>
       <div z-2 font-display space-y-4 relative>
         <SVGCloud z-1 aspect-square absolute top="-55" left="25vw md:50vw lg:120" />
@@ -54,27 +54,31 @@ onMounted(() => {
         </p>
 
         <div>
-          Working as a Mid Frontend Developer at
-          <a
-            href="https://4ofthem.eu/"
-            target="_blank"
-            hyperlink
-            inline-flex items-center gap-2
+          Working as a Frontend Developer at
+          <div
             class="group"
+            display="inline-block"
           >
-            Four of them LLC.
+            <a
+              href="https://4ofthem.eu/"
+              target="_blank"
+              hyperlink
+              inline-flex items-center gap-2
+            >
+              Four of them LLC
+            </a>
             <Icon
               name="tabler:clover"
               text="#FF8502 xl"
-              class="opacity-0 translate-x--2 transition-base scale-50 group-hover:(opacity-100 translate-x-0 rotate-120 scale-100)"
+              class="opacity-0 translate-x--1 transition-base scale-50 group-hover:(opacity-100 translate-x-1 rotate-120 scale-100)"
             />
-          </a>
+          </div>
         </div>
 
         <div mt="!8" flex items-center gap-3 text-sm>
           <span class="relative flex h-2 w-2">
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-4 opacity-75" />
-            <span class="relative inline-flex h-2 w-2 rounded-full bg-green-5" />
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-65" />
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-accent" />
           </span>
           <p text-stone-5 dark:text-stone-5 flex items-center gap-2>
             Currently in Zagreb, Croatia
@@ -99,13 +103,14 @@ onMounted(() => {
               target="_blank"
               :aria-label="social.label"
               flex items-center justify-center
+              text-opaque dark:text-stone-5 hover:text-accent
+              transition-base
               p-2
+              rounded-full
             >
               <Icon
                 :name="social.icon"
                 text-2xl
-                text-dimmed hover:text-default
-                transition-smooth
               />
             </a>
           </li>

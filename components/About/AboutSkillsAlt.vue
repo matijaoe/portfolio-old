@@ -7,30 +7,35 @@ const skills = [
     value: 'vue',
     icon: 'logos:vue',
     favorite: true,
+    desc: 'My bread and butter',
   },
   {
     name: 'Nuxt',
     value: 'nuxt',
     icon: 'logos:nuxt-icon',
     favorite: true,
+    desc: 'Vue, but on a server? No way',
   },
   {
     name: 'TypeScript',
     value: 'typescript',
     icon: 'logos:typescript-icon',
     favorite: true,
+    desc: 'Make me safe',
   },
   {
     name: 'React',
     value: 'react',
     icon: 'logos:react',
     favorite: false,
+    desc: 'A necessary evil',
   },
   {
     name: 'Next',
     value: 'next',
     icon: 'logos:nextjs-icon',
     favorite: false,
+    desc: 'The cool kid',
   },
   {
     name: 'JavaScript',
@@ -41,13 +46,15 @@ const skills = [
     name: 'Svelte',
     value: 'svelte',
     icon: 'logos:svelte-icon',
-    favorite: false,
+    favorite: true,
+    desc: 'The future',
   },
   {
     name: 'Vite',
     value: 'vite',
     icon: 'logos:vitejs',
     favorite: true,
+    desc: 'Blazingly™ fast',
   },
   {
     name: 'Tanstack Query',
@@ -60,12 +67,14 @@ const skills = [
     value: 'tailwindcss',
     icon: 'logos:tailwindcss-icon',
     favorite: true,
+    desc: 'The og atomic CSS',
   },
   {
     name: 'UnoCSS',
     value: 'unocss',
     icon: 'logos:unocss',
     favorite: true,
+    desc: 'The only way I do css',
   },
   {
     name: 'SCSS',
@@ -83,7 +92,8 @@ const skills = [
     name: 'Nest',
     value: 'nest',
     icon: 'logos:nestjs',
-    favorite: true,
+    favorite: false,
+    desc: 'Love the structure',
   },
   {
     name: 'Node',
@@ -108,6 +118,7 @@ const skills = [
     value: 'postgresql',
     icon: 'logos:postgresql',
     favorite: false,
+    desc: 'The ol\' reliable',
   },
   {
     name: 'MongoDB',
@@ -136,12 +147,16 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
   <AboutSection title="Skills">
     <template #right>
       <div flex gap-4 items-center>
-        <p uppercase font-sans font-semibold text-sm text-default :class="favsOnly ? 'text-default' : 'text-stone-3 !dark:text-stone-7 line-through'">
+        <p
+          uppercase font-sans font-semibold text-sm text-default
+          class="decoration-2"
+          :class="favsOnly ? 'text-default' : 'text-stone-3 !dark:text-stone-7 line-through'"
+        >
           favorites
         </p>
         <Switch
           v-model="favsOnly"
-          :class="favsOnly ? 'bg-stone-8 dark:bg-green-5' : 'bg-stone-2 dark:bg-stone-7'"
+          :class="favsOnly ? 'bg-stone-8 dark:bg-accent' : 'bg-stone-2 dark:bg-stone-7'"
           class="relative inline-flex h-6 w-11 items-center rounded-full"
           transition-base
         >
@@ -149,6 +164,7 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
           <span
             :class="favsOnly ? 'translate-x-6' : 'translate-x-1'"
             class="inline-block h-4 w-4 transform rounded-full bg-white dark:bg-stone-9"
+            transition-base
           />
         </Switch>
       </div>
@@ -174,8 +190,8 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
                 {{ item.name }}
               </p>
             </div>
-            <p text-opaque text-sm line-clamp-1>
-              Research Games best-of-breed Research
+            <p text-stone-4 dark:text-stone-5 text-sm line-clamp-1>
+              {{ item.desc ?? 'Random thing about it' }}
             </p>
           </div>
         </div>
