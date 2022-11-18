@@ -17,7 +17,7 @@ const { isDark } = useTheme()
       p="t-24 b-40 md:(t-32 b-40)"
     >
       <NuxtPage />
-      <!-- <GrainCover v-if="isDark" opacity="2" /> -->
+      <GrainCover opacity="2" />
     </main>
 
     <TheFooter mt-auto />

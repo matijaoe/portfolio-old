@@ -103,7 +103,7 @@ onMounted(() => {
               target="_blank"
               :aria-label="social.label"
               flex items-center justify-center
-              text-opaque dark:text-stone-5 hover:text-accent
+              text-stone-3 dark:text-stone-5 hover:text-accent
               transition-base
               p-2
               rounded-full

@@ -1,16 +1,20 @@
 :root {
-  --accent-light: #fe5f55;
-  --accent-dark: #D6FB03;
+  --accent-light: hsl(4, 80%, 60%);
+  --accent-light-opaque: hsla(4, 80%, 60%, 0.1);
+  --accent-dark: hsl(69, 98%, 50%);
+  --accent-dark-opaque: hsla(69, 98%, 50%, 0.14);
 }
 
 html {
   overflow-x: hidden;
   --accent: var(--accent-light);
+  --accent-opaque: var(--accent-light-opaque);
 }
 
 html.dark {
   color-scheme: dark;
   --accent: var(--accent-dark);
+  --accent-opaque: var(--accent-dark-opaque);
 }
 
 ::selection {
@@ -18,10 +22,11 @@ html.dark {
   color: #44403c;
 }
 
+/* 
 .dark ::selection {
   background: #44403c6d;
   color: #d6d3d1;
-}
+} */
 
 .hide-scrollbar::-webkit-scrollbar {
   width: 0;

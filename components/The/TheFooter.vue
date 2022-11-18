@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { socials } from '~~/data/socials'
-
 const year = new Date().getFullYear()
 </script>
 

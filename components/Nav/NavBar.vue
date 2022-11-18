@@ -14,7 +14,7 @@ onMounted(() => {
 
 <template>
   <nav
-    relatives overflow-hidden
+    relative overflow-hidden
     flex justify-center
     px-4 py-1 rounded-full
     transition duration-500 ease transition-base
@@ -30,7 +30,8 @@ onMounted(() => {
           py="1.5" px-4
           text-opaque
           bg-transparent
-          :class="{ 'hover:(bg-opaque text-opaque-hovered)': !pageScrolled, 'hover:text-opaque-hovered': pageScrolled }"
+          class="hover:text-default"
+          :class="{ 'hover:(bg-opaque)': !pageScrolled, 'text-opaque-hovered': pageScrolled }"
           transition-base
           relative z-2
           rounded-md

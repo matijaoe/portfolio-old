@@ -8,7 +8,7 @@
     uppercase
     rounded-full
     bg-accent
-    border="~ 1.5 stone-9"
+    border="~ 1.5 stone-9 dark:transparent"
   >
     wip
   </span>

@@ -40,12 +40,14 @@ onMounted(() => {
         justify-self-end
         flex items-center gap-5
       >
-        <!-- <button
+        <button
           aria-label="Command prompt"
-          py-1 transition flex items-center text-opaque hover:text-default text-xl md:text-2xl
+          flex items-center
+          text-xl md:text-2xl
+          text-opaque hover:text-default
         >
           <Icon name="tabler:command" />
-        </button> -->
+        </button>
 
         <DarkToggle class="p-3 mr--3 lg:(p-2 mr--2)" />
       </div>

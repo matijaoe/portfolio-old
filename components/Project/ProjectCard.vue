@@ -21,6 +21,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
   <div
     ref="cardRow"
     flex items-center justify-between relative
+    class="group"
   >
     <div
       ref="card"
@@ -44,7 +45,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               line-clamp-1
               font-display text-2xl
               flex-1 flex items-start gap-4
-              class="hover:underline" :class="{ '!underline': cardHovered }"
+              class="hover:underline" :class="{ underline: cardHovered }"
             >
               {{ project.name }}
             </h3>
@@ -55,8 +56,8 @@ const openProject = () => window.open(initalLink.value, '_blank')
               name="ph:arrow-up-right-bold"
               text-lg
               mb-1
-              text-accent
               transition
+              text-dimmed
               :class="[cardHovered
                 ? 'visible opacity-100 translate-x-0'
                 : 'invisible opacity-0 -translate-x-4']"
