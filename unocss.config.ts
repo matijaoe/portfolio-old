@@ -58,13 +58,13 @@ export default defineConfig({
     'text-dimmed': 'text-stone-7 dark:text-stone-4',
     'text-dimmed-lighter': 'text-stone-7/90 dark:text-stone-4/90',
     // Others
-    'hyperlink': '-mx-0.5 -my-0.5 py-0.5 px-1 rounded-sm underline hover:(filter-saturate-90 !text-accent bg-accentop) transition-base',
+    'hyperlink': '-mx-0.5 -my-0.5 py-0.5 px-1 rounded-sm underline hover:(!text-default bg-accentop) transition-base',
     'divider-x': 'divide-x-1 divide-stone-2 dark:divide-stone-8',
     'divider-y': 'divide-y-1 divide-stone-2 dark:divide-stone-8',
     // Backgrounds
     'bg-opaque': 'bg-stone-2/35 dark:bg-stone-8/40',
     'bg-default-1': 'bg-stone-50 dark:bg-stone-9',
     'bg-default-2': 'bg-stone-2 dark:bg-stone-8',
-    'bg-default-3': 'bg-stone-1 dark:bg-stone-8',
+    'bg-default-3': 'bg-[#EFEEED] dark:bg-stone-8',
   },
 })

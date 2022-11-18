@@ -2,36 +2,36 @@ export const navItems = [
   {
     label: 'Home',
     to: '/',
-    icon: 'tabler:home-2',
+    icon: 'ph-armchair-duotone',
   },
   {
     label: 'About',
     to: '/about',
-    icon: 'tabler:user',
+    icon: 'ph:user-duotone',
   },
   {
     label: 'Projects',
     to: '/projects',
-    icon: 'tabler:bulb',
+    icon: 'ph:lightbulb-filament-duotone',
   },
-  // {
-  //   label: 'Uses',
-  //   to: '/uses',
-  //   icon: 'tabler:tools',
-  // },
+  {
+    label: 'Uses',
+    to: '/uses',
+    icon: 'ph:tray-duotone',
+  },
   // {
   //   label: 'Blog',
   //   to: '/blog',
-  //   icon: 'tabler:file-text',
+  //   icon: 'ph:scroll-duotone',
   // },
   {
     label: 'Contact',
     to: '/contact',
-    icon: 'tabler:pencil',
+    icon: 'ph:chat-circle-duotone',
   },
   // {
   //   label: 'Guestbook',
   //   to: '/guestbook',
-  //   icon: 'tabler:book',
+  //   icon: 'ph:book-open-duotone',
   // },
 ]

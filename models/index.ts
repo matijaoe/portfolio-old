@@ -37,4 +37,5 @@ export type NavCard = {
   title: string
   description: string
   to: RouteLocationRaw
+  icon: string
 }

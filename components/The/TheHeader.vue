@@ -46,7 +46,7 @@ onMounted(() => {
           text-xl md:text-2xl
           text-opaque hover:text-default
         >
-          <Icon name="tabler:command" />
+          <Icon name="ph:command-duotone" />
         </button>
 
         <DarkToggle class="p-3 mr--3 lg:(p-2 mr--2)" />

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
-import { baseSocials } from '~~/data/socials'
+import { baseSocials as socials } from '~~/data/socials'
 import type { NavCard } from '~~/models'
 
 useHead({
@@ -12,13 +12,17 @@ const cards: NavCard[] = [
     title: 'Get to know me',
     description: 'Who am I, what do I do, what have I done, what will I do.',
     to: '/about',
+    icon: 'ph:user-duotone',
   },
   {
     title: 'Projects',
-    description: 'Check out some of projects I am proud of.',
+    description: 'Check out some of projects I am proud of. Many more are coming. ProductHunt here I come.',
     to: '/projects',
+    icon: 'ph:lightbulb-filament-duotone',
   },
 ]
+
+const hasMore = ref(false)
 
 const container = ref<HTMLDivElement>()
 
@@ -89,10 +93,9 @@ onMounted(() => {
       <div mt-4 flex items-center gap-4 divider-x>
         <ul flex items-center gap-1 ml--2>
           <li
-            v-for="(social, i) in baseSocials"
-            :key="i"
+            v-for="social in socials"
+            :key="social.label"
             v-tooltip="{
-              delay: 0,
               content: social.label,
               theme: 'info-tooltip',
               placement: 'bottom',
@@ -103,7 +106,7 @@ onMounted(() => {
               target="_blank"
               :aria-label="social.label"
               flex items-center justify-center
-              text-stone-3 dark:text-stone-5 hover:text-accent
+              text-dimmed hover:text-accent
               transition-base
               p-2
               rounded-full
@@ -116,7 +119,7 @@ onMounted(() => {
           </li>
         </ul>
 
-        <button pl-4 flex items-center gap="1.5">
+        <button pl-4 flex items-center gap="1.5" text-dimmed>
           Press <div flex items-center gap-1>
             <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
           </div> to start
@@ -124,12 +127,102 @@ onMounted(() => {
       </div>
     </div>
 
-    <div row grid md:grid-cols-2 gap-4>
-      <NavSiteCard
-        v-for="(card, i) in cards"
-        :key="i"
-        :card="card"
-      />
+    <div px-8 w-full max-w-7xl mx-auto>
+      <div class="grid grid-cols-6 sm:grid-cols-12 gap-3">
+        <BaseCard class="row-span-4 col-span-6">
+          <div flex-1 flex flex-col gap-8>
+            <div flex items-end justify-between>
+              <div flex items-center gap-3>
+                <Icon name="ph:compass-duotone" text-3xl mb="1.5" />
+                <h4 text-2xl font-display text-default>
+                  Now
+                </h4>
+              </div>
+              <div text-dimmed text-sm>
+                <div>{{ Intl.DateTimeFormat('en-us', { dateStyle: 'medium' }).format(new Date(2022, 11, 18)) }}</div>
+              </div>
+            </div>
+            <div text-base text-dimmed space-y-3>
+              <p>
+                Building a platform for financial independence
+              </p>
+              <p>
+                I've been working at Atlassian on the Trello team for a year now, but still kind of struggling to find my place on the Frontend Platform team. However, the company culture is so good, there's no reason to look elsewhere!
+              </p>
+              <p>
+                I basically took the summer of 2022 off from coding and side projects, and disconnecting felt so good! I spent time traveling, doing home improvements, and picking up hobbies like reading and riding my OneWheel.
+              </p>
+              <p>
+                Now that I'm off my break, I'm trying to get back on track with my goals for 2022. I've been learning Remix with the hope that it will be the foundation for the future products that I'll build.
+              </p>
+              <p>
+                I've only been back a week or two, and I've already released three new projects, updated another, and published two blog posts. I hope to keep moving forward at a reasonable pace, probably not this fast, while still sprinkling in some enjoyment time here and there.
+              </p>
+            </div>
+          </div>
+          <div ml--3 mr--3 flex justify-between items-center>
+            <button
+              flex gap-2 items-center justify-center
+              class="hover:translate-x-3 transition-base hover:(bg-stone-2 text-stone-8) py-1.5 px-3 rounded-md"
+              @click="hasMore = true"
+            >
+              <Icon name="ph:caret-left-duotone" text-xl />
+              Older
+            </button>
+            <button
+              v-if="hasMore"
+              flex gap-2 items-center justify-center
+              class="hover:translate-x--3 transition-base"
+              @click="hasMore = false"
+            >
+              Newer
+              <Icon name="ph:caret-right-duotone" text-xl />
+            </button>
+          </div>
+        </BaseCard>
+
+        <a
+          v-for="social in socials"
+          :key="social.label"
+          class="group col-span-3 sm:(col-span-2 row-span-1)" block
+          :href="social.href" target="_blank"
+        >
+          <!-- :style="{ background: social.color }" -->
+          <BaseCard
+            aspect-square no-padding
+          >
+            <div
+              filter-saturate-90
+              p-5 flex-1 flex flex-col justify-between class="text-default"
+            >
+              <Icon :style="{ color: social.color }" :name="social.icon" text-5xl text-stone-2 />
+              <div ml-auto>@{{ social.href.split('/').at(-1) }}</div>
+            </div>
+          </BaseCard>
+        </a>
+
+        <NavSiteCard
+          :card="cards[1]"
+          class="col-span-1 col-span-6"
+        />
+
+        <NavSiteCard
+          :card="cards[0]"
+          class="col-span-6"
+        />
+
+        <BaseCard class="col-span-6">
+          what am i doing
+        </BaseCard>
+
+        <BaseCard class="col-span-6">
+          what am i doing
+        </BaseCard>
+
+        <BaseCard class="col-span-6">
+          what am i doing
+        </BaseCard>
+      </div>
     </div>
   </div>
 </template>

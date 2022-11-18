@@ -1,6 +1,6 @@
 :root {
-  --accent-light: hsl(4, 80%, 60%);
-  --accent-light-opaque: hsla(4, 80%, 60%, 0.1);
+  --accent-light: hsl(198, 69%, 76%);
+  --accent-light-opaque: hsla(198, 69%, 76%, 0.14);
   --accent-dark: hsl(69, 98%, 50%);
   --accent-dark-opaque: hsla(69, 98%, 50%, 0.14);
 }
@@ -22,11 +22,11 @@ html.dark {
   color: #44403c;
 }
 
-/* 
+
 .dark ::selection {
   background: #44403c6d;
   color: #d6d3d1;
-} */
+}
 
 .hide-scrollbar::-webkit-scrollbar {
   width: 0;

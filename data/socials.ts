@@ -3,16 +3,19 @@ export const baseSocials = [
     label: 'Github',
     icon: 'ph:github-logo-fill',
     href: 'https://github.com/mat2ja',
+    color: '#171515',
   },
   {
     label: 'LinkedIn',
     icon: 'ph:linkedin-logo-fill',
     href: 'http://linkedin.com/in/matijao',
+    color: '#0277B5',
   },
   {
     label: 'Twitter',
     icon: 'ph:twitter-logo-fill',
     href: 'https://twitter.com/matijao_',
+    color: '#1F9CEA',
   },
 ]
 

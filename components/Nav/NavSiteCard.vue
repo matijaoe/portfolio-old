@@ -7,28 +7,20 @@ defineProps<{
 </script>
 
 <template>
-  <button
-    text-left
-    rounded="[0.625rem]"
-    bg="hover:(stone-8 dark:stone-2)"
-    p="0.5"
-    class="hover:(-translate-y-1)"
-    transition-base
-    @click="navigateTo(card.to)"
-  >
-    <div
-      flex flex-col gap-4
-      px-8 py-8
-      rounded-lg
-      transition-smooth
-      bg-default-3
-    >
-      <h4 text-xl font-display text-default>
-        {{ card.title }}
-      </h4>
-      <p text-sm text-dimmed>
-        {{ card.description }}
-      </p>
-    </div>
-  </button>
+  <NuxtLink :to="card.to" block flex flex-col>
+    <BaseCard flex-1>
+      <div flex flex-col gap-5>
+        <div flex items-center gap-3>
+          <Icon :name="card.icon" text-3xl mb="1.5" />
+          <h4 text-2xl font-display text-default>
+            {{ card.title }}
+          </h4>
+        </div>
+
+        <p text-sm text-dimmed>
+          {{ card.description }}
+        </p>
+      </div>
+    </BaseCard>
+  </NuxtLink>
 </template>
