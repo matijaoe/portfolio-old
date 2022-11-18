@@ -23,7 +23,7 @@ const list = [
 </script>
 
 <template>
-  <AboutSection title="Competitions">
+  <AboutSection title="Competitions" icon="ph:trophy-duotone">
     <div space-y-6 z-2>
       <div v-for="(item, i) in list" :key="i" flex flex-col gap-1>
         <h6 text-lg leading-snug font-semibold>

@@ -45,7 +45,7 @@ export const projects: Project[] = [
     thumbnail: '/projects/aimo.webp',
   },
   {
-    name: 'FIRE Platform',
+    name: 'Fare',
     description: 'Platform for Financial independence, Retire early community.',
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS, Tag.Prisma],
     year: 2023,
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     thumbnail: '/projects/fire.webp',
   },
   {
-    name: 'Personal site',
+    name: 'matijao.com',
     description: 'My personal site',
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS],
     year: 2023,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
       },
       {
         label: 'Live',
-        href: 'https://matijao.vercel.app',
+        href: 'https://matijao.com',
       },
     ],
     inProgress: true,

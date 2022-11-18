@@ -23,7 +23,7 @@ const cards: NavCard[] = [
 ]
 
 const hasMore = ref(false)
-
+const { isDark } = useTheme()
 const container = ref<HTMLDivElement>()
 
 onMounted(() => {
@@ -57,7 +57,7 @@ onMounted(() => {
           I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code (STOLEN PLACEHOLDER)
         </p>
 
-        <div>
+        <!-- <div>
           Working as a Frontend Developer at
           <div
             class="group"
@@ -77,7 +77,7 @@ onMounted(() => {
               class="opacity-0 translate-x--1 transition-base scale-50 group-hover:(opacity-100 translate-x-1 rotate-120 scale-100)"
             />
           </div>
-        </div>
+        </div> -->
 
         <div mt="!8" flex items-center gap-3 text-sm>
           <span class="relative flex h-2 w-2">
@@ -91,7 +91,7 @@ onMounted(() => {
       </div>
 
       <div mt-4 flex items-center gap-4 divider-x>
-        <ul flex items-center gap-1 ml--2>
+        <!-- <ul flex items-center gap-1 ml--2>
           <li
             v-for="social in socials"
             :key="social.label"
@@ -117,9 +117,9 @@ onMounted(() => {
               />
             </a>
           </li>
-        </ul>
+        </ul> -->
 
-        <button pl-4 flex items-center gap="1.5" text-dimmed>
+        <button flex items-center gap="1.5" text-default>
           Press <div flex items-center gap-1>
             <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
           </div> to start
@@ -129,7 +129,11 @@ onMounted(() => {
 
     <div px-8 w-full max-w-7xl mx-auto>
       <div class="grid grid-cols-6 sm:grid-cols-12 gap-3">
-        <BaseCard class="row-span-4 col-span-6">
+        <BaseCard
+          class="row-span-4 col-span-6"
+          :always-bordered="!isDark"
+          :class="{ '!pb-4': !isDark }"
+        >
           <div flex-1 flex flex-col gap-8>
             <div flex items-end justify-between>
               <div flex items-center gap-3>
@@ -160,42 +164,44 @@ onMounted(() => {
               </p>
             </div>
           </div>
-          <div ml--3 mr--3 flex justify-between items-center>
+          <div mx--3 flex justify-between items-center>
             <button
+              text-sm
               flex gap-2 items-center justify-center
               class="hover:translate-x-3 transition-base hover:(bg-stone-2 text-stone-8) py-1.5 px-3 rounded-md"
               @click="hasMore = true"
             >
-              <Icon name="ph:caret-left-duotone" text-xl />
+              <Icon name="ph:caret-left-duotone" text-lg />
               Older
             </button>
             <button
               v-if="hasMore"
+              text-sm
               flex gap-2 items-center justify-center
               class="hover:translate-x--3 transition-base"
               @click="hasMore = false"
             >
               Newer
-              <Icon name="ph:caret-right-duotone" text-xl />
+              <Icon name="ph:caret-right-duotone" text-lg />
             </button>
           </div>
         </BaseCard>
-
         <a
           v-for="social in socials"
           :key="social.label"
           class="group col-span-3 sm:(col-span-2 row-span-1)" block
           :href="social.href" target="_blank"
         >
-          <!-- :style="{ background: social.color }" -->
           <BaseCard
+            :style="!isDark ? { background: social.color } : {}"
+            :class="{ '!pb-4': !isDark }"
             aspect-square no-padding
           >
             <div
               filter-saturate-90
               p-5 flex-1 flex flex-col justify-between class="text-default"
             >
-              <Icon :style="{ color: social.color }" :name="social.icon" text-5xl text-stone-2 />
+              <Icon :style="isDark ? {} : { color: social.color }" :name="social.icon" text-5xl text-stone-2 dark:text-stone-4 />
               <div ml-auto>@{{ social.href.split('/').at(-1) }}</div>
             </div>
           </BaseCard>

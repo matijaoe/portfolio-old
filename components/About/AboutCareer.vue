@@ -3,7 +3,7 @@ import { jobs } from '~~/data/jobs'
 </script>
 
 <template>
-  <AboutSection title="Career">
+  <AboutSection title="Career" icon="ph:briefcase-duotone">
     <div space-y-6 z-2>
       <div
         v-for="(job, i) in jobs"

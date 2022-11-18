@@ -6,17 +6,14 @@ useHead({
 
 <template>
   <div row flex flex-col gap-24>
-    <div v space-y-10 lg:space-y-4>
+    <div space-y-8 lg:space-y-4>
       <BaseHeading
         v-motion-slide-visible-once-bottom
         as="h2" text-4xl sm:text-5xl md:text-6xl z-2
       >
         Hi there
       </BaseHeading>
-      <div
-
-        class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)"
-      >
+      <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
         <div
           v-motion-slide-visible-once-bottom
           lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4
@@ -30,6 +27,16 @@ useHead({
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
           </p>
+          <div>
+            <button
+              flex gap-3 items-center justify-center
+              text-sm
+              class="transition-base bg-opaque text-default py-1.5 px-3 rounded-md hover:(ring-2 ring-stone-2 dark:ring-stone-8)"
+            >
+              <Icon name="ph:download-duotone" text-lg />
+              CV
+            </button>
+          </div>
         </div>
 
         <figure
@@ -50,15 +57,19 @@ useHead({
       </div>
     </div>
 
-    <AboutCareer v-motion-slide-visible-once-bottom />
+    <div v-motion-slide-visible-once-bottom>
+      <div>
+        <AboutCareer />
+      </div>
+    </div>
 
-    <div grid lg:grid-cols-5 gap-24 lg:gap-16 justify-between lg:divider-x>
-      <AboutEducation v-motion-slide-visible-once-bottom col-span-3 />
-      <AboutCompetitions
-        v-motion-slide-visible-once-bottom
-        col-span-2
-        lg:pl-16
-      />
+    <div grid lg:grid-cols-5 gap-4 justify-between mx--8>
+      <BaseCard v-motion-slide-visible-once-bottom col-span-3>
+        <AboutEducation />
+      </BaseCard>
+      <BaseCard v-motion-slide-visible-once-bottom col-span-2>
+        <AboutCompetitions />
+      </BaseCard>
     </div>
 
     <div relative>

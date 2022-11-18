@@ -24,7 +24,7 @@ const schools = [
 </script>
 
 <template>
-  <AboutSection title="Education">
+  <AboutSection title="Education" icon="ph:student-duotone">
     <div space-y-6 z-2>
       <div v-for="(school, i) in schools" :key="i" flex flex-col gap-1>
         <h6 text-lg leading-snug font-semibold>

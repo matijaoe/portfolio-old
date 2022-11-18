@@ -17,7 +17,7 @@ const year = new Date().getFullYear()
       </div>
 
       <div flex justify-center>
-        <p text-sm text-stone-2 flex items-center gap-2>
+        <p text-sm text-opaque-hovered flex items-center gap-2>
           built with
           <Icon name="twemoji:red-heart" class="heartbeat" text-xs />
         </p>
