@@ -1,23 +1,17 @@
 <script lang="ts" setup>
 useHead({
-  title: 'About | Matija Osrecki',
+  title: 'About | Matija Osrečki',
 })
 </script>
 
 <template>
   <div row flex flex-col gap-24>
     <div space-y-8 lg:space-y-4>
-      <BaseHeading
-        v-motion-slide-visible-once-bottom
-        as="h2" text-4xl sm:text-5xl md:text-6xl z-2
-      >
+      <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl z-2>
         Hi there
       </BaseHeading>
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
-        <div
-          v-motion-slide-visible-once-bottom
-          lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4
-        >
+        <div lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4>
           <p>
             I'm <span class="text-strong">Matija Osrečki</span>, 23 year old Full Stack Developer from Croatia.
           </p>
@@ -43,9 +37,8 @@ useHead({
           lg:aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1"
         >
           <div v-motion-pop-visible class="img-shade" w-full bg />
-          <div v-motion-slide-visible-once-bottom relative>
+          <div relative>
             <NuxtImg
-
               transition duration-500 ease rotate-3 hover:rotate-12
               rounded-lg
               format="webp"
@@ -57,17 +50,17 @@ useHead({
       </div>
     </div>
 
-    <div v-motion-slide-visible-once-bottom>
+    <div>
       <div>
         <AboutCareer />
       </div>
     </div>
 
     <div grid lg:grid-cols-5 gap-4 justify-between mx--8>
-      <BaseCard v-motion-slide-visible-once-bottom col-span-3>
+      <BaseCard col-span-3>
         <AboutEducation />
       </BaseCard>
-      <BaseCard v-motion-slide-visible-once-bottom col-span-2>
+      <BaseCard col-span-2>
         <AboutCompetitions />
       </BaseCard>
     </div>
@@ -75,14 +68,14 @@ useHead({
     <div relative>
       <SVGThings absolute top--60 left--60 />
 
-      <AboutSkills v-motion-slide-visible-once-bottom />
+      <AboutSkills />
     </div>
 
-    <AboutSkillsAlt v-motion-slide-visible-once-bottom />
+    <AboutSkillsAlt />
 
-    <AboutBooks v-motion-slide-visible-once-bottom />
+    <AboutBooks />
 
-    <AboutPodcasts v-motion-slide-visible-once-bottom />
+    <AboutPodcasts />
   </div>
 </template>
 

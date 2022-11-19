@@ -2,7 +2,7 @@
 import { projects } from '~~/data/projects'
 
 useHead({
-  title: 'Projects | Matija Osrecki',
+  title: 'Projects | Matija Osrečki',
 })
 </script>
 
