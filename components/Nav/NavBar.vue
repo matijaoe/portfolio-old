@@ -34,7 +34,7 @@ onMounted(() => {
           :class="{ 'hover:(bg-opaque)': !pageScrolled, 'text-opaque-hovered': pageScrolled }"
           transition-base
           relative z-2
-          rounded-md
+          rounded-lg
           active-class="!text-default"
         >
           <span text-sm> {{ item.label }}</span>

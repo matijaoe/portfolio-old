@@ -23,9 +23,12 @@ useHead({
           </p>
           <div>
             <button
-              flex gap-3 items-center justify-center
-              text-sm
-              class="transition-base bg-opaque text-default py-1.5 px-3 rounded-md hover:(ring-2 ring-stone-2 dark:ring-stone-8)"
+              flex gap-2 items-center justify-center
+              text="sm default"
+              py="2" px-3
+              bg-default-3
+              transition-base rounded-lg
+              class="hover:(ring-2 ring-stone-2 dark:ring-stone-7)"
             >
               <Icon name="ph:download-duotone" text-lg />
               CV

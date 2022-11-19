@@ -1,32 +1,31 @@
 <script lang="ts" setup>
-defineProps<{
+withDefaults(defineProps<{
   as?: any
   noPadding?: boolean
-  alwaysBordered?: boolean
-}>()
+  hoverable?: boolean
+}>(), {
+  hoverable: true,
+})
 </script>
 
 <template>
   <div
     :as="as"
-    text-left
-    rounded="[0.625rem]"
-    :class="{ 'bg-stone-8 dark:bg-stone-4': alwaysBordered }"
-    bg="hover:(stone-8 dark:stone-4)"
-    p="0.5"
-    class="hover:(-translate-y-1)"
-    transition-base
     flex flex-col
+    transition-base
+    rounded-2xl
+    overflow-hidden
+    ring-1 ring-transparent
+    :class="{
+      'hover:(translate-y--1 ring-2 ring-stone-8 dark:ring-stone-6)': hoverable,
+    }"
   >
     <div
+      bg-opaque
       :class="[noPadding ? 'p-0' : 'p-8']"
-      flex-1
-      flex
-      flex-col
-      rounded-lg
+      flex-1 flex flex-col
       overflow-hidden
       transition-smooth
-      bg-default-3
     >
       <slot />
     </div>

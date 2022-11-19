@@ -11,7 +11,7 @@ defineProps<{
     absolute
     top="50%"
     right="-80% sm:-60% md:-25% lg:-10% xl:-35"
-    rounded-lg
+    rounded-md
     overflow-hidden
     transition
     class="-translate-y-20 scale-130 opacity-4 rotate-12 filter-saturate-0 z-1"

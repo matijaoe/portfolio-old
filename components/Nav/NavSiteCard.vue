@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <NuxtLink :to="card.to" block flex flex-col>
-    <BaseCard flex-1>
+    <BaseCard flex-1 hoverable>
       <div flex flex-col gap-5>
         <div flex items-center gap-3>
           <Icon :name="card.icon" text-3xl mb="1.5" />

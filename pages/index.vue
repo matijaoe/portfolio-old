@@ -131,8 +131,6 @@ onMounted(() => {
       <div class="grid grid-cols-6 sm:grid-cols-12 gap-3">
         <BaseCard
           class="row-span-4 col-span-6"
-          :always-bordered="!isDark"
-          :class="{ '!pb-4': !isDark }"
         >
           <div flex-1 flex flex-col gap-8>
             <div flex items-end justify-between>
@@ -163,12 +161,30 @@ onMounted(() => {
                 I've only been back a week or two, and I've already released three new projects, updated another, and published two blog posts. I hope to keep moving forward at a reasonable pace, probably not this fast, while still sprinkling in some enjoyment time here and there.
               </p>
             </div>
+            <div>
+              <button
+                ml-auto
+                text-sm py-2 px-3 rounded-lg
+                flex gap-2 items-center justify-center
+                transition-base
+                class="group hover:(bg-stone-2/70 dark:(bg-stone-8))"
+              >
+                Read the rest
+                <Icon
+                  name="ph:arrow-right-duotone" text-md
+                  transition-base
+                  class="translate-x--0.5 group-hover:(translate-x-0.5)"
+                />
+              </button>
+            </div>
           </div>
           <div mx--3 flex justify-between items-center>
             <button
-              text-sm
+              text-sm py-2 px-3 rounded-lg
               flex gap-2 items-center justify-center
-              class="hover:translate-x-3 transition-base hover:(bg-stone-2 text-stone-8) py-1.5 px-3 rounded-md"
+              transition-base
+              class="hover:(translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
+
               @click="hasMore = true"
             >
               <Icon name="ph:caret-left-duotone" text-lg />
@@ -176,10 +192,10 @@ onMounted(() => {
             </button>
             <button
               v-if="hasMore"
-              text-sm
+              text-sm py-2 px-3 rounded-lg
               flex gap-2 items-center justify-center
-              class="hover:translate-x--3 transition-base"
-              @click="hasMore = false"
+              transition-base
+              class="hover:(-translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
             >
               Newer
               <Icon name="ph:caret-right-duotone" text-lg />
@@ -192,11 +208,7 @@ onMounted(() => {
           class="group col-span-3 sm:(col-span-2 row-span-1)" block
           :href="social.href" target="_blank"
         >
-          <BaseCard
-            :style="!isDark ? { background: social.color } : {}"
-            :class="{ '!pb-4': !isDark }"
-            aspect-square no-padding
-          >
+          <BaseCard aspect-square no-padding>
             <div
               filter-saturate-90
               p-5 flex-1 flex flex-col justify-between class="text-default"
@@ -209,17 +221,15 @@ onMounted(() => {
 
         <NavSiteCard
           :card="cards[1]"
+          min-h="45"
           class="col-span-1 col-span-6"
         />
 
         <NavSiteCard
           :card="cards[0]"
+          min-h="45"
           class="col-span-6"
         />
-
-        <BaseCard class="col-span-6">
-          what am i doing
-        </BaseCard>
 
         <BaseCard class="col-span-6">
           what am i doing
