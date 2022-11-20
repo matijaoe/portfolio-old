@@ -26,9 +26,25 @@ const list = [
   <AboutSection title="Competitions" icon="ph:trophy-duotone">
     <div space-y-6 z-2>
       <div v-for="(item, i) in list" :key="i" flex flex-col gap-1>
-        <h6 text-lg leading-snug font-semibold>
-          {{ item.name }}
-        </h6>
+        <div flex items-center gap-1>
+          <h6 text-lg leading-snug font-semibold>
+            {{ item.name }}
+          </h6>
+          <button
+            v-tooltip="{
+              delay: 0,
+              content: 'TVZ Mc2 is one of the biggest student programming competitions in Croatia.',
+              theme: 'info-tooltip',
+              placement: 'top',
+            }"
+            p-2
+            flex justify-center items-center
+          >
+            <Icon
+              name="tabler:info-circle" text="sm dimmed"
+            />
+          </button>
+        </div>
 
         <div flex items-center gap-2>
           <a :href="item.url" target="_blank" hyperlink>{{ item.project }}</a>

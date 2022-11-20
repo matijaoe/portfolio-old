@@ -1,6 +1,8 @@
 .v-popper--theme-info-tooltip .v-popper__inner {
+  z-index: 1000;
   background: #d6d3d186;
   color: #44403c;
+  backdrop-filter: blur(12px);
 
   padding: 5px 10px;
   font-size: 13px;
@@ -10,6 +12,7 @@
 .dark .v-popper--theme-info-tooltip .v-popper__inner {
   background: #44403c6d;
   color: #d6d3d1;
+  backdrop-filter: blur(12px);
 }
 
 .v-popper--theme-info-tooltip .v-popper__arrow-inner {

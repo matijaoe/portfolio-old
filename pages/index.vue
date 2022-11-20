@@ -129,10 +129,9 @@ onMounted(() => {
 
     <div px-8 w-full max-w-7xl mx-auto>
       <div class="grid grid-cols-6 sm:grid-cols-12 gap-3">
-        <BaseCard
-          class="row-span-4 col-span-6"
-        >
+        <BaseCard class="row-span-4 col-span-6">
           <div flex-1 flex flex-col gap-8>
+            <!-- title -->
             <div flex items-end justify-between>
               <div flex items-center gap-3>
                 <Icon name="ph:compass-duotone" text-3xl mb="1.5" />
@@ -144,6 +143,7 @@ onMounted(() => {
                 <div>{{ Intl.DateTimeFormat('en-us', { dateStyle: 'medium' }).format(new Date(2022, 11, 18)) }}</div>
               </div>
             </div>
+            <!-- content -->
             <div text-base text-dimmed space-y-3>
               <p>
                 Building a platform for financial independence
@@ -161,6 +161,7 @@ onMounted(() => {
                 I've only been back a week or two, and I've already released three new projects, updated another, and published two blog posts. I hope to keep moving forward at a reasonable pace, probably not this fast, while still sprinkling in some enjoyment time here and there.
               </p>
             </div>
+            <!-- content button -->
             <div>
               <button
                 ml-auto
@@ -178,6 +179,7 @@ onMounted(() => {
               </button>
             </div>
           </div>
+          <!-- controls -->
           <div mx--3 flex justify-between items-center>
             <button
               text-sm py-2 px-3 rounded-lg
@@ -202,6 +204,7 @@ onMounted(() => {
             </button>
           </div>
         </BaseCard>
+
         <a
           v-for="social in socials"
           :key="social.label"
@@ -209,11 +212,12 @@ onMounted(() => {
           :href="social.href" target="_blank"
         >
           <BaseCard aspect-square no-padding>
-            <div
-              filter-saturate-90
-              p-5 flex-1 flex flex-col justify-between class="text-default"
-            >
-              <Icon :style="isDark ? {} : { color: social.color }" :name="social.icon" text-5xl text-stone-2 dark:text-stone-4 />
+            <div p-5 flex-1 flex flex-col justify-between class="text-default">
+              <Icon
+                :style="isDark && social.label === 'Github' ? { color: '#a8a29e' } : { color: social.color }"
+                :class="{ 'filter-saturate-75': isDark }"
+                :name="social.icon" text-5xl text-stone-2 dark:text-stone-4
+              />
               <div ml-auto>@{{ social.href.split('/').at(-1) }}</div>
             </div>
           </BaseCard>
