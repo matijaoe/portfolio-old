@@ -31,7 +31,6 @@ export default defineNuxtConfig({
     preference: 'system',
     fallback: 'dark',
   },
-
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
