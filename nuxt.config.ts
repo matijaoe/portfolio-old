@@ -62,8 +62,5 @@ export default defineNuxtConfig({
       link: [{ rel: 'canonical', href: meta.url }],
     },
   },
-  content: {
-    // https://content.nuxtjs.org/api/configuration
-  },
   image: {},
 })
