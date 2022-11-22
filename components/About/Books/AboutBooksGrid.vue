@@ -8,7 +8,6 @@ const { isTouchDevice } = useTouchDevice()
 
 <template>
   <div
-    v-dragscroll="!isTouchDevice"
     mt--1
     pt-1
     pb-3
