@@ -170,7 +170,6 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
       </div>
     </template>
     <div
-      v-auto-animate
       grid grid-cols="1 md:2 lg:3" gap-3
     >
       <article

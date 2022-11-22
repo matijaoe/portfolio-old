@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import gsap from 'gsap'
 import { baseSocials as socials } from '~~/data/socials'
 import type { NavCard } from '~~/models'
 
@@ -25,17 +24,6 @@ const cards: NavCard[] = [
 const hasMore = ref(false)
 const { isDark } = useTheme()
 const container = ref<HTMLDivElement>()
-
-onMounted(() => {
-  gsap.from(container.value!.children, {
-    delay: 0.15,
-    duration: 0.5,
-    y: '+100',
-    autoAlpha: 0,
-    stagger: 0.15,
-    ease: 'back.out(1.7)',
-  })
-})
 </script>
 
 <template>
@@ -91,34 +79,6 @@ onMounted(() => {
       </div>
 
       <div mt-4 flex items-center gap-4 divider-x>
-        <!-- <ul flex items-center gap-1 ml--2>
-          <li
-            v-for="social in socials"
-            :key="social.label"
-            v-tooltip="{
-              content: social.label,
-              theme: 'info-tooltip',
-              placement: 'bottom',
-            }"
-          >
-            <a
-              :href="social.href"
-              target="_blank"
-              :aria-label="social.label"
-              flex items-center justify-center
-              text-dimmed hover:text-accent
-              transition-base
-              p-2
-              rounded-full
-            >
-              <Icon
-                :name="social.icon"
-                text-2xl
-              />
-            </a>
-          </li>
-        </ul> -->
-
         <button flex items-center gap="1.5" text-default>
           Press <div flex items-center gap-1>
             <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>

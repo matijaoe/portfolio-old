@@ -41,7 +41,7 @@ useHead({
         >
           <div v-motion-pop-visible class="img-shade" w-full bg />
           <div relative>
-            <NuxtImg
+            <img
               transition duration-500 ease rotate-3 hover:rotate-12
               rounded-lg
               format="webp"

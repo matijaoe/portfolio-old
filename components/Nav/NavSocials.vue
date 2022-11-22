@@ -7,12 +7,6 @@ import { socials } from '~~/data/socials'
     <li
       v-for="(social, i) in socials"
       :key="i"
-      v-tooltip="{
-        delay: 0,
-        content: social.label,
-        theme: 'info-tooltip',
-        placement: 'top',
-      }"
     >
       <a
         :href="social.href"

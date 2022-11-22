@@ -8,7 +8,6 @@ const { isTouchDevice } = useTouchDevice()
 
 <template>
   <div
-    v-dragscroll="!isTouchDevice"
     mt--1
     pt-1
     pb-3
@@ -45,7 +44,7 @@ const { isTouchDevice } = useTouchDevice()
         </div>
 
         <figure relative>
-          <NuxtImg
+          <img
             loading="lazy"
             format="webp"
             height="256"

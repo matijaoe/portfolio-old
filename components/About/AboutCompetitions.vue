@@ -31,12 +31,6 @@ const list = [
             {{ item.name }}
           </h6>
           <button
-            v-tooltip="{
-              delay: 0,
-              content: 'TVZ Mc2 is one of the biggest student programming competitions in Croatia.',
-              theme: 'info-tooltip',
-              placement: 'top',
-            }"
             p-2
             flex justify-center items-center
           >

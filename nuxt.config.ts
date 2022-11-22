@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@unocss/nuxt',
     '@vueuse/nuxt',
-    '@nuxt/image-edge',
     '@nuxtjs/color-mode',
   ],
   experimental: {
