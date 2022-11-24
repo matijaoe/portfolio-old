@@ -29,7 +29,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
       z-5 relative
       flex gap-4
       w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 transition sm:pl-3 pr-5"
+      class="lg:-translate-x-4 transition sm:pl-3 pr-5 backdrop-blur-md"
       :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovered }]"
       @click="openProject"
     >

@@ -60,21 +60,19 @@ useHead({
     </div>
 
     <div grid lg:grid-cols-5 gap-4 justify-between mx--8>
-      <BaseCard col-span-3>
+      <BaseCard col-span-3 :hoverable="false">
         <AboutEducation />
       </BaseCard>
-      <BaseCard col-span-2>
+      <BaseCard col-span-2 :hoverable="false">
         <AboutCompetitions />
       </BaseCard>
     </div>
 
     <div relative>
-      <SVGThings absolute top--60 left--60 />
+      <SVGThings absolute top--50 left--60 />
 
       <AboutSkills />
     </div>
-
-    <AboutSkillsAlt />
 
     <AboutBooks />
 

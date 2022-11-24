@@ -17,9 +17,11 @@ defineProps<{
           </h4>
         </div>
 
-        <p text-sm text-dimmed>
+        <p text-dimmed>
           {{ card.description }}
         </p>
+
+        <slot />
       </div>
     </BaseCard>
   </NuxtLink>

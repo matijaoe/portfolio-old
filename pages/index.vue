@@ -20,6 +20,12 @@ const cards: NavCard[] = [
     to: '/projects',
     icon: 'ph:lightbulb-filament-duotone',
   },
+  {
+    title: 'Contact',
+    description: 'Contact me via email or any of my socials',
+    to: '/contact',
+    icon: 'ph:chat-circle-dots-duotone',
+  },
 ]
 
 const hasMore = ref(false)
@@ -128,7 +134,7 @@ onMounted(() => {
     </div>
 
     <div px-8 w-full max-w-7xl mx-auto>
-      <div class="grid grid-cols-6 sm:grid-cols-12 gap-3">
+      <div class="grid grid-cols-6 grid-rows-4 sm:grid-cols-12 gap-3" auto-rows-max>
         <BaseCard class="row-span-4 col-span-6">
           <div flex-1 flex flex-col gap-8>
             <!-- title -->
@@ -149,7 +155,7 @@ onMounted(() => {
                 Building a platform for financial independence
               </p>
               <p>
-                I've been working at Atlassian on the Trello team for a year now, but still kind of struggling to find my place on the Frontend Platform team. However, the company culture is so good, there's no reason to look elsewhere!
+                FAKE TEXT I've been working at Atlassian on the Trello team for a year now, but still kind of struggling to find my place on the Frontend Platform team. However, the company culture is so good, there's no reason to look elsewhere!
               </p>
               <p>
                 I basically took the summer of 2022 off from coding and side projects, and disconnecting felt so good! I spent time traveling, doing home improvements, and picking up hobbies like reading and riding my OneWheel.
@@ -161,13 +167,10 @@ onMounted(() => {
                 I've only been back a week or two, and I've already released three new projects, updated another, and published two blog posts. I hope to keep moving forward at a reasonable pace, probably not this fast, while still sprinkling in some enjoyment time here and there.
               </p>
             </div>
-            <!-- content button -->
+
             <div>
               <button
-                ml-auto
-                text-sm py-2 px-3 rounded-lg
-                flex gap-2 items-center justify-center
-                transition-base
+                ml-auto text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
                 class="group hover:(bg-stone-2/70 dark:(bg-stone-8))"
               >
                 Read the rest
@@ -182,9 +185,7 @@ onMounted(() => {
           <!-- controls -->
           <div mx--3 flex justify-between items-center>
             <button
-              text-sm py-2 px-3 rounded-lg
-              flex gap-2 items-center justify-center
-              transition-base
+              text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
               class="hover:(translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
 
               @click="hasMore = true"
@@ -194,9 +195,7 @@ onMounted(() => {
             </button>
             <button
               v-if="hasMore"
-              text-sm py-2 px-3 rounded-lg
-              flex gap-2 items-center justify-center
-              transition-base
+              text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
               class="hover:(-translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
             >
               Newer
@@ -225,23 +224,28 @@ onMounted(() => {
 
         <NavSiteCard
           :card="cards[1]"
-          min-h="45"
           class="col-span-1 col-span-6"
         />
 
         <NavSiteCard
           :card="cards[0]"
-          min-h="45"
           class="col-span-6"
         />
 
-        <BaseCard class="col-span-6">
-          what am i doing
-        </BaseCard>
+        <NavSiteCard
+          :card="cards[2]"
+          class="col-span-6"
+        />
 
-        <BaseCard class="col-span-6">
-          what am i doing
-        </BaseCard>
+        <NavSiteCard
+          :card="cards[2]"
+          class="col-span-6"
+        />
+
+        <NavSiteCard
+          :card="cards[2]"
+          class="col-span-6"
+        />
       </div>
     </div>
   </div>

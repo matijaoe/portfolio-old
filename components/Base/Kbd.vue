@@ -3,16 +3,7 @@
 </script>
 
 <template>
-  <kbd
-    transition-smooth
-    bg-default-3
-    font-mono text-sm text-default leading-none
-    p="y-1 x-1.5"
-    rounded-md
-  >
-    <span text-default>
-      <slot />
-
-    </span>
+  <kbd class="px-2 py-1 text-xs font-semibold text-stone-8 bg-stone-1 border border-stone-2 rounded-lg dark:(bg-stone-8 text-stone-3 border-stone-7/40)">
+    <slot />
   </kbd>
 </template>
