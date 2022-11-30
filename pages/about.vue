@@ -54,9 +54,7 @@ useHead({
     </div>
 
     <div>
-      <div>
-        <AboutCareer />
-      </div>
+      <AboutCareer />
     </div>
 
     <div grid lg:grid-cols-5 gap-4 justify-between mx--8>
