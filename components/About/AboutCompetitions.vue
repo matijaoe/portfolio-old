@@ -17,7 +17,7 @@ const list = [
     project: 'Qwiz',
     from: 'Feb 2022',
     to: 'Jun 2022',
-    description: 'Bili smo osmi hehe xd',
+    description: 'Had not won but learned a lot.',
   },
 ]
 </script>

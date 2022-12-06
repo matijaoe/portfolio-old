@@ -3,52 +3,10 @@ import type { Project } from '~~/models'
 
 export const projects: Project[] = [
   {
-    name: 'Qwiz',
-    description: 'Platform for creation, organization & discovery of pub quizzes.',
-    tags: [Tag.Next, Tag.React, Tag.TypeScript, Tag.Nest, Tag.Prisma],
-    year: 2022,
-    links: [
-      {
-        label: 'Code',
-        href: 'https://github.com/qwiz-app/qwiz',
-      },
-      {
-        label: 'Live',
-        href: 'https://app.qwiz.party',
-      },
-      {
-        label: 'Video demo',
-        href: 'https://drive.google.com/file/d/1swh3Bd43ThSkKgEnOpwXu9OcoUbOqt0l/view',
-      },
-      {
-        label: 'API Docs',
-        href: 'https://documenter.getpostman.com/view/15639222/UyrDCvUG',
-      },
-    ],
-    thumbnail: '/projects/qwiz.webp',
-  },
-  {
-    name: 'Aimo',
-    description: 'Social media app designed for motivated individuals who want to work on themselves, but which require that extra push given to them by our idea of accountability partners. ',
-    tags: [Tag.Nuxt, Tag.Vue, Tag.Tailwind, Tag.Firebase],
-    year: 2021,
-    links: [
-      {
-        label: 'Code',
-        href: 'https://github.com/mat2ja/aimo',
-      },
-      {
-        label: 'Live',
-        href: 'https://aimo.vercel.app',
-      },
-    ],
-    thumbnail: '/projects/aimo.webp',
-  },
-  {
     name: 'Fare',
-    description: 'Platform for Financial independence, Retire early community.',
+    description: 'Application helping you attain Financial Independence.',
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS, Tag.Prisma],
-    year: 2023,
+    year: 2022,
     links: [
       {
         label: 'Code',
@@ -59,8 +17,42 @@ export const projects: Project[] = [
     thumbnail: '/projects/fire.webp',
   },
   {
+    name: 'Qwiz',
+    description: 'Platform for creation, organization & discovery of pub quizzes.',
+    tags: [Tag.Next, Tag.React, Tag.TypeScript, Tag.Nest, Tag.Prisma],
+    year: 2022,
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/qwiz-app/qwiz',
+      },
+      {
+        label: 'App',
+        href: 'https://app.qwiz.party',
+      },
+    ],
+    thumbnail: '/projects/qwiz.webp',
+  },
+  {
+    name: 'Aimo',
+    description: 'Platform for connecting motivated individuals with accountability partners.',
+    tags: [Tag.Nuxt, Tag.Vue, Tag.Tailwind, Tag.Firebase],
+    year: 2021,
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/mat2ja/aimo',
+      },
+      {
+        label: 'App',
+        href: 'https://aimo.vercel.app',
+      },
+    ],
+    thumbnail: '/projects/aimo.webp',
+  },
+  {
     name: 'matijao.com',
-    description: 'My personal site',
+    description: 'The site you are on.',
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS],
     year: 2023,
     links: [
@@ -69,7 +61,7 @@ export const projects: Project[] = [
         href: 'https://github.com/mat2ja/matijao.me',
       },
       {
-        label: 'Live',
+        label: 'App',
         href: 'https://matijao.com',
       },
     ],
@@ -77,30 +69,9 @@ export const projects: Project[] = [
     thumbnail: '/projects/matijao.webp',
   },
   {
-    name: 'Expense tracker',
-    description: 'Final project of Advanced JavaScript college course',
-    tags: [Tag.Vue, Tag.TypeScript, Tag.Vite, Tag.Node, Tag.Express, Tag.Mongo],
-    year: 2022,
-    links: [
-      {
-        label: 'Frontend',
-        href: 'https://github.com/mat2ja/expenses-frontend',
-      },
-      {
-        label: 'Backend',
-        href: 'https://github.com/mat2ja/expenses-backend',
-      },
-      {
-        label: 'Live',
-        href: 'https://expenses-frontend-five.vercel.app',
-      },
-    ],
-    thumbnail: '/projects/expenses.webp',
-  },
-  {
     name: 'MeetMia',
-    description: 'Cake shop concept project for Web Design college course',
-    tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.SCSS],
+    description: 'Cake shop concept project built for Web Design college course.',
+    tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.SASS],
     year: 2021,
     links: [
       {
@@ -108,7 +79,7 @@ export const projects: Project[] = [
         href: 'https://github.com/mat2ja/meet-mia',
       },
       {
-        label: 'Live',
+        label: 'App',
         href: 'https://meet-mia.surge.sh/',
       },
     ],
@@ -116,8 +87,8 @@ export const projects: Project[] = [
   },
   {
     name: 'Comet',
-    description: 'Video streaming platform mockup',
-    tags: [Tag.HTML, Tag.SCSS, Tag.JavaScript],
+    description: 'Video streaming platform mockup.',
+    tags: [Tag.HTML, Tag.SASS, Tag.JavaScript],
     year: 2020,
     links: [
       {
@@ -125,7 +96,7 @@ export const projects: Project[] = [
         href: 'https://github.com/mat2ja/comet',
       },
       {
-        label: 'Live',
+        label: 'App',
         href: 'https://mat2ja.github.io/comet/',
       },
     ],

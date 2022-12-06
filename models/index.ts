@@ -7,7 +7,7 @@ export enum Tag {
   Next = 'next',
   TypeScript = 'typescript',
   JavaScript = 'javascript',
-  SCSS = 'scss',
+  SASS = 'sass',
   HTML = 'html',
   Tailwind = 'tailwind',
   Vite = 'vite',

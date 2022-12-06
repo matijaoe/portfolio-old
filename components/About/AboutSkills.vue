@@ -7,145 +7,137 @@ const skills = [
     value: 'vue',
     icon: 'logos:vue',
     favorite: true,
-    desc: 'My bread and butter',
+    desc: 'The Progressive JavaScript Framework.',
+    url: 'https://vuejs.org',
   },
   {
     name: 'Nuxt',
     value: 'nuxt',
     icon: 'logos:nuxt-icon',
     favorite: true,
-    desc: 'Vue, but on a server? No way',
+    desc: 'The Intuitive Web Framework',
+    url: 'https://nuxt.com',
   },
   {
     name: 'TypeScript',
     value: 'typescript',
     icon: 'logos:typescript-icon',
     favorite: true,
-    desc: 'Make me safe',
-  },
-  {
-    name: 'React',
-    value: 'react',
-    icon: 'logos:react',
-    favorite: false,
-    desc: 'A necessary evil',
-  },
-  {
-    name: 'Next',
-    value: 'next',
-    icon: 'logos:nextjs-icon',
-    favorite: false,
-    desc: 'The cool kid',
-  },
-  {
-    name: 'JavaScript',
-    value: 'javascript',
-    icon: 'logos:javascript',
+    desc: 'JavaScript that scales.',
+    url: 'https://www.typescriptlang.org',
   },
   {
     name: 'Svelte',
     value: 'svelte',
     icon: 'logos:svelte-icon',
     favorite: true,
-    desc: 'The future',
-  },
-  {
-    name: 'Vite',
-    value: 'vite',
-    icon: 'logos:vitejs',
-    favorite: true,
-    desc: 'Blazingly™ fast',
-  },
-  {
-    name: 'Tanstack Query',
-    value: 'tanstack query',
-    icon: 'logos:react-query-icon',
-    favorite: true,
+    desc: 'Cybernetically enhanced web apps.',
+    url: 'https://svelte.dev',
   },
   {
     name: 'Tailwind CSS',
     value: 'tailwindcss',
     icon: 'logos:tailwindcss-icon',
     favorite: true,
-    desc: 'The og atomic CSS',
+    desc: 'A utility-first CSS framework.',
+    url: 'https://tailwindcss.com',
   },
   {
     name: 'UnoCSS',
     value: 'unocss',
     icon: 'logos:unocss',
     favorite: true,
-    desc: 'The only way I do css',
+    desc: 'The instant on-demand atomic CSS engine.',
+    url: 'https://github.com/unocss/unocss',
   },
   {
-    name: 'SCSS',
+    name: 'Sass',
     value: 'scss',
     icon: 'logos:sass',
     favorite: false,
+    desc: 'Syntactically Awesome Style Sheets.',
+    url: 'https://sass-lang.com/',
   },
   {
-    name: 'Storybook',
-    value: 'storybook',
-    icon: 'logos:storybook-icon',
-    favorite: false,
+    name: 'TanStack Query',
+    value: 'tanstack query',
+    icon: 'logos:react-query-icon',
+    favorite: true,
+    desc: 'Powerful asynchronous state management.',
+    url: 'https://tanstack.com/query',
   },
   {
-    name: 'Nest',
-    value: 'nest',
-    icon: 'logos:nestjs',
+    name: 'React',
+    value: 'react',
+    icon: 'logos:react',
     favorite: false,
-    desc: 'Love the structure',
+    desc: 'A JavaScript library for building user interfaces.',
+    url: 'https://reactjs.org',
   },
   {
-    name: 'Node',
-    value: 'node',
-    icon: 'logos:nodejs-icon',
+    name: 'Next',
+    value: 'next',
+    icon: 'logos:nextjs-icon',
     favorite: false,
+    desc: 'Production grade React applications that scale.',
+    url: 'https://nextjs.org',
   },
   {
-    name: 'Express',
-    value: 'express',
-    icon: 'simple-icons:express',
-    favorite: false,
+    name: 'Vite',
+    value: 'vite',
+    icon: 'logos:vitejs',
+    favorite: true,
+    desc: 'Next Generation Frontend Tooling.',
+    url: 'https://vitejs.dev',
   },
   {
     name: 'Prisma',
     value: 'prisma',
     icon: 'logos:prisma',
     favorite: true,
+    url: 'https://prisma.io',
+    desc: 'Next-generation Node.js and TypeScript ORM.',
   },
   {
-    name: 'SQL',
+    name: 'PostgreSQL',
     value: 'postgresql',
     icon: 'logos:postgresql',
     favorite: false,
-    desc: 'The ol\' reliable',
+    desc: 'The World\'s Most Advanced Open Source Relational Database.',
+    url: 'https://postgresql.org',
   },
   {
-    name: 'MongoDB',
-    value: 'mongodb',
-    icon: 'logos:mongodb-icon',
+    name: 'Nest',
+    value: 'nest',
+    icon: 'logos:nestjs',
     favorite: false,
+    desc: 'Node framework for building enterprise-grade server-side applications.',
+    url: 'https://nestjs.com',
+  },
+  {
+    name: 'Node',
+    value: 'node',
+    icon: 'logos:nodejs-icon',
+    favorite: false,
+    desc: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine',
+    url: 'https://nodejs.org',
   },
   {
     name: 'Python',
     value: 'python',
     icon: 'logos:python',
     favorite: false,
-  },
-  {
-    name: 'Figma',
-    value: 'figma',
-    icon: 'logos:figma',
-    favorite: false,
+    desc: 'Build complex application using simple, readable, and versatile syntax',
+    url: 'https://python.org',
   },
 ]
-const favsOnly = ref(true)
-const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill.favorite) : skills)
+const favsOnly = $ref(false)
+const shownSkills = computed(() => favsOnly ? skills.filter(({ favorite }) => !!favorite) : skills)
 </script>
 
 <template>
   <AboutSection title="Skills">
-    <template #right>
+    <!-- <template #right>
       <div flex gap-4 items-center>
         <p
           uppercase font-sans font-semibold text-sm text-default
@@ -167,35 +159,39 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(skill => skill
           />
         </Switch>
       </div>
-    </template>
+    </template> -->
+
     <div
       v-auto-animate
-      grid grid-cols="1 md:2 lg:3" gap-3
+      grid grid-cols="1 md:2 lg:4" grid-rows="4" gap-4
     >
-      <article
+      <a
         v-for="item in shownSkills"
         :key="item.value"
-        p-6
-        rounded-lg
-        transition-base
-        max-h="96px"
-        transition-all duration-300
-        class="backdrop-blur-md bg-transparent ring-1 ring-stone-9/5 dark:(bg-stone-8/40 ring-stone-7/40) hover:(-translate-y-1)"
+        :href="item.url"
+        target="_blank"
+        class="group"
       >
-        <div flex items-center gap-5>
-          <Icon shrink-0 :name="item.icon" text-4xl />
-          <div>
-            <div flex items-center gap-3>
-              <p font-medium text-xl>
+        <article
+          select-none p-8 text-center
+          h-full
+          rounded-2xl transition-all duration-300
+          class="backdrop-blur-md bg-stone-50 ring-1 ring-stone-9/5 dark:(bg-stone-8/40 ring-stone-7/40) hover:(-translate-y-1)"
+        >
+          <div flex flex-col justify-center items-center gap-6>
+            <Icon shrink-0 :name="item.icon" text-5xl />
+
+            <div flex flex-col gap-2>
+              <p font-medium text-lg>
                 {{ item.name }}
               </p>
+              <p text-stone-5 dark:text-stone-4 text-sm>
+                {{ item.desc ?? 'Random thing about it' }}
+              </p>
             </div>
-            <p text-stone-4 dark:text-stone-5 text-sm line-clamp-1>
-              {{ item.desc ?? 'Random thing about it' }}
-            </p>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     </div>
   </AboutSection>
 </template>

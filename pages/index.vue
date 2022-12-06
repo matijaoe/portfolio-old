@@ -63,7 +63,6 @@ onMounted(() => {
           I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code (STOLEN PLACEHOLDER)
         </p>
 
-
         <!-- <div>
           Working as a Frontend Developer at
           <div
@@ -230,16 +229,6 @@ onMounted(() => {
 
         <NavSiteCard
           :card="cards[0]"
-          class="col-span-6"
-        />
-
-        <NavSiteCard
-          :card="cards[2]"
-          class="col-span-6"
-        />
-
-        <NavSiteCard
-          :card="cards[2]"
           class="col-span-6"
         />
 
