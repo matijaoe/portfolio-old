@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { jobs } from '~~/data/jobs'
+const { jobs } = useJobs()
 </script>
 
 <template>

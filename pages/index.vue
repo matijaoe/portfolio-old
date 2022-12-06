@@ -135,7 +135,7 @@ onMounted(() => {
 
     <div px-8 w-full max-w-7xl mx-auto>
       <div class="grid grid-cols-6 grid-rows-4 sm:grid-cols-12 gap-3" auto-rows-max>
-        <BaseCard class="row-span-4 col-span-6">
+        <BaseCard class="row-span-3 col-span-6">
           <div flex-1 flex flex-col gap-8>
             <!-- title -->
             <div flex items-end justify-between>
@@ -162,9 +162,6 @@ onMounted(() => {
               </p>
               <p>
                 Now that I'm off my break, I'm trying to get back on track with my goals for 2022. I've been learning Remix with the hope that it will be the foundation for the future products that I'll build.
-              </p>
-              <p>
-                I've only been back a week or two, and I've already released three new projects, updated another, and published two blog posts. I hope to keep moving forward at a reasonable pace, probably not this fast, while still sprinkling in some enjoyment time here and there.
               </p>
             </div>
 
@@ -229,6 +226,11 @@ onMounted(() => {
 
         <NavSiteCard
           :card="cards[0]"
+          class="col-span-6"
+        />
+
+        <NavSiteCard
+          :card="cards[2]"
           class="col-span-6"
         />
 

@@ -18,6 +18,11 @@ export default defineNuxtConfig({
   unocss: {
     preflight: true,
   },
+  imports: {
+    dirs: [
+      'composables/**', // Scan all nested directories
+    ],
+  },
   css: [
     'assets/styles/variables.css',
     'assets/styles/fonts.css',
