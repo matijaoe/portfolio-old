@@ -69,6 +69,41 @@ export const projects: Project[] = [
     thumbnail: '/projects/matijao.webp',
   },
   {
+    name: 'Favicônes',
+    description: 'Quick and easy way to use any icon as favicon.',
+    tags: [Tag.Nuxt, Tag.Vue, Tag.UnoCSS],
+    year: 2022,
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/mat2ja/favicones',
+      },
+      {
+        label: 'App',
+        href: 'https://favicones.vercel.app/',
+      },
+    ],
+    thumbnail: '/projects/favicones.webp',
+  },
+  {
+    name: 'BTC Tools',
+    inProgress: true,
+    description: 'BIP39 wordlist preview. More tools coming soon.',
+    tags: [Tag.SvelteKit, Tag.TypeScript, Tag.Tailwind],
+    year: 2022,
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/mat2ja/btc-tools',
+      },
+      {
+        label: 'App',
+        href: 'https://bip39-rosy.vercel.app',
+      },
+    ],
+    thumbnail: '/projects/btc-tools.webp',
+  },
+  {
     name: 'MeetMia',
     description: 'Cake shop concept project built for Web Design college course.',
     tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.SASS],

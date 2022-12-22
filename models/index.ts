@@ -17,7 +17,7 @@ export enum Tag {
   Nest = 'nest',
   Firebase = 'firebase',
   Prisma = 'prisma',
-  Mongo = 'mongo',
+  SvelteKit = 'sveltekit',
 }
 
 export type Project = {
