@@ -4,7 +4,7 @@ import type { Project } from '~~/models'
 export const projects: Project[] = [
   {
     name: 'Fare',
-    description: 'Application helping you attain Financial Independence.',
+    description: 'Application for tracking personal finances and attaining financial independence.',
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS, Tag.Prisma],
     year: 2022,
     links: [
@@ -14,7 +14,7 @@ export const projects: Project[] = [
       },
     ],
     inProgress: true,
-    thumbnail: '/projects/fire.webp',
+    thumbnail: '/projects/fare.webp',
   },
   {
     name: 'Qwiz',
