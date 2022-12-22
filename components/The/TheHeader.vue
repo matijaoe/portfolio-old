@@ -8,25 +8,17 @@ onMounted(() => {
     pos.value = y.value
   })
 })
+
+const { toggleGrain } = useGrain()
 </script>
 
 <template>
-  <header
-    fixed top-0 left-0 w-screen
-    flex-grow-1 flex-shrink-0
-    py-4 md:py-6
-    z-200
-  >
+  <header fixed top-0 left-0 w-screen flex-grow-1 flex-shrink-0 py-4 md:py-6 z-200>
     <!-- TODO: they are not fully vertically aligned on mobile -->
-    <div
-      row
-      grid grid-cols-5 gap-2 items-center
-    >
+    <div row grid grid-cols-5 gap-2 items-center>
       <div :class="{ 'opacity-0 invisible': pageScrolled }" flex items-center>
         <NuxtLink to="/" aria-label="Logo" class="p-3 ml--3 lg:(p-2 ml--2)" text-opaque hover:text-default>
-          <Icon
-            transition name="tabler:seeding" text-xl md:text-2xl
-          />
+          <Icon transition name="tabler:seeding" text-xl md:text-2xl />
         </NuxtLink>
       </div>
 
@@ -35,17 +27,9 @@ onMounted(() => {
         <NavBar w-max mx-auto />
       </div>
 
-      <div
-        :class="{ 'opacity-0 invisible': pageScrolled }"
-        justify-self-end
-        flex items-center gap-5
-      >
-        <button
-          aria-label="Command prompt"
-          flex items-center
-          text-xl md:text-2xl
-          text-opaque hover:text-default
-        >
+      <div :class="{ 'opacity-0 invisible': pageScrolled }" justify-self-end flex items-center gap-5>
+        <button aria-label="Command prompt" flex items-center text-xl md:text-2xl text-opaque hover:text-default
+          @click="toggleGrain">
           <Icon name="ph:command-duotone" />
         </button>
 
