@@ -26,6 +26,7 @@
     "vue-dragscroll": "^4.0.5"
   },
   "dependencies": {
-    "date-fns": "^2.29.3"
+    "date-fns": "^2.29.3",
+    "vue-command-palette": "^0.1.4"
   }
 }

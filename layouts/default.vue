@@ -10,8 +10,8 @@ const { isDark } = useTheme()
     <main flex-1 flex flex-col p="t-24 b-40 md:(t-32 b-40)">
       <NuxtPage />
       <!-- <GrainCover v-show="showGrain" opacity="2" /> -->
-      <GrainCover2 v-show="showGrain" :opacity="isDark ? 18 : 5" />
-      <!-- <div id="texture" /> -->
+      <GrainCover2 v-show="showGrain" :opacity="isDark ? 10 : 4" />
+      <div v-show="!isDark" id="texture" />
     </main>
 
     <TheFooter mt-auto />

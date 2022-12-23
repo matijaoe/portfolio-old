@@ -16,6 +16,6 @@
   top: -300%;
   animation: home-grain 11s steps(10) infinite;
   pointer-events: none;
-  z-index: 1;
+  z-index: 500;
 }
 </style>
