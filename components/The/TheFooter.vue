@@ -3,7 +3,6 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  
   <footer
     py-14
     border="t-1 t-stone-2 dark:(t-stone-8)"

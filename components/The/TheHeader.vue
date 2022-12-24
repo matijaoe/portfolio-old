@@ -10,10 +10,18 @@ onMounted(() => {
 })
 
 const { toggleGrain } = useGrain()
+
+const { notificationShown } = useNotification()
 </script>
 
 <template>
   <header fixed top-0 left-0 w-screen flex-grow-1 flex-shrink-0 z-200>
+    <!-- Notification -->
+    <Notification v-if="notificationShown">
+      Very much work in progress. Nothing to see here. Move along.
+    </Notification>
+
+    <!-- Header -->
     <div py-4 md:py-6>
       <!-- TODO: they are not fully vertically aligned on mobile -->
       <div row grid grid-cols-5 gap-2 items-center>
