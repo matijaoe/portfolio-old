@@ -20,7 +20,7 @@ const { socials } = useSocials()
         :aria-label="social.label"
         p-2 flex items-center justify-center
         text-xl
-        text-stone-4 dark:text-stone-5 hover:text-accent
+        class="text-stone-4 dark:text-stone-5 hover:!text-accent"
         transition-base
       >
         <Icon
@@ -41,7 +41,7 @@ const { socials } = useSocials()
         aria-label="Links"
         p-2 flex items-center justify-center
         text-xl
-        text-stone-4 dark:text-stone-5 hover:text-accent
+        class="text-stone-4 dark:text-stone-5 hover:!text-accent"
         transition-base
       >
         <Icon

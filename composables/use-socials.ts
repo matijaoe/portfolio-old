@@ -13,7 +13,7 @@ export const useSocials = () => {
 
   const baseSocials = computed(() => [
     {
-      label: 'Github',
+      label: 'GitHub',
       username: '@mat2ja',
       icon: 'ph:github-logo-fill',
       href: 'https://github.com/mat2ja',
