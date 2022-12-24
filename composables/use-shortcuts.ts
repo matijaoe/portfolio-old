@@ -9,15 +9,15 @@ export const useShortcuts = () => {
       handler: toggleDark,
     },
     home: {
-      key: 'h',
+      key: 'cltr+h',
       handler: () => navigateTo('/'),
     },
     about: {
-      key: 'a',
+      key: 'ctrl+a',
       handler: () => navigateTo('/about'),
     },
     projects: {
-      key: 'p',
+      key: 'ctrl+p',
       handler: () => navigateTo('/projects'),
     },
   }

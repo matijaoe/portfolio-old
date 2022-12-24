@@ -60,7 +60,7 @@ onMounted(() => {
 
       <div max-w-xl space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
         <p title="its a stolen placeholder">
-          I'm a Software Engineer who enjoys turning problems and opportunities into simple interfaces through design and code (STOLEN PLACEHOLDER)
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nemo incidunt libero voluptas quam necessitatibus neque aspernatur ut
         </p>
 
         <!-- <div>
@@ -155,13 +155,13 @@ onMounted(() => {
                 Building a platform for financial independence
               </p>
               <p>
-                FAKE TEXT I've been working at Atlassian on the Trello team for a year now, but still kind of struggling to find my place on the Frontend Platform team. However, the company culture is so good, there's no reason to look elsewhere!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum neque nam voluptatibus minus. Id, eum? Ipsa eum esse odio repudiandae, quisquam praesentium illo sunt, nemo autem cum vero veniam? Temporibus?
               </p>
               <p>
-                I basically took the summer of 2022 off from coding and side projects, and disconnecting felt so good! I spent time traveling, doing home improvements, and picking up hobbies like reading and riding my OneWheel.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quaerat nihil mollitia harum nostrum quas tempore ad impedit! Corrupti perspiciatis in consequatur officia illo molestiae cupiditate veniam fugiat aspernatur. Corporis.
               </p>
               <p>
-                Now that I'm off my break, I'm trying to get back on track with my goals for 2022. I've been learning Remix with the hope that it will be the foundation for the future products that I'll build.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quam maiores. Ab culpa exercitationem sit sunt reiciendis hic, vitae corrupti distinctio numquam quas
               </p>
             </div>
 
