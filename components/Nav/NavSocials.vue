@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { socials } from '~~/data/socials'
+const { socials } = useSocials()
 </script>
 
 <template>
@@ -27,6 +27,27 @@ import { socials } from '~~/data/socials'
           :name="social.icon"
         />
       </a>
+    </li>
+    <li
+      v-tooltip="{
+        delay: 0,
+        content: 'All links',
+        theme: 'info-tooltip',
+        placement: 'top',
+      }"
+    >
+      <NuxtLink
+        to="/links"
+        aria-label="Links"
+        p-2 flex items-center justify-center
+        text-xl
+        text-stone-4 dark:text-stone-5 hover:text-accent
+        transition-base
+      >
+        <Icon
+          name="ph:arrow-right"
+        />
+      </NuxtLink>
     </li>
   </menu>
 </template>

@@ -12,9 +12,11 @@ const year = new Date().getFullYear()
       <div flex="~ flex-col gap-5 md:(flex-row gap-4)" items-center justify-between flex-col md:flex-row gap-2>
         <NavSocials />
 
-        <p text-sm text-opaque-hovered>
-          © {{ year }} Matija Osrečki. All rights reserved.
-        </p>
+        <div flex items-center gap-2>
+          <p text-sm text-opaque-hovered>
+            © {{ year }} Matija Osrečki. All rights reserved.
+          </p>
+        </div>
       </div>
 
       <div flex justify-center>

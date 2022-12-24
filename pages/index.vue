@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
-import { baseSocials as socials } from '~~/data/socials'
 import type { NavCard } from '~~/models'
+
+const { baseSocials: socials } = useSocials()
 
 useHead({
   title: 'Home | Matija Osrečki',
@@ -174,11 +175,11 @@ onMounted(() => {
           <Card aspect-square no-padding>
             <div p-5 flex-1 flex flex-col justify-between class="text-default">
               <Icon
-                :style="isDark && social.label === 'Github' ? { color: '#a8a29e' } : { color: social.color }"
+                :style="{ color: social.color }"
                 :class="{ 'filter-saturate-75': isDark }"
                 :name="social.icon" text-5xl text-stone-2 dark:text-stone-4
               />
-              <div ml-auto>@{{ social.href.split('/').at(-1) }}</div>
+              <div ml-auto>{{ social.username }}</div>
             </div>
           </Card>
         </a>

@@ -17,7 +17,7 @@ withDefaults(defineProps<{
     overflow-hidden
     ring-1 ring-transparent
     :class="{
-      'hover:(translate-y--1 ring-2 ring-stone-8 dark:ring-stone-6)': hoverable,
+      'hover:(translate-y--1 ring-2 ring-stone-8 dark:ring-accent)': hoverable,
     }"
   >
     <div
