@@ -22,17 +22,9 @@ useHead({
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
           </p>
           <div>
-            <button
-              flex gap-2 items-center justify-center
-              text="sm default"
-              py="2" px-3
-              bg-default-3
-              transition-base rounded-lg
-              class="hover:(ring-2 ring-stone-2 dark:ring-stone-7)"
-            >
-              <Icon name="ph:download-duotone" text-lg />
+            <Button icon="ph:download-duotone">
               CV
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -58,12 +50,12 @@ useHead({
     </div>
 
     <div grid lg:grid-cols-5 gap-4 justify-between mx--8>
-      <BaseCard col-span-3 :hoverable="false">
+      <Card col-span-3 :hoverable="false">
         <AboutEducation />
-      </BaseCard>
-      <BaseCard col-span-2 :hoverable="false">
+      </Card>
+      <Card col-span-2 :hoverable="false">
         <AboutCompetitions />
-      </BaseCard>
+      </Card>
     </div>
 
     <div relative>

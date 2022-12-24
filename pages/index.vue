@@ -98,7 +98,7 @@ onMounted(() => {
 
     <div px-8 w-full max-w-7xl mx-auto>
       <div class="grid grid-cols-6 grid-rows-4 sm:grid-cols-12 gap-3" auto-rows-max>
-        <BaseCard class="row-span-3 col-span-6">
+        <Card class="row-span-3 col-span-6">
           <div flex-1 flex flex-col gap-8>
             <!-- title -->
             <div flex items-end justify-between>
@@ -163,7 +163,7 @@ onMounted(() => {
               <Icon name="ph:caret-right-duotone" text-lg />
             </button>
           </div>
-        </BaseCard>
+        </Card>
 
         <a
           v-for="social in socials"
@@ -171,7 +171,7 @@ onMounted(() => {
           class="group col-span-3 sm:(col-span-2 row-span-1)" block
           :href="social.href" target="_blank"
         >
-          <BaseCard aspect-square no-padding>
+          <Card aspect-square no-padding>
             <div p-5 flex-1 flex flex-col justify-between class="text-default">
               <Icon
                 :style="isDark && social.label === 'Github' ? { color: '#a8a29e' } : { color: social.color }"
@@ -180,7 +180,7 @@ onMounted(() => {
               />
               <div ml-auto>@{{ social.href.split('/').at(-1) }}</div>
             </div>
-          </BaseCard>
+          </Card>
         </a>
 
         <NavSiteCard
