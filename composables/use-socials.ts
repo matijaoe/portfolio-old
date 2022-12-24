@@ -17,7 +17,7 @@ export const useSocials = () => {
       username: '@mat2ja',
       icon: 'ph:github-logo-fill',
       href: 'https://github.com/mat2ja',
-      color: isDark ? '#kfafaf9' : '#171515',
+      color: isDark ? '#fafaf9' : '#171515',
       key: 'g',
     },
     {
