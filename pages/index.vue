@@ -9,14 +9,14 @@ useHead({
 
 const cards: NavCard[] = [
   {
-    title: 'Get to know me',
-    description: 'Who am I, what do I do, what have I done, what will I do.',
+    title: 'About me',
+    description: 'What am I all about',
     to: '/about',
     icon: 'ph:user-duotone',
   },
   {
     title: 'Projects',
-    description: 'Check out some of projects I am proud of. Many more are coming. ProductHunt here I come.',
+    description: 'Check out some of projects I am proud of. Many more are about to come. See ya on ProductHunt.',
     to: '/projects',
     icon: 'ph:lightbulb-filament-duotone',
   },
@@ -26,6 +26,19 @@ const cards: NavCard[] = [
     to: '/contact',
     icon: 'ph:chat-circle-dots-duotone',
   },
+  {
+    title: 'My uses',
+    description: 'The tools I use to get things done',
+    to: '/uses',
+    icon: 'ph:tray-duotone',
+  },
+  {
+    title: 'Guestbook',
+    description: 'Stop by and leave a message',
+    to: '/guestbook',
+    icon: 'ph:book-open-duotone',
+  },
+
 ]
 
 const hasMore = ref(false)
@@ -63,28 +76,6 @@ onMounted(() => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore voluptatem ab eligendi similique. Quam, obcaecati odit, modi
         </p>
 
-        <!-- <div>
-          Working as a Frontend Developer at
-          <div
-            class="group"
-            display="inline-block"
-          >
-            <a
-              href="https://4ofthem.eu/"
-              target="_blank"
-              hyperlink
-              inline-flex items-center gap-2
-            >
-              Four of them LLC
-            </a>
-            <Icon
-              name="tabler:clover"
-              text="#FF8502 xl"
-              class="opacity-0 translate-x--1 transition-base scale-50 group-hover:(opacity-100 translate-x-1 rotate-120 scale-100)"
-            />
-          </div>
-        </div> -->
-
         <div mt="!8" flex items-center gap-3 text-sm>
           <span class="relative flex h-2 w-2">
             <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-65" />
@@ -96,35 +87,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div mt-4 flex items-center gap-4 divider-x>
-        <!-- <ul flex items-center gap-1 ml--2>
-          <li
-            v-for="social in socials"
-            :key="social.label"
-            v-tooltip="{
-              content: social.label,
-              theme: 'info-tooltip',
-              placement: 'bottom',
-            }"
-          >
-            <a
-              :href="social.href"
-              target="_blank"
-              :aria-label="social.label"
-              flex items-center justify-center
-              text-dimmed hover:text-accent
-              transition-base
-              p-2
-              rounded-full
-            >
-              <Icon
-                :name="social.icon"
-                text-2xl
-              />
-            </a>
-          </li>
-        </ul> -->
-
+      <div mt-4>
         <button flex items-center gap="1.5" text-default>
           Press <div flex items-center gap-1>
             <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
@@ -163,7 +126,7 @@ onMounted(() => {
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quam maiores. Ab culpa exercitationem sit sunt reiciendis hic, vitae corrupti distinctio numquam quas
               </p>
-            </div>g
+            </div>
 
             <div>
               <button
@@ -179,6 +142,7 @@ onMounted(() => {
               </button>
             </div>
           </div>
+
           <!-- controls -->
           <div mx--3 flex justify-between items-center>
             <button
@@ -226,17 +190,16 @@ onMounted(() => {
 
         <NavSiteCard
           :card="cards[0]"
-          class="col-span-6"
+          col-span-6
         />
 
         <NavSiteCard
-          :card="cards[2]"
-          class="col-span-6"
+          :card="cards[3]"
+          col-span-6
         />
-
         <NavSiteCard
-          :card="cards[2]"
-          class="col-span-6"
+          :card="cards[4]"
+          col-span-6
         />
       </div>
     </div>

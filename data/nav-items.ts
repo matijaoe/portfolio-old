@@ -29,9 +29,9 @@ export const navItems = [
     to: '/contact',
     icon: 'ph:chat-circle-duotone',
   },
-  // {
-  //   label: 'Guestbook',
-  //   to: '/guestbook',
-  //   icon: 'ph:book-open-duotone',
-  // },
+  {
+    label: 'Guestbook',
+    to: '/guestbook',
+    icon: 'ph:book-open-duotone',
+  },
 ]

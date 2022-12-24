@@ -4,14 +4,15 @@ const year = new Date().getFullYear()
 
 <template>
   <footer
-    py-14
+    pt-14
+    pb-20
     border="t-1 t-stone-2 dark:(t-stone-8)"
   >
     <div row space-y-10>
       <div flex="~ flex-col gap-5 md:(flex-row gap-4)" items-center justify-between flex-col md:flex-row gap-2>
         <NavSocials />
 
-        <p text-sm text-opaque>
+        <p text-sm text-opaque-hovered>
           © {{ year }} Matija Osrečki. All rights reserved.
         </p>
       </div>
