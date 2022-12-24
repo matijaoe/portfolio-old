@@ -3,6 +3,7 @@ withDefaults(defineProps<{
   as?: any
   noPadding?: boolean
   hoverable?: boolean
+  active?: boolean
 }>(), {
   hoverable: true,
 })
@@ -18,6 +19,7 @@ withDefaults(defineProps<{
     ring-1 ring-transparent
     :class="{
       'hover:(translate-y--1 ring-2 ring-stone-8 dark:ring-accent)': hoverable,
+      '!ring-2 !ring-stone-8 dark:!ring-accent': active,
     }"
   >
     <div

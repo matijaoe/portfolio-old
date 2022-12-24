@@ -1,69 +1,60 @@
-export const useShortcuts = () => {
+type ShortcutConfig = Record<string, { key: string; handler: () => void }>
+export const useShortcuts = (config: ShortcutConfig) => {
   const keys = useMagicKeys()
 
-  const { toggleDark } = useTheme()
-
-  const shortcuts = {
-    theme: {
-      key: 'cmd+j',
-      handler: toggleDark,
-    },
-    home: {
-      key: 'h',
-      handler: () => navigateTo('/'),
-    },
-    about: {
-      key: 'a',
-      handler: () => navigateTo('/about'),
-    },
-    projects: {
-      key: 'p',
-      handler: () => navigateTo('/projects'),
-    },
-  }
-
-  type ShortcutsThing = keyof typeof shortcuts
+  type ShortcutsThing = keyof typeof config
 
   const defineShortcut = (thing: ShortcutsThing) => {
-    const { key, handler } = shortcuts[thing]
+    const { key, handler } = config[thing]
     whenever(keys[key], handler)
   }
 
-  const defineShortcuts = () => (Object.keys(shortcuts) as ShortcutsThing[]).forEach(defineShortcut)
+  const defineShortcuts = () => (Object.keys(config) as ShortcutsThing[]).forEach(defineShortcut)
 
   defineShortcuts()
 }
 
+export const useGlobalShortcuts = () => {
+  const { toggleDark } = useTheme()
+
+  const config = {
+    dark: {
+      key: 'cmd+j',
+      handler: () => toggleDark(),
+    },
+  }
+
+  useShortcuts(config)
+}
+
 export const useSocialsShortcuts = () => {
-  const keys = useMagicKeys()
+  const { websiteSocial, socialsIncludingBase } = $(useSocials())
 
-  const shortcuts = {
-    website: {
-      key: 'w',
-      handler: () => navigateTo('/'),
-    },
-    github: {
-      key: 'g',
-      handler: () => navigateTo('https://github.com/mat2ja', { external: true }),
-    },
-    twitter: {
-      key: 't',
-      handler: () => navigateTo('https://twitter.com/matijao_', { external: true }),
-    },
-    linkedin: {
-      key: 'l',
-      handler: () => navigateTo('https://linkedin.com/in/matijao', { external: true }),
-    },
+  const socials = computed(() => [websiteSocial, ...socialsIncludingBase])
+
+  const config = $computed(() => socials.value
+    .filter(item => !!item?.key)
+    .reduce((acc, social) => {
+      acc[social.label] = {
+        key: social.key!,
+        handler: () => navigateTo(social.to ?? social.href, { external: !social.to }),
+      }
+      return acc
+    }, {} as ShortcutConfig))
+
+  const shortcutsShown = ref(true)
+
+  useShortcuts({ ...config })
+
+  // const { cmd } = useMagicKeys()
+  // watch(cmd, (v) => {
+  //   if (v)
+  //     shortcutsShown.value = true
+  //   else
+  //     shortcutsShown.value = false
+  // })
+
+  return {
+    shortcutsShown,
   }
-
-  type ShortcutsThing = keyof typeof shortcuts
-
-  const defineShortcut = (thing: ShortcutsThing) => {
-    const { key, handler } = shortcuts[thing]
-    whenever(keys[key], handler)
-  }
-
-  const defineShortcuts = () => (Object.keys(shortcuts) as ShortcutsThing[]).forEach(defineShortcut)
-
-  defineShortcuts()
 }

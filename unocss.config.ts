@@ -62,7 +62,7 @@ export default defineConfig({
     'divider-x': 'divide-x-1 divide-stone-2 dark:divide-stone-8',
     'divider-y': 'divide-y-1 divide-stone-2 dark:divide-stone-8',
     // Backgrounds
-    'bg-opaque': 'bg-stone-2/35 dark:bg-stone-8/40',
+    'bg-opaque': 'bg-stone-2/40 dark:bg-stone-8/40',
     'bg-default-1': 'bg-stone-50 dark:bg-stone-9',
     'bg-default-2': 'bg-stone-2 dark:bg-stone-8',
     'bg-default-3': 'bg-[#EFEEED] dark:bg-stone-8',

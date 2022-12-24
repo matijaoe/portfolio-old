@@ -1,55 +1,33 @@
 <script lang="ts" setup>
-import { stripUrl } from '~/utils'
-const { matijaoSocial, socialsIncludingBase } = useSocials()
-const { isDark } = useTheme()
+const { websiteSocial, socialsIncludingBase } = $(useSocials())
 
-const socials = computed(() => [
-  matijaoSocial.value,
-  ...socialsIncludingBase.value,
-])
+const socials = computed(() => [websiteSocial, ...socialsIncludingBase])
+
 definePageMeta({
   layout: 'links',
 })
 
-useSocialsShortcuts()
+const { shortcutsShown } = useSocialsShortcuts()
 </script>
 
 <template>
-  <div max-w-8xl mx-auto>
+  <div max-w-8xl mx-auto flex-1 flex flex-col w-full gap-20>
     <div class="link-grid" gap-4>
-      <NuxtLink
-        v-for="social in socials"
+      <LinksLinkCard
+        v-for="(social, idx) in socials"
         :key="social.label"
-        :external="!social.to"
-        class="group col-span-3 sm:(col-span-2 row-span-1)"
-        block
-        :to="social?.to ?? social.href"
-      >
-        <Card aspect-square no-padding>
-          <div p-5 flex-1 flex flex-col justify-between class="text-default">
-            <Icon
-              :style="{ color: social.color }"
-              :class="{ 'filter-saturate-75': isDark }"
-              :name="social.icon" text-6xl text-stone-2 dark:text-stone-4
-            />
-            <div ml-auto text-right>
-              <div
-                class=" translate-y-5.75 group-hover:(translate-y-0)"
-                transition duration-400 font-medium
-              >
-                {{ social.label }}
-              </div>
-              <div
-                class="invisible opacity-0 translate-y-2 group-hover:(visible opacity-100 translate-y-0 delay-100)"
-                transition-all duration-400
-                text="#43aedc" dark:text-accent
-              >
-                {{ stripUrl(social.href) }}
-              </div>
-            </div>
-          </div>
-        </Card>
-      </NuxtLink>
+        :social="social"
+        :idx="idx"
+        :show-key="shortcutsShown"
+      />
+    </div>
+    <div flex justify-center sm:justify-end mt-auto pb-12 sm:pb-0>
+      <div text-opaque flex items-center gap-5 sm:divider-x>
+        <p text-sm sm:text-base class="hidden sm:block">
+          press corresponding key to open, right click to copy
+        </p>
+        <DarkToggle sm:pl-4 class="!text-3xl md:!text-2xl" />
+      </div>
     </div>
   </div>
 </template>

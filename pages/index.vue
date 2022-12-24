@@ -34,12 +34,17 @@ const cards: NavCard[] = [
     icon: 'ph:tray-duotone',
   },
   {
-    title: 'Guestbook',
-    description: 'Stop by and leave a message',
-    to: '/guestbook',
-    icon: 'ph:book-open-duotone',
+    title: 'Links',
+    description: 'All my places on the web',
+    to: '/links',
+    icon: 'ph:globe-duotone',
   },
-
+  // {
+  //   title: 'Guestbook',
+  //   description: 'Stop by and leave a message',
+  //   to: '/guestbook',
+  //   icon: 'ph:book-open-duotone',
+  // },
 ]
 
 const hasMore = ref(false)
@@ -198,6 +203,7 @@ onMounted(() => {
           :card="cards[3]"
           col-span-6
         />
+
         <NavSiteCard
           :card="cards[4]"
           col-span-6

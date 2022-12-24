@@ -31,7 +31,7 @@ useHead({
         <figure
           lg:aspect-square flex flex-col relative lg:col-span-2 class="group order--1 lg:order-1"
         >
-          <div v-motion-pop-visible class="img-shade" w-full bg />
+          <div class="img-shade" w-full bg />
           <div relative>
             <NuxtImg
               transition duration-500 ease rotate-3 hover:rotate-12
