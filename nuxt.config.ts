@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
+    '@nuxt/content',
   ],
   experimental: {
     reactivityTransform: true,

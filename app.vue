@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 useShortcuts()
+
+
 </script>
 
 <template>

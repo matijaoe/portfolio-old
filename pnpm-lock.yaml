@@ -8,6 +8,7 @@ specifiers:
   '@nuxt/image-edge': 1.0.0-27827328.bc9ddc0
   '@nuxtjs/color-mode': ^3.2.0
   '@unocss/nuxt': ^0.47.6
+  '@unocss/preset-typography': ^0.48.0
   '@unocss/preset-web-fonts': ^0.47.6
   '@vueuse/nuxt': ^9.8.2
   date-fns: ^2.29.3
@@ -21,6 +22,7 @@ specifiers:
   vue-dragscroll: ^4.0.5
 
 dependencies:
+  '@unocss/preset-typography': 0.48.0
   date-fns: 2.29.3
   vue-command-palette: 0.1.4
 
@@ -1327,6 +1329,10 @@ packages:
     resolution: {integrity: sha512-Pjg/NdpuTwZk2Ns3bzI/3XVPuXU+AQ78Sw+9QJyMgA56dArd3TlpNDN6UTOD9XAK6mxdPUu7rNSKpNTLpBW2og==}
     dev: true
 
+  /@unocss/core/0.48.0:
+    resolution: {integrity: sha512-WvAvChbJ65l97mHismyApeFVgNeGR4uSZl1BzVY+E/fRmyooE4QxiCm3g2akox6mQryzxvBvgSpP9aPzH676ZQ==}
+    dev: false
+
   /@unocss/inspector/0.47.6:
     resolution: {integrity: sha512-enYQJo7+/UtSbgzpyKzL4vZU9Tz3QyoPGDmuKoHXSIt6sAtB+DQelW7vMWjcmwA19uaISxIGXx9BJPj5XV67UA==}
     dependencies:
@@ -1391,6 +1397,12 @@ packages:
     dependencies:
       '@unocss/core': 0.47.6
     dev: true
+
+  /@unocss/preset-typography/0.48.0:
+    resolution: {integrity: sha512-CB5hPe9jP/tZI/H49nE7e79Accgu2q8yp2qRGIM4jlDcU1Tz4g0JmAxg8MeIqrqajVuJQhAu9cd3QnZ5wuh6hA==}
+    dependencies:
+      '@unocss/core': 0.48.0
+    dev: false
 
   /@unocss/preset-uno/0.47.6:
     resolution: {integrity: sha512-pDRuFmPzshX6ICaWhj7UBrnoL++rYD/QY52aljg9L4yAOZsZ1m0XRUlbnoXXXsEqDjw38SYNUzA1LtYcevBRvA==}

@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 const { showGrain } = useGrain()
 const { isDark } = useTheme()
+
+const notificationShown = ref(true)
+const hideNotification = () => {
+  notificationShown.value = false
+}
 </script>
 
 <template>
@@ -14,7 +19,20 @@ const { isDark } = useTheme()
       <div v-show="!isDark" id="texture" />
     </main>
 
-    <TheFooter mt-auto />
+    <div v-show="notificationShown" fixed bottom-0 left-0 right-0 z-100 pt-1>
+      <div bg-accent text-center py-3 grid="~ cols-[100px_1fr_100px]" items-center text-stone-8 font-medium text-sm>
+        <div />
+        <div row>
+          Very much work in progress. Nothing to see here. Move along.
+        </div>
+        <div>
+          <button @click="hideNotification">
+            <Icon name="tabler:x" text-xl />
+          </button>
+        </div>
+      </div>
+    </div>
+    <TheFooter mt-auto :class="{ 'mb-18': notificationShown }" />
   </div>
 </template>
 

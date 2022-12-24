@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { Switch } from '@headlessui/vue'
-
 const skills = [
   {
     name: 'Vue',
