@@ -1,7 +1,7 @@
-::heading{as="h1"}
+::heading
 Uses
 ::
-_I often overshare_
+> I often overshare
 
 
 ## Hardware
@@ -16,9 +16,9 @@ _I often overshare_
 - [Samsung T7 SSD](https://semiconductor.samsung.com/consumer-storage/portable-ssd/t7/) - fast and blue
 - [Kobo Libra H2O](https://gl.kobobooks.com/products/kobo-libra-h2o) - book reader
 - [Google Nest Mini](https://store.google.com/us/product/google_nest_mini?hl=en-US)
-- [Ikea Markus Chair](https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/)
+- [Ikea Markus](https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/)
 
-## Misc cool stuff
+## Random cool stuff
 - [Trek X-Caliber 8](https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/cross-country-mountain-bikes/x-caliber/x-caliber-8/p/33193/) - my all too expensive red bike
 - [Hydroflask](https://www.hydroflask.com/uk-en/) - trendy water bottles
 - [Magic Fiber](https://magicfiber.com/) - higy quality microfiber cloths
@@ -39,20 +39,15 @@ _I often overshare_
 - [Google Keep](https://keep.google.com) - quick notes
 - [Notion](https://www.notion.so/)
 - [Google Sheets](https://www.google.com/sheets/about/)
-- [Google Docs](https://www.google.com/docs/about/)
-- [Pitch.com](https://pitch.com/)
-- [TickTick](https://ticktick.com/?language=en_US)
 - [Google Tasks](https://play.google.com/store/apps/details?id=com.google.android.apps.tasks&hl=en_US&gl=US)
+- [TickTick](https://ticktick.com/?language=en_US)
 - [Jira](https://www.atlassian.com/software/jira)
 - [Figma](https://www.figma.com/)
 - [1Password](https://1password.com/) - password manager
 - [Authy](https://authy.com/) - 2FA
-- [DocuSign](https://www.docusign.com/) - electronic signatures
-- [Endel](https://endel.io/) - personalized soundscapes to help you focus, relax, and sleep
-- [Tide]([https://tide.fm/en_US/](https://play.google.com/store/apps/details?id=io.moreless.tide&hl=en&gl=US)) - ambient sounds
 - [Loop Habit Tracker](https://play.google.com/store/apps/details?id=org.isoron.uhabits&hl=en_US&gl=US) - create and maintain good habits
 - [Luci](https://play.google.com/store/apps/details?id=com.samruston.luci&hl=en_US&gl=US) - smart dream journal
-- [Lithium](https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&gl=US) - EPUB Reader
+- [Lithium](https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&gl=US) - reading on the go
 
 
 ## Mac Apps
@@ -81,36 +76,25 @@ _I often overshare_
 - [httpie](https://httpie.io/)
 - [gh cli](https://cli.github.com/)
 - [GitHub Copilot](https://github.com/features/copilot)
-- [ChatGPT](https://openai.com/blog/chatgpt/)
-- [RunJS](https://runjs.app/)
 - [GitHub](https://github.com/)
 - [GitLab](https://about.gitlab.com/) - for work
+- [ChatGPT](https://openai.com/blog/chatgpt/)
+- [RunJS](https://runjs.app/)
 
-#### VSCode Setup
-- [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse) (provide a screenshot)
+
+#### VSCode Theme & Font
+- [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
 
 ## Finance
-
-#### Crypto
 - [Ledger](https://www.ledger.com/)
 - [Kraken](https://www.kraken.com/)
 - [Coinbase](https://pro.coinbase.com/)
-- [Binance](https://www.binance.com/en)
 - [Bitcoin mjenjačnica](https://bitcoin-mjenjacnica.hr/)
 - [Accointing.com](https://www.accointing.com/)
 - [Blue Wallet](https://bluewallet.io/)
-- [CoinMarketCap](https://coinmarketcap.com/)
-- [CoinCodex](https://coincodex.com/)
-- [EtherScan](https://etherscan.io/)
-
-#### Fintech
 - [Revolut](https://www.revolut.com)
-- [Wise](https://wise.com/)
-- [Google Pay](https://pay.google.com/)
-
-### Investing
 - [Interactive Brokers](https://www.interactivebrokers.com/en/home.php)
 - [Trading212](https://www.trading212.com/)
 - [TradingView](https://www.tradingview.com/)
@@ -142,18 +126,14 @@ Tweets, videos, podcasts, courses, blogs & articles
 
 
 ## Shoutouts
-- [antfu](https://antfu.me) (Anthony Fu)
-- [Sindre Sorhus](https://sindresorhus.com/)
-- [Tanner Linsley](https://twitter.com/tannerlinsley)
-- [Evan You](https://twitter.com/youyuxi)
-- [Rich Harris](https://twitter.com/rich_harris)
-- [Wes Bos](https://wesbos.com/)
-- [rauno](https://rauno.me/)
-- [levelsio](https://twitter.com/levelsio)
+Some of the people I am inspired by
+- [Anthony Fu](https://antfu.me?ref=matijao)
+- [Sindre Sorhus](https://sindresorhus.com/?ref=matijao)
+- [Tanner Linsley](https://twitter.com/tannerlinsley?ref=matijao)
+- [Wes Bos](https://wesbos.com/?ref=matijao)
+- [rauno](https://rauno.me/?ref=matijao)
+- [levelsio](https://twitter.com/levelsio?ref=matijao)
 - [pabue](https://pabue.co/?ref=matijao)
 - [Joy Of Code](https://joyofcode.xyz/?ref=matijao)
-- [Colt Steele](https://www.udemy.com/user/coltsteele/) 
-- [Gurwinder](https://twitter.com/g_s_bhogal)
-- [Mr. Money Moustache](https://www.mrmoneymustache.com/blog/)
-- [Andreas Antonopoulos](https://twitter.com/aantonop) (aantonop)
+- [Gurwinder](https://twitter.com/g_s_bhogal?ref=matijao)
 

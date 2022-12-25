@@ -1,5 +1,9 @@
 <template>
-  <BaseHeading font-normal text-6xl not-prose my-0 py-0>
+  <BaseHeading font-normal as="h2" class="text-4xl sm:text-5xl md:text-9x not-prose">
     <slot />
   </BaseHeading>
 </template>
+
+<style lang="postcss" scoped>
+
+</style>
