@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Resume from '~~/Resume.pdf'
+import Resume from '/Resume.pdf'
 useHead({
   title: 'About | Matija Osrečki',
 })
