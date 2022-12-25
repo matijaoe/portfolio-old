@@ -23,7 +23,7 @@ const { jobs } = useJobs()
           </div>
         </div>
 
-        <div text-dimmed text-sm flex items-center gap-2>
+        <div text-dimmed text-sm flex items-center gap-2 ml="0.5">
           <span>{{ job.from }} – {{ job.to }}</span>
           <span>•</span>
           <span>{{ job.duration }}</span>

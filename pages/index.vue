@@ -102,7 +102,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div px-8 w-full max-w-7xl mx-auto>
+    <div row sm:px-8 w-full max-w-7xl mx-auto>
       <div class="grid grid-cols-6 grid-rows-4 sm:grid-cols-12 gap-3" auto-rows-max>
         <Card class="row-span-3 col-span-6">
           <div flex-1 flex flex-col gap-8>

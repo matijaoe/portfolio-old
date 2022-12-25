@@ -18,7 +18,7 @@ const { isDark } = useTheme()
 <template>
   <Html lang="en">
     <Body text-default font-sans transition-smooth bg-default-1>
-      <div min-h-screen flex flex-col>
+      <div min-h-screen flex flex-col w-screen overflow-x-hidden>
         <NuxtLayout />
       </div>
       <!-- <GrainCover v-show="showGrain" opacity="2" /> -->

@@ -12,9 +12,9 @@ defineProps<{
     py="2" px-3
     bg-default-3
     transition-base rounded-lg
-    class="hover:(ring-2 ring-stone-2 dark:ring-stone-7)"
+    class="hover:(ring-2 ring-stone-2 dark:ring-stone-7) active:(scale-95)"
   >
-    <div v-if="$slots.icon || icon">
+    <div v-if="$slots.icon || icon" flex items-center>
       <slot name="icon">
         <Icon v-if="icon" :name="icon" text-lg />
       </slot>
