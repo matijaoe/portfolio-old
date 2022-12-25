@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import gsap from 'gsap'
 const { websiteSocial, socialsIncludingBase } = $(useSocials())
 
 const socials = computed(() => [websiteSocial, ...socialsIncludingBase])
@@ -34,11 +35,27 @@ const art = computed(() => [
   isDark ? 'https://mdl.artvee.com/sftb/403901mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
   isDark ? 'https://mdl.artvee.com/sftb/225614fg.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
 ])
+
+const container = ref<HTMLDivElement>()
+
+onMounted(() => {
+  gsap.from(container.value!.children, {
+    delay: 0.15,
+    duration: 0.5,
+    y: '100',
+    autoAlpha: 0,
+    stagger: 0.125,
+    ease: 'back.out(1.7)',
+  })
+})
 </script>
 
 <template>
   <div max-w-8xl mx-auto flex-1 flex flex-col w-full gap-20>
-    <div class="link-grid" gap-4>
+    <div
+      ref="container"
+      class="link-grid" gap-4
+    >
       <div
         v-for="img in art.slice(0, 1)"
         :key="img"
