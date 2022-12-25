@@ -1,7 +1,13 @@
 <script lang="ts" setup>
+import Resume from '~~/Resume.pdf'
 useHead({
   title: 'About | Matija Osrečki',
 })
+
+const openPdf = () => {
+  if (process.client)
+    window.open(Resume, '_blank')
+}
 </script>
 
 <template>
@@ -22,7 +28,7 @@ useHead({
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
           </p>
           <div>
-            <Button icon="ph:download-duotone">
+            <Button icon="ph:file-text-duotone" @click="openPdf">
               CV
             </Button>
           </div>
