@@ -32,8 +32,8 @@ const bgImages = [
 ]
 
 const art = computed(() => [
-  isDark ? 'https://mdl.artvee.com/sftb/403901mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/225614fg.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
+  isDark ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
+  isDark ? 'https://mdl.artvee.com/sftb/403901mt.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
 ])
 
 const container = ref<HTMLDivElement>()
@@ -73,7 +73,7 @@ onMounted(() => {
         :show-key="shortcutsShown"
       />
 
-      <div
+      <!-- <div
         v-for="img in art.slice(1)"
         :key="img"
         rounded-2xl
@@ -81,7 +81,7 @@ onMounted(() => {
         overflow-hidden
         class="col-span-3 sm:(col-span-2 row-span-1) aspect-2/1 sm:aspect-square filter-saturate-90"
         :style="{ backgroundImage: 'url(' + `'${img}'` + ')', backgroundSize: 'cover', backgroundPosition: 'center' }"
-      />
+      /> -->
     </div>
     <div flex justify-center sm:justify-end mt-auto pb-12 sm:pb-0>
       <div text-opaque flex items-center gap-5 sm:divider-x>

@@ -65,11 +65,19 @@ export const useSocials = () => {
     href: 'https://matijao.com',
     to: '/',
     color: 'var(--accent)',
-    key: 'w',
+    key: 'm',
   }))
 
   const socialsIncludingBase = computed<LinkModel[]>(() => [
     ...socials.value,
+    {
+      label: 'Wakatime',
+      username: '@matijao',
+      icon: 'simple-icons:wakatime',
+      href: 'https://wakatime.com/@matijao',
+      color: isDark ? '#FFF' : '#000',
+      key: 'w',
+    },
     {
       label: 'AngelList',
       username: '@matijao',
@@ -95,4 +103,3 @@ export const useSocials = () => {
     socialsIncludingBase,
   }
 }
-
