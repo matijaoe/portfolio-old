@@ -57,7 +57,7 @@ whenever(keys?.[key.value], (v) => {
           text-5xl sm:text-6xl
           text-stone-2 dark:text-stone-4
         />
-        <div flex justify-between>
+        <div flex justify-between gap-4>
           <div
             v-show="showKey"
             v-tooltip="{
@@ -74,7 +74,7 @@ whenever(keys?.[key.value], (v) => {
             {{ social.key }}
           </div>
 
-          <div ml-auto text-right>
+          <div ml-auto text-right overflow-hidden>
             <div
               class="translate-0 sm:translate-y-5.75 group-hover:(translate-y-0)"
               transition duration-400 font-medium
@@ -83,9 +83,15 @@ whenever(keys?.[key.value], (v) => {
             </div>
 
             <div
+              v-tooltip="{
+                content: stripUrl(social.href),
+                theme: 'info-tooltip',
+                placement: 'bottom',
+              }"
               class="visible opacity-100 translate-y-0 sm:(invisible opacity-0 translate-y-2) sm:group-hover:(visible opacity-100 translate-y-0 delay-100)"
               transition-all duration-400
               text="#43aedc" dark:text-accent
+              truncate
             >
               {{ justCopied ? 'Copied link to clipboard' : stripUrl(social.href) }}
             </div>
