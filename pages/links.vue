@@ -16,26 +16,11 @@ useHead({
 const { isDark } = $(useTheme())
 const { shortcutsShown } = useSocialsShortcuts()
 
-const bgImages = [
-  'https://mdl.artvee.com/sftb/403901mt.jpg',
-  'https://mdl.artvee.com/sftb/700854an.jpg',
-  'https://mdl.artvee.com/sftb/402633mt.jpg',
-  'https://mdl.artvee.com/sftb/403588mt.jpg',
-  'https://mdl.artvee.com/sftb/101906ab.jpg',
-  'https://mdl.artvee.com/sftb/103885ab.jpg',
-  'https://mdl.artvee.com/sftb/225614fg.jpg',
-  'https://mdl.artvee.com/sftb/401074mt.jpg',
-  'https://mdl.artvee.com/sftb/501118ld.jpg',
-  'https://mdl.artvee.com/sftb/600248sl.jpg',
-  'https://mdl.artvee.com/sftb/401288mt.jpg',
-  'https://mdl.artvee.com/sftb/515596ld.jpg',
-]
-
 const art = computed(() => [
   isDark ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/403901mt.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/603015sl.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/401074mt.jpg' : 'https://mdl.artvee.com/sftb/103885ab.jpg',
+  isDark ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
+  isDark ? 'https://mdl.artvee.com/sftb/403588mt.jpg' : 'https://mdl.artvee.com/sftb/603015sl.jpg',
+  isDark ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
 ])
 
 const container = ref<HTMLDivElement>()
