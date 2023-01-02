@@ -18,6 +18,7 @@ export enum Tag {
   Firebase = 'firebase',
   Prisma = 'prisma',
   SvelteKit = 'sveltekit',
+  Deno = 'deno',
 }
 
 export type Project = {
@@ -25,12 +26,11 @@ export type Project = {
   description: string
   tags: Tag[]
   year: number
-  links: {
-    label: string
-    href: string
-  }[]
-  inProgress?: boolean
-  thumbnail?: any
+  repo?: string
+  url?: string
+  wip?: boolean
+  thumbnail?: string
+  images?: string[]
 }
 
 export type NavCard = {

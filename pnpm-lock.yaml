@@ -17,6 +17,7 @@ specifiers:
   gsap: ^3.11.4
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.8
+  slugify: ^1.6.5
   typescript: ^4.9.4
   vue-command-palette: ^0.1.4
   vue-dragscroll: ^4.0.5
@@ -24,6 +25,7 @@ specifiers:
 dependencies:
   '@unocss/preset-typography': 0.48.0
   date-fns: 2.29.3
+  slugify: 1.6.5
   vue-command-palette: 0.1.4
 
 devDependencies:
@@ -6854,7 +6856,6 @@ packages:
   /slugify/1.6.5:
     resolution: {integrity: sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ==}
     engines: {node: '>=8.0.0'}
-    dev: true
 
   /socket.io-client/4.5.4:
     resolution: {integrity: sha512-ZpKteoA06RzkD32IbqILZ+Cnst4xewU7ZYK12aS1mzHftFFjpoMz69IuhP/nL25pJfao/amoPI527KnuhFm01g==}

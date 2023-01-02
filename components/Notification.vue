@@ -3,7 +3,7 @@ const { hideNotification } = useNotification()
 </script>
 
 <template>
-  <div z-100>
+  <div z-1000>
     <div bg-accent text-center py-3 grid="~ cols-[100px_1fr_100px]" items-center text-stone-8 font-medium text-sm>
       <div />
       <div row line-clamp-1>

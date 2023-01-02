@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { Project } from '~~/models'
 
-const props = defineProps<{
+const { project, index } = defineProps<{
   project: Project
   index: number
 }>()
-
-const initalLink = ref(props.project.links[0].href)
 
 const cardRow = ref<HTMLElement>()
 const card = ref<HTMLElement>()
@@ -14,7 +12,15 @@ const card = ref<HTMLElement>()
 const cardRowHovered = useElementHover(cardRow)
 const cardHovered = useElementHover(card)
 
-const openProject = () => window.open(initalLink.value, '_blank')
+const slug = $ref(slugify(project.name))
+
+const hasLink = $computed(() => project.repo || project.url)
+const openProject = () => {
+  if (hasLink && process.client)
+    navigateTo(`/projects/${slug}`)
+
+  // TODO: create a test that checks if project pages are in line with slugified project names
+}
 </script>
 
 <template>
@@ -49,7 +55,7 @@ const openProject = () => window.open(initalLink.value, '_blank')
               {{ project.name }}
             </h3>
 
-            <ProjectTagWip v-if="project.inProgress" />
+            <ProjectTagWip v-if="project.wip" />
 
             <Icon
               name="ph:arrow-up-right-bold"
@@ -78,16 +84,24 @@ const openProject = () => window.open(initalLink.value, '_blank')
         </p>
 
         <div text-sm flex items-center gap-3>
-          <div v-for="(link, i) in project.links" :key="i" flex gap-4>
-            <NuxtLink
-              :href="link.href"
-              target="_blank"
-              class="hyperlink text-dimmed-lighter hover:text-dimmed"
-              @click.stop
-            >
-              {{ link.label }}
-            </NuxtLink>
-          </div>
+          <NuxtLink
+            v-if="project.url"
+            :href="project.url"
+            target="_blank"
+            class="hyperlink text-dimmed-lighter hover:text-dimmed flex items-center gap-1"
+            @click.stop
+          >
+            Live
+          </NuxtLink>
+          <NuxtLink
+            v-if="project.repo"
+            :href="project.repo"
+            target="_blank"
+            class="hyperlink text-dimmed-lighter hover:text-dimmed flex items-center gap-2"
+            @click.stop
+          >
+            Code
+          </NuxtLink>
         </div>
 
         <ul mt-2 flex items-center flex-wrap gap-2>

@@ -1,9 +1,19 @@
 <script lang="ts" setup>
 import { projects } from '~~/data/projects'
+import type { Project } from '~~/models'
 
 useHead({
   title: 'Projects | Matija Osrečki',
 })
+
+// const extension = ref<Project[]>([
+//   {
+//     name: 'Vue Ecosystem Snippets',
+//     description: 'Snippets for the modern Vue ecosystem - including Nuxt 3, Pinia, VueUse & Vue Router.',
+//     url: 'https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets',
+
+//   },
+// ])
 </script>
 
 <template>
