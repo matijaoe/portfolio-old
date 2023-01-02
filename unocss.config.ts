@@ -40,7 +40,6 @@ export default defineConfig({
     colors: {
       accent: 'var(--accent)',
       accentop: 'var(--accent-opaque)',
-      creamy: '#F6F5F1',
     },
   },
   shortcuts: {

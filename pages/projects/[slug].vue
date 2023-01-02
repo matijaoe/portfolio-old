@@ -44,6 +44,7 @@ const images = $computed(() => {
               placement: 'bottom',
               distance: 8,
             }"
+            class="!px-4"
             :to="project.url" external variant="accent" new-tab
           >
             Live

@@ -14,7 +14,7 @@ console.log({ props })
 const variantClass = computed(() => {
   switch (props.variant) {
     case 'accent': {
-      return 'bg-accent text-stone-8 font-medium'
+      return 'bg-accent text-stone-8 font-medium hover:(ring-accentop)'
     }
     case 'default':
     default: {
