@@ -69,7 +69,7 @@ type Post = {
 
 const posts: Post[] = [
   {
-    date: new Date(2023, 1, 3),
+    date: new Date('2023-01-03'),
     content: 'fddsfdfs',
   },
 ]
@@ -127,7 +127,7 @@ const posts: Post[] = [
                 </h4>
               </div>
               <div text-dimmed text-sm>
-                <div>{{ Intl.DateTimeFormat('en-us', { dateStyle: 'medium' }).format(new Date(2023, 1, 3)) }}</div>
+                <div>{{ Intl.DateTimeFormat('en-us', { dateStyle: 'medium' }).format(new Date('2023-01-03')) }}</div>
               </div>
             </div>
 
