@@ -4,12 +4,11 @@ const props = withDefaults(defineProps<{
   label?: string
   to?: string
   external?: boolean
-  variant: 'default' | 'accent'
+  variant?: 'default' | 'accent'
   newTab?: boolean
 }>(), {
   variant: 'default',
 })
-console.log({ props })
 
 const variantClass = computed(() => {
   switch (props.variant) {

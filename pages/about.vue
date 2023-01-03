@@ -17,15 +17,16 @@ const openPdf = () => {
         Hi there
       </BaseHeading>
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
-        <div lg:col-span-3 space-y-4 leading-loose text-stone-6 dark:text-stone-4>
+        <div lg:col-span-3 space-y-4 leading-relaxed text-stone-6 dark:text-stone-4>
           <p>
-            I'm <span class="text-strong">Matija Osrečki</span>, 23 year old Full Stack Developer from Croatia.
+            I'm Matija Osrečki, ambitious and determined front end oriented full stack developer from Croatia, with a special attention to detail and a keen eye for UI/UX design.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nam quos? Totam beatae reprehenderit ratione! Molestiae praesentium, esse voluptas beatae, quibusdam suscipit, distinctio fuga itaque hic et quod doloremque eius!
+            I'm constantly found working on personal side projects and staying up to date with all the newest developments in this space.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam laboriosam maxime odit ducimus eveniet minima magni, voluptatum ea rerum! Tenetur totam nesciunt, dolores nihil expedita ducimus!
+            Most passionate about building products, web design, clean code and bitcoin. Looking for a way to contribute to the open
+            source community in a meaningful way.
           </p>
           <div>
             <Button icon="ph:file-text-duotone" @click="openPdf">

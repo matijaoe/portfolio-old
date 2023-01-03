@@ -38,7 +38,7 @@ const { notificationShown } = useNotification()
 
         <div :class="{ 'opacity-0 invisible': pageScrolled }" justify-self-end flex items-center gap-5>
           <button
-            aria-label="Command prompt" flex items-center text-xl md:text-2xl text-opaque hover:text-default
+            aria-label="Command prompt" hidden md:flex items-center text-xl md:text-2xl text-opaque hover:text-default
             @click="toggleGrain"
           >
             <Icon name="ph:command-duotone" />
