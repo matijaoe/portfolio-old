@@ -140,13 +140,7 @@ const posts: Post[] = [
                 </NuxtLink> - <em>an app for attaining financial independence</em>, but the whole thing dragged out for bit too long. After five long months, it's time to accept the bugs, package it up, put a nice bow on it and move onto the next thing.
               </p>
               <p>
-                Parallel to that, I spent last three months madly in love with web development, building and learning like never before. It all happened all of the sudden, but at just the right time. All throughout summer I was in a bit of a rut, desperately searching for something to do with my free time after work. One day, browsing GitHub, as one does, I came across a colleague of mine building something cool, and I felt a strong urge to do something of my own. He shall not be named, but he shall be <NuxtLink
-                  to="https://github.com/MatijaNovosel"
-                  target="_blank"
-                  external
-                >
-                  {{ 'linked'.trim() }}
-                </NuxtLink>. Newfound inspiration, coupled with my competitiveness, caused me to jump straight into building out my portfolio page. I bought my first ever domain (the most important part), and then promptly spent entire days iterating over all kind of designs, getting too stuck on each. That whole chaotic design process may just be my favorite part of building something new. All that took my focus off of the college project for bit too long though, so had to shift my focus back to that.
+                Parallel to that, I spent last three months madly in love with web development, building and learning like never before. It all happened all of the sudden, but at just the right time. All throughout summer I was in a bit of a rut, desperately searching for something to do with my free time after work. One day, browsing GitHub, as one does, I came across a colleague of mine building something cool, and I felt a strong urge to do something of my own. Newfound inspiration, coupled with my competitiveness, caused me to jump straight into building out my portfolio page. I bought my first ever domain (the most important part), and then promptly spent entire days iterating over all kind of designs, getting too stuck on each. That whole chaotic design process may just be my favorite part of building something new. All that took my focus off of the college project for bit too long though, so had to shift my focus back to that.
               </p>
 
               <p>
@@ -168,7 +162,7 @@ const posts: Post[] = [
               </p>
 
               <p>
-                I'm finally getting more and more comfortable contributing to open source, albeit nothing too serious. Got access to <NuxtLink to="https://twitter.com/elk_zone" external target="_blank">
+                I'm finally getting more and more comfortable contributing to open source, albeit nothing too serious just yet. Got access to <NuxtLink to="https://twitter.com/elk_zone" external target="_blank">
                   {{ 'Elk'.trim() }}
                 </NuxtLink> (Mastodon client built on Nuxt 3 by some of the Vue & Nuxt core team members) private repo. This may be the thing I was looking for. Hope to find a way to contribute in a meaningful way. Figuring out how the hell to create a Mastodon account is a task in itself.
               </p>

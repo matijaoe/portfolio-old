@@ -35,8 +35,8 @@ const openProject = () => {
       z-5 relative
       flex gap-4
       w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 transition sm:pl-3 pr-5 backdrop-blur-md"
-      :class="[{ 'sm:(bg-opaque !lg:translate-x-0)': cardRowHovered }]"
+      class="lg:-translate-x-4 transition sm:pl-3 pr-5"
+      :class="[{ 'sm:(bg-opaque !lg:translate-x-0 backdrop-blur-md)': cardRowHovered }]"
       @click="openProject"
     >
       <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-semibold text-5xl text="stone-8/12 dark:white/18">

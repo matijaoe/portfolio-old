@@ -11,7 +11,9 @@ useHead({
     </BaseHeading>
 
     <div mt-8>
-      <a href="mailto:matija.osrecki@gmail.com" text-5xl underline decoration-accent hover:bg-accentop>
+      <a
+        href="mailto:matija.osrecki@gmail.com" class="text-2xl sm:text-3xl md:text-5xl" underline decoration-accent hover:bg-accentop rounded-sm
+      >
         matija.osrecki@gmail.com
       </a>
     </div>

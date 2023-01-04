@@ -21,19 +21,25 @@ const { notificationShown } = useNotification()
       Very much work in progress. Nothing to see here. Move along.
     </Notification>
 
+    <!-- TODO: very messy experimenting was going on -->
+
     <!-- Header -->
     <div py-4 md:py-6>
       <!-- TODO: they are not fully vertically aligned on mobile -->
-      <div row grid grid-cols-5 gap-2 items-center>
+      <div hidden sm:grid row grid-cols-5 gap-2 items-center>
         <div :class="{ 'opacity-0 invisible': pageScrolled }" flex items-center>
           <NuxtLink to="/" aria-label="Logo" class="p-3 ml--3 lg:(p-2 ml--2)" text-opaque hover:text-default>
             <Icon transition name="tabler:seeding" text-xl md:text-2xl />
           </NuxtLink>
         </div>
 
-        <!-- TODO: dont set whole header to fix because it blocks click around not used area on scrollk -->
+        <!-- TODO: dont set whole header to fix because it blocks click around not used area on scroll -->
         <div col-span-3 flex items-center>
-          <NavBar w-max mx-auto />
+          <NavBar
+            px-4 py-1
+            w-max mx-auto
+            :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
+          />
         </div>
 
         <div :class="{ 'opacity-0 invisible': pageScrolled }" justify-self-end flex items-center gap-5>
@@ -45,6 +51,18 @@ const { notificationShown } = useNotification()
           </button>
 
           <DarkToggle class="p-3 mr--3 lg:(p-2 mr--2)" />
+        </div>
+      </div>
+
+      <!-- mobile -->
+      <div row sm:hidden w-full flex justify-center>
+        <div
+          flex items-center justify-center rounded-full w-fit gap-2
+          :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
+          px-4 py-1
+        >
+          <NavBar />
+          <DarkToggle p-3 lg:p-2 />
         </div>
       </div>
     </div>

@@ -16,12 +16,9 @@ onMounted(() => {
   <nav
     relative overflow-hidden
     flex justify-center
-    px-4 py-1 rounded-full
     transition duration-500 ease transition-base
-
-    :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
   >
-    <menu font-medium lowercase flex items-center gap-2 sm:gap-0 w-max>
+    <menu font-medium lowercase flex items-center gap-2 md:gap-0 w-max>
       <li v-for="(item, i) in navItems" :key="i">
         <!-- desktop -->
         <NuxtLink
