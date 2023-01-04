@@ -135,7 +135,7 @@ const posts: Post[] = [
             <!-- content -->
             <div prose>
               <p>
-                Currently polishing up my college final year project and getting ready to starting writing my thesis. I enjoyed building  <NuxtLink to="/projects/fare" underline>
+                Currently polishing up my college final year project and getting ready to start writing my thesis. I enjoyed building  <NuxtLink to="/projects/fare" underline>
                   {{ 'FARE'.trim() }}
                 </NuxtLink> - <em>an app for attaining financial independence</em>, but the whole thing dragged out for bit too long. After five long months, it's time to accept the bugs, package it up, put a nice bow on it and move onto the next thing.
               </p>
@@ -150,7 +150,7 @@ const posts: Post[] = [
               </p>
 
               <p>
-                Took two weeks vacation off work, spent it all on coding. Used the momentum to build most of Fare, with a new small side project every few days (I just couldn't help myself). Picked up Svelte along the way. All that time, my motivation and passion was fueled by the <NuxtLink to="https://syntax.fm/" target="_blank" external>
+                Took two weeks vacation off work, spent it all on coding. Used the momentum to build out most of Fare, with a new small side project every few days (I just couldn't help myself). Picked up Svelte along the way. All that time, my motivation and passion was fueled by the <NuxtLink to="https://syntax.fm/" target="_blank" external>
                   {{ 'SyntaxFM'.trim() }}
                 </NuxtLink> podcast, which I discovered around that time. Finally found my people.
               </p>
