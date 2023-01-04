@@ -39,6 +39,7 @@ const { notificationShown } = useNotification()
             px-4 py-1
             w-max mx-auto
             :class="{ 'bg-opaque backdrop-blur-md': pageScrolled }"
+            rounded-full
           />
         </div>
 
