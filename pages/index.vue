@@ -150,7 +150,7 @@ const posts: Post[] = [
               </p>
 
               <p>
-                Nowadays I spend my days brainstorming ideas, and then picking one and actually doing it. Spent last few weeks building out vscode extensions. Picked up <NuxtLink to="Deno" external target="_blank">
+                Nowadays I spend my days brainstorming ideas, and then picking one and actually doing it. Spent last few weeks building out vscode extensions. Picked up <NuxtLink to="https://deno.land/" external target="_blank">
                   {{ 'Deno'.trim() }}
                 </NuxtLink> along the way. Released <NuxtLink to="https://marketplace.visualstudio.com/items?itemName=matijao.modern-js-snippets" external target="_blank">
                   {{ 'Modern JavaScript Snippets'.trim() }}
