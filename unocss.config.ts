@@ -12,13 +12,18 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetTypography(),
+    presetTypography({
+      cssExtend: {
+       'a:hover': {
+          color: "var(--accent)",
+        },
+      }
+    }),
     presetWebFonts({
       provider: 'google',
       fonts: {
         sans: {
           name: 'Satoshi',
-          weights: ['300', '400', '500', '600', '700'],
           provider: 'fontshare',
         },
         display: {
