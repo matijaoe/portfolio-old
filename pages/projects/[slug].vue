@@ -2,13 +2,12 @@
 const params = useRoute()
 const { slug } = params.params as { slug: string }
 
-const { project } = $(useProject({ slug }))
+const { project } = useProject({ slug })
 
-const images = $computed(() => {
-  if (project?.images?.length)
-    return project.images
-
-  return [project?.thumbnail]
+const images = computed(() => {
+  if (project.value?.images?.length)
+    return project.value.images
+  return [project.value?.thumbnail]
 })
 </script>
 

@@ -7,7 +7,7 @@ const { notificationShown } = useNotification()
     <TheHeader />
 
     <main
-      flex-1 flex flex-col p="t-24 b-40 md:(t-32 b-40)"
+      flex-1 flex flex-col p="b-40"
       :class="{ 'mt-10': notificationShown }"
     >
       <NuxtPage />
@@ -16,4 +16,3 @@ const { notificationShown } = useNotification()
     <TheFooter mt-auto />
   </div>
 </template>
-

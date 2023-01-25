@@ -28,11 +28,11 @@ export const useGlobalShortcuts = () => {
 }
 
 export const useSocialsShortcuts = () => {
-  const { website, socialsIncludingBase } = $(useSocials())
+  const { website, socialsIncludingBase } = useSocials()
 
-  const socials = computed(() => [website, ...socialsIncludingBase])
+  const socials = computed(() => [website.value, ...socialsIncludingBase.value])
 
-  const config = $computed(() => socials.value
+  const config = computed(() => socials.value
     .filter(item => !!item?.key)
     .reduce((acc, social) => {
       acc[social.label] = {
@@ -44,7 +44,7 @@ export const useSocialsShortcuts = () => {
 
   const shortcutsShown = ref(true)
 
-  useShortcuts({ ...config })
+  useShortcuts({ ...config.value })
 
   // const { cmd } = useMagicKeys()
   // watch(cmd, (v) => {

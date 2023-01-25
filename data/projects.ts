@@ -8,7 +8,6 @@ export const projects: Project[] = [
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS, Tag.Prisma],
     year: 2022,
     repo: 'https://github.com/mat2ja/fire-zavrsni',
-    wip: true,
     thumbnail: '/projects/fare.webp',
   },
   {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Project } from '~~/models'
 
-const { project, index } = defineProps<{
+const { project } = defineProps<{
   project: Project
   index: number
 }>()
@@ -12,12 +12,12 @@ const card = ref<HTMLElement>()
 const cardRowHovered = useElementHover(cardRow)
 const cardHovered = useElementHover(card)
 
-const slug = $ref(slugify(project.name))
+const slug = ref(slugify(project.name))
 
-const hasLink = $computed(() => project.repo || project.url)
+const hasLink = computed(() => project.repo || project.url)
 const openProject = () => {
-  if (hasLink && process.client)
-    navigateTo(`/projects/${slug}`)
+  if (hasLink.value && process.client)
+    navigateTo(`/projects/${slug.value}`)
 
   // TODO: create a test that checks if project pages are in line with slugified project names
 }

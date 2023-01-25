@@ -1,15 +1,7 @@
 <script lang="ts" setup>
 import { navItems } from '~~/data/nav-items'
 
-const pos = ref(0)
-const pageScrolled = computed(() => pos.value > 48)
-
-const { y } = useWindowScroll()
-onMounted(() => {
-  watchEffect(() => {
-    pos.value = y.value
-  })
-})
+const { scrolled } = useWindowScrolled()
 </script>
 
 <template>
@@ -28,7 +20,7 @@ onMounted(() => {
           text-opaque
           bg-transparent
           class="hover:text-default"
-          :class="{ 'hover:(bg-opaque)': !pageScrolled, 'text-opaque-hovered': pageScrolled }"
+          :class="{ 'hover:(bg-opaque)': !scrolled, 'text-opaque-hovered': scrolled }"
           transition-base
           relative z-2
           rounded-lg

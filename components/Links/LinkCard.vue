@@ -6,10 +6,10 @@ const props = defineProps<{
   showKey?: boolean
 }>()
 
-let justCopied = $(refAutoReset(false, 750))
+const justCopied = refAutoReset(false, 750)
 const copyUrl = (text: string) => {
   copy(text)
-  justCopied = true
+  justCopied.value = true
 }
 
 // Detect hover
@@ -19,19 +19,19 @@ const hovered = useElementHover(elem)
 watch(hovered, (value) => {
   if (!value) {
     setTimeout(() => {
-      if (justCopied)
-        justCopied = false
+      if (justCopied.value)
+        justCopied.value = false
     }, 500)
   }
 })
 
 // Recognize keypresses
-let keyPressed = $(refAutoReset(false, 150))
+const keyPressed = refAutoReset(false, 150)
 const keys = useMagicKeys()
 const key = computed(() => props.social.key ?? undefined)
 
 whenever(keys?.[key.value], (v) => {
-  keyPressed = true
+  keyPressed.value = true
 })
 </script>
 

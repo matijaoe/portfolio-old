@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
-const { website, socialsIncludingBase } = $(useSocials())
+const { website, socialsIncludingBase } = useSocials()
 
-const socials = computed(() => [website, ...socialsIncludingBase])
+const socials = computed(() => [website.value, ...socialsIncludingBase.value])
 
 definePageMeta({
   layout: 'links',
@@ -13,13 +13,13 @@ useHead({
   title: 'Links | Matija Osrečki',
 })
 
-const { isDark } = $(useTheme())
+const { isDark } = useTheme()
 const { shortcutsShown } = useSocialsShortcuts()
 
 const art = computed(() => [
-  isDark ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
+  isDark.value ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
+  isDark.value ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
+  isDark.value ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
 ])
 
 const container = ref<HTMLDivElement>()

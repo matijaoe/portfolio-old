@@ -14,10 +14,10 @@ export default defineConfig({
     presetAttributify(),
     presetTypography({
       cssExtend: {
-       'a:hover': {
-          color: "var(--accent)",
+        'a:hover': {
+          color: 'var(--accent)',
         },
-      }
+      },
     }),
     presetWebFonts({
       provider: 'google',

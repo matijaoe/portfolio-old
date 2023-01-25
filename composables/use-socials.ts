@@ -9,14 +9,14 @@ export type LinkModel = {
 }
 
 export const useSocials = () => {
-  const { isDark } = $(useTheme())
+  const { isDark } = useTheme()
 
   const github = computed<LinkModel>(() => ({
     label: 'GitHub',
     username: '@mat2ja',
     icon: 'ph:github-logo-fill',
     href: 'https://github.com/mat2ja',
-    color: isDark ? '#fafaf9' : '#171515',
+    color: isDark.value ? '#fafaf9' : '#171515',
     key: 'g',
   }))
 
@@ -77,7 +77,7 @@ export const useSocials = () => {
     username: '@matijao',
     icon: 'fa6-brands:goodreads',
     href: 'https://www.goodreads.com/matijao',
-    color: isDark ? '#EEECDD' : '#372212',
+    color: isDark.value ? '#EEECDD' : '#372212',
     key: 'b',
   }))
 
@@ -86,7 +86,7 @@ export const useSocials = () => {
     username: '@matijao',
     icon: 'simple-icons:wakatime',
     href: 'https://wakatime.com/@matijao',
-    color: isDark ? '#FFF' : '#000',
+    color: isDark.value ? '#FFF' : '#000',
     key: 'w',
   }))
   const vsMarketplace = computed<LinkModel>(() => ({
@@ -102,7 +102,7 @@ export const useSocials = () => {
     username: '@matijao',
     icon: 'fa6-brands:angellist',
     href: 'https://angel.co/u/matijao',
-    color: isDark ? '#FFF' : '#000',
+    color: isDark.value ? '#FFF' : '#000',
     key: 'a',
   }))
   const linktree = computed<LinkModel>(() => ({

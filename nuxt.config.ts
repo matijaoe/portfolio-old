@@ -1,9 +1,8 @@
 import { meta } from './data/meta'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   // TODO: ssr messes up with my inital gsap animations, fix this somehow without turning off ssr
-  ssr: false,
+  ssr: true,
   modules: [
     'nuxt-icon',
     '@unocss/nuxt',
@@ -13,7 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
   experimental: {
-    reactivityTransform: true,
+    reactivityTransform: false,
   },
   unocss: {
     preflight: true,

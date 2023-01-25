@@ -1,16 +1,6 @@
 <script lang="ts" setup>
 useGlobalShortcuts()
 
-useHead({
-  script: [
-    {
-      'src': 'https://plausible.io/js/script.js',
-      'data-domain': 'matijao.com',
-      'defer': true,
-    },
-  ],
-})
-
 const { showGrain } = useGrain()
 const { isDark } = useTheme()
 </script>
@@ -21,7 +11,6 @@ const { isDark } = useTheme()
       <div min-h-screen flex flex-col w-screen overflow-x-hidden>
         <NuxtLayout />
       </div>
-      <!-- <GrainCover v-show="showGrain" opacity="2" /> -->
       <GrainCover2 v-show="showGrain" :opacity="isDark ? 10 : 4" />
       <div v-show="!isDark" id="texture" />
     </Body>

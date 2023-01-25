@@ -14,7 +14,7 @@ defineProps<{
     rounded-md
     overflow-hidden
     transition duration-250
-    class="-translate-y-20 scale-130 opacity-4 rotate-9 filter-saturate-0 z-1"
+    class="-translate-y-20 scale-130 opacity-4 rotate-9 filter-saturate-0 z-9"
     :class="[
       { 'lg:(visible opacity-100 -rotate-3 -translate-x-30 -translate-y-35 scale-130 filter-saturate-100 z-10)': shown },
     ]"
