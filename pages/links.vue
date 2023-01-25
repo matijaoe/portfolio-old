@@ -2,7 +2,7 @@
 import gsap from 'gsap'
 const { website, socialsIncludingBase } = useSocials()
 
-const socials = computed(() => [website.value, ...socialsIncludingBase.value])
+const socials = computed(() => [website, ...socialsIncludingBase])
 
 definePageMeta({
   layout: 'links',
@@ -52,10 +52,10 @@ onMounted(() => {
         :style="{ backgroundImage: 'url(' + `'${img}'` + ')', backgroundSize: 'cover' }"
       />
       <LinksLinkCard
-        v-for="(social, idx) in socials"
+        v-for="(social) in socials"
         :key="social.label"
+        class="group col-span-3 sm:(col-span-2 row-span-1)"
         :social="social"
-        :idx="idx"
         :show-key="shortcutsShown"
       />
 

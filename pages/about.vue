@@ -13,7 +13,7 @@ const openPdf = () => {
 <template>
   <div row flex flex-col gap-24>
     <div space-y-8 lg:space-y-4>
-      <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl z-2>
+      <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl z-500>
         Hi there
       </BaseHeading>
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
@@ -43,6 +43,8 @@ const openPdf = () => {
             <NuxtImg
               transition duration-500 ease rotate-3 hover:rotate-12
               rounded-lg
+              :width="300"
+              :height="300"
               format="webp"
               src="/avatar.webp"
               alt="Matija Osrečki avatar"

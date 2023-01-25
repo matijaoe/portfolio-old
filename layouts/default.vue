@@ -7,7 +7,7 @@ const { notificationShown } = useNotification()
     <TheHeader />
 
     <main
-      flex-1 flex flex-col p="b-40"
+      flex-1 flex flex-col p="t-6 b-40 sm:(t-0)"
       :class="{ 'mt-10': notificationShown }"
     >
       <NuxtPage />

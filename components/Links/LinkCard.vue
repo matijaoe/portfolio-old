@@ -6,6 +6,8 @@ const props = defineProps<{
   showKey?: boolean
 }>()
 
+const { isDark } = useTheme()
+
 const justCopied = refAutoReset(false, 750)
 const copyUrl = (text: string) => {
   copy(text)
@@ -38,10 +40,9 @@ whenever(keys?.[key.value], (v) => {
 <template>
   <NuxtLink
     ref="elem"
-    select-none
+    select-none block
     :external="!social.to"
-    class="group col-span-3 sm:(col-span-2 row-span-1)"
-    block
+    class="group"
     :to="social?.to ?? social.href"
     @contextmenu.prevent="copyUrl(social.href)"
   >
@@ -51,11 +52,11 @@ whenever(keys?.[key.value], (v) => {
       :active="keyPressed"
     >
       <div p-5 flex-1 flex flex-col justify-between class="text-default">
+        <!-- TODO: wrong color on dark mode first refresh -->
         <Icon
-          :style="{ color: social.color }"
+          :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }"
           :name="social.icon"
           text-5xl sm:text-6xl
-          text-stone-2 dark:text-stone-4
         />
         <div flex justify-between gap-4>
           <div

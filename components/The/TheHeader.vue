@@ -2,7 +2,6 @@
 const { scrolled } = useWindowScrolled()
 
 const { toggleGrain } = useGrain()
-
 const { notificationShown } = useNotification()
 </script>
 
@@ -17,10 +16,8 @@ const { notificationShown } = useNotification()
     <div py-4 md:py-6 px-5 sm:px-8>
       <div hidden sm:flex items-center fixed class="left-50% -translate-x-50%">
         <NavBar
-          px-4 py-1
-          w-max mx-auto
+          px-4 py-1 w-max mx-auto rounded-full
           :class="{ 'bg-opaque backdrop-blur-md': scrolled }"
-          rounded-full
         />
       </div>
 
@@ -46,7 +43,7 @@ const { notificationShown } = useNotification()
       </div>
 
       <!-- mobile -->
-      <div row sm:hidden w-full flex justify-center>
+      <div row sm:hidden w-full flex justify-center fixed class="left-50% -translate-x-50%" z-100>
         <div
           flex items-center justify-center rounded-full w-fit gap-2
           :class="{ 'bg-opaque backdrop-blur-md': scrolled }"

@@ -11,7 +11,7 @@ const { isDark } = useTheme()
       <div min-h-screen flex flex-col w-screen overflow-x-hidden>
         <NuxtLayout />
       </div>
-      <GrainCover2 v-show="showGrain" :opacity="isDark ? 10 : 4" />
+      <GrainCover v-show="showGrain" :opacity="4" />
       <div v-show="!isDark" id="texture" />
     </Body>
   </Html>

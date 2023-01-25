@@ -30,7 +30,7 @@ export const useGlobalShortcuts = () => {
 export const useSocialsShortcuts = () => {
   const { website, socialsIncludingBase } = useSocials()
 
-  const socials = computed(() => [website.value, ...socialsIncludingBase.value])
+  const socials = computed(() => [website, ...socialsIncludingBase])
 
   const config = computed(() => socials.value
     .filter(item => !!item?.key)

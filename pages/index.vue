@@ -114,7 +114,7 @@ const posts: Post[] = [
       </div> -->
     </div>
 
-    <div row sm:px-8 w-full max-w-7xl mx-auto>
+    <div row sm:px-8 w-full max-w="1600px" mx-auto>
       <div class="grid md:grid-cols-2 gap-3">
         <Card>
           <div flex-1 flex flex-col gap-4>
@@ -211,23 +211,11 @@ const posts: Post[] = [
 
         <div flex flex-col gap-3>
           <div grid sm:grid-cols-3 gap-3>
-            <a
+            <LinksLinkCard
               v-for="social in socials"
               :key="social.label"
-              class="group" block
-              :href="social.href" target="_blank"
-            >
-              <Card aspect="2/1" sm:aspect-square no-padding>
-                <div p-5 flex-1 flex flex-col justify-between class="text-default">
-                  <Icon
-                    :style="{ color: social.color }"
-                    :class="{ 'filter-saturate-75': isDark }"
-                    :name="social.icon" text-5xl text-stone-2 dark:text-stone-4
-                  />
-                  <div ml-auto>{{ social.username }}</div>
-                </div>
-              </Card>
-            </a>
+              :social="social"
+            />
           </div>
 
           <NavSiteCard
