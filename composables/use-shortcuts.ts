@@ -28,15 +28,15 @@ export const useGlobalShortcuts = () => {
 }
 
 export const useSocialsShortcuts = () => {
-  const { websiteSocial, socialsIncludingBase } = $(useSocials())
+  const { website, socialsIncludingBase } = $(useSocials())
 
-  const socials = computed(() => [websiteSocial, ...socialsIncludingBase])
+  const socials = computed(() => [website, ...socialsIncludingBase])
 
   const config = $computed(() => socials.value
     .filter(item => !!item?.key)
     .reduce((acc, social) => {
       acc[social.label] = {
-        key: social.key!,
+        key: `${social.key!}`,
         handler: () => navigateTo(social.to ?? social.href, { external: !social.to }),
       }
       return acc

@@ -48,6 +48,15 @@ export const useSocials = () => {
     key: 'm',
   }))
 
+  const mastodon = computed<LinkModel>(() => ({
+    label: 'Mastodon',
+    username: '@matijao',
+    icon: 'bxl:mastodon',
+    href: 'https://elk.zone/fosstodon.org/@matijao',
+    color: '#CC7D23',
+    key: 's',
+  }))
+
   const email = computed<LinkModel>(() => ({
     label: 'Email',
     username: 'matija.osrecki@gmail.com',
@@ -115,12 +124,14 @@ export const useSocials = () => {
 
   const socials = computed<LinkModel[]>(() => [
     ...baseSocials.value,
+    mastodon.value,
     goodreads.value,
     email.value,
   ])
 
   const socialsIncludingBase = computed<LinkModel[]>(() => [
     ...baseSocials.value,
+    mastodon.value,
     goodreads.value,
     wakatime.value,
     vsMarketplace.value,

@@ -19,7 +19,6 @@ const { shortcutsShown } = useSocialsShortcuts()
 const art = computed(() => [
   isDark ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
   isDark ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
-  isDark ? 'https://mdl.artvee.com/sftb/403588mt.jpg' : 'https://mdl.artvee.com/sftb/603015sl.jpg',
   isDark ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
 ])
 
@@ -38,7 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div max-w-8xl mx-auto flex-1 flex flex-col w-full gap-20>
+  <div max-w-1600px mx-auto flex-1 flex flex-col w-full gap-20>
     <div
       ref="container"
       class="link-grid" gap-4
@@ -61,7 +60,7 @@ onMounted(() => {
       />
 
       <div
-        v-for="img in art.slice(1, 4)"
+        v-for="img in art.slice(1, 3)"
         :key="img"
         rounded-2xl
         select-none
