@@ -12,13 +12,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetTypography({
-      cssExtend: {
-        'a:hover': {
-          color: 'var(--accent)',
-        },
-      },
-    }),
+    presetTypography({}),
     presetWebFonts({
       provider: 'google',
       fonts: {

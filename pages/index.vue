@@ -17,7 +17,7 @@ const cards: NavCard[] = [
   },
   {
     title: 'Projects',
-    description: 'Check out some of projects I am proud of. Many more to come.',
+    description: 'Some of projects I am proud of. Many more to come.',
     to: '/projects',
     icon: 'ph:lightbulb-filament-duotone',
   },
@@ -218,16 +218,16 @@ const posts: Post[] = [
             />
           </div>
 
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards[4]"
-          />
+          <div class="grid grid-cols-2 gap-3">
+            <NavSiteCard
+              :card="cards[4]"
+              h-full
+            />
 
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards[1]"
-          />
-
+            <NavSiteCard
+              :card="cards[1]"
+            />
+          </div>
           <NavSiteCard
             aspect-ratio="3/1"
             :card="cards[0]"

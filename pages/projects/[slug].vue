@@ -63,7 +63,7 @@ const images = computed(() => {
     </div>
 
     <div mt-10>
-      <div space-y-8 rounded-2xl class="p-2 bg-accent overflow-hidden">
+      <div space-y-8 rounded-2xl p-2 bg-accent overflow-hidden>
         <div
           v-for="image in images"
           :key="image" p-1

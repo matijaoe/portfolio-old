@@ -6,15 +6,19 @@ const { notificationShown } = useNotification()
 </script>
 
 <template>
-  <header w-screen z-200>
-    <!-- Notification -->
-    <Notification v-if="notificationShown">
-      Very much work in progress. Nothing to see here. Move along.
-    </Notification>
+  <!-- Notification -->
+  <Notification v-show="notificationShown">
+    Very much work in progress. Nothing to see here. Move along.
+  </Notification>
 
+  <header w-screen z-200>
     <!-- Header -->
     <div py-4 md:py-6 px-5 sm:px-8>
-      <div hidden sm:flex items-center fixed class="left-50% -translate-x-50%">
+      <div
+        hidden sm:flex flex-col justify-center fixed class="left-50% -translate-x-50%"
+        :class="notificationShown && scrolled ? '-translate-y-12' : 'translate-y-0'"
+        transition duration-400
+      >
         <NavBar
           px-4 py-1 w-max mx-auto rounded-full
           :class="{ 'bg-opaque backdrop-blur-md': scrolled }"
