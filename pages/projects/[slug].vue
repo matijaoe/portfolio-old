@@ -7,19 +7,19 @@ const { project } = useProject({ slug })
 const images = computed(() => {
   if (project.value?.images?.length)
     return project.value.images
-  return [project.value?.thumbnail]
+  return project.value?.thumbnail ? [project.value?.thumbnail] : []
 })
 </script>
 
 <template>
   <div v-if="project" row>
     <div>
-      <div flex items-center justify-between>
+      <div flex items-start justify-between>
         <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
           {{ project.name }}
         </BaseHeading>
 
-        <div flex items-center gap-2>
+        <div flex items-center gap-2 shrink-0>
           <Button @click="navigateTo({ name: 'projects' })">
             Go back
           </Button>
@@ -57,12 +57,12 @@ const images = computed(() => {
         </ProjectTag>
       </ul>
 
-      <div prose max-w="50ch">
+      <div v-if="project.description" prose max-w="50ch">
         <p>{{ project.description }}</p>
       </div>
     </div>
 
-    <div mt-10>
+    <div v-if="images?.length" mt-10>
       <div space-y-8 rounded-2xl p-2 bg-accent overflow-hidden>
         <div
           v-for="image in images"

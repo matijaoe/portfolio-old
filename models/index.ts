@@ -19,6 +19,7 @@ export enum Tag {
   Prisma = 'prisma',
   SvelteKit = 'sveltekit',
   Deno = 'deno',
+  Bash = 'bash',
 }
 
 export type Project = {

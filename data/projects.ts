@@ -80,3 +80,71 @@ export const projects: Project[] = [
     thumbnail: '/projects/comet.webp',
   },
 ]
+
+export const extensions: Project[] = [
+  {
+    name: 'Vue Ecosystem Snippets',
+    description: 'Snippets for the modern Vue ecosystem',
+    year: 2023,
+    url: 'https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets',
+    tags: [Tag.Deno, Tag.TypeScript],
+  },
+  {
+    name: 'Modern JavaScript Snippets',
+    description: 'Snippets for the modern Vue ecosystem - including Nuxt 3, Pinia, VueUse & Vue Router.',
+    year: 2023,
+    url: 'https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets',
+    tags: [Tag.Deno, Tag.TypeScript],
+  },
+  {
+    name: 'URL Editor for Chrome',
+    description: 'Chrome Extension',
+    year: 2023,
+    repo: 'https://github.com/mat2ja/url-editor',
+    tags: [Tag.React, Tag.Tailwind],
+    wip: true,
+  },
+  {
+    name: 'Raycast Project Scaffolder',
+    description: 'Quickly scaffold a new project using official templates',
+    year: 2023,
+    url: undefined,
+    tags: [Tag.React],
+    wip: true,
+  },
+  {
+    name: 'pnpm.plugin.zsh',
+    description: 'Oh My Zsh aliases for common pnpm commands',
+    year: 2023,
+    repo: 'https://github.com/mat2ja/pnpm.plugin.zsh',
+    tags: [Tag.Bash],
+  },
+]
+
+export const starters: Project[] = [
+  {
+    name: 'Nuxt Starter',
+    description: 'Nuxt 3 & UnoCSS starter template',
+    year: 2023,
+    repo: 'https://github.com/mat2ja/nuxt-starter',
+    url: 'https://nuxt-starter-iota.vercel.app/',
+    tags: [Tag.Nuxt, Tag.UnoCSS],
+  },
+  {
+    name: 'Vue Starter',
+    description: 'Vue & UnoCSS starter template',
+    year: 2023,
+    repo: 'https://github.com/mat2ja/vue-starter',
+    url: 'https://vue-uno-starter.vercel.app/',
+    tags: [Tag.Vue, Tag.UnoCSS],
+  },
+  {
+    name: 'Vue & Anu Starter',
+    description: 'Vue & Anu starter template',
+    year: 2023,
+    repo: 'https://github.com/mat2ja/vue-anu-starter',
+    url: 'https://vue-anu-starter.vercel.app/',
+    tags: [Tag.Vue, Tag.UnoCSS],
+  },
+
+]

@@ -39,7 +39,7 @@ const openProject = () => {
       :class="[{ 'sm:(bg-opaque !lg:translate-x-0 backdrop-blur-md)': cardRowHovered }]"
       @click="openProject"
     >
-      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-medium text-5xl text="stone-8/12 dark:white/18">
+      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-semibold text-5xl text="stone-8/12 dark:white/18">
         {{ project.year }}
       </div>
 
@@ -48,7 +48,7 @@ const openProject = () => {
           <div flex items-center gap-3>
             <h3
               line-clamp-1
-              font-sans font-semibold text-2xl
+              font-sans font-semibold text-xl
               flex-1 flex items-start gap-4
               class="hover:underline" :class="{ underline: cardHovered }"
             >
@@ -110,12 +110,5 @@ const openProject = () => {
         </div>
       </div>
     </div>
-
-    <ProjectCardThumbnail
-      v-if="project.thumbnail"
-      :thumbnail="project.thumbnail"
-      :shown="cardRowHovered"
-      :alt="project.name"
-    />
   </div>
 </template>
