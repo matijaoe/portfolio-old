@@ -59,7 +59,7 @@ export const projects: Project[] = [
   },
   {
     name: 'MeetMia',
-    description: 'Cake shop concept project built for Web Design college course.',
+    description: 'Cake shop concept project, designed and built.',
     tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.SASS],
     year: 2021,
     repo: 'https://github.com/mat2ja/meet-mia',
@@ -91,9 +91,9 @@ export const extensions: Project[] = [
   },
   {
     name: 'Modern JavaScript Snippets',
-    description: 'Snippets for the modern Vue ecosystem - including Nuxt 3, Pinia, VueUse & Vue Router.',
+    description: 'Code snippets for modern JavaScript & TypeScript',
     year: 2023,
-    url: 'https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets',
+    url: 'https://marketplace.visualstudio.com/items?itemName=matijao.modern-js-snippets',
     tags: [Tag.Deno, Tag.TypeScript],
     vscode: true,
   },
