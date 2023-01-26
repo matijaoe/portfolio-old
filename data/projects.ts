@@ -102,7 +102,7 @@ export const extensions: Project[] = [
     description: 'Chrome Extension',
     year: 2023,
     repo: 'https://github.com/mat2ja/url-editor',
-    tags: [Tag.React, Tag.Tailwind],
+    tags: [Tag.SvelteKit, Tag.Tailwind],
     wip: true,
   },
   {
