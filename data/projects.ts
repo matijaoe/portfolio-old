@@ -26,7 +26,6 @@ export const projects: Project[] = [
     year: 2021,
     repo: 'https://github.com/mat2ja/aimo',
     url: 'https://aimo.vercel.app',
-
     thumbnail: '/projects/aimo.webp',
   },
   {
@@ -88,6 +87,7 @@ export const extensions: Project[] = [
     year: 2023,
     url: 'https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets',
     tags: [Tag.Deno, Tag.TypeScript],
+    vscode: true,
   },
   {
     name: 'Modern JavaScript Snippets',
@@ -95,6 +95,7 @@ export const extensions: Project[] = [
     year: 2023,
     url: 'https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets',
     tags: [Tag.Deno, Tag.TypeScript],
+    vscode: true,
   },
   {
     name: 'URL Editor for Chrome',
@@ -111,13 +112,14 @@ export const extensions: Project[] = [
     url: undefined,
     tags: [Tag.React],
     wip: true,
+    raycast: true,
   },
   {
     name: 'pnpm.plugin.zsh',
     description: 'Oh My Zsh aliases for common pnpm commands',
     year: 2023,
     repo: 'https://github.com/mat2ja/pnpm.plugin.zsh',
-    tags: [Tag.Bash],
+    tags: [Tag.Zsh],
   },
 ]
 

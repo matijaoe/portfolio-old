@@ -32,7 +32,7 @@ export const useJobs = () => {
       },
       from: 'Aug 2022',
       to: 'Present',
-      duration: calculateDuration(new Date(2022, 8), addMonths(now, 1)),
+      duration: calculateDuration(new Date(2022, 8), addMonths(now, 2)),
       remote: true,
       flags: ['circle-flags:hr', 'circle-flags:de'],
     },

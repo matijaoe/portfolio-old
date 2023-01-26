@@ -19,7 +19,7 @@ export enum Tag {
   Prisma = 'prisma',
   SvelteKit = 'sveltekit',
   Deno = 'deno',
-  Bash = 'bash',
+  Zsh = 'zsh',
 }
 
 export type Project = {
@@ -30,6 +30,9 @@ export type Project = {
   repo?: string
   url?: string
   wip?: boolean
+  // TODO: custom type property
+  vscode?: boolean
+  raycast?: boolean
   thumbnail?: string
   images?: string[]
 }
