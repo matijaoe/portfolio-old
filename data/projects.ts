@@ -75,7 +75,7 @@ export const projects: Project[] = [
     tags: [Tag.HTML, Tag.SASS, Tag.JavaScript],
     year: 2020,
     repo: 'https://github.com/mat2ja/comet',
-    url: 'https://mat2ja.github.io/comet/',
+    url: 'https://comet-blush.vercel.app',
     thumbnail: '/projects/comet.webp',
   },
 ]
