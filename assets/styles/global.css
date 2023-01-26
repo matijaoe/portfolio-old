@@ -18,14 +18,7 @@ html.dark {
 }
 
 ::selection {
-  background: #d6d3d186;
-  color: #44403c;
-}
-
-
-.dark ::selection {
-  background: #44403c6d;
-  color: #d6d3d1;
+  --at-apply: bg-stone-300/30 dark:(bg-stone-300/4);
 }
 
 .hide-scrollbar::-webkit-scrollbar {

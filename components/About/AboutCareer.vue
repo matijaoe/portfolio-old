@@ -15,7 +15,11 @@ const { jobs } = useJobs()
         </h6>
 
         <div flex items-center gap-2>
-          <a :href="job.company.url" target="_blank" hyperlink>{{ job.company.name }}</a>
+          <a
+            :href="job.company.url" target="_blank"
+            hyperlink
+            :class="{ '!decoration-accent decoration-wavy': i === 0 }"
+          >{{ job.company.name }}</a>
           <span>•</span>
           <span text-dimmed>{{ job.company.location }}</span>
           <div flex items-center gap-1>

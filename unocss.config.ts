@@ -12,7 +12,13 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetTypography({}),
+    presetTypography({
+      cssExtend: {
+        'a:hover': {
+          'text-decoration-color': 'var(--accent)',
+        },
+      },
+    }),
     presetWebFonts({
       provider: 'google',
       fonts: {
@@ -56,7 +62,7 @@ export default defineConfig({
     'text-dimmed': 'text-stone-7 dark:text-stone-4',
     'text-dimmed-lighter': 'text-stone-7/90 dark:text-stone-4/90',
     // Others
-    'hyperlink': '-mx-0.5 -my-0.5 py-0.5 px-1 rounded-sm underline hover:(!text-default underline-accent) transition-base',
+    'hyperlink': '-mx-0.5 -my-0.5 py-0.5 px-1 rounded-sm underline decoration-stone-8/20 dark:decoration-stone-2/20 decoration-offset-2 hover:(!decoration-accent) transition-base',
     'divider-x': 'divide-x-1 divide-stone-2 dark:divide-stone-8',
     'divider-y': 'divide-y-1 divide-stone-2 dark:divide-stone-8',
     // Backgrounds

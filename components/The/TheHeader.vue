@@ -16,7 +16,7 @@ const { notificationShown } = useNotification()
     <div py-4 md:py-6 px-5 sm:px-8>
       <div
         hidden sm:flex flex-col justify-center fixed class="left-50% -translate-x-50%"
-        :class="notificationShown && scrolled ? '-translate-y-12' : 'translate-y-0'"
+        :class="notificationShown && scrolled ? '-translate-y-11' : 'translate-y-0'"
         transition duration-400
       >
         <NavBar

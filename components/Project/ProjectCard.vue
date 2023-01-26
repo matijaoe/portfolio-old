@@ -39,7 +39,7 @@ const openProject = () => {
       :class="[{ 'sm:(bg-opaque !lg:translate-x-0 backdrop-blur-md)': cardRowHovered }]"
       @click="openProject"
     >
-      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-medium text-5xl text="stone-8/12 dark:white/18">
+      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-bold text-5xl text="stone-8/12 dark:white/18">
         {{ project.year }}
       </div>
 
@@ -68,7 +68,7 @@ const openProject = () => {
           <div
             block sm:hidden
             absolute top="[-2]" right-0
-            font-semibold
+            font-black
             text="stone-2/20 3xl right"
           >
             {{ project.year }}

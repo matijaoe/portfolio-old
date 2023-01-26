@@ -91,7 +91,7 @@ const posts: Post[] = [
 
       <div max-w-lg space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
         <p title="its a stolen placeholder">
-          Ambitious and competitive front-end oriented software developer, very much in love all things web development.
+          Ambitious and competitive front-end oriented <span underline decoration-wavy decoration-offset-3 decoration-accent>software developer</span>, very much in love all things web development.
         </p>
 
         <div mt="!8" flex items-center gap-3 text-sm>
