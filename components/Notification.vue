@@ -9,7 +9,7 @@ const { hideNotification } = useNotification()
         <slot />
       </div>
       <div absolute class="top-50% translate-y--50%" right-4 md:right-6>
-        <button @click="hideNotification">
+        <button aria-label="Close" @click="hideNotification">
           <Icon name="ph:x-bold" text-xl />
         </button>
       </div>

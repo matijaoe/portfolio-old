@@ -48,7 +48,8 @@ onMounted(() => {
         rounded-2xl
         select-none
         overflow-hidden
-        class="col-span-3 sm:(col-span-2 row-span-1) aspect-2/1 sm:aspect-square filter-saturate-90"
+        sm:none
+        class="col-span-3 sm:(col-span-2 row-span-1) aspect-square filter-saturate-90"
         :style="{ backgroundImage: 'url(' + `'${img}'` + ')', backgroundSize: 'cover' }"
       />
       <LinksLinkCard
@@ -65,7 +66,7 @@ onMounted(() => {
         rounded-2xl
         select-none
         overflow-hidden
-        class="col-span-3 sm:(col-span-2 row-span-1) aspect-2/1 sm:aspect-square filter-saturate-90"
+        class="col-span-3 sm:(col-span-2 row-span-1) aspect-square filter-saturate-90"
         :style="{ backgroundImage: 'url(' + `'${img}'` + ')', backgroundSize: 'cover', backgroundPosition: 'center' }"
       />
     </div>

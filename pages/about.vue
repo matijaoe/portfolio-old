@@ -43,8 +43,9 @@ const openPdf = () => {
             <NuxtImg
               transition duration-500 ease rotate-3 hover:rotate-12
               rounded-lg
-              :width="300"
-              :height="300"
+              :width="600"
+              :height="600"
+              preload
               format="webp"
               src="/avatar.webp"
               alt="Matija Osrečki avatar"

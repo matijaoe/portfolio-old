@@ -20,8 +20,6 @@ defineProps<{
       <slot name="right" />
     </div>
 
-    <!-- <div h="2px" rounded-full w-8 bg-stone-4 dark:bg-stone-7 mt-3 /> -->
-
     <div z-2 flex flex-col gap-4>
       <slot />
     </div>

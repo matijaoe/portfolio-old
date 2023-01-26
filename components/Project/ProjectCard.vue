@@ -101,7 +101,7 @@ const openProject = () => {
         </div>
 
         <div mt-auto>
-          <ul mt-2 flex items-center flex-wrap gap-2>
+          <div mt-2 flex items-center flex-wrap gap-2>
             <ProjectTagBlank v-if="project.vscode" class="bg-[#0098FF]">
               vscode
             </ProjectTagBlank>
@@ -109,7 +109,7 @@ const openProject = () => {
             <ProjectTag v-for="tag in project.tags" :key="tag">
               {{ tag }}
             </ProjectTag>
-          </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ defineProps<{
         loading="lazy"
         h-64
         format="webp"
-        height="1024"
+        :height="822"
         :src="thumbnail"
         :alt="alt"
       />
