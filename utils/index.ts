@@ -11,3 +11,9 @@ export const stripUrl = (link: string) => {
 export const copy = (text: string) => {
   navigator.clipboard.writeText(text)
 }
+
+export const formatCurrency = (value: number, options?: Intl.NumberFormatOptions) => new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  ...options,
+}).format(value)

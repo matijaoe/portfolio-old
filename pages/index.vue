@@ -218,30 +218,38 @@ const posts: Post[] = [
             />
           </div>
 
-          <div class="grid grid-cols-2 gap-3">
-            <NavSiteCard
-              :card="cards[4]"
-              h-full
-            />
+          <div flex flex-col gap-3>
+            <div grid sm:grid-cols-3 gap-3>
+              <CardBtc aspect-square />
+              <CardEth aspect-square />
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <NavSiteCard
+                :card="cards[4]"
+                h-full
+              />
+
+              <NavSiteCard
+                :card="cards[1]"
+              />
+            </div>
 
             <NavSiteCard
-              :card="cards[1]"
+              aspect-ratio="3/1"
+              :card="cards[0]"
             />
-          </div>
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards[0]"
-          />
 
-          <!-- <NavSiteCard
+            <!-- <NavSiteCard
             :card="cards[3]"
             col-span-6
           /> -->
 
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards[2]"
-          />
+            <NavSiteCard
+              aspect-ratio="3/1"
+              :card="cards[2]"
+            />
+          </div>
         </div>
       </div>
     </div>

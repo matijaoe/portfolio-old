@@ -10,6 +10,10 @@ useHead({
       Say hello
     </BaseHeading>
 
+    <div py10>
+      <CardBtc w-64 aspect-square />
+    </div>
+
     <div mt-8>
       <a
         href="mailto:matija.osrecki@gmail.com" class="text-2xl sm:text-3xl md:text-5xl" underline decoration-accent hover:bg-accentop rounded-sm
@@ -19,4 +23,3 @@ useHead({
     </div>
   </div>
 </template>
-
