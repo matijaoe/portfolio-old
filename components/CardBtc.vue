@@ -5,7 +5,7 @@ type PriceModel = {
   }
 }
 
-const { data } = await useFetch<PriceModel>('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
+const { data, error } = await useFetch<PriceModel>('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
 const price = computed(() => data.value?.bitcoin.usd)
 
 const formatted = computed(() => {
@@ -24,7 +24,7 @@ const formatted = computed(() => {
     transition-base
     rounded-2xl
     overflow-hidden
-    bg="#f2a900"
+    bg="#f2a900/70"
     text-black
     p-4
     flex-1 flex flex-col
@@ -37,6 +37,9 @@ const formatted = computed(() => {
       <p ml-auto font-mono text-2xl>
         {{ formatted }}
       </p>
+      <div v-if="error">
+        {{ error }}
+      </div>
     </div>
   </div>
 </template>

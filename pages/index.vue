@@ -105,13 +105,13 @@ const posts: Post[] = [
         </div>
       </div>
 
-      <!-- <div mt-4>
+      <div mt-4>
         <button flex items-center gap="1.5" text-default>
           Press <div flex items-center gap-1>
             <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
           </div> to start
         </button>
-      </div> -->
+      </div>
     </div>
 
     <div row sm:px-8 w-full max-w="1600px" mx-auto>
@@ -172,7 +172,7 @@ const posts: Post[] = [
               </p>
             </div>
 
-            <!-- <div>
+            <div>
               <button
                 ml-auto text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
                 class="group hover:(bg-stone-2/70 dark:(bg-stone-8))"
@@ -184,11 +184,10 @@ const posts: Post[] = [
                   class="translate-x--0.5 group-hover:(translate-x-0.5)"
                 />
               </button>
-            </div> -->
+            </div>
           </div>
 
-          <!-- controls -->
-          <!-- <div mx--3 flex justify-between items-center>
+          <div mx--3 flex justify-between items-center>
             <button
               text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
               class="hover:(translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
@@ -206,7 +205,7 @@ const posts: Post[] = [
               Newer
               <Icon name="ph:caret-right-duotone" text-lg />
             </button>
-          </div> -->
+          </div>
         </Card>
 
         <div flex flex-col gap-3>
@@ -240,10 +239,10 @@ const posts: Post[] = [
               :card="cards[0]"
             />
 
-            <!-- <NavSiteCard
-            :card="cards[3]"
-            col-span-6
-          /> -->
+            <NavSiteCard
+              :card="cards[3]"
+              col-span-6
+            />
 
             <NavSiteCard
               aspect-ratio="3/1"
