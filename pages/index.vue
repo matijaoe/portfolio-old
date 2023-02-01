@@ -39,12 +39,6 @@ const cards: NavCard[] = [
     to: '/links',
     icon: 'ph:globe-duotone',
   },
-  // {
-  //   title: 'Guestbook',
-  //   description: 'Stop by and leave a message',
-  //   to: '/guestbook',
-  //   icon: 'ph:book-open-duotone',
-  // },
 ]
 
 const hasMore = ref(false)
@@ -90,8 +84,8 @@ const posts: Post[] = [
       </div>
 
       <div max-w-lg space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
-        <p title="its a stolen placeholder">
-          Ambitious and competitive front-end oriented <span underline decoration-wavy decoration-offset-3 decoration-accent>software developer</span>, very much in love with all things web development.
+        <p>
+          Self-motivated front-end oriented <span underline decoration-wavy decoration-offset-3 decoration-accent>software developer</span>, very much in love with all things web development.
         </p>
 
         <div mt="!8" flex items-center gap-3 text-sm>
