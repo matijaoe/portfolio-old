@@ -59,7 +59,7 @@ const openPdf = () => {
       <AboutCareer />
     </div>
 
-    <div grid lg:grid-cols-5 gap-4 justify-between mx--8>
+    <div grid lg:grid-cols-5 gap-4 justify-between>
       <Card col-span-3 :hoverable="false">
         <AboutEducation />
       </Card>
