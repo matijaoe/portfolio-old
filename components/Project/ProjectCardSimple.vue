@@ -102,13 +102,13 @@ const openProject = () => {
 
         <div mt-auto>
           <div mt-2 flex items-center flex-wrap gap-2>
-            <ProjectTagBlank v-if="project.vscode" class="bg-[#0098FF] shadow-md shadow-#0098FF/25">
+            <ProjectTagWip v-if="project.wip" />
+            <ProjectTagBlank v-if="project.vscode" class="bg-stone-3/80 dark:bg-stone-6/60 dark:text-stone-300">
               vscode
             </ProjectTagBlank>
-            <ProjectTagBlank v-if="project.raycast" class="bg-[#FE6363] shadow-md shadow-#FE6363/25">
+            <ProjectTagBlank v-if="project.raycast" class="bg-stone-3/80 dark:bg-stone-6/60 dark:text-stone-300">
               raycast
             </ProjectTagBlank>
-            <ProjectTagWip v-if="project.wip" />
             <ProjectTag v-for="tag in project.tags" :key="tag">
               {{ tag }}
             </ProjectTag>

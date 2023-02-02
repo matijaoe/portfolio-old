@@ -83,9 +83,9 @@ const posts: Post[] = [
         </p>
       </div>
 
-      <div max-w-lg space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
+      <div max-w-48ch space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
         <p>
-          Self-motivated front-end oriented <span underline decoration-wavy decoration-offset-3 decoration-accent>software developer</span>, very much in love with all things web development.
+          Self-motivated front-end oriented <span underline decoration-wavy decoration-offset-4 decoration-accent>software developer</span>, very much in love with all things web development.
         </p>
 
         <div mt="!8" flex items-center gap-3 text-sm>
@@ -158,7 +158,7 @@ const posts: Post[] = [
               </p>
             </div>
 
-            <!-- <div>
+            <div>
               <button
                 ml-auto text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
                 class="group hover:(bg-stone-2/70 dark:(bg-stone-8))"
@@ -170,11 +170,11 @@ const posts: Post[] = [
                   class="translate-x--0.5 group-hover:(translate-x-0.5)"
                 />
               </button>
-            </div> -->
+            </div>
           </div>
 
           <!-- controls -->
-          <!-- <div mx--3 flex justify-between items-center>
+          <div mx--3 flex justify-between items-center>
             <button
               text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
               class="hover:(translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
@@ -192,7 +192,7 @@ const posts: Post[] = [
               Newer
               <Icon name="ph:caret-right-duotone" text-lg />
             </button>
-          </div> -->
+          </div>
         </Card>
 
         <div flex flex-col gap-3>

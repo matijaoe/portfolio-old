@@ -1,5 +1,5 @@
 export const useNotification = () => {
-  const notificationShown = useState('notification', () => true)
+  const notificationShown = useState('notification', () => false)
 
   const hideNotification = () => {
     notificationShown.value = false

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const styles = 'transition-smooth fill-stone-2/45 dark:fill-stone-8/50'
+const styles = 'transition-smooth fill-stone-2/45 dark:fill-stone-8/40'
 </script>
 
 <template>
