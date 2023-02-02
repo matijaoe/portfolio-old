@@ -37,22 +37,22 @@ export const useSocialsShortcuts = () => {
     .reduce((acc, social) => {
       acc[social.label] = {
         key: `${social.key!}`,
-        handler: () => navigateTo(social.to ?? social.href, { external: !social.to }),
+        handler: () => navigateTo(social?.href ?? social.href, { external: !social.to }),
       }
       return acc
     }, {} as ShortcutConfig))
 
-  const shortcutsShown = ref(true)
+  const shortcutsShown = ref(false)
 
-  useShortcuts({ ...config.value })
+  // useShortcuts({ ...config.value })
 
-  // const { cmd } = useMagicKeys()
-  // watch(cmd, (v) => {
-  //   if (v)
-  //     shortcutsShown.value = true
-  //   else
-  //     shortcutsShown.value = false
-  // })
+  const { cmd } = useMagicKeys()
+  watch(cmd, (v) => {
+    if (v)
+      shortcutsShown.value = true
+    else
+      shortcutsShown.value = false
+  })
 
   return {
     shortcutsShown,

@@ -98,14 +98,6 @@ const posts: Post[] = [
           </p>
         </div>
       </div>
-
-      <!-- <div mt-4>
-        <button flex items-center gap="1.5" text-default>
-          Press <div flex items-center gap-1>
-            <BaseKbd>⌘</BaseKbd><BaseKbd>K</BaseKbd>
-          </div> to start
-        </button>
-      </div> -->
     </div>
 
     <div row sm:px-8 w-full max-w="1600px" mx-auto>
