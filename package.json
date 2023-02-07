@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@types/marked": "^4.0.8",
     "date-fns": "^2.29.3",
     "marked": "^4.2.12",
     "slugify": "^1.6.5",

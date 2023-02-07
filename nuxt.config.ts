@@ -66,4 +66,7 @@ export default defineNuxtConfig({
     },
   },
   image: {},
+  vite: {
+    assetsInclude: ['**/*.md'],
+  },
 })
