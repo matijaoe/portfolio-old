@@ -48,8 +48,9 @@ const variantClass = computed(() => {
     :external="external"
     :target="newTab ? '_blank' : '_self'"
     flex gap-2 items-center justify-center
-    py="2" px-3
-    transition-base rounded-lg
+    p="y-2 x-3"
+    rounded-lg
+    transition-base
     class="text-sm hover:(ring-2) active:(scale-95)"
     :class="[variantClass]"
   >

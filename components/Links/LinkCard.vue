@@ -39,7 +39,6 @@ whenever(keys?.[key.value], (v) => {
 
 <template>
   <NuxtLink
-    ref="elem"
     select-none block
     :external="!social.to"
     class="group"
@@ -52,7 +51,7 @@ whenever(keys?.[key.value], (v) => {
       :active="keyPressed"
     >
       <div p-5 flex-1 flex flex-col justify-between class="text-default">
-        <!-- TODO: wrong color on dark mode first refresh -->
+        <!-- TODO: wrong color on dark mode first load -->
         <Icon
           :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }"
           :name="social.icon"

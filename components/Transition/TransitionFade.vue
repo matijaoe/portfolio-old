@@ -10,7 +10,7 @@
   transition: opacity 250ms ease;
 }
 
-.v-enter-from,
+.fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }

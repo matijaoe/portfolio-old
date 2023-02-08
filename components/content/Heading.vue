@@ -3,7 +3,3 @@
     <slot />
   </BaseHeading>
 </template>
-
-<style lang="postcss" scoped>
-
-</style>

@@ -5,14 +5,11 @@ const { scrolled } = useWindowScrolled()
 </script>
 
 <template>
-  <nav
-    relative overflow-hidden
-    flex justify-center
-    transition duration-500 ease transition-base
-  >
+  <nav relative overflow-hidden flex justify-center transition-base duration-500 ease>
     <menu font-medium lowercase flex items-center gap-2 md:gap-0 w-max>
       <li v-for="(item, i) in navItems" :key="i">
         <!-- desktop -->
+        <!-- TODO: fix color when scrolled and over bright image -->
         <NuxtLink
           :to="item.to"
           hidden md:block
@@ -20,7 +17,7 @@ const { scrolled } = useWindowScrolled()
           text-opaque
           bg-transparent
           class="hover:text-default"
-          :class="{ 'hover:(bg-opaque)': !scrolled, 'text-opaque-hovered': scrolled }"
+          :class="{ 'hover:(bg-opaque)': !scrolled }"
           transition-base
           relative z-2
           rounded-lg
@@ -32,11 +29,12 @@ const { scrolled } = useWindowScrolled()
         <!-- mobile -->
         <NuxtLink
           :to="item.to"
+          p-3 lg:p-2
           flex items-center
-          block md:hidden transition text-opaque hover:text-opaque-hovered
+          block md:hidden text-opaque hover:text-opaque-hovered
+          transition
           active-class="!text-default"
           :aria-label="item.label"
-          p-3 lg:p-2
         >
           <Icon text-xl md:text-2xl :name="item.icon" />
         </NuxtLink>

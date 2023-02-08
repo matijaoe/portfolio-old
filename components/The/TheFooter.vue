@@ -1,11 +1,10 @@
 <script lang="ts" setup>
-const year = new Date().getFullYear()
+const year = ref(new Date().getFullYear())
 </script>
 
 <template>
   <footer
-    pt-14
-    pb-20
+    p="t-14 b-20"
     border="t-1 t-stone-2 dark:(t-stone-8)"
   >
     <div row space-y-10>
@@ -29,7 +28,7 @@ const year = new Date().getFullYear()
   </footer>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .heartbeat {
   animation: beat .3s infinite alternate;
   transform-origin: center;
@@ -41,4 +40,3 @@ const year = new Date().getFullYear()
   }
 }
 </style>
-

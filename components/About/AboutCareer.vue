@@ -18,7 +18,7 @@ const { jobs } = useJobs()
           <a
             :href="job.company.url" target="_blank"
             hyperlink
-            :class="{ '!decoration-accent decoration-wavy': i === 0 }"
+            :class="{ 'decoration-wavy': i === 0 }"
           >{{ job.company.name }}</a>
           <span>•</span>
           <span text-dimmed>{{ job.company.location }}</span>
