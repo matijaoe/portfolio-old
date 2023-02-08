@@ -22,7 +22,6 @@ export const useSocials = () => {
     ...baseSocials,
     mastodon,
     goodreads,
-    email,
   ]
 
   const socialsIncludingBase = [

@@ -34,7 +34,6 @@ export const useJobs = () => {
       to: 'Present',
       duration: calculateDuration(new Date(2022, 8), addMonths(now, 2)),
       remote: true,
-      flags: ['circle-flags:hr', 'circle-flags:de'],
     },
     {
       position: 'Junior Frontend Developer',
@@ -47,7 +46,6 @@ export const useJobs = () => {
       to: 'July 2022',
       duration: calculateDuration(new Date(2021, 8), new Date(2022, 8)),
       remote: true,
-      flags: ['circle-flags:hr', 'circle-flags:de'],
     },
     {
       position: 'Junior Full Stack Developer',
@@ -60,7 +58,6 @@ export const useJobs = () => {
       to: 'Jul 2021',
       duration: calculateDuration(new Date(2021, 5), new Date(2021, 8)),
       remote: true,
-      flags: ['circle-flags:hr'],
     },
   ])
 

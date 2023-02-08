@@ -17,14 +17,10 @@ const { jobs } = useJobs()
         <div flex items-center gap-2>
           <a
             :href="job.company.url" target="_blank"
-            hyperlink
-            :class="{ 'decoration-wavy': i === 0 }"
+            hyperlink-wavy
           >{{ job.company.name }}</a>
           <span>•</span>
           <span text-dimmed>{{ job.company.location }}</span>
-          <div flex items-center gap-1>
-            <Icon v-for="flag in job.flags" :key="flag" :name="flag" />
-          </div>
         </div>
 
         <div text-dimmed text-sm flex items-center gap-2 ml="0.5">

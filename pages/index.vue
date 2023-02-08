@@ -1,18 +1,9 @@
 <script lang="ts" setup>
-import gsap from 'gsap'
-import { marked } from 'marked'
+// import gsap from 'gsap'
 const { baseSocials: socials } = useSocials()
 
 useHead({
   title: 'Home | Matija Osrečki',
-})
-
-const NowMd = ref('')
-
-import('~/content/2023-01-03.md').then((res) => {
-  fetch(res.default)
-    .then(response => response.text())
-    .then(text => NowMd.value = marked.parse(text))
 })
 
 const cards = {
@@ -47,33 +38,14 @@ const cards = {
     icon: 'ph:globe-duotone',
   },
 } as const
-
-const hasMore = ref(false)
-const { isDark } = useTheme()
-const container = ref<HTMLDivElement>()
-
-onMounted(() => {
-  gsap.from(container.value!.children, {
-    delay: 0.15,
-    duration: 0.5,
-    y: '+100',
-    autoAlpha: 0,
-    stagger: 0.15,
-    ease: 'back.out(1.7)',
-  })
-})
 </script>
 
 <template>
   <div flex flex-col gap-40 mt-12vh relative>
-    <div ref="container" row flex flex-col gap-8>
+    <div row flex flex-col gap-8>
       <div z-2 font-display space-y-4 relative>
         <SVGCloud z-1 aspect-square absolute top="-55" left="25vw md:50vw lg:120" />
-        <p
-          ref="name" text-6xl md:text-8xl
-          z-2
-          relative
-        >
+        <p text-6xl md:text-8xl z-2 relative>
           Matija Osrečki
         </p>
       </div>
@@ -95,98 +67,39 @@ onMounted(() => {
       </div>
     </div>
 
-    <div row sm:px-8 w-full max-w="1600px" mx-auto>
+    <div row sm:px-8 w-full mx-auto max-w="1200px">
       <div class="grid md:grid-cols-2 gap-3">
-        <Card>
-          <div flex-1 flex flex-col gap-4>
-            <!-- title -->
-            <div flex items-end justify-between>
-              <div flex items-center gap-3>
-                <Icon name="ph:compass-duotone" text-3xl mb="1.5" />
-                <h4 text-2xl font-display text-default>
-                  Now
-                </h4>
-              </div>
-              <div text-dimmed text-sm>
-                <div>{{ Intl.DateTimeFormat('en-us', { dateStyle: 'medium' }).format(new Date('2023-01-03')) }}</div>
-              </div>
-            </div>
-
-            <!-- TODO: temporary inline, convert to markdown in the future -->
-            <!-- content -->
-            <div prose v-html="NowMd" />
-
-            <div>
-              <button
-                ml-auto text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
-                class="group hover:(bg-stone-2/70 dark:(bg-stone-8))"
-                @click="navigateTo('/2023-01-03')"
-              >
-                Read the rest
-                <Icon
-                  name="ph:arrow-right-duotone" text-md
-                  transition-base
-                  class="translate-x--0.5 group-hover:(translate-x-0.5)"
-                />
-              </button>
-            </div>
-          </div>
-
-          <div mx--3 flex justify-between items-center>
-            <button
-              text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
-              class="hover:(translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
-
-              @click="hasMore = true"
-            >
-              <Icon name="ph:caret-left-duotone" text-lg />
-              Older
-            </button>
-            <button
-              v-if="hasMore"
-              text-sm py-2 px-3 rounded-lg flex gap-2 items-center justify-center transition-base
-              class="hover:(-translate-x-3 bg-stone-2/70 dark:(bg-stone-8))"
-            >
-              Newer
-              <Icon name="ph:caret-right-duotone" text-lg />
-            </button>
-          </div>
-        </Card>
-
-        <div flex flex-col gap-3>
-          <div grid sm:grid-cols-3 gap-3>
-            <LinksLinkCard
-              v-for="social in socials"
-              :key="social.label"
-              :social="social"
-            />
-          </div>
-
-          <NavSiteCard
-            :card="cards.about"
-            aspect-ratio="3/1"
+        <div grid sm:grid-cols-5 gap-3 col-span-2>
+          <LinksLinkCard
+            v-for="social in socials"
+            :key="social.label"
+            :social="social"
           />
-
           <NavSiteCard
-            aspect-ratio="3/1"
+            col-span-2
             :card="cards.links"
           />
-
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards.projects"
-          />
-
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards.uses"
-          />
-
-          <NavSiteCard
-            aspect-ratio="3/1"
-            :card="cards.contact"
-          />
         </div>
+
+        <NavSiteCard
+          aspect="3/1"
+          :card="cards.about"
+        />
+
+        <NavSiteCard
+          aspect="3/1"
+          :card="cards.projects"
+        />
+
+        <NavSiteCard
+          aspect="3/1"
+          :card="cards.uses"
+        />
+
+        <NavSiteCard
+          aspect="3/1"
+          :card="cards.contact"
+        />
       </div>
     </div>
   </div>

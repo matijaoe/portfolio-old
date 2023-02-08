@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: false,
+    inlineSSRStyles: false,
   },
   unocss: {
     preflight: true,

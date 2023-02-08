@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import '@fontsource/ia-writer-mono'
+
 useGlobalShortcuts()
 
 const { showGrain } = useGrain()

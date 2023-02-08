@@ -14,8 +14,17 @@ export default defineConfig({
     presetAttributify(),
     presetTypography({
       cssExtend: {
+        'a': {
+          'text-decoration-color': 'rgb(41, 37, 36, 0.2)',
+        },
+        '.dark a': {
+          'text-decoration-color': 'rgb(231, 229, 228, 0.2)',
+        },
         'a:hover': {
           'text-decoration-color': 'var(--accent)',
+        },
+        'p': {
+          'line-height': 2,
         },
       },
     }),
@@ -31,7 +40,8 @@ export default defineConfig({
           provider: 'none',
         },
         mono: {
-          name: 'JetBrains Mono',
+          // name: 'iA Writer Mono',
+          name: 'DM Mono',
           provider: 'google',
         },
       },
@@ -63,6 +73,7 @@ export default defineConfig({
     'text-dimmed-lighter': 'text-stone-7/90 dark:text-stone-4/90',
     // Others
     'hyperlink': '-mx-0.5 -my-0.5 py-0.5 px-1 rounded-sm underline decoration-stone-8/20 dark:decoration-stone-2/20 decoration-offset-2 hover:(!decoration-accent) transition-base',
+    'hyperlink-wavy': '-mx-0.5 -my-0.5 py-0.5 px-1 rounded-sm underline decoration-stone-8/20 dark:decoration-stone-2/20 decoration-offset-3 decoration-wavy hover:(!decoration-accent) transition-base',
     'divider-x': 'divide-x-1 divide-stone-2 dark:divide-stone-8',
     'divider-y': 'divide-y-1 divide-stone-2 dark:divide-stone-8',
     // Backgrounds
