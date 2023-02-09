@@ -13,7 +13,7 @@ useHead({
     </BaseHeading>
 
     <div space-y-32>
-      <section mt-8 md:mt-12 flex flex-col gap-5 md:gap-7>
+      <section mt-8 md:mt-12 grid lg:grid-cols-2 gap-5 md:gap-7>
         <ProjectCardNew
           v-for="(project, i) in projects"
           :key="i"
