@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Aimo',
-    description: 'Platform for connecting motivated individuals with accountability partners.',
+    description: 'Social media platform connecting motivated individuals with accountability partners.',
     tags: [Tag.Nuxt, Tag.Vue, Tag.Tailwind, Tag.Firebase],
     year: 2021,
     repo: 'https://github.com/mat2ja/aimo',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
   },
   {
     name: 'MeetMia',
-    description: 'Cake shop concept project, designed and built.',
+    description: 'Cake shop concept project',
     tags: [Tag.Vue, Tag.Vite, Tag.TypeScript, Tag.SASS],
     year: 2021,
     repo: 'https://github.com/mat2ja/meet-mia',

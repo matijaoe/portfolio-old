@@ -40,7 +40,7 @@ export const mastodon = {
   label: 'Mastodon',
   username: '@matijao',
   icon: 'bxl:mastodon',
-  href: 'https://fosstodon.org/@matijao',
+  href: 'https://elk.zone/fosstodon.org/@matijao',
   color: '#CC7D23',
   key: 's',
 }
