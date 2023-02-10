@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Portfolio 🍃
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+My much too overthinked porfolio website
 
 ## Setup
 
-Make sure to install the dependencies:
-
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
+# Install the dependencies
 pnpm install --shamefully-hoist
+
+# Start the development server
+pnpm run dev
+
+# Build for production
+pnpm run build
+
+# Locally preview production build
+pnpm run preview
 ```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
