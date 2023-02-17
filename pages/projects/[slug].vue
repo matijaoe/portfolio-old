@@ -15,9 +15,9 @@ const images = computed(() => {
   <div v-if="project" row>
     <div>
       <div flex items-start justify-between>
-        <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
+        <H as="h2" text-4xl sm:text-5xl md:text-6xl>
           {{ project.name }}
-        </BaseHeading>
+        </H>
 
         <div flex items-center gap-2 shrink-0>
           <Button @click="navigateTo({ name: 'projects' })">

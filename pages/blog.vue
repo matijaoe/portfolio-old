@@ -6,8 +6,8 @@ useHead({
 
 <template>
   <div row>
-    <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
+    <H as="h2" text-4xl sm:text-5xl md:text-6xl>
       Blog
-    </BaseHeading>
+    </H>
   </div>
 </template>

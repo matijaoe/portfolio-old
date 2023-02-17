@@ -6,9 +6,9 @@ useHead({
 
 <template>
   <div row>
-    <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
+    <H as="h2" text-4xl sm:text-5xl md:text-6xl>
       Say hello
-    </BaseHeading>
+    </H>
 
     <div mt-8>
       <a
@@ -19,4 +19,3 @@ useHead({
     </div>
   </div>
 </template>
-

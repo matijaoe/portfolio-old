@@ -14,11 +14,11 @@ export const navItems = [
     to: '/projects',
     icon: 'ph:lightbulb-filament-duotone',
   },
-  // {
-  //   label: 'Uses',
-  //   to: '/uses',
-  //   icon: 'ph:tray-duotone',
-  // },
+  {
+    label: 'Uses',
+    to: '/uses',
+    icon: 'ph:tray-duotone',
+  },
   // {
   //   label: 'Blog',
   //   to: '/blog',

@@ -10,11 +10,11 @@ defineProps<{
     <div flex items-center justify-between gap-4>
       <div flex items-center gap-3>
         <Icon v-if="icon" :name="icon" text-3xl mb="1.5" />
-        <BaseHeading as="h3" text-2xl>
+        <H as="h3" text-2xl>
           <slot name="title">
             {{ title }}
           </slot>
-        </BaseHeading>
+        </H>
       </div>
 
       <slot name="right" />

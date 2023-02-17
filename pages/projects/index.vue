@@ -8,9 +8,9 @@ useHead({
 
 <template>
   <div row pb-10 md:pb-30>
-    <BaseHeading as="h2" text-4xl sm:text-5xl md:text-6xl>
+    <H as="h2" text-4xl sm:text-5xl md:text-6xl>
       Projects
-    </BaseHeading>
+    </H>
 
     <div space-y-32>
       <section mt-8 md:mt-12 grid lg:grid-cols-2 gap-5 md:gap-7>
@@ -23,9 +23,9 @@ useHead({
       </section>
 
       <div>
-        <BaseHeading as="h3" text-xl sm:text-2xl md:text-3xl>
+        <H as="h3" text-xl sm:text-2xl md:text-3xl>
           Extensions and plugins
-        </BaseHeading>
+        </H>
         <section mt-6 grid md:grid-cols-2 gap-x-5 gap-y-4>
           <ProjectCardSimple
             v-for="(project, i) in extensions"
@@ -37,9 +37,9 @@ useHead({
       </div>
 
       <div>
-        <BaseHeading as="h3" text-xl sm:text-2xl md:text-3xl>
+        <H as="h3" text-xl sm:text-2xl md:text-3xl>
           Starter templates
-        </BaseHeading>
+        </H>
         <section mt-6 grid md:grid-cols-2 gap-x-5 gap-y-4>
           <ProjectCardSimple
             v-for="(project, i) in starters"

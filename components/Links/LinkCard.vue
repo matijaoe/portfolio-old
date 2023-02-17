@@ -54,9 +54,9 @@ whenever(keys?.[key.value], (v) => {
         <!-- TODO: wrong color on dark mode first load -->
         <!-- :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }" -->
         <Icon
+          transition ease-in-out
           :name="social.icon"
           text-5xl sm:text-6xl
-          transition
         />
         <div flex justify-between gap-4>
           <div

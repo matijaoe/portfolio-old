@@ -19,19 +19,19 @@ Uses
 
 ## Software
 - [Arc Browser](https://arc.net/) - a browser reimagined
-- [Google Chrome](https://www.google.com/chrome/) - I can't get used to Arc yet
+- [Google Chrome](https://www.google.com/chrome/) - I can't get fully used to Arc yet
 - [Brave Browser](https://brave.com/) - for work
-- [Discord](https://discord.com/)
+- [Discord](https://discord.com/) 
 - [Slack](https://slack.com/)
+- [Google Podcasts](https://podcasts.google.com/) - all my podcast needs
 - [Spotify](https://www.spotify.com/) - music and rogan
-- [Google Podcasts](https://podcasts.google.com/) - for all my podcast needs
 - [Calibre](https://calibre-ebook.com/) - powerful e-book management
-- [Audible](https://www.audible.com/)
-- [Scribd](https://www.scribd.com/)
+- [Audible](https://www.audible.com/) - audibooks #1
+- [Scribd](https://www.scribd.com/) - audibooks #2
 - [Notion](https://www.notion.so/)
 - [TickTick](https://ticktick.com/?language=en_US)
 - [Figma](https://www.figma.com/)
-- [1Password](https://1password.com/) - password manager
+- [1Password](https://1password.com/)
   
 ## Mac Apps
 - [Raycast](https://www.raycast.com/) - blazingly fast, totally extendable launcher
@@ -40,11 +40,11 @@ Uses
 - [iA Writer](https://ia.net/writer) - journaling in markdown
 - [Nota](https://nota.md/) - markdown notes
 - [SideNotes](https://www.apptorium.com/sidenotes) - quick notes on screen side
-- [Mimestream](https://mimestream.com/) - native macOS email client for Gmail
+- [Mimestream](https://mimestream.com/) - native macOS email client
 - [Cron Calendar](https://cron.com/) - next-generation calendar
 - [CodePoint](https://apps.apple.com/us/app/codepoint/id6444068649) - stunning unicode & SF Symbols Finder
 - [SelfControl](https://selfcontrolapp.com/) - helps you avoid distracting websites
-- [Bartender](https://www.macbartender.com/Bartender4/)
+- [Bartender](https://www.macbartender.com/Bartender4/) - take control of your menu bar
 - Anything by [Sindre Sorhus](https://sindresorhus.com/apps)
 
 ## Dev Tools
@@ -61,9 +61,29 @@ Uses
 - [GitLab](https://about.gitlab.com/) - for work
 
 
-#### VSCode Theme & Font
+### VSCode
+#### Theme
 - [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
+- [Vitesse Light Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse) - when out in the sun
+
+#### Font
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
+
+#### Extensions
+- [Vue Ecosystem Snippets](https://marketplace.visualstudio.com/items?itemName=matijao.vue-nuxt-snippets)
+- [Modern JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=matijao.modern-js-snippets)
+- [File Utils](https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils)
+- [Advanced New File](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
+- [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+- [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+- [Where Am I](https://marketplace.visualstudio.com/items?itemName=antfu.whereami)
+- [GitLink](https://marketplace.visualstudio.com/items?itemName=qezhu.gitlink)
+- [TabOut](https://marketplace.visualstudio.com/items?itemName=albert.TabOut)
+- [gitignore](https://marketplace.visualstudio.com/items?itemName=michelemelluso.gitignore)
+- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+- [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 
 ## Finance
 - [Ledger](https://www.ledger.com/) - not your keys, not your coins
@@ -98,10 +118,10 @@ Tweets, videos, podcasts, courses, blogs & articles
 - [Frontend Masters](https://frontendmasters.com/)
 
 ## Services
-- [vercel](https://vercel.com/)
-- [porkbun](https://porkbun.com/)
-- [icones](https://icones.js.org/) 
-- [elk zone](https://elk.zone/)
+- [Vercel](https://vercel.com/)
+- [Porkbun](https://porkbun.com/)
+- [Icônes](https://icones.js.org/) 
+- [Elk](https://elk.zone/)
 
 
 ## Shoutouts
