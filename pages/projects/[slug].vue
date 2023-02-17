@@ -57,7 +57,7 @@ const images = computed(() => {
         </ProjectTag>
       </ul>
 
-      <div v-if="project.description" prose max-w="50ch">
+      <div v-if="project.description" max-w="50ch" mt-6>
         <p>{{ project.description }}</p>
       </div>
     </div>

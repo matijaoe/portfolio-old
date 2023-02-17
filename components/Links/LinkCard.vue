@@ -52,10 +52,11 @@ whenever(keys?.[key.value], (v) => {
     >
       <div p-5 flex-1 flex flex-col justify-between class="text-default">
         <!-- TODO: wrong color on dark mode first load -->
+        <!-- :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }" -->
         <Icon
-          :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }"
           :name="social.icon"
           text-5xl sm:text-6xl
+          transition
         />
         <div flex justify-between gap-4>
           <div
@@ -90,7 +91,7 @@ whenever(keys?.[key.value], (v) => {
               }"
               class="visible opacity-100 translate-y-0 sm:(invisible opacity-0 translate-y-2) sm:group-hover:(visible opacity-100 translate-y-0 delay-100)"
               transition-all duration-400
-              text="#43aedc" dark:text-accent
+              text-opaque-hovered dark:text-accent
               truncate
             >
               {{ justCopied ? 'Copied link to clipboard' : stripUrl(social.href) }}

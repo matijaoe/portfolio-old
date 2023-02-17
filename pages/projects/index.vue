@@ -38,7 +38,7 @@ useHead({
 
       <div>
         <BaseHeading as="h3" text-xl sm:text-2xl md:text-3xl>
-          Project starter templates
+          Starter templates
         </BaseHeading>
         <section mt-6 grid md:grid-cols-2 gap-x-5 gap-y-4>
           <ProjectCardSimple

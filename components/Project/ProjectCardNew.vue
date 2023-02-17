@@ -114,11 +114,12 @@ const openProject = () => {
       class="translate-y-15% group-hover:translate-y-3%"
     >
       <NuxtImg
+        transition
         rounded-lg
         loading="lazy"
-        w="380px"
+        h="240px"
         format="webp"
-        :height="822"
+        :height="480"
         :src="project.thumbnail"
         :alt="project.name"
       />

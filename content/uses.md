@@ -28,19 +28,11 @@ Uses
 - [Calibre](https://calibre-ebook.com/) - powerful e-book management
 - [Audible](https://www.audible.com/)
 - [Scribd](https://www.scribd.com/)
-- [Google Keep](https://keep.google.com) - quick notes
 - [Notion](https://www.notion.so/)
-- [Google Sheets](https://www.google.com/sheets/about/)
-- [Google Tasks](https://play.google.com/store/apps/details?id=com.google.android.apps.tasks&hl=en_US&gl=US)
 - [TickTick](https://ticktick.com/?language=en_US)
 - [Figma](https://www.figma.com/)
 - [1Password](https://1password.com/) - password manager
-- [Authy](https://authy.com/) - 2FA
-- [Loop Habit Tracker](https://play.google.com/store/apps/details?id=org.isoron.uhabits&hl=en_US&gl=US) - create and maintain good habits
-- [Luci](https://play.google.com/store/apps/details?id=com.samruston.luci&hl=en_US&gl=US) - smart dream journal
-- [Lithium](https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&gl=US) - reading on the go
-
-
+  
 ## Mac Apps
 - [Raycast](https://www.raycast.com/) - blazingly fast, totally extendable launcher
 - [CleanShot X](https://cleanshot.com/) - powerful screenshots tool
@@ -53,9 +45,7 @@ Uses
 - [CodePoint](https://apps.apple.com/us/app/codepoint/id6444068649) - stunning unicode & SF Symbols Finder
 - [SelfControl](https://selfcontrolapp.com/) - helps you avoid distracting websites
 - [Bartender](https://www.macbartender.com/Bartender4/)
-- Anything from [Sindre Sorhus](https://sindresorhus.com/apps)
-- [Rocket](https://matthewpalmer.net/rocket/) - fast emojis
-- [MonitorControl](https://monitorcontrol.app/) - external display management
+- Anything by [Sindre Sorhus](https://sindresorhus.com/apps)
 
 ## Dev Tools
 - [Homebrew](https://brew.sh/) - package manager
@@ -76,12 +66,12 @@ Uses
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
 ## Finance
-- [Ledger](https://www.ledger.com/)
+- [Ledger](https://www.ledger.com/) - not your keys, not your coins
 - [Kraken](https://www.kraken.com/)
 - [Coinbase](https://pro.coinbase.com/)
 - [Revolut](https://www.revolut.com)
-- [Interactive Brokers](https://www.interactivebrokers.com/en/home.php)
-- [Trading212](https://www.trading212.com/)
+- [Interactive Brokers](https://www.interactivebrokers.com/en/home.php) - VWCE & chill
+- [Trading212](https://www.trading212.com/) - leftovers from IBKR
 
 
 ## Keeping up with web dev
@@ -96,8 +86,8 @@ Tweets, videos, podcasts, courses, blogs & articles
 - [Fireship](https://www.youtube.com/c/Fireship)
 - [Jack Herrington](https://www.youtube.com/@jherr)
 - [Matt Pocock](https://www.youtube.com/@mattpocockuk) - the typescript guy
-- [Michael Thiessen](https://michaelnthiessen.com/) - the vue guy
 - [LearnVue](https://www.youtube.com/@LearnVue) - everyting vue
+- [Michael Thiessen](https://michaelnthiessen.com/)
 - [Joy Of Code](https://joyofcode.xyz/) - evertyhing svelte
 - [Kevin Powell](https://www.youtube.com/@KevinPowell) - evertything css
 - [Learn With Jason](https://www.youtube.com/@learnwithjason)
@@ -106,7 +96,12 @@ Tweets, videos, podcasts, courses, blogs & articles
 - [web.dev](https://web.dev/)
 - [Udemy](https://www.udemy.com/)
 - [Frontend Masters](https://frontendmasters.com/)
-- [@mislavjc](https://twitter.com/mislavjc) sending me stuff
+
+## Services
+- [vercel](https://vercel.com/)
+- [porkbun](https://porkbun.com/)
+- [icones](https://icones.js.org/) 
+- [elk zone](https://elk.zone/)
 
 
 ## Shoutouts
@@ -115,9 +110,9 @@ Some of the people I am inspired by
 - [Sindre Sorhus](https://sindresorhus.com/?ref=matijao)
 - [Tanner Linsley](https://twitter.com/tannerlinsley?ref=matijao)
 - [Wes Bos](https://wesbos.com/?ref=matijao)
-- [rauno](https://rauno.me/?ref=matijao)
+- [rauno](https://rauno.me?ref=matijao)
 - [levelsio](https://twitter.com/levelsio?ref=matijao)
 - [pabue](https://pabue.co/?ref=matijao)
-- [Joy Of Code](https://joyofcode.xyz/?ref=matijao)
+- [Joy Of Code](https://joyofcode.xyz?ref=matijao)
 - [Gurwinder](https://twitter.com/g_s_bhogal?ref=matijao)
 

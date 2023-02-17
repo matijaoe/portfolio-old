@@ -31,10 +31,8 @@ export default defineNuxtConfig({
     'assets/styles/floating-vue.css',
   ],
   colorMode: {
-    storageKey: 'matijao-color-mode',
     classSuffix: '',
-    preference: 'system',
-    fallback: 'dark',
+    storageKey: 'matijao-color-mode',
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
