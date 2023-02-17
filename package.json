@@ -18,18 +18,18 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
     "@formkit/auto-animate": "1.0.0-beta.6",
-    "@headlessui/vue": "^1.7.9",
+    "@headlessui/vue": "^1.7.10",
     "@nuxt/content": "^2.4.3",
     "@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
     "@nuxtjs/color-mode": "^3.2.0",
     "@types/node": "^18.13.0",
-    "@unocss/nuxt": "^0.49.4",
+    "@unocss/nuxt": "^0.49.7",
     "@vueuse/nuxt": "^9.12.0",
-    "eslint": "^8.33.0",
+    "eslint": "^8.34.0",
     "floating-vue": "^2.0.0-beta.20",
     "gsap": "^3.11.4",
-    "nuxt": "^3.1.2",
-    "nuxt-icon": "^0.2.11",
+    "nuxt": "^3.2.2",
+    "nuxt-icon": "^0.3.2",
     "typescript": "^4.9.5",
     "vue-dragscroll": "^4.0.5"
   }
