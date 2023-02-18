@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// import gsap from 'gsap'
 const { baseSocials: socials } = useSocials()
 
 useHead({

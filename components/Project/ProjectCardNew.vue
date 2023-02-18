@@ -30,7 +30,7 @@ const openProject = () => {
     z-5 relative
     w-full
     overflow-hidden
-    class="group sm:(bg-opaque) backdrop-blur-md border-2 border-stone-2/40 dark:border-stone-8/40"
+    class="group bg-opaque backdrop-blur-md border-2 border-stone-2/40 dark:border-stone-8/40"
     transition-smooth
     @click="openProject"
   >
@@ -55,15 +55,6 @@ const openProject = () => {
               text-accent
               class="invisible opacity-0 -translate-x-4 group-hover:(visible opacity-100 translate-x-0)"
             />
-          </div>
-
-          <div
-            block sm:hidden
-            absolute top="[-2]" right-0
-            font-black
-            text="stone-2/20 3xl right"
-          >
-            {{ project.year }}
           </div>
         </div>
 
@@ -111,9 +102,10 @@ const openProject = () => {
 
     <div
       absolute bottom-0 flex justify-center left-0 right-0 transition duration-300 ease-out
-      class="translate-y-15% group-hover:translate-y-3%"
+      class="translate-y-16% group-hover:translate-y-5%"
     >
       <NuxtImg
+        object-contain
         transition
         rounded-lg
         loading="lazy"

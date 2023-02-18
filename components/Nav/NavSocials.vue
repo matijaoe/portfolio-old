@@ -45,7 +45,7 @@ const { socials } = useSocials()
         transition-base
       >
         <Icon
-          name="ph:arrow-right"
+          name="ph:arrow-right-bold"
         />
       </NuxtLink>
     </li>

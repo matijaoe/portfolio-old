@@ -22,7 +22,7 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(({ favorite })
           select-none p-8 text-center
           h-full
           rounded-2xl transition-all duration-300
-          class="backdrop-blur-md bg-stone-50 ring-1 ring-stone-9/5 dark:(bg-stone-8/40 ring-stone-7/40) hover:(-translate-y-1)"
+          class="backdrop-blur-md bg-stone-50 dark:(bg-stone-8/40) backdrop-blur-md border-2 border-stone-2/40 dark:border-stone-8/40 hover:(-translate-y-1)"
         >
           <div flex flex-col justify-center items-center gap-6>
             <Icon shrink-0 :name="item.icon" text-5xl />

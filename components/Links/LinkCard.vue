@@ -53,11 +53,13 @@ whenever(keys?.[key.value], (v) => {
       <div p-5 flex-1 flex flex-col justify-between class="text-default">
         <!-- TODO: wrong color on dark mode first load -->
         <!-- :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }" -->
-        <Icon
-          transition ease-in-out
-          :name="social.icon"
-          text-5xl sm:text-6xl
-        />
+        <div flex items-center justify-between>
+          <Icon
+            transition ease-in-out
+            :name="social.icon"
+            text-5xl sm:text-6xl
+          />
+        </div>
         <div flex justify-between gap-4>
           <div
             v-show="showKey"
