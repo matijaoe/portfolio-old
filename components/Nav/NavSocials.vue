@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const { socials } = useSocials()
+import { email, github, linkedin, twitter } from '~~/data/socials'
+
+const socials = [github, twitter, linkedin, email]
 </script>
 
 <template>
@@ -14,9 +16,10 @@ const { socials } = useSocials()
         placement: 'top',
       }"
     >
-      <a
-        :href="social.href"
+      <NuxtLink
+        :to="social.href"
         target="_blank"
+        external
         :aria-label="social.label"
         p-2 flex items-center justify-center
         text-xl
@@ -26,7 +29,7 @@ const { socials } = useSocials()
         <Icon
           :name="social.icon"
         />
-      </a>
+      </NuxtLink>
     </li>
     <li
       v-tooltip="{

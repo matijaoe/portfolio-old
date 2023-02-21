@@ -21,8 +21,6 @@ const { isTouchDevice } = useTouchDevice()
     <div
       v-for="(book, i) in books"
       :key="i"
-      :href="book.url"
-      target="_blank"
       flex-shrink-0
       rounded="0.625rem"
       p="0.5"
@@ -40,7 +38,13 @@ const { isTouchDevice } = useTouchDevice()
           bg-gradient-to-t from-stone-9 text-stone-2
         >
           <p flex items-end justify-center w-full h-full pb-4 px-2 text-center>
-            <a hover:underline uppercase font-bold :href="book.url" target="_blank" line-clamp-2 class="text-11px" leading-snug>{{ book.name }}</a>
+            <NuxtLink
+              :to="book.url" target="_blank" external
+              hover:underline uppercase font-bold
+              line-clamp-2 class="text-11px" leading-snug
+            >
+              {{ book.name }}
+            </NuxtLink>
           </p>
         </div>
 
@@ -58,4 +62,3 @@ const { isTouchDevice } = useTouchDevice()
     </div>
   </div>
 </template>
-

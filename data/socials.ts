@@ -5,7 +5,6 @@ export const github = {
   href: 'https://github.com/mat2ja',
   color: '#171515',
   colorDark: '#fafaf9',
-  key: 'g',
 }
 
 export const twitter = {
@@ -14,7 +13,6 @@ export const twitter = {
   icon: 'ph:twitter-logo-fill',
   href: 'https://twitter.com/matijao_',
   color: '#1F9CEA',
-  key: 't',
 }
 
 export const linkedin = {
@@ -23,7 +21,6 @@ export const linkedin = {
   icon: 'ph:linkedin-logo-fill',
   href: 'https://linkedin.com/in/matijao',
   color: '#0277B5',
-  key: 'l',
 }
 
 export const website = {
@@ -33,7 +30,6 @@ export const website = {
   href: 'https://matijao.com',
   to: '/',
   color: 'var(--accent)',
-  key: 'm',
 }
 
 export const mastodon = {
@@ -42,16 +38,14 @@ export const mastodon = {
   icon: 'bxl:mastodon',
   href: 'https://elk.zone/fosstodon.org/@matijao',
   color: '#CC7D23',
-  key: 's',
 }
 
 export const email = {
   label: 'Email',
   username: 'matija.osrecki@gmail.com',
-  icon: 'ph:envelope-fill',
+  icon: 'mdi:gmail',
   href: 'mailto:matija.osrecki@gmail.com',
   color: '#DB4437',
-  key: 'e',
 }
 
 export const goodreads = {
@@ -61,7 +55,6 @@ export const goodreads = {
   href: 'https://www.goodreads.com/matijao',
   color: '#372212',
   colorDark: '#EEECDD',
-  key: 'b',
 }
 
 export const wakatime = {
@@ -71,7 +64,6 @@ export const wakatime = {
   href: 'https://wakatime.com/@matijao',
   color: '#000',
   colorDark: '#FFF',
-  key: 'w',
 }
 export const vsMarketplace = {
   label: 'VS Marketplace',
@@ -79,16 +71,14 @@ export const vsMarketplace = {
   icon: 'simple-icons:visualstudiocode',
   href: 'https://marketplace.visualstudio.com/publishers/matijao',
   color: '#22A5F1',
-  key: 'v',
 }
-export const angellist = {
-  label: 'AngelList',
+export const wellfound = {
+  label: 'Wellfound',
   username: '@matijao',
   icon: 'fa6-brands:angellist',
   href: 'https://angel.co/u/matijao',
   color: '#000',
   colorDark: '#FFF',
-  key: 'a',
 }
 export const linktree = {
   label: 'Linktree',
@@ -96,7 +86,6 @@ export const linktree = {
   icon: 'simple-icons:linktree',
   href: 'https://linktr.ee/matijao',
   color: '#44E660',
-  key: 'k',
 }
 export const resume = {
   label: 'Resume',
@@ -104,5 +93,4 @@ export const resume = {
   icon: 'academicons:cv',
   href: 'https://cv.matijao.com',
   color: 'var(--accent)',
-  key: 'r',
 }

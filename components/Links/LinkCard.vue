@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import type { LinkModel } from '~~/composables/use-socials'
 
-const props = defineProps<{
+defineProps<{
   social: LinkModel
-  showKey?: boolean
+  monochrome?: boolean
 }>()
 
 const { isDark } = useTheme()
@@ -26,15 +26,6 @@ watch(hovered, (value) => {
     }, 500)
   }
 })
-
-// Recognize keypresses
-const keyPressed = refAutoReset(false, 150)
-const keys = useMagicKeys()
-const key = computed(() => props.social.key ?? undefined)
-
-whenever(keys?.[key.value], (v) => {
-  keyPressed.value = true
-})
 </script>
 
 <template>
@@ -48,35 +39,18 @@ whenever(keys?.[key.value], (v) => {
     <Card
       ref="elem"
       class="!active:(scale-98) aspect-2/1 sm:aspect-square" no-padding
-      :active="keyPressed"
     >
       <div p-5 flex-1 flex flex-col justify-between class="text-default">
         <!-- TODO: wrong color on dark mode first load -->
-        <!-- :style="{ color: social.colorDark && isDark ? social.colorDark : social.color }" -->
         <div flex items-center justify-between>
           <Icon
+            :style="!monochrome ? { color: social.colorDark && isDark ? social.colorDark : social.color } : {}"
             transition ease-in-out
             :name="social.icon"
             text-5xl sm:text-6xl
           />
         </div>
         <div flex justify-between gap-4>
-          <div
-            v-show="showKey"
-            v-tooltip="{
-              content: `Press ${social.key?.toUpperCase()} to open`,
-              theme: 'info-tooltip',
-              placement: 'top',
-            }"
-            uppercase font-medium font-sans text-5xl
-            text="stone-8/8 dark:stone-50/6"
-            transition
-            class="invisible md:visible"
-            :class="{ '!text-accent scale-110': keyPressed }"
-          >
-            {{ social.key }}
-          </div>
-
           <div ml-auto text-right overflow-hidden>
             <div
               class="translate-0 sm:translate-y-5.75 group-hover:(translate-y-0)"

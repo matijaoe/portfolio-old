@@ -11,11 +11,13 @@ useHead({
     </H>
 
     <div mt-8>
-      <a
-        href="mailto:matija.osrecki@gmail.com" class="text-2xl sm:text-3xl md:text-5xl" underline decoration-accent hover:bg-accentop rounded-sm
+      <NuxtLink
+        to="mailto:matija.osrecki@gmail.com"
+        external
+        class="text-2xl sm:text-3xl md:text-5xl" underline decoration-accent hover:bg-accentop rounded-sm
       >
         matija.osrecki@gmail.com
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

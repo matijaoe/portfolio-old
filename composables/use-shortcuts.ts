@@ -26,35 +26,3 @@ export const useGlobalShortcuts = () => {
 
   useShortcuts(config)
 }
-
-export const useSocialsShortcuts = () => {
-  const { website, socialsIncludingBase } = useSocials()
-
-  const socials = computed(() => [website, ...socialsIncludingBase])
-
-  const config = computed(() => socials.value
-    .filter(item => !!item?.key)
-    .reduce((acc, social) => {
-      acc[social.label] = {
-        key: `${social.key!}`,
-        handler: () => navigateTo(social?.href ?? social.href, { external: !social.to }),
-      }
-      return acc
-    }, {} as ShortcutConfig))
-
-  const shortcutsShown = ref(false)
-
-  // useShortcuts({ ...config.value })
-
-  const { cmd } = useMagicKeys()
-  watch(cmd, (v) => {
-    if (v)
-      shortcutsShown.value = true
-    else
-      shortcutsShown.value = false
-  })
-
-  return {
-    shortcutsShown,
-  }
-}

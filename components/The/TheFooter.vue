@@ -13,12 +13,12 @@ const year = ref(new Date().getFullYear())
 
         <div flex items-center gap-2>
           <p text-sm text-opaque-hovered>
-            © {{ year }} Matija Osrečki. All rights reserved.
+            &copy; {{ year }} Matija Osrečki. All rights reserved.
           </p>
         </div>
       </div>
 
-      <div flex justify-center text-2xl font-mono>
+      <div flex justify-center text-2xl>
         <p text-sm text-opaque-hovered flex items-center gap-2>
           built with
           <Icon name="twemoji:red-heart" class="heartbeat" text-xs />

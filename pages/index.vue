@@ -73,6 +73,7 @@ const cards = {
             v-for="social in socials"
             :key="social.label"
             :social="social"
+            monochrome
           />
           <NavSiteCard
             col-span-2

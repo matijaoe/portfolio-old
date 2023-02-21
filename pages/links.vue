@@ -6,7 +6,6 @@ const socials = computed(() => [website, ...socialsIncludingBase])
 
 definePageMeta({
   layout: 'links',
-
 })
 
 useHead({
@@ -14,12 +13,11 @@ useHead({
 })
 
 const { isDark } = useTheme()
-const { shortcutsShown } = useSocialsShortcuts()
 
 const art = computed(() => [
-  isDark.value ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
-  isDark.value ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
-  isDark.value ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
+  // isDark.value ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
+  // isDark.value ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
+  // isDark.value ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
 ])
 
 const container = ref<HTMLDivElement>()
@@ -55,9 +53,9 @@ onMounted(() => {
       <LinksLinkCard
         v-for="(social) in socials"
         :key="social.label"
+        monochrome
         class="group col-span-3 sm:(col-span-2 row-span-1)"
         :social="social"
-        :show-key="shortcutsShown"
       />
 
       <div

@@ -19,7 +19,10 @@ defineProps<{
       { 'lg:(visible opacity-100 -rotate-3 -translate-x-30 -translate-y-35 scale-130 filter-saturate-100 z-10)': shown },
     ]"
   >
-    <a relative :href="thumbnail" target="_blank">
+    <NuxtLink
+      relative
+      :href="thumbnail" target="_blank" external
+    >
       <NuxtImg
         loading="lazy"
         h-64
@@ -28,6 +31,6 @@ defineProps<{
         :src="thumbnail"
         :alt="alt"
       />
-    </a>
+    </NuxtLink>
   </div>
 </template>

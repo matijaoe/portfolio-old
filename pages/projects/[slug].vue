@@ -71,13 +71,16 @@ const images = computed(() => {
           overflow-hidden
         >
           <div class="bg-black dark:(bg-accent)" overflow-hidden rounded-lg>
-            <a relative :href="image" target="_blank">
+            <NuxtLink
+              relative
+              :to="image" target="_blank" external
+            >
               <NuxtImg
                 format="webp"
                 :src="image"
                 alt="Project thumbnail"
               />
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>

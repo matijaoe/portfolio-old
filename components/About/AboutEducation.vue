@@ -32,7 +32,9 @@ const schools = [
         </h6>
 
         <div flex items-center gap-2>
-          <a :href="school.url" target="_blank" hyperlink>{{ school.name }}</a>
+          <NuxtLink :to="school.url" target="_blank" external hyperlink>
+            {{ school.name }}
+          </NuxtLink>
           <span text-opaque>|</span>
           <span text-xs font-bold uppercase>{{ school.nameShort }}</span>
         </div>

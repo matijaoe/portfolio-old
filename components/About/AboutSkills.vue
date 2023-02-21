@@ -11,11 +11,12 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(({ favorite })
       v-auto-animate
       grid grid-cols="1 md:2 lg:4" grid-rows="4" gap-4
     >
-      <a
+      <NuxtLink
         v-for="item in shownSkills"
         :key="item.value"
-        :href="item.url"
+        :to="item.url"
         target="_blank"
+        external
         class="group"
       >
         <article
@@ -37,7 +38,7 @@ const shownSkills = computed(() => favsOnly.value ? skills.filter(({ favorite })
             </div>
           </div>
         </article>
-      </a>
+      </NuxtLink>
     </div>
   </AboutSection>
 </template>
