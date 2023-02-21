@@ -1,12 +1,12 @@
 # Portfolio 🍃
 
-My much too overthinked porfolio website
+My much too overthinked portfolio website
 
 ## Setup
 
 ```bash
 # Install the dependencies
-pnpm install --shamefully-hoist
+pnpm install
 
 # Start the development server
 pnpm run dev

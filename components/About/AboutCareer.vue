@@ -1,5 +1,31 @@
 <script lang="ts" setup>
-const { jobs } = useJobs()
+import { addMonths, differenceInMonths } from 'date-fns'
+import { jobs } from '~~/data/jobs'
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'short',
+  }).format(date)
+}
+
+const calculateDuration = (from: Date, to: Date | null) => {
+  if (to === null)
+    to = addMonths(new Date(), 1)
+
+  const months = differenceInMonths(addMonths(to, 1), from)
+  if (months < 12) {
+    return `${months} months`
+  }
+  else {
+    const years = Math.floor(months / 12)
+    const monthsLeft = months % 12
+    if (!monthsLeft)
+      return `${years} year${years > 1 ? 's' : ''}`
+
+    return `${years} years, ${monthsLeft} months`
+  }
+}
 </script>
 
 <template>
@@ -15,18 +41,20 @@ const { jobs } = useJobs()
         </h6>
 
         <div flex items-center gap-2>
-          <a
-            :href="job.company.url" target="_blank"
+          <NuxtLink
+            :to="job.company.url" target="_blank" external
             hyperlink-wavy
-          >{{ job.company.name }}</a>
+          >
+            {{ job.company.name }}
+          </NuxtLink>
           <span>•</span>
           <span text-dimmed>{{ job.company.location }}</span>
         </div>
 
         <div text-dimmed text-sm flex items-center gap-2 ml="0.5">
-          <span>{{ job.from }} – {{ job.to }}</span>
+          <span>{{ formatDate(job.from) }} – {{ job.to ? formatDate(job.to) : 'Present' }}</span>
           <span>•</span>
-          <span>{{ job.duration }}</span>
+          <span>{{ calculateDuration(job.from, job.to) }}</span>
         </div>
       </div>
     </div>
