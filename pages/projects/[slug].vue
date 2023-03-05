@@ -20,7 +20,7 @@ const images = computed(() => {
         </H>
 
         <div flex items-center gap-2 shrink-0>
-          <Button @click="navigateTo({ name: 'projects' })">
+          <Button @click="navigateTo({ name: 'projects' })" !bg-transparent>
             Go back
           </Button>
           <Button
@@ -43,10 +43,9 @@ const images = computed(() => {
               placement: 'bottom',
               distance: 8,
             }"
-            class="!px-4"
             :to="project.url" external variant="accent" new-tab
           >
-            Live
+            See live
           </Button>
         </div>
       </div>
@@ -63,25 +62,24 @@ const images = computed(() => {
     </div>
 
     <div v-if="images?.length" mt-10>
-      <div space-y-8 rounded-2xl p-2 bg-accent overflow-hidden>
-        <div
-          v-for="image in images"
-          :key="image" p-1
-          bg-black rounded-xl
-          overflow-hidden
-        >
-          <div class="bg-black dark:(bg-accent)" overflow-hidden rounded-lg>
-            <NuxtLink
-              relative
-              :to="image" target="_blank" external
-            >
-              <NuxtImg
-                format="webp"
-                :src="image"
-                alt="Project thumbnail"
-              />
-            </NuxtLink>
-          </div>
+      <div
+        v-for="image in images"
+        :key="image" p-1.5
+        bg-black dark:bg-accent rounded-xl
+        overflow-hidden
+      >
+        <div class="bg-black dark:(bg-accent)" overflow-hidden rounded-lg>
+          <NuxtLink
+            relative
+            :to="image" target="_blank" external
+          >
+            <NuxtImg
+              width="1904px"
+              format="webp"
+              :src="image"
+              alt="Project thumbnail"
+            />
+          </NuxtLink>
         </div>
       </div>
     </div>
