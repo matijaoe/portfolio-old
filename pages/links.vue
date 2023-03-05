@@ -12,14 +12,6 @@ useHead({
   title: 'Links | Matija Osrečki',
 })
 
-const { isDark } = useTheme()
-
-const art = computed(() => [
-  // isDark.value ? 'https://mdl.artvee.com/sftb/405063mt.jpg' : 'https://mdl.artvee.com/sftb/700854an.jpg',
-  // isDark.value ? 'https://mdl.artvee.com/sftb/800397ht.jpg' : 'https://mdl.artvee.com/sftb/515596ld.jpg',
-  // isDark.value ? 'https://mdl.artvee.com/sftb/602614sl.jpg' : 'https://mdl.artvee.com/sftb/800717ht.jpg',
-])
-
 const container = ref<HTMLDivElement>()
 
 onMounted(() => {
@@ -40,32 +32,12 @@ onMounted(() => {
       ref="container"
       class="link-grid" gap-4
     >
-      <div
-        v-for="img in art.slice(0, 1)"
-        :key="img"
-        rounded-2xl
-        select-none
-        overflow-hidden
-        sm:none
-        class="col-span-3 sm:(col-span-2 row-span-1) aspect-square filter-saturate-90"
-        :style="{ backgroundImage: 'url(' + `'${img}'` + ')', backgroundSize: 'cover' }"
-      />
       <LinksLinkCard
         v-for="(social) in socials"
         :key="social.label"
         monochrome
         class="group col-span-3 sm:(col-span-2 row-span-1)"
         :social="social"
-      />
-
-      <div
-        v-for="img in art.slice(1, 3)"
-        :key="img"
-        rounded-2xl
-        select-none
-        overflow-hidden
-        class="col-span-3 sm:(col-span-2 row-span-1) aspect-square filter-saturate-90"
-        :style="{ backgroundImage: 'url(' + `'${img}'` + ')', backgroundSize: 'cover', backgroundPosition: 'center' }"
       />
     </div>
     <div flex justify-center sm:justify-end mt-auto pb-12 sm:pb-0>

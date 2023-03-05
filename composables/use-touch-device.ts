@@ -2,8 +2,7 @@ export const useTouchDevice = () => {
   const isTouchDevice = computed(
     () =>
       process.client
-        ? 'ontouchstart' in window
-      || navigator.maxTouchPoints > 0
+        ? ('ontouchstart' in window || navigator.maxTouchPoints > 0)
         : false,
   )
 

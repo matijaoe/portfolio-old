@@ -1,4 +1,4 @@
-import { wellfound, email, github, goodreads, linkedin, linktree, mastodon, resume, twitter, vsMarketplace, wakatime, website } from '~~/data/socials'
+import { email, github, goodreads, linkedin, linktree, mastodon, resume, twitter, vsMarketplace, wakatime, website, wellfound } from '~~/data/socials'
 
 export type LinkModel = {
   label: string

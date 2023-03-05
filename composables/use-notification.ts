@@ -4,6 +4,7 @@ export const useNotification = () => {
   const hideNotification = () => {
     notificationShown.value = false
   }
+
   const showNotification = () => {
     notificationShown.value = true
   }

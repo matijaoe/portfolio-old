@@ -13,19 +13,6 @@ const copyUrl = (text: string) => {
   copy(text)
   justCopied.value = true
 }
-
-// Detect hover
-const elem = ref()
-const hovered = useElementHover(elem)
-
-watch(hovered, (value) => {
-  if (!value) {
-    setTimeout(() => {
-      if (justCopied.value)
-        justCopied.value = false
-    }, 500)
-  }
-})
 </script>
 
 <template>
