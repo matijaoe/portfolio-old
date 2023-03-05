@@ -6,12 +6,6 @@ const { project } = defineProps<{
   index: number
 }>()
 
-const cardRow = ref<HTMLElement>()
-const card = ref<HTMLElement>()
-
-const cardRowHovered = useElementHover(cardRow)
-const cardHovered = useElementHover(card)
-
 const slug = ref(slugify(project.name))
 
 const hasLink = computed(() => project.repo || project.url)
@@ -24,33 +18,25 @@ const openProject = () => {
 </script>
 
 <template>
+  <!-- TODO: combine inner and outer shadow with border, for that cool new look -->
   <div
-    ref="cardRow"
-    flex items-center justify-between relative
-    class="group"
+    p-10 pb-0 rounded-2xl cursor-pointer
+    z-5 relative
+    w-full
+    overflow-hidden
+    class="group bg-opaque backdrop-blur-md border-2 border-stone-2/40 dark:border-stone-8/40"
+    transition-smooth
+    @click="openProject"
   >
-    <div
-      ref="card"
-      py-4 rounded-2xl cursor-pointer
-      z-5 relative
-      flex gap-4
-      w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 transition sm:pl-3 pr-5"
-      :class="[{ 'sm:(bg-opaque !lg:translate-x-0 backdrop-blur-md)': cardRowHovered }]"
-      @click="openProject"
-    >
-      <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-bold text-5xl text="stone-8/12 dark:white/18">
-        {{ project.year }}
-      </div>
-
+    <div h-full max-w-lg>
       <div flex-1 flex flex-col gap-2>
-        <div relative flex justify-between items-center>
-          <div flex items-center gap-3>
+        <div>
+          <div relative flex items-center gap-3 w="fit">
             <h3
-              line-clamp-1
-              font-sans font-semibold text-2xl
+              font-sans font-bold text-3xl line-clamp-1
               flex-1 flex items-start gap-4
-              class="hover:underline" :class="{ underline: cardHovered }"
+              pb-2 transition underline
+              decoration="wavy 2 offset-4 transparent group-hover:accent"
             >
               {{ project.name }}
             </h3>
@@ -61,23 +47,14 @@ const openProject = () => {
               transition
               duration-250
               text-accent
-              class="invisible opacity-0 -translate-x-4 group-hover:(visible opacity-100 translate-x-0)"
+              class="invisible opacity-0 -translate-x-2 group-hover:(visible opacity-100 translate-x-0)"
             />
           </div>
 
-          <div
-            block sm:hidden
-            absolute top="[-2]" right-0
-            font-black
-            text="stone-2/20 3xl right"
-          >
-            {{ project.year }}
-          </div>
+          <p text-base text-dimmed min-h="md:44px">
+            {{ project.description }}
+          </p>
         </div>
-
-        <p text-sm text-dimmed>
-          {{ project.description }}
-        </p>
 
         <div text-sm flex items-center gap-3>
           <NuxtLink
@@ -100,7 +77,7 @@ const openProject = () => {
           </NuxtLink>
         </div>
 
-        <div mt-auto>
+        <div>
           <div mt-2 flex items-center flex-wrap gap-2>
             <ProjectTagWip v-if="project.wip" />
             <ProjectTagBlank v-if="project.vscode" class="bg-stone-3/80 dark:bg-stone-2/10 dark:text-stone-300">
@@ -115,13 +92,23 @@ const openProject = () => {
           </div>
         </div>
       </div>
-    </div>
 
-    <ProjectCardThumbnail
-      v-if="project.thumbnail"
-      :thumbnail="project.thumbnail"
-      :shown="cardRowHovered"
-      :alt="project.name"
-    />
+      <div
+        mt-8
+        flex justify-center transition duration-250
+        class="translate-y-18% group-hover:translate-y-8%"
+      >
+        <NuxtImg
+          object-contain
+          rounded-lg
+          loading="lazy"
+          h="240px"
+          format="webp"
+          :height="480"
+          :src="project.thumbnail"
+          :alt="project.name"
+        />
+      </div>
+    </div>
   </div>
 </template>

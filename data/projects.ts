@@ -30,7 +30,7 @@ export const projects: Project[] = [
   },
   {
     name: 'matijao.com',
-    description: 'The site you are on.',
+    description: 'My portfolio site you are browsing at this very exact moment',
     tags: [Tag.Nuxt, Tag.Vue, Tag.TypeScript, Tag.UnoCSS],
     year: 2023,
     repo: 'https://github.com/mat2ja/matijao.me',

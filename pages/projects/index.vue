@@ -14,7 +14,7 @@ useHead({
 
     <div space-y-32>
       <section mt-8 md:mt-12 grid lg:grid-cols-2 gap-5 md:gap-7>
-        <ProjectCardNew
+        <ProjectCard
           v-for="(project, i) in projects"
           :key="i"
           :index="i"

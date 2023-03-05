@@ -6,12 +6,6 @@ const { project } = defineProps<{
   index: number
 }>()
 
-const cardRow = ref<HTMLElement>()
-const card = ref<HTMLElement>()
-
-const cardRowHovered = useElementHover(cardRow)
-const cardHovered = useElementHover(card)
-
 const slug = ref(slugify(project.name))
 
 const hasLink = computed(() => project.repo || project.url)
@@ -25,18 +19,15 @@ const openProject = () => {
 
 <template>
   <div
-    ref="cardRow"
     flex items-center justify-between relative
     class="group"
   >
     <div
-      ref="card"
       py-4 rounded-2xl cursor-pointer
       z-5 relative
       flex gap-4
       w-full max-w-full md:max-w-lg
-      class="lg:-translate-x-4 transition sm:pl-3 pr-5 border-2 border-transparent"
-      :class="[{ 'sm:(bg-opaque !lg:translate-x-0 backdrop-blur-md) border-stone-2/40 dark:border-stone-8/40': cardRowHovered }]"
+      class="lg:-translate-x-4 transition sm:pl-3 pr-5 border-2 border-transparent hover:(sm:(bg-opaque !lg:translate-x-0 backdrop-blur-md) border-stone-2/40 dark:border-stone-8/40)"
       @click="openProject"
     >
       <div hidden sm:block class="write-vertical-left rotate-180 text-right" top="50%" font-semibold text-5xl text="stone-8/12 dark:white/18">
@@ -50,7 +41,7 @@ const openProject = () => {
               line-clamp-1
               font-sans font-semibold text-xl
               flex-1 flex items-start gap-4
-              class="hover:underline" :class="{ underline: cardHovered }"
+              class="group-hover:underline"
             >
               {{ project.name }}
             </h3>
