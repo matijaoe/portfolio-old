@@ -20,7 +20,7 @@ const images = computed(() => {
         </H>
 
         <div flex items-center gap-2 shrink-0>
-          <Button @click="navigateTo({ name: 'projects' })" !bg-transparent>
+          <Button @click="navigateTo({ name: 'projects' })">
             Go back
           </Button>
           <Button
