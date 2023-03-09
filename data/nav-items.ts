@@ -24,11 +24,11 @@ export const navItems = [
   //   to: '/blog',
   //   icon: 'ph:scroll-duotone',
   // },
-  {
-    label: 'Contact',
-    to: '/contact',
-    icon: 'ph:chat-circle-duotone',
-  },
+  // {
+  //   label: 'Contact',
+  //   to: '/contact',
+  //   icon: 'ph:chat-circle-duotone',
+  // },
   // {
   //   label: 'Guestbook',
   //   to: '/guestbook',

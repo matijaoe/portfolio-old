@@ -44,7 +44,7 @@ Uses
 - [Cron Calendar](https://cron.com/) - next-generation calendar
 - [CodePoint](https://apps.apple.com/us/app/codepoint/id6444068649) - stunning unicode & SF Symbols Finder
 - [SelfControl](https://selfcontrolapp.com/) - helps you avoid distracting websites
-- [Bartender](https://www.macbartender.com/Bartender4/) - take control of your menu bar
+- [Bartender 4](https://www.macbartender.com/Bartender4/) - take control of your menu bar
 - Anything by [Sindre Sorhus](https://sindresorhus.com/apps)
 
 ## Dev Tools
@@ -64,7 +64,7 @@ Uses
 ### VSCode
 #### Theme
 - [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
-- [Vitesse Light Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse) - when out in the sun
+- [Vitesse Light Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse) - when feeling frisky
 
 #### Font
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
@@ -91,7 +91,7 @@ Uses
 - [Coinbase](https://pro.coinbase.com/)
 - [Revolut](https://www.revolut.com)
 - [Interactive Brokers](https://www.interactivebrokers.com/en/home.php) - VWCE & chill
-- [Trading212](https://www.trading212.com/) - leftovers from IBKR
+- [Trading212](https://www.trading212.com/) - play money
 
 
 ## Keeping up with web dev

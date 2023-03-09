@@ -37,6 +37,17 @@ const cards = {
     icon: 'ph:globe-duotone',
   },
 } as const
+
+const now = useNow({ interval: 1000 })
+
+const formattedTime = computed(() => {
+  return Intl.DateTimeFormat('en-us', {
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: false,
+  }).format(now.value)
+})
 </script>
 
 <template>
@@ -63,6 +74,40 @@ const cards = {
             Currently in Zagreb, Croatia
           </p>
         </div>
+      </div>
+    </div>
+
+    <div row sm:px-8 w-full mx-auto max-w="1200px">
+      <div grid grid-cols-10 grid-rows-3 gap-4>
+        <NowCard row-span-3 col-span-4 />
+
+        <LinksLinkCard
+          v-for="social in socials"
+          :key="social.label"
+          :social="social"
+          monochrome
+          col-span-2
+        />
+        <NuxtLink to="/links" block col-span-3 h-full>
+          <Card h-full>
+            All my places on the web
+          </Card>
+        </NuxtLink>
+        <div grid gap-4 col-span-3 row-span-1>
+          <NuxtLink to="/links">
+            <Card text-center>
+              <!-- current time auto updating every second HH:mm:ss format -->
+              All my places on the web
+            </Card>
+          </NuxtLink>
+          <Card font-mono font-medium text-3xl grid place-content-center h-full text-center>
+            <!-- current time auto updating every second HH:mm:ss format -->
+            {{ formattedTime }}
+          </Card>
+        </div>
+        <p bg-purple-400 w-full aspect-square>
+          #3
+        </p>
       </div>
     </div>
 
