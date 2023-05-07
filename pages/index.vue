@@ -89,7 +89,7 @@ const weatherDescription = computed(() => {
             {{ formattedTime }}
           </p>
 
-          <template v-if="currentWeather">
+          <template v-if="currentWeather && weatherDescription">
             <span>•</span>
             <div flex items-center gap-1>
               <!-- <Icon name="ph:sun-duotone" text-base /> -->
@@ -97,7 +97,7 @@ const weatherDescription = computed(() => {
               <!-- <img :src="weatherDescription.image" alt="" h-2.5ch> -->
               <p>{{ Math.round(currentWeather.temperature) }}&deg;,</p>
 
-              <p>{{ weatherDescription.description }}</p>
+              <!-- <p>{{ weatherDescription.description }}</p> -->
             </div>
           </template>
         </div>
