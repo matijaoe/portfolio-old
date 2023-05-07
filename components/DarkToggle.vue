@@ -8,10 +8,10 @@ const { isDark, toggleDark } = useTheme()
     v-tooltip="{
       content: '⌘+J',
       theme: 'info-tooltip',
-      placement: 'top',
+      placement: 'left',
     }"
     flex items-center
-    text-xl md:text-2xl
+    text-xl
     aria-label="Toggle dark mode"
     text-opaque hover:text-default
     @click="toggleDark"

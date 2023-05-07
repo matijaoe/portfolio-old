@@ -11,7 +11,7 @@ const { scrolled } = useWindowScrolled()
         <NuxtLink
           :to="item.to"
           hidden md:block
-          py="1.5" px-4
+          py="1.75" px-4
           text-opaque
           bg-transparent
           class="hover:text-default"

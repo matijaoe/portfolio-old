@@ -19,16 +19,16 @@ export const navItems = [
   //   to: '/uses',
   //   icon: 'ph:tray-duotone',
   // },
-  {
-    label: 'Posts',
-    to: '/posts',
-    icon: 'ph:scroll-duotone',
-  },
-  {
-    label: 'Contact',
-    to: '/contact',
-    icon: 'ph:chat-circle-duotone',
-  },
+  // {
+  //   label: 'Posts',
+  //   to: '/posts',
+  //   icon: 'ph:scroll-duotone',
+  // },
+  // {
+  //   label: 'Contact',
+  //   to: '/contact',
+  //   icon: 'ph:chat-circle-duotone',
+  // },
   // {
   //   label: 'Guestbook',
   //   to: '/guestbook',
