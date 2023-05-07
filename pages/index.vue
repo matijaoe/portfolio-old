@@ -1,52 +1,6 @@
 <script lang="ts" setup>
-const { baseSocials: socials } = useSocials()
-
 useHead({
   title: 'Home | Matija Osrečki',
-})
-
-const cards = {
-  about: {
-    title: 'About me',
-    description: 'What am I all about',
-    to: '/about',
-    icon: 'ph:user-duotone',
-  },
-  projects: {
-    title: 'Projects',
-    description: 'Some of projects I am proud of. Many more to come.',
-    to: '/projects',
-    icon: 'ph:lightbulb-filament-duotone',
-  },
-  contact: {
-    title: 'Contact',
-    description: 'Contact me via email or any of my socials',
-    to: '/contact',
-    icon: 'ph:chat-circle-dots-duotone',
-  },
-  uses: {
-    title: 'My uses',
-    description: 'The tools I use to get things done',
-    to: '/uses',
-    icon: 'ph:tray-duotone',
-  },
-  links: {
-    title: 'Links',
-    description: 'All my places on the web',
-    to: '/links',
-    icon: 'ph:globe-duotone',
-  },
-} as const
-
-const now = useNow({ interval: 1000 })
-
-const formattedTime = computed(() => {
-  return Intl.DateTimeFormat('en-us', {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: false,
-  }).format(now.value)
 })
 </script>
 
@@ -62,89 +16,18 @@ const formattedTime = computed(() => {
 
       <div max-w-48ch space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
         <p>
-          Self-motivated front-end oriented software developer, very much in love with all things web development.
+          Self-motivated front-end oriented software developer, very much in love with all things web development. And Bitcoin.
         </p>
 
         <div mt="!8" flex items-center gap-3 text-sm>
           <span class="relative flex h-2 w-2">
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-65" />
-            <span class="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-65" />
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
           </span>
           <p text-stone-5 dark:text-stone-5 flex items-center gap-2>
             Currently in Zagreb, Croatia
           </p>
         </div>
-      </div>
-    </div>
-
-    <div row sm:px-8 w-full mx-auto max-w="1200px">
-      <div grid grid-cols-10 grid-rows-3 gap-4>
-        <NowCard row-span-3 col-span-4 />
-
-        <LinksLinkCard
-          v-for="social in socials"
-          :key="social.label"
-          :social="social"
-          monochrome
-          col-span-2
-        />
-        <NuxtLink to="/links" block col-span-3 h-full>
-          <Card h-full>
-            All my places on the web
-          </Card>
-        </NuxtLink>
-        <div grid gap-4 col-span-3 row-span-1>
-          <NuxtLink to="/links">
-            <Card text-center>
-              <!-- current time auto updating every second HH:mm:ss format -->
-              All my places on the web
-            </Card>
-          </NuxtLink>
-          <Card font-mono font-medium text-3xl grid place-content-center h-full text-center>
-            <!-- current time auto updating every second HH:mm:ss format -->
-            {{ formattedTime }}
-          </Card>
-        </div>
-        <p bg-purple-400 w-full aspect-square>
-          #3
-        </p>
-      </div>
-    </div>
-
-    <div row sm:px-8 w-full mx-auto max-w="1200px">
-      <div class="grid md:grid-cols-2 gap-3">
-        <div grid sm:grid-cols-5 gap-3 col-span-2>
-          <LinksLinkCard
-            v-for="social in socials"
-            :key="social.label"
-            :social="social"
-            monochrome
-          />
-          <NavSiteCard
-            col-span-2
-            :card="cards.links"
-          />
-        </div>
-
-        <NavSiteCard
-          aspect="3/1"
-          :card="cards.about"
-        />
-
-        <NavSiteCard
-          aspect="3/1"
-          :card="cards.projects"
-        />
-
-        <NavSiteCard
-          aspect="3/1"
-          :card="cards.uses"
-        />
-
-        <NavSiteCard
-          aspect="3/1"
-          :card="cards.contact"
-        />
       </div>
     </div>
   </div>

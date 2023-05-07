@@ -1,24 +1,20 @@
 <script lang="ts" setup>
 import { navItems } from '~~/data/nav-items'
-
-const { scrolled } = useWindowScrolled()
 </script>
 
 <template>
   <nav relative overflow-hidden flex justify-center transition-base duration-500 ease>
-    <menu font-medium lowercase flex items-center gap-2 md:gap-0 w-max>
+    <menu font-medium lowercase flex items-center gap-2 w-max>
       <li v-for="(item, i) in navItems" :key="i">
         <NuxtLink
           :to="item.to"
           hidden md:block
-          py="1.5" px-4
-          text-opaque
-          bg-transparent
-          class="hover:text-default"
-          :class="{ 'hover:(bg-opaque)': !scrolled }"
+          font-600
+          py="3.25" px="4"
+          class="link text-default bg-stone-2/50 dark:bg-stone-8"
           transition-base
           relative z-2
-          rounded-lg
+          rounded-8px
           active-class="!text-default"
         >
           <span text-sm> {{ item.label }}</span>
@@ -40,3 +36,16 @@ const { scrolled } = useWindowScrolled()
     </menu>
   </nav>
 </template>
+
+<style lang="postcss" scoped>
+li:first-child {
+  .link {
+    @apply rounded-l-full rounded-r-8px pl-5;
+  }
+}
+li:last-child {
+  .link {
+    @apply rounded-r-full rounded-l-8px pr-5;
+  }
+}
+</style>

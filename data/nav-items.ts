@@ -14,21 +14,21 @@ export const navItems = [
     to: '/projects',
     icon: 'ph:lightbulb-filament-duotone',
   },
+  // {
+  //   label: 'Uses',
+  //   to: '/uses',
+  //   icon: 'ph:tray-duotone',
+  // },
   {
-    label: 'Uses',
-    to: '/uses',
-    icon: 'ph:tray-duotone',
+    label: 'Posts',
+    to: '/posts',
+    icon: 'ph:scroll-duotone',
   },
-  // {
-  //   label: 'Blog',
-  //   to: '/blog',
-  //   icon: 'ph:scroll-duotone',
-  // },
-  // {
-  //   label: 'Contact',
-  //   to: '/contact',
-  //   icon: 'ph:chat-circle-duotone',
-  // },
+  {
+    label: 'Contact',
+    to: '/contact',
+    icon: 'ph:chat-circle-duotone',
+  },
   // {
   //   label: 'Guestbook',
   //   to: '/guestbook',

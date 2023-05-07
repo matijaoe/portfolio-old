@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-const { scrolled } = useWindowScrolled()
-
 const { toggleGrain } = useGrain()
 const { notificationShown } = useNotification()
 </script>
