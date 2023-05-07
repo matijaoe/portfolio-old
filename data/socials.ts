@@ -1,7 +1,7 @@
 export const github = {
   label: 'GitHub',
   username: '@mat2ja',
-  icon: 'ph:github-logo-fill',
+  icon: 'ph:github-logo-duotone',
   href: 'https://github.com/mat2ja',
   color: '#171515',
   colorDark: '#fafaf9',
@@ -10,7 +10,7 @@ export const github = {
 export const twitter = {
   label: 'Twitter',
   username: '@matijao_',
-  icon: 'ph:twitter-logo-fill',
+  icon: 'ph:twitter-logo-duotone',
   href: 'https://twitter.com/matijao_',
   color: '#1F9CEA',
 }
@@ -18,7 +18,7 @@ export const twitter = {
 export const linkedin = {
   label: 'LinkedIn',
   username: '@matijao',
-  icon: 'ph:linkedin-logo-fill',
+  icon: 'ph:linkedin-logo-duotone',
   href: 'https://linkedin.com/in/matijao',
   color: '#0277B5',
 }
@@ -43,7 +43,7 @@ export const mastodon = {
 export const email = {
   label: 'Email',
   username: 'matija.osrecki@gmail.com',
-  icon: 'mdi:gmail',
+  icon: 'ph:envelope-duotone',
   href: 'mailto:matija.osrecki@gmail.com',
   color: '#DB4437',
 }
@@ -51,7 +51,7 @@ export const email = {
 export const goodreads = {
   label: 'Goodreads',
   username: '@matijao',
-  icon: 'fa6-brands:goodreads',
+  icon: 'ph:goodreads-logo-duotone',
   href: 'https://www.goodreads.com/matijao',
   color: '#372212',
   colorDark: '#EEECDD',
@@ -77,6 +77,14 @@ export const wellfound = {
   username: '@matijao',
   icon: 'fa6-brands:angellist',
   href: 'https://angel.co/u/matijao',
+  color: '#000',
+  colorDark: '#FFF',
+}
+export const readCv = {
+  label: 'ReadCV',
+  username: '@matijao',
+  icon: 'ph:read-cv-logo',
+  href: 'https://read.cv/matijao',
   color: '#000',
   colorDark: '#FFF',
 }

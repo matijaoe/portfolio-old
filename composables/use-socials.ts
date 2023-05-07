@@ -1,4 +1,4 @@
-import { email, github, goodreads, linkedin, linktree, mastodon, resume, twitter, vsMarketplace, wakatime, website, wellfound } from '~~/data/socials'
+import { email, github, goodreads, linkedin, linktree, mastodon, readCv, resume, twitter, vsMarketplace, wakatime, website, wellfound } from '~~/data/socials'
 
 export type LinkModel = {
   label: string
@@ -32,6 +32,7 @@ export const useSocials = () => {
     vsMarketplace,
     wellfound,
     linktree,
+    readCv,
     resume,
     email,
   ]

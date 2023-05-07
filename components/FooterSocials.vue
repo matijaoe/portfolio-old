@@ -31,6 +31,7 @@ const socials = [github, twitter, linkedin, email]
         />
       </NuxtLink>
     </li>
+
     <li
       v-tooltip="{
         delay: 0,

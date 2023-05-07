@@ -3,40 +3,17 @@ const year = ref(new Date().getFullYear())
 </script>
 
 <template>
-  <footer
-    p="t-14 b-20"
-    border="t-1 t-stone-2 dark:(t-stone-8)"
-  >
-    <div row space-y-10>
+  <footer row>
+    <div py-8 border="t-1 t-stone-2 dark:(t-stone-8)">
       <div flex="~ flex-col gap-5 md:(flex-row gap-4)" items-center justify-between flex-col md:flex-row gap-2>
-        <NavSocials />
+        <FooterSocials />
 
         <div flex items-center gap-2>
           <p text-sm text-opaque-hovered>
-            &copy; {{ year }} Matija Osrečki. All rights reserved.
+            Matija Osrečki &copy; {{ year }}
           </p>
         </div>
-      </div>
-
-      <div flex justify-center text-2xl>
-        <p text-sm text-opaque-hovered flex items-center gap-2>
-          built with
-          <Icon name="twemoji:red-heart" class="heartbeat" text-xs />
-        </p>
       </div>
     </div>
   </footer>
 </template>
-
-<style scoped lang="postcss">
-.heartbeat {
-  animation: beat .3s infinite alternate;
-  transform-origin: center;
-}
-
-@keyframes beat {
-  to {
-    transform: scale(1.25);
-  }
-}
-</style>
