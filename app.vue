@@ -39,7 +39,9 @@ const { isDark } = useTheme()
               :aria-label="social.label"
               flex items-center justify-center
               text-xl
-              text-opaque hover:text-default
+              text-default
+              opacity-50
+              hover:opacity-100
             >
               <Icon
                 :name="social.icon"
@@ -60,7 +62,9 @@ const { isDark } = useTheme()
               aria-label="Links"
               flex items-center justify-center
               text-xl
-              text-opaque hover:text-default
+              text-default
+              opacity-50
+              hover:opacity-100
             >
               <Icon
                 name="ph:link-duotone"

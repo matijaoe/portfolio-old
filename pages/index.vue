@@ -71,7 +71,7 @@ const weatherDescription = computed(() => {
           Self-motivated front-end oriented software developer, very much in love with all things web development. Obsessed about Bitcoin too.
         </p>
 
-        <div text-sm flex items-center gap-2 text-stone-5 dark:text-stone-5 mt="!8">
+        <div text-xs font-mono flex items-center gap-2 text-stone-5 dark:text-stone-5 mt="!8">
           <div flex items-center gap-3>
             <span class="relative flex h-2 w-2">
               <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-65" />
@@ -83,18 +83,18 @@ const weatherDescription = computed(() => {
             </p>
           </div>
 
-          ·
+          <span>•</span>
 
           <p tabular-nums>
             {{ formattedTime }}
           </p>
 
           <template v-if="currentWeather">
-            ·
+            <span>•</span>
             <div flex items-center gap-1>
               <!-- <Icon name="ph:sun-duotone" text-base /> -->
 
-              <img :src="weatherDescription.image" alt="" h-2.5ch>
+              <!-- <img :src="weatherDescription.image" alt="" h-2.5ch> -->
               <p>{{ Math.round(currentWeather.temperature) }}&deg;,</p>
 
               <p>{{ weatherDescription.description }}</p>

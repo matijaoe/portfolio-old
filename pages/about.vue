@@ -19,13 +19,13 @@ const openPdf = () => {
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
         <div lg:col-span-3 space-y-4 leading-relaxed text-stone-6 dark:text-stone-4>
           <p>
-            I'm Matija Osrečki, ambitious and determined front end oriented full stack developer from Croatia, with a special attention to detail and a keen eye for UI/UX design.
+            What you are looking here at is an ambitious and determined front end oriented full stack developer from Croatia, with a special attention to detail and a keen eye for UI/UX design.
           </p>
           <p>
-            I'm constantly found working on personal side projects and staying up to date with all the newest developments in this space.
+            I'm constantly working on personal side projects and staying up to date with all the newest developments in this space.
           </p>
           <p>
-            Most passionate about building products, web design, clean code and bitcoin. Looking for a way to contribute to the open
+            I'm passionate about building products, web design, clean code and bitcoin. Looking for a way to contribute to the open
             source community in a meaningful way.
           </p>
           <div>

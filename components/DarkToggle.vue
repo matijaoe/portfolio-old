@@ -13,7 +13,9 @@ const { isDark, toggleDark } = useTheme()
     flex items-center
     text-xl
     aria-label="Toggle dark mode"
-    text-opaque hover:text-default
+    text-default
+    opacity-50
+    hover:opacity-100
     @click="toggleDark"
   >
     <Icon v-show="!isDark" name="ph:moon-duotone" />
