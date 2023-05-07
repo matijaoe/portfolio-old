@@ -2,14 +2,14 @@
 import { addMonths, differenceInMonths } from 'date-fns'
 import { jobs } from '~~/data/jobs'
 
-const formatDate = (date: Date) => {
+function formatDate(date: Date) {
   return new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'short',
   }).format(date)
 }
 
-const calculateDuration = (from: Date, to: Date | null) => {
+function calculateDuration(from: Date, to: Date | null) {
   if (to === null)
     to = addMonths(new Date(), 1)
 

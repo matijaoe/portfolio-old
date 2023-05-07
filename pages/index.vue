@@ -68,7 +68,7 @@ const weatherDescription = computed(() => {
 
       <div max-w-48ch space-y-4 text-stone-7 dark:text-stone-4 leading-relaxed z-2>
         <p>
-          Self-motivated front-end oriented software developer, very much in love with all things web development. Obsessed about Bitcoin too.
+          Self-motivated front-end oriented software developer, very much in love with all things web development. Obsessed with Bitcoin too.
         </p>
 
         <div text-xs font-mono flex items-center gap-2 text-stone-5 dark:text-stone-5 mt="!8">

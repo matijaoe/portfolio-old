@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import Resume from '/Resume.pdf'
+
 useHead({
   title: 'About | Matija Osrečki',
 })
 
-const openPdf = () => {
+function openPdf() {
   if (process.client)
     window.open(Resume, '_blank')
 }
@@ -14,7 +15,7 @@ const openPdf = () => {
   <div row flex flex-col gap-24>
     <div space-y-8 lg:space-y-4>
       <H as="h2" text-4xl sm:text-5xl md:text-6xl z-500>
-        Hi there
+        About me
       </H>
       <div class="grid grid-cols-1 gap-12 mt-10 lg:(grid-cols-5 gap-40)">
         <div lg:col-span-3 space-y-4 leading-relaxed text-stone-6 dark:text-stone-4>

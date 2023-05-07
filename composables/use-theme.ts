@@ -1,4 +1,4 @@
-export const useTheme = () => {
+export function useTheme() {
   const colorMode = useColorMode()
 
   const isDark = computed(() => colorMode.value === 'dark')
