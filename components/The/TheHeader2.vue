@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <header row>
+  <header row flex justify-start>
     <NavBar
-      px-4 py-6 w-max mx-auto rounded-full
+      ml--4 py-6
       :class="{ 'bg-opaque backdrop-blur-md': scrolled }"
     />
   </header>
