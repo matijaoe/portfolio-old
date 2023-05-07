@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div max-w-1600px mx-auto flex-1 flex flex-col w-full gap-20>
+  <div max-w-1000px mx-auto flex-1 flex flex-col w-full gap-20 min-h-full grid>
     <div
       ref="container"
       class="link-grid" gap-4
@@ -54,7 +54,8 @@ onMounted(() => {
 <style lang="css" scoped>
 .link-grid {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  @apply h-full flex-1;
 }
 </style>
