@@ -52,7 +52,7 @@ const { isDark } = useTheme()
             v-tooltip="{
               delay: 0,
               content: 'All links',
-              theme: 'info-tooltip',
+            theme: 'info-tooltip',
               placement: 'left',
             }"
             p-2
